@@ -27,6 +27,7 @@ theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\cards\DefaultCommonSkill.class
+theWildCard\cards\SavageBlow.class
 theWildCard\util\TextureLoader.class
 theWildCard\relics\BottledPlaceholderRelic.class
 theWildCard\powers\RarePower.class

@@ -29,6 +29,10 @@
     "NAME": "TOUCH",
     "DESCRIPTION": "Deal !D! Damage."
   },
+  "theWildCard:SavageBlow": {
+    "NAME": "Savage Blow",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
   "theWildCard:DefaultRareSkill": {
     "NAME": "For Each Loop x2",
     "DESCRIPTION": "Apply !M! vulnerable to all enemies, 2 times.",

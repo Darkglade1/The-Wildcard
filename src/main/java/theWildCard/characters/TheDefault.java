@@ -171,6 +171,8 @@ public class TheDefault extends CustomPlayer {
         retVal.add(DefaultAttackWithVariable.ID);
         retVal.add(DefaultSecondMagicNumberSkill.ID);
         retVal.add(OrbSkill.ID);
+
+        retVal.add(SavageBlow.ID);
         return retVal;
     }
 
