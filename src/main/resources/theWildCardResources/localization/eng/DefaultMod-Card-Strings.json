@@ -8,6 +8,11 @@
     "DESCRIPTION": "Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity."
   },
+  "theWildCard:Michael": {
+    "NAME": "Michael",
+    "DESCRIPTION": "Retain. NL Persona Judgement. NL Gain 2 Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Gain 2 Strength."
+  },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"

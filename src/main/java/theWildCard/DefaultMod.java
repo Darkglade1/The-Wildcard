@@ -88,7 +88,7 @@ public class DefaultMod implements
     //This is for the in-game mod settings panel.
     private static final String MODNAME = "The Wild Card";
     private static final String AUTHOR = "Darkglade"; // And pretty soon - You!
-    private static final String DESCRIPTION = "An enigma who signed a contract to gain unfathomable power.";
+    private static final String DESCRIPTION = "A character mod inspired by the Persona Series.";
     
     // =============== INPUT TEXTURE LOCATION =================
     
@@ -100,13 +100,6 @@ public class DefaultMod implements
     public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
     public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
     public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
-    
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
-    // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_BLUE = "theWildCardResources/images/512/bg_attack_blue.png";
@@ -417,6 +410,7 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new SavageBlow());
         BaseMod.addCard(new Arsene());
+        BaseMod.addCard(new Michael());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -436,6 +430,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(SavageBlow.ID);
         UnlockTracker.unlockCard(Arsene.ID);
+        UnlockTracker.unlockCard(Michael.ID);
         
         logger.info("Done adding cards!");
     }

@@ -12,6 +12,12 @@
     "DESCRIPTION": "This card belongs to the Fool Arcana."
   },
   {
+    "NAMES": [
+      "judgement"
+    ],
+    "DESCRIPTION": "This card belongs to the Judgement Arcana."
+  },
+  {
     "PROPER_NAME": "Multiword Keyword",
     "NAMES": [
       "Multiword Keyword",

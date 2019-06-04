@@ -158,6 +158,7 @@ public class TheDefault extends CustomPlayer {
         retVal.add(SavageBlow.ID);
         retVal.add(SavageBlow.ID);
         retVal.add(Arsene.ID);
+        retVal.add(Michael.ID);
         return retVal;
     }
 

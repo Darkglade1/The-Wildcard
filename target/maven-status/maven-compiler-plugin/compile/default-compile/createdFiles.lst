@@ -1,8 +1,10 @@
+theWildCard\cards\Michael.class
 theWildCard\cards\DefaultUncommonPower.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\cards\DefaultUncommonAttack.class
 theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\DefaultCommonPower.class
+theWildCard\powers\ArsenePower.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\characters\TheDefault.class
@@ -33,6 +35,7 @@ theWildCard\util\TextureLoader.class
 theWildCard\relics\BottledPlaceholderRelic.class
 theWildCard\powers\RarePower.class
 theWildCard\DefaultMod.class
+theWildCard\tags\Tags.class
 theWildCard\relics\DefaultClickableRelic.class
 theWildCard\patches\DefaultInsertPatch.class
 theWildCard\cards\CardTemplate.class

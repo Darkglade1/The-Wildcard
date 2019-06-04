@@ -3,6 +3,10 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
 },
+"theWildCard:ArsenePower": {
+        "NAME": "Arsene",
+        "DESCRIPTIONS": ["Gain 1 Strength and 1 Dexterity"]
+},
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
