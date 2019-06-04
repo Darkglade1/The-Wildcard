@@ -30,7 +30,7 @@ import theWildCard.relics.PlaceholderRelic2;
 import java.util.ArrayList;
 
 import static theWildCard.DefaultMod.*;
-import static theWildCard.characters.TheDefault.Enums.COLOR_GRAY;
+import static theWildCard.characters.TheDefault.Enums.COLOR_BLUE;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
 //and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
@@ -49,9 +49,9 @@ public class TheDefault extends CustomPlayer {
     public static class Enums {
         @SpireEnum
         public static AbstractPlayer.PlayerClass THE_DEFAULT;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") // These two HAVE to have the same absolutely identical name.
-        public static AbstractCard.CardColor COLOR_GRAY;
-        @SpireEnum(name = "DEFAULT_GRAY_COLOR") @SuppressWarnings("unused")
+        @SpireEnum(name = "DEFAULT_BLUE_COLOR") // These two HAVE to have the same absolutely identical name.
+        public static AbstractCard.CardColor COLOR_BLUE;
+        @SpireEnum(name = "DEFAULT_BLUE_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }
 
@@ -61,10 +61,10 @@ public class TheDefault extends CustomPlayer {
     // =============== BASE STATS =================
 
     public static final int ENERGY_PER_TURN = 3;
-    public static final int STARTING_HP = 75;
-    public static final int MAX_HP = 75;
+    public static final int STARTING_HP = 60;
+    public static final int MAX_HP = 60;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
+    public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
 
     // =============== /BASE STATS/ =================
@@ -155,24 +155,9 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-
-        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
-
-        retVal.add(DefaultCommonSkill.ID);
-        retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
-
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
-
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
-
         retVal.add(SavageBlow.ID);
+        retVal.add(SavageBlow.ID);
+        retVal.add(Arsene.ID);
         return retVal;
     }
 
@@ -215,13 +200,13 @@ public class TheDefault extends CustomPlayer {
     // Should return the card color enum to be associated with your character.
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return COLOR_GRAY;
+        return COLOR_BLUE;
     }
 
     // Should return a color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
-        return theWildCard.DefaultMod.DEFAULT_GRAY;
+        return theWildCard.DefaultMod.DEFAULT_BLUE;
     }
 
     // Should return a BitmapFont object that you can use to customize how your
@@ -258,14 +243,14 @@ public class TheDefault extends CustomPlayer {
     // Should return a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
-        return theWildCard.DefaultMod.DEFAULT_GRAY;
+        return theWildCard.DefaultMod.DEFAULT_BLUE;
     }
 
     // Should return a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
-        return theWildCard.DefaultMod.DEFAULT_GRAY;
+        return theWildCard.DefaultMod.DEFAULT_BLUE;
     }
 
     // Should return an AttackEffect array of any size greater than 0. These effects

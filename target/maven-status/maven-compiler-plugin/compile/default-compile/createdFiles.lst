@@ -8,6 +8,7 @@ theWildCard\relics\PlaceholderRelic2.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\cards\DefaultUncommonSkill.class
+theWildCard\cards\Arsene.class
 theWildCard\cards\DefaultRarePower.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class

@@ -1,15 +1,24 @@
 {
+  "theWildCard:SavageBlow": {
+    "NAME": "Savage Blow",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "theWildCard:Arsene": {
+    "NAME": "Arsene",
+    "DESCRIPTION": "Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity."
+  },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
   },
   "theWildCard:DefaultCommonSkill": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! Block. NL theWildCard:Multiword_Keyword."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "theWildCard:DefaultCommonPower": {
     "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! theWildCard:Keyword.",
+    "DESCRIPTION": "Gain !M! keyword.",
     "UPGRADE_DESCRIPTION": "Gain !M! theWildCard:Keywords."
   },
   "theWildCard:DefaultUncommonAttack": {
@@ -22,15 +31,11 @@
   },
   "theWildCard:DefaultUncommonPower": {
     "NAME": "Weirdness",
-    "DESCRIPTION": "Gain X theWildCard:Keywords.",
+    "DESCRIPTION": "Gain X Strength.",
     "UPGRADE_DESCRIPTION": "Gain X +1 theWildCard:Keywords."
   },
   "theWildCard:DefaultRareAttack": {
     "NAME": "TOUCH",
-    "DESCRIPTION": "Deal !D! Damage."
-  },
-  "theWildCard:SavageBlow": {
-    "NAME": "Savage Blow",
     "DESCRIPTION": "Deal !D! Damage."
   },
   "theWildCard:DefaultRareSkill": {

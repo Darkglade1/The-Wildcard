@@ -1,10 +1,15 @@
 [
   {
     "NAMES": [
-      "keyword",
-      "keywords"
+      "persona"
     ],
-    "DESCRIPTION": "Whenever you play a card, gain 1 dexterity this turn only."
+    "DESCRIPTION": "Persona are 0 cost Skill cards that change the active Arcana and grant special passive effects. You can only have one Persona at a time."
+  },
+  {
+    "NAMES": [
+      "fool"
+    ],
+    "DESCRIPTION": "This card belongs to the Fool Arcana."
   },
   {
     "PROPER_NAME": "Multiword Keyword",
