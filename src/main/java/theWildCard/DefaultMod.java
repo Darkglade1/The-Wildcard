@@ -86,9 +86,9 @@ public class DefaultMod implements
     public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
-    private static final String MODNAME = "Default Mod";
-    private static final String AUTHOR = "Gremious"; // And pretty soon - You!
-    private static final String DESCRIPTION = "A base for Slay the Spire to start your own mod from, feat. the Default.";
+    private static final String MODNAME = "The Wild Card";
+    private static final String AUTHOR = "Darkglade"; // And pretty soon - You!
+    private static final String DESCRIPTION = "An enigma who signed a contract to gain unfathomable power.";
     
     // =============== INPUT TEXTURE LOCATION =================
     
@@ -109,17 +109,17 @@ public class DefaultMod implements
     // ONCE YOU CHANGE YOUR MOD ID (BELOW, YOU CAN'T MISS IT) CHANGE THESE PATHS!!!!!!!!!!!
   
     // Card backgrounds - The actual rectangular card.
-    private static final String ATTACK_DEFAULT_GRAY = "theWildCardResources/images/512/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY = "theWildCardResources/images/512/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY = "theWildCardResources/images/512/bg_power_default_gray.png";
+    private static final String ATTACK_BLUE = "theWildCardResources/images/512/bg_attack_blue.png";
+    private static final String SKILL_BLUE = "theWildCardResources/images/512/bg_skill_blue.png";
+    private static final String POWER_BLUE = "theWildCardResources/images/512/bg_power_blue.png";
     
-    private static final String ENERGY_ORB_DEFAULT_GRAY = "theWildCardResources/images/512/card_default_gray_orb.png";
+    private static final String ENERGY_ORB_BLUE = "theWildCardResources/images/512/card_orb.png";
     private static final String CARD_ENERGY_ORB = "theWildCardResources/images/512/card_small_orb.png";
     
-    private static final String ATTACK_DEFAULT_GRAY_PORTRAIT = "theWildCardResources/images/1024/bg_attack_default_gray.png";
-    private static final String SKILL_DEFAULT_GRAY_PORTRAIT = "theWildCardResources/images/1024/bg_skill_default_gray.png";
-    private static final String POWER_DEFAULT_GRAY_PORTRAIT = "theWildCardResources/images/1024/bg_power_default_gray.png";
-    private static final String ENERGY_ORB_DEFAULT_GRAY_PORTRAIT = "theWildCardResources/images/1024/card_default_gray_orb.png";
+    private static final String ATTACK_BLUE_PORTRAIT = "theWildCardResources/images/1024/bg_attack_blue.png";
+    private static final String SKILL_BLUE_PORTRAIT = "theWildCardResources/images/1024/bg_skill_blue.png";
+    private static final String POWER_BLUE_PORTRAIT = "theWildCardResources/images/1024/bg_power_blue.png";
+    private static final String ENERGY_ORB_BLUE_PORTRAIT = "theWildCardResources/images/1024/card_orb.png";
     
     // Character assets
     private static final String THE_DEFAULT_BUTTON = "theWildCardResources/images/charSelect/DefaultCharacterButton.png";
@@ -203,9 +203,9 @@ public class DefaultMod implements
         
         BaseMod.addColor(TheDefault.Enums.COLOR_BLUE, DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE,
                 DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE,
-                ATTACK_DEFAULT_GRAY, SKILL_DEFAULT_GRAY, POWER_DEFAULT_GRAY, ENERGY_ORB_DEFAULT_GRAY,
-                ATTACK_DEFAULT_GRAY_PORTRAIT, SKILL_DEFAULT_GRAY_PORTRAIT, POWER_DEFAULT_GRAY_PORTRAIT,
-                ENERGY_ORB_DEFAULT_GRAY_PORTRAIT, CARD_ENERGY_ORB);
+                ATTACK_BLUE, SKILL_BLUE, POWER_BLUE, ENERGY_ORB_BLUE,
+                ATTACK_BLUE_PORTRAIT, SKILL_BLUE_PORTRAIT, POWER_BLUE_PORTRAIT,
+                ENERGY_ORB_BLUE_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the color");
         
