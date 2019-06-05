@@ -7,6 +7,10 @@
         "NAME": "Arsene",
         "DESCRIPTIONS": ["Gain 1 Strength and 1 Dexterity"]
 },
+"theWildCard:MichaelPower": {
+        "NAME": "Michael",
+        "DESCRIPTIONS": ["Gain 2 Strength"]
+},
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]

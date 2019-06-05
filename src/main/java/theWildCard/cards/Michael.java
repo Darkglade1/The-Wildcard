@@ -7,21 +7,24 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import theWildCard.DefaultMod;
 import theWildCard.characters.TheDefault;
+import theWildCard.powers.MichaelPower;
 import theWildCard.tags.Tags;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class Michael extends AbstractDynamicCard {
+public class Michael extends AbstractPersonaCard {
 
     public static final String ID = DefaultMod.makeID(Michael.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
+    public static final int STRENGTH = 2;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -31,11 +34,9 @@ public class Michael extends AbstractDynamicCard {
     private static final int COST = 0;
     private static final int UPGRADED_COST = 0;
 
-    private static final int STRENGTH = 2;
-
 
     public Michael() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = STRENGTH;
         this.retain = true;
         tags.add(Tags.PERSONA);
@@ -45,8 +46,12 @@ public class Michael extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        removePersonaPower(p);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new StrengthPower(p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                new MichaelPower(p, p), 0));
+        activePersona = MichaelPower.POWER_ID;
     }
 
     @Override

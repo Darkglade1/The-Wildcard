@@ -16,6 +16,7 @@ theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
 theWildCard\cards\AbstractDefaultCard.class
 theWildCard\cards\DefaultRareSkill.class
+theWildCard\powers\MichaelPower.class
 theWildCard\cards\OrbSkill.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
@@ -29,6 +30,7 @@ theWildCard\cards\AbstractDynamicCard.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class
+theWildCard\cards\AbstractPersonaCard.class
 theWildCard\cards\DefaultCommonSkill.class
 theWildCard\cards\SavageBlow.class
 theWildCard\util\TextureLoader.class

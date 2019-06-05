@@ -15,14 +15,18 @@ import theWildCard.tags.Tags;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class Arsene extends AbstractDynamicCard {
+public class Arsene extends AbstractPersonaCard {
 
     public static final String ID = DefaultMod.makeID(Arsene.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
+    public static final String NAME = cardStrings.NAME;
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
+    public static final int STRENGTH = 1;
+    public static final int DEXTERITY = 1;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -32,13 +36,10 @@ public class Arsene extends AbstractDynamicCard {
     private static final int COST = 0;
     private static final int UPGRADED_COST = 0;
 
-    private static final int STRENGTH = 1;
-    private static final int DEXTERITY = 1;
-
 
 
     public Arsene() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = STRENGTH;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DEXTERITY;
         this.retain = true;
@@ -49,12 +50,14 @@ public class Arsene extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        removePersonaPower(p);
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new StrengthPower(p, magicNumber), magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new DexterityPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new ArsenePower(p, p), 0));
+        activePersona = ArsenePower.POWER_ID;
     }
 
     @Override
