@@ -13,6 +13,11 @@
     "DESCRIPTION": "Retain. NL Persona Judgement. NL Gain 2 Strength.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Gain 2 Strength."
   },
+  "theWildCard:PaleRider": {
+    "NAME": "Pale Rider",
+    "DESCRIPTION": "Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies."
+  },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"

@@ -18,6 +18,12 @@
     "DESCRIPTION": "This card belongs to the Judgement Arcana."
   },
   {
+    "NAMES": [
+      "death"
+    ],
+    "DESCRIPTION": "This card belongs to the Death Arcana."
+  },
+  {
     "PROPER_NAME": "Multiword Keyword",
     "NAMES": [
       "Multiword Keyword",

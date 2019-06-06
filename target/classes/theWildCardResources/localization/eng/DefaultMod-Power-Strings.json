@@ -11,6 +11,10 @@
         "NAME": "Michael",
         "DESCRIPTIONS": ["Gain 2 Strength"]
 },
+"theWildCard:PaleRiderPower": {
+        "NAME": "Pale Rider",
+        "DESCRIPTIONS": ["At the start of your turn, apply 2 Vulnerable to all enemies"]
+},
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]

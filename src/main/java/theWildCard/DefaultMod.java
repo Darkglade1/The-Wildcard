@@ -411,6 +411,7 @@ public class DefaultMod implements
         BaseMod.addCard(new SavageBlow());
         BaseMod.addCard(new Arsene());
         BaseMod.addCard(new Michael());
+        BaseMod.addCard(new PaleRider());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -431,6 +432,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(SavageBlow.ID);
         UnlockTracker.unlockCard(Arsene.ID);
         UnlockTracker.unlockCard(Michael.ID);
+        UnlockTracker.unlockCard(PaleRider.ID);
         
         logger.info("Done adding cards!");
     }

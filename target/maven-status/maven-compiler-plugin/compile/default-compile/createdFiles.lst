@@ -4,6 +4,7 @@ theWildCard\variables\DefaultCustomVariable.class
 theWildCard\cards\DefaultUncommonAttack.class
 theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\DefaultCommonPower.class
+theWildCard\cards\PaleRider.class
 theWildCard\powers\ArsenePower.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\relics\PlaceholderRelic2.class
@@ -25,6 +26,7 @@ theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\patches\relics\BottledPlaceholderField.class
 theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
+theWildCard\powers\PaleRiderPower.class
 theWildCard\orbs\DefaultOrb.class
 theWildCard\cards\AbstractDynamicCard.class
 theWildCard\events\IdentityCrisisEvent.class
