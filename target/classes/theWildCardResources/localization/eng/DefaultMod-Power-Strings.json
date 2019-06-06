@@ -3,15 +3,15 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
 },
-"theWildCard:ArsenePower": {
+"theWildCard:PersonaArsenePower": {
         "NAME": "Arsene",
         "DESCRIPTIONS": ["Gain 1 Strength and 1 Dexterity"]
 },
-"theWildCard:MichaelPower": {
+"theWildCard:PersonaMichaelPower": {
         "NAME": "Michael",
         "DESCRIPTIONS": ["Gain 2 Strength"]
 },
-"theWildCard:PaleRiderPower": {
+"theWildCard:PersonaPaleRiderPower": {
         "NAME": "Pale Rider",
         "DESCRIPTIONS": ["At the start of your turn, apply 2 Vulnerable to all enemies"]
 },

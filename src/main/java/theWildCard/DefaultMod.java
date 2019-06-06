@@ -408,10 +408,10 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRareAttack());
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
-        BaseMod.addCard(new SavageBlow());
-        BaseMod.addCard(new Arsene());
-        BaseMod.addCard(new Michael());
-        BaseMod.addCard(new PaleRider());
+        BaseMod.addCard(new AttackCommonSavageBlow());
+        BaseMod.addCard(new PersonaArsene());
+        BaseMod.addCard(new PersonaMichael());
+        BaseMod.addCard(new PersonaPaleRider());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -429,10 +429,10 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(DefaultRareAttack.ID);
         UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
-        UnlockTracker.unlockCard(SavageBlow.ID);
-        UnlockTracker.unlockCard(Arsene.ID);
-        UnlockTracker.unlockCard(Michael.ID);
-        UnlockTracker.unlockCard(PaleRider.ID);
+        UnlockTracker.unlockCard(AttackCommonSavageBlow.ID);
+        UnlockTracker.unlockCard(PersonaArsene.ID);
+        UnlockTracker.unlockCard(PersonaMichael.ID);
+        UnlockTracker.unlockCard(PersonaPaleRider.ID);
         
         logger.info("Done adding cards!");
     }

@@ -155,11 +155,11 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(SavageBlow.ID);
-        retVal.add(SavageBlow.ID);
-        retVal.add(Arsene.ID);
-        retVal.add(Michael.ID);
-        retVal.add(PaleRider.ID);
+        retVal.add(AttackCommonSavageBlow.ID);
+        retVal.add(AttackCommonSavageBlow.ID);
+        retVal.add(PersonaArsene.ID);
+        retVal.add(PersonaMichael.ID);
+        retVal.add(PersonaPaleRider.ID);
         return retVal;
     }
 

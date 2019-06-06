@@ -1,19 +1,19 @@
 {
-  "theWildCard:SavageBlow": {
+  "theWildCard:AttackCommonSavageBlow": {
     "NAME": "Savage Blow",
     "DESCRIPTION": "Deal !D! Damage."
   },
-  "theWildCard:Arsene": {
+  "theWildCard:PersonaArsene": {
     "NAME": "Arsene",
     "DESCRIPTION": "Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity."
   },
-  "theWildCard:Michael": {
+  "theWildCard:PersonaMichael": {
     "NAME": "Michael",
     "DESCRIPTION": "Retain. NL Persona Judgement. NL Gain 2 Strength.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Gain 2 Strength."
   },
-  "theWildCard:PaleRider": {
+  "theWildCard:PersonaPaleRider": {
     "NAME": "Pale Rider",
     "DESCRIPTION": "Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies."
