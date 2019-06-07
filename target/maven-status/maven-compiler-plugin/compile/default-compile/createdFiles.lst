@@ -6,6 +6,7 @@ theWildCard\cards\DefaultCommonPower.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
 theWildCard\relics\PlaceholderRelic2.class
+theWildCard\cards\AttackCommonSweepingSlash.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\cards\DefaultUncommonSkill.class
@@ -15,8 +16,11 @@ theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
 theWildCard\cards\AbstractDefaultCard.class
 theWildCard\cards\DefaultRareSkill.class
+theWildCard\cards\AttackCommonWardingBlow.class
+theWildCard\cards\AttackCommonHealersStrike.class
 theWildCard\cards\OrbSkill.class
 theWildCard\powers\PersonaPaleRiderPower.class
+theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
 theWildCard\actions\UncommonPowerAction.class

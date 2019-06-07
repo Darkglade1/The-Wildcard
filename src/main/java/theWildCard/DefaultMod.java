@@ -409,6 +409,10 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new AttackCommonSavageBlow());
+        BaseMod.addCard(new AttackCommonBalancedThrust());
+        BaseMod.addCard(new AttackCommonWardingBlow());
+        BaseMod.addCard(new AttackCommonSweepingSlash());
+        BaseMod.addCard(new AttackCommonHealersStrike());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
         BaseMod.addCard(new PersonaPaleRider());
@@ -430,6 +434,10 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(AttackCommonSavageBlow.ID);
+        UnlockTracker.unlockCard(AttackCommonBalancedThrust.ID);
+        UnlockTracker.unlockCard(AttackCommonWardingBlow.ID);
+        UnlockTracker.unlockCard(AttackCommonSweepingSlash.ID);
+        UnlockTracker.unlockCard(AttackCommonHealersStrike.ID);
         UnlockTracker.unlockCard(PersonaArsene.ID);
         UnlockTracker.unlockCard(PersonaMichael.ID);
         UnlockTracker.unlockCard(PersonaPaleRider.ID);

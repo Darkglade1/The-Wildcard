@@ -1,7 +1,23 @@
 {
   "theWildCard:AttackCommonSavageBlow": {
     "NAME": "Savage Blow",
-    "DESCRIPTION": "Deal !D! Damage."
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "theWildCard:AttackCommonBalancedThrust": {
+    "NAME": "Balanced Thrust",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "theWildCard:AttackCommonWardingBlow": {
+    "NAME": "Warding Blow",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
+  "theWildCard:AttackCommonSweepingSlash": {
+    "NAME": "Sweeping Slash",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "theWildCard:AttackCommonHealersStrike": {
+    "NAME": "Healer's Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Exhaust."
   },
   "theWildCard:PersonaArsene": {
     "NAME": "Arsene",
