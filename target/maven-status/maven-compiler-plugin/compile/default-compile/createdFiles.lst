@@ -6,6 +6,7 @@ theWildCard\cards\DefaultCommonPower.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
 theWildCard\relics\PlaceholderRelic2.class
+theWildCard\variables\ArcanaEnums$Arcana.class
 theWildCard\cards\AttackCommonSweepingSlash.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
@@ -15,6 +16,7 @@ theWildCard\cards\DefaultRarePower.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
 theWildCard\cards\AbstractDefaultCard.class
+theWildCard\variables\ArcanaEnums.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\AttackCommonWardingBlow.class
 theWildCard\cards\AttackCommonHealersStrike.class
@@ -36,10 +38,12 @@ theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\cards\AbstractPersonaCard.class
 theWildCard\cards\DefaultCommonSkill.class
+theWildCard\cards\AbstractArcanaCard.class
 theWildCard\util\TextureLoader.class
 theWildCard\relics\BottledPlaceholderRelic.class
 theWildCard\cards\PersonaPaleRider.class
 theWildCard\powers\RarePower.class
+theWildCard\cards\ArcanaSeveringSlash.class
 theWildCard\cards\PersonaMichael.class
 theWildCard\DefaultMod.class
 theWildCard\tags\Tags.class

@@ -1,4 +1,8 @@
 {
+  "theWildCard:ArcanaSeveringSlash": {
+    "NAME": "Severing Slash",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:AttackCommonSavageBlow": {
     "NAME": "Savage Blow",
     "DESCRIPTION": "Deal !D! damage."

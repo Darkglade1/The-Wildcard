@@ -7,6 +7,24 @@
   },
   {
     "NAMES": [
+      "arcana"
+    ],
+    "DESCRIPTION": "Arcana are cards that transform into different cards depending on the active Arcana."
+  },
+  {
+    "NAMES": [
+      "priestess"
+    ],
+    "DESCRIPTION": "This card belongs to the Priestess Arcana."
+  },
+  {
+    "NAMES": [
+      "emperor"
+    ],
+    "DESCRIPTION": "This card belongs to the Emperor Arcana."
+  },
+  {
+    "NAMES": [
       "fool"
     ],
     "DESCRIPTION": "This card belongs to the Fool Arcana."
