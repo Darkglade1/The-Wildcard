@@ -5,23 +5,23 @@
   },
   "theWildCard:AttackCommonSavageBlow": {
     "NAME": "Savage Blow",
-    "DESCRIPTION": "Deal !D! damage."
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
   },
   "theWildCard:AttackCommonBalancedThrust": {
     "NAME": "Balanced Thrust",
-    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Deal !D! damage."
   },
   "theWildCard:AttackCommonWardingBlow": {
     "NAME": "Warding Blow",
-    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Deal !D! damage."
   },
   "theWildCard:AttackCommonSweepingSlash": {
     "NAME": "Sweeping Slash",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage to ALL enemies."
   },
   "theWildCard:AttackCommonHealersStrike": {
     "NAME": "Healer's Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
   },
   "theWildCard:PersonaArsene": {
     "NAME": "Arsene",

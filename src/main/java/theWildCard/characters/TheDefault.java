@@ -155,11 +155,7 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-//        retVal.add(AttackCommonSavageBlow.ID);
-//        retVal.add(AttackCommonBalancedThrust.ID);
-//        retVal.add(AttackCommonWardingBlow.ID);
-//        retVal.add(AttackCommonSweepingSlash.ID);
-//        retVal.add(AttackCommonHealersStrike.ID);
+        retVal.add(ArcanaSeveringSlash.ID);
         retVal.add(ArcanaSeveringSlash.ID);
         retVal.add(PersonaArsene.ID);
         retVal.add(PersonaMichael.ID);
