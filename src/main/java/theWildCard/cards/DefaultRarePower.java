@@ -11,7 +11,7 @@ import theWildCard.powers.RarePower;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class DefaultRarePower extends AbstractDynamicCard {
+public class DefaultRarePower extends AbstractDefaultCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

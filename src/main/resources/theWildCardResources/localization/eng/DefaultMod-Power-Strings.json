@@ -3,6 +3,14 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
 },
+"theWildCard:PersonaSakuyaPower": {
+        "NAME": "Sakuya",
+        "DESCRIPTIONS": ["At the start of your turn, apply 2 Weak to all enemies"]
+},
+"theWildCard:PersonaPolydeucesPower": {
+        "NAME": "Polydeuces",
+        "DESCRIPTIONS": ["Gain 2 Dexterity"]
+},
 "theWildCard:PersonaArsenePower": {
         "NAME": "Arsene",
         "DESCRIPTIONS": ["Gain 1 Strength and 1 Dexterity"]

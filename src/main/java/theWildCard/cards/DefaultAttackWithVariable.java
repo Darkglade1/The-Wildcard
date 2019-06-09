@@ -12,7 +12,7 @@ import theWildCard.characters.TheDefault;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class DefaultAttackWithVariable extends AbstractDynamicCard {
+public class DefaultAttackWithVariable extends AbstractDefaultCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards

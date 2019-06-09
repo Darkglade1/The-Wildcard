@@ -11,18 +11,12 @@ import theWildCard.characters.TheDefault;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class AttackCommonSavageBlow extends AbstractDynamicCard {
+public class AttackCommonSavageBlow extends AbstractDefaultCard {
 
-    // TEXT DECLARATION
 
     public static final String ID = DefaultMod.makeID(AttackCommonSavageBlow.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("AttackCommonSavageBlow.png");
-    // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -35,8 +29,6 @@ public class AttackCommonSavageBlow extends AbstractDynamicCard {
     private static final int DAMAGE = 22;
     private static final int UPGRADE_PLUS_DMG = 8;
 
-    // /STAT DECLARATION/
-
 
     public AttackCommonSavageBlow() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -44,7 +36,6 @@ public class AttackCommonSavageBlow extends AbstractDynamicCard {
     }
 
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
@@ -52,7 +43,6 @@ public class AttackCommonSavageBlow extends AbstractDynamicCard {
     }
 
 
-    // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {

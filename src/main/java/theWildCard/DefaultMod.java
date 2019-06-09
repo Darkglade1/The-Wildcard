@@ -420,6 +420,8 @@ public class DefaultMod implements
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
         BaseMod.addCard(new PersonaPaleRider());
+        BaseMod.addCard(new PersonaPolydeuces());
+        BaseMod.addCard(new PersonaSakuya());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -446,6 +448,8 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(PersonaArsene.ID);
         UnlockTracker.unlockCard(PersonaMichael.ID);
         UnlockTracker.unlockCard(PersonaPaleRider.ID);
+        UnlockTracker.unlockCard(PersonaPolydeuces.ID);
+        UnlockTracker.unlockCard(PersonaSakuya.ID);
         
         logger.info("Done adding cards!");
     }

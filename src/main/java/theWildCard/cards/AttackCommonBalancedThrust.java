@@ -12,19 +12,10 @@ import theWildCard.characters.TheDefault;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class AttackCommonBalancedThrust extends AbstractDynamicCard {
-
-    // TEXT DECLARATION
+public class AttackCommonBalancedThrust extends AbstractDefaultCard {
 
     public static final String ID = DefaultMod.makeID(AttackCommonBalancedThrust.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("AttackCommonBalancedThrust.png");
-    // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
-
-
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
 
     private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -38,8 +29,6 @@ public class AttackCommonBalancedThrust extends AbstractDynamicCard {
     private static final int BLOCK = 6;
     private static final int UPGRADE_PLUS_BLOCK = 2;
 
-    // /STAT DECLARATION/
-
 
     public AttackCommonBalancedThrust() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -47,8 +36,6 @@ public class AttackCommonBalancedThrust extends AbstractDynamicCard {
         baseBlock = BLOCK;
     }
 
-
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
@@ -56,8 +43,6 @@ public class AttackCommonBalancedThrust extends AbstractDynamicCard {
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
-
-    // Upgraded stats.
     @Override
     public void upgrade() {
         if (!upgraded) {

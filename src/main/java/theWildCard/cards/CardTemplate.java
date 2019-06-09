@@ -12,7 +12,7 @@ import theWildCard.characters.TheDefault;
 import static theWildCard.DefaultMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
-public class CardTemplate extends AbstractDynamicCard {
+public class CardTemplate extends AbstractDefaultCard {
 
     /*
      * "Hey, I wanna make a bunch of cards now." - You, probably.

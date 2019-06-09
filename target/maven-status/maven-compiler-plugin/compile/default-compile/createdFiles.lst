@@ -5,11 +5,13 @@ theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\DefaultCommonPower.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
+theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\variables\ArcanaEnums$Arcana.class
 theWildCard\cards\AttackCommonSweepingSlash.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
+theWildCard\cards\PersonaSakuya.class
 theWildCard\cards\DefaultUncommonSkill.class
 theWildCard\powers\PersonaMichaelPower.class
 theWildCard\cards\DefaultRarePower.class
@@ -22,6 +24,7 @@ theWildCard\cards\AttackCommonWardingBlow.class
 theWildCard\cards\AttackCommonHealersStrike.class
 theWildCard\cards\OrbSkill.class
 theWildCard\powers\PersonaPaleRiderPower.class
+theWildCard\powers\PersonaSakuyaPower.class
 theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
@@ -32,7 +35,6 @@ theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
 theWildCard\powers\PersonaArsenePower.class
 theWildCard\orbs\DefaultOrb.class
-theWildCard\cards\AbstractDynamicCard.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class
@@ -45,6 +47,7 @@ theWildCard\cards\PersonaPaleRider.class
 theWildCard\powers\RarePower.class
 theWildCard\cards\ArcanaSeveringSlash.class
 theWildCard\cards\PersonaMichael.class
+theWildCard\cards\PersonaPolydeuces.class
 theWildCard\DefaultMod.class
 theWildCard\tags\Tags.class
 theWildCard\relics\DefaultClickableRelic.class

@@ -23,6 +23,16 @@
     "NAME": "Healer's Strike",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
   },
+  "theWildCard:PersonaSakuya": {
+    "NAME": "Sakuya",
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply 1 Weak to all enemies. NL At the start of your turn, apply 2 Weak to all enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Apply 1 Weak to all enemies. NL At the start of your turn, apply 2 Weak to all enemies."
+  },
+  "theWildCard:PersonaPolydeuces": {
+    "NAME": "Polydeuces",
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL Gain 2 Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Gain 2 Dexterity."
+  },
   "theWildCard:PersonaArsene": {
     "NAME": "Arsene",
     "DESCRIPTION": "Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity.",

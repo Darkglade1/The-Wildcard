@@ -12,7 +12,7 @@ import theWildCard.orbs.DefaultOrb;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
-public class OrbSkill extends AbstractDynamicCard {
+public class OrbSkill extends AbstractDefaultCard {
 
     /*
      * Orb time.
