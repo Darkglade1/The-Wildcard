@@ -12,7 +12,7 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public abstract class AbstractPersonaCard extends CustomCard {
 
-    public static String activePersona;
+    private static String activePersona;
     public ArcanaEnums.Arcana cardArcana;
 
     public AbstractPersonaCard(final String id,
@@ -62,5 +62,9 @@ public abstract class AbstractPersonaCard extends CustomCard {
         if (activePersona != null) {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(p, p, activePersona));
         }
+    }
+
+    public static void changePersona(String persona) {
+        activePersona = persona;
     }
 }

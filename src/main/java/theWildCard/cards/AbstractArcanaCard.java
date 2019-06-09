@@ -38,6 +38,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         tags.add(Tags.ARCANA);
     }
 
+    @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         if (c.tags.contains(Tags.PERSONA)) {
             transform();
@@ -83,6 +84,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         initializeDescription();
     }
 
+    @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         if (cardToTransform != null) {
             return cardToTransform.canUse(p, m);
@@ -90,6 +92,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         return false;
     }
 
+    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
         if (cardToTransform != null) {
@@ -97,6 +100,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         }
     }
 
+    @Override
     public void applyPowers() {
         super.applyPowers();
         if (cardToTransform != null) {
@@ -104,31 +108,17 @@ public abstract class AbstractArcanaCard extends CustomCard {
         }
     }
 
+    @Override
     public void onMoveToDiscard() {
         super.onMoveToDiscard();
         resetCard();
     }
 
-    public void atTurnStart() {
+    @Override
+    public void triggerWhenDrawn() {
         if (ArcanaEnums.getActiveArcana() != null) {
             transform();
         }
-    }
-
-    public void resetCard() {
-        this.name = languagePack.getCardStrings(cardID).NAME;
-        this.cost = -1;
-        this.costForTurn = this.cost;
-        this.isCostModifiedForTurn = false;
-        this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
-        this.exhaust = false;
-        this.purgeOnUse = false;
-        if (this.upgraded) {
-            upgradeName();
-        }
-        //loadCardImage("chrono_images/cards/ResonantCall.png");
-        resetAttributes();
-        initializeDescription();
     }
 
     @Override
@@ -141,5 +131,20 @@ public abstract class AbstractArcanaCard extends CustomCard {
         if (!upgraded) {
             upgradeName();
         }
+    }
+    
+    private void resetCard() {
+        this.name = languagePack.getCardStrings(cardID).NAME;
+        this.cost = -1;
+        this.costForTurn = this.cost;
+        this.isCostModifiedForTurn = false;
+        this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
+        this.exhaust = false;
+        this.purgeOnUse = false;
+        if (this.upgraded) {
+            upgradeName();
+        }
+        resetAttributes();
+        initializeDescription();
     }
 }

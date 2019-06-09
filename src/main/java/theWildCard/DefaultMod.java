@@ -18,6 +18,7 @@ import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,6 +32,7 @@ import theWildCard.relics.PlaceholderRelic;
 import theWildCard.relics.PlaceholderRelic2;
 import theWildCard.util.IDCheckDontTouchPls;
 import theWildCard.util.TextureLoader;
+import theWildCard.variables.ArcanaEnums;
 import theWildCard.variables.DefaultCustomVariable;
 import theWildCard.variables.DefaultSecondMagicNumber;
 
@@ -74,7 +76,8 @@ public class DefaultMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        PostBattleSubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
@@ -516,6 +519,12 @@ public class DefaultMod implements
                 //  getModID().toLowerCase() makes your keyword mod specific (it won't show up in other cards that use that word)
             }
         }
+    }
+
+    @Override
+    public void receivePostBattle(AbstractRoom var1) {
+        ArcanaEnums.changeArcana(null); //clears the active Arcana after battle
+        AbstractPersonaCard.changePersona(null); //clears the active Persona after battle
     }
     
     // ================ /LOAD THE KEYWORDS/ ===================    

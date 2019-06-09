@@ -37,7 +37,6 @@ public class PersonaPaleRider extends AbstractPersonaCard {
     }
 
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
@@ -48,6 +47,6 @@ public class PersonaPaleRider extends AbstractPersonaCard {
         }
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PersonaPaleRiderPower(p, p), 0));
-        activePersona = PersonaPaleRiderPower.POWER_ID;
+        changePersona(PersonaPaleRiderPower.POWER_ID);
     }
 }

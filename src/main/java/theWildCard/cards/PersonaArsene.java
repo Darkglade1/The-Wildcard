@@ -18,8 +18,8 @@ public class PersonaArsene extends AbstractPersonaCard {
     public static final String ID = DefaultMod.makeID(PersonaArsene.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
-    public int defaultSecondMagicNumber;        // Just like magic number, or any number for that matter, we want our regular, modifiable stat
-    public int defaultBaseSecondMagicNumber;    // And our base stat - the number in it's base state. It will reset to that by default.
+    public int defaultSecondMagicNumber;
+    public int defaultBaseSecondMagicNumber;
 
     public static final int STRENGTH = 1;
     public static final int DEXTERITY = 1;
@@ -40,7 +40,6 @@ public class PersonaArsene extends AbstractPersonaCard {
     }
 
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
@@ -50,6 +49,6 @@ public class PersonaArsene extends AbstractPersonaCard {
                 new DexterityPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PersonaArsenePower(p, p), 0));
-        activePersona = PersonaArsenePower.POWER_ID;
+       changePersona(PersonaArsenePower.POWER_ID);
     }
 }

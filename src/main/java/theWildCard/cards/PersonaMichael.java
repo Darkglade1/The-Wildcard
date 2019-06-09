@@ -34,7 +34,6 @@ public class PersonaMichael extends AbstractPersonaCard {
     }
 
 
-    // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
@@ -42,6 +41,6 @@ public class PersonaMichael extends AbstractPersonaCard {
                 new StrengthPower(p, magicNumber), magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PersonaMichaelPower(p, p), 0));
-        activePersona = PersonaMichaelPower.POWER_ID;
+        changePersona(PersonaMichaelPower.POWER_ID);
     }
 }
