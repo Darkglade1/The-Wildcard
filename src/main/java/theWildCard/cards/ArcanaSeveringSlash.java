@@ -18,7 +18,7 @@ public class ArcanaSeveringSlash extends AbstractArcanaCard {
     private static final int COST = -1;
 
     public ArcanaSeveringSlash() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaSeveringSlash.class);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         priestessCard = new AttackCommonHealersStrike();
         emperorCard = new AttackCommonWardingBlow();
         foolCard = new AttackCommonBalancedThrust();

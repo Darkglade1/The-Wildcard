@@ -1,21 +1,14 @@
 package theWildCard.cards;
 
 import basemod.abstracts.CustomCard;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.Hitbox;
-import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 import theWildCard.tags.Tags;
 import theWildCard.variables.ArcanaEnums;
 
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
-import static theWildCard.DefaultMod.makeCardPath;
 
 public abstract class AbstractArcanaCard extends CustomCard {
 
@@ -26,9 +19,12 @@ public abstract class AbstractArcanaCard extends CustomCard {
     public AbstractCard judgementCard;
     public AbstractCard deathCard;
     public AbstractCard cardToTransform;
-    public AbstractCard cardToPreview;
-    public boolean bullshit = false;
-    protected Class previewClass;
+    public AbstractCard cardToPreviewPriestess;
+    public AbstractCard cardToPreviewEmperor;
+    public AbstractCard cardToPreviewFool;
+    public AbstractCard cardToPreviewJudgement;
+    public AbstractCard cardToPreviewDeath;
+    
 
     public AbstractArcanaCard(final String id,
                               final String img,
@@ -36,8 +32,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
                               final CardType type,
                               final CardColor color,
                               final CardRarity rarity,
-                              final CardTarget target,
-                              Class previewCard) {
+                              final CardTarget target) {
 
         super(id, languagePack.getCardStrings(id).NAME, img, cost, languagePack.getCardStrings(id).DESCRIPTION, type, color, rarity, target);
 
@@ -48,8 +43,6 @@ public abstract class AbstractArcanaCard extends CustomCard {
         isBlockModified = false;
         isMagicNumberModified = false;
         tags.add(Tags.ARCANA);
-        cardToPreview = foolCard;
-        this.previewClass = previewCard;
     }
 
     @Override
@@ -150,89 +143,87 @@ public abstract class AbstractArcanaCard extends CustomCard {
     @Override
     public void hover() {
         try {
-            this.cardToPreview = (AbstractCard) this.previewClass.newInstance();
-            if (this.upgraded) {
-                this.cardToPreview.upgrade();
+            //Sets up these variables to indicate that a preview should be shown
+            cardToPreviewPriestess = priestessCard;
+            cardToPreviewEmperor = emperorCard;
+            cardToPreviewFool = foolCard;
+            cardToPreviewJudgement = judgementCard;
+            cardToPreviewDeath = deathCard;
+            if (upgraded) {
+                cardToPreviewPriestess.upgrade();
+                cardToPreviewEmperor.upgrade();
+                cardToPreviewFool.upgrade();
+                cardToPreviewJudgement.upgrade();
+                cardToPreviewDeath.upgrade();
             }
         } catch (Throwable e) {
             System.out.println(e.toString());
         }
         super.hover();
-        this.bullshit = true;
     }
 
     @Override
     public void unhover() {
         super.unhover();
-        this.bullshit = false;
-        this.cardToPreview = null;
-    }
-
-    @Override
-    public void renderInLibrary(SpriteBatch sb) {
-//        if (this.current_y < -200.0F * Settings.scale && this.current_y <= Settings.HEIGHT + 200.0F * Settings.scale) {
-//            return;
-//        }
-//        if (SingleCardViewPopup.isViewingUpgrade && this.isSeen && !this.isLocked) {
-////            AbstractCard copy = makeStatEquivalentCopy();
-////            copy.current_x = this.current_x;
-////            copy.current_y = this.current_y;
-////            copy.drawScale = this.drawScale;
-////            copy.upgrade();
-////            copy.displayUpgrades();
-////            copy.render(sb);
-//        } else {
-//
-//            super.renderInLibrary(sb);
-//        }
-        super.renderInLibrary(sb);
-        if (cardToPreview != null) {
-            AbstractCard rCard = cardToPreview.makeStatEquivalentCopy();
-            if (rCard != null) {
-                rCard.drawScale = 0.75f;
-                rCard.current_x = this.current_x - (rCard.hb.width / 2f);
-                rCard.current_y = this.current_y;
-                rCard.render(sb);
-            }
-        }
+        //remove the preview when the user stops hovering over the card
+        cardToPreviewPriestess = null;
+        cardToPreviewEmperor = null;
+        cardToPreviewFool = null;
+        cardToPreviewJudgement = null;
+        cardToPreviewDeath = null;
     }
 
     @Override
     public void renderCardTip(SpriteBatch sb) {
         super.renderCardTip(sb);
-        if (cardToPreview != null) {
-            AbstractCard rCard = cardToPreview.makeStatEquivalentCopy();
-            if (rCard != null) {
-                rCard.drawScale = 0.75f;
-                rCard.current_x = this.current_x - (rCard.hb.width / 2f);
-                rCard.current_y = this.current_y;
-                rCard.render(sb);
+        //Shows a preview of the different forms of the Arcana card above it when hovered over
+        float drawScale = 0.5f;
+        float yPosition = this.current_y + this.hb.height/1.35f;
+        if (cardToPreviewPriestess != null) {
+            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = this.current_x - this.hb.width;
+                card.current_y = yPosition;
+                card.render(sb);
             }
         }
-//        if (this.cardToPreview != null && !Settings.hideCards && this.bullshit) {
-//
-//            float tmpScale = this.drawScale / 1.5F;
-//
-////            if (this.newTarget == null)
-////                return;
-////            Hitbox target = this.newTarget.hb;
-//
-//            this.cardToPreview.current_x = Gdx.input.getX() + AbstractCard.IMG_WIDTH / 2.0F / 1.5F;
-//            this.cardToPreview.current_y = (Settings.HEIGHT - Gdx.input.getY()) + AbstractCard.IMG_HEIGHT / 2.0F / 1.5F;
-//
-//            this.cardToPreview.drawScale = tmpScale;
-////            if (AbstractDungeon.player.hasRelic("Runic Dome")) {
-////                this.cardToPreview.setLocked();
-////            }
-//            this.cardToPreview.render(sb);
-//        }
-//        AbstractCard rCard = makeStatEquivalentCopy();
-//        if (rCard != null) {
-//            rCard.drawScale = 0.75f;
-//            rCard.current_x = InputHelper.mX - (rCard.hb.width / 2f);
-//            rCard.current_y = InputHelper.mY;
-//            rCard.render(sb);
-//        }
+        if (cardToPreviewEmperor != null) {
+            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = this.current_x - this.hb.width/2;
+                card.current_y = yPosition;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewFool != null) {
+            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = this.current_x;
+                card.current_y = yPosition;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewJudgement != null) {
+            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = this.current_x + this.hb.width/2;
+                card.current_y = yPosition;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewDeath != null) {
+            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = this.current_x + this.hb.width;
+                card.current_y = yPosition;
+                card.render(sb);
+            }
+        }
     }
     
     private void resetCard() {
