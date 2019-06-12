@@ -3,6 +3,10 @@
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
 },
+"theWildCard:StrengthLossPower": {
+        "NAME": "Burst of Strength",
+        "DESCRIPTIONS": ["Lose Strength after your next attack"]
+},
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
         "DESCRIPTIONS": ["At the start of your turn, apply 2 Weak to all enemies"]

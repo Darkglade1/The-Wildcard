@@ -24,7 +24,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
     public AbstractCard cardToPreviewFool;
     public AbstractCard cardToPreviewJudgement;
     public AbstractCard cardToPreviewDeath;
-    
+
 
     public AbstractArcanaCard(final String id,
                               final String img,

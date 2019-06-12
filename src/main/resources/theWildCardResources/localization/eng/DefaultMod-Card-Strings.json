@@ -3,25 +3,49 @@
     "NAME": "Severing Slash",
     "DESCRIPTION": "Arcana."
   },
-  "theWildCard:AttackCommonSavageBlow": {
-    "NAME": "Savage Blow",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
+  "theWildCard:ArcanaArcaneArts": {
+    "NAME": "Arcane Arts",
+    "DESCRIPTION": "Arcana."
   },
-  "theWildCard:AttackCommonBalancedThrust": {
-    "NAME": "Balanced Thrust",
-    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Deal !D! damage."
+  "theWildCard:AttackCommonHealersStrike": {
+    "NAME": "Healer's Strike",
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
   },
   "theWildCard:AttackCommonWardingBlow": {
     "NAME": "Warding Blow",
     "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Deal !D! damage."
   },
+  "theWildCard:AttackCommonBalancedThrust": {
+    "NAME": "Balanced Thrust",
+    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Deal !D! damage."
+  },
   "theWildCard:AttackCommonSweepingSlash": {
     "NAME": "Sweeping Slash",
     "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage to ALL enemies."
   },
-  "theWildCard:AttackCommonHealersStrike": {
-    "NAME": "Healer's Strike",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
+  "theWildCard:AttackCommonSavageBlow": {
+    "NAME": "Savage Blow",
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
+  },
+  "theWildCard:SkillCommonDebilitatingSpell": {
+    "NAME": "Debilitating Spell",
+    "DESCRIPTION": "Arcana Priestess. NL Apply !M! Weak."
+  },
+  "theWildCard:SkillCommonFortify": {
+    "NAME": "Fortify",
+    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block."
+  },
+  "theWildCard:SkillCommonTwoForOne": {
+    "NAME": "Two For One",
+    "DESCRIPTION": "Arcana Fool. NL Apply !M! Weak. NL Apply !M! Vulnerable."
+  },
+  "theWildCard:SkillCommonBurstOfStrength": {
+    "NAME": "Burst of Strength",
+    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength on your next attack."
+  },
+  "theWildCard:SkillCommonPiercingGaze": {
+    "NAME": "Piercing Gaze",
+    "DESCRIPTION": "Arcana Death. NL Apply !M! Vulnerable."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",

@@ -412,11 +412,17 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new ArcanaSeveringSlash());
+        BaseMod.addCard(new ArcanaArcaneArts());
         BaseMod.addCard(new AttackCommonSavageBlow());
         BaseMod.addCard(new AttackCommonBalancedThrust());
         BaseMod.addCard(new AttackCommonWardingBlow());
         BaseMod.addCard(new AttackCommonSweepingSlash());
         BaseMod.addCard(new AttackCommonHealersStrike());
+        BaseMod.addCard(new SkillCommonPiercingGaze());
+        BaseMod.addCard(new SkillCommonBurstOfStrength());
+        BaseMod.addCard(new SkillCommonTwoForOne());
+        BaseMod.addCard(new SkillCommonFortify());
+        BaseMod.addCard(new SkillCommonDebilitatingSpell());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
         BaseMod.addCard(new PersonaPaleRider());

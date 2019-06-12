@@ -2,6 +2,7 @@ theWildCard\cards\DefaultUncommonPower.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\cards\DefaultUncommonAttack.class
 theWildCard\characters\TheDefault$Enums.class
+theWildCard\cards\SkillCommonDebilitatingSpell.class
 theWildCard\cards\DefaultCommonPower.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
@@ -19,9 +20,11 @@ theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
 theWildCard\cards\AbstractDefaultCard.class
 theWildCard\variables\ArcanaEnums.class
+theWildCard\cards\SkillCommonBurstOfStrength.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\AttackCommonWardingBlow.class
 theWildCard\cards\AttackCommonHealersStrike.class
+theWildCard\cards\ArcanaArcaneArts.class
 theWildCard\cards\OrbSkill.class
 theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\powers\PersonaSakuyaPower.class
@@ -30,9 +33,13 @@ theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
 theWildCard\actions\UncommonPowerAction.class
 theWildCard\patches\DefaultInsertPatch$Locator.class
+theWildCard\cards\SkillCommonPiercingGaze.class
 theWildCard\patches\relics\BottledPlaceholderField.class
+theWildCard\cards\SkillCommonTwoForOne.class
 theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
+theWildCard\powers\StrengthLossPower.class
+theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class
 theWildCard\orbs\DefaultOrb.class
 theWildCard\events\IdentityCrisisEvent.class
