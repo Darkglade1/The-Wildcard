@@ -17,7 +17,7 @@ public class AttackCommonBalancedThrust extends AbstractDefaultCard {
     public static final String ID = DefaultMod.makeID(AttackCommonBalancedThrust.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("AttackCommonBalancedThrust.png");
 
-    private static final CardRarity RARITY = CardRarity.SPECIAL;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
