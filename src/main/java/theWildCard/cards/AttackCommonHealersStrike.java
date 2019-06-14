@@ -34,8 +34,8 @@ public class AttackCommonHealersStrike extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = HEAL;
-        this.exhaust = true;
-        this.tags.add(CardTags.HEALING);
+        exhaust = true;
+        tags.add(CardTags.HEALING);
     }
 
 
@@ -43,7 +43,7 @@ public class AttackCommonHealersStrike extends AbstractDefaultCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, magicNumber));
     }
 
 

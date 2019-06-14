@@ -77,7 +77,8 @@ public class DefaultMod implements
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
         PostInitializeSubscriber,
-        PostBattleSubscriber {
+        PostBattleSubscriber,
+        PostDeathSubscriber{
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
@@ -412,6 +413,7 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new ArcanaSeveringSlash());
+        BaseMod.addCard(new ArcanaStingingStrike());
         BaseMod.addCard(new ArcanaArcaneArts());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
@@ -436,6 +438,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(ArcanaSeveringSlash.ID);
+        UnlockTracker.unlockCard(ArcanaStingingStrike.ID);
         UnlockTracker.unlockCard(ArcanaArcaneArts.ID);
         UnlockTracker.unlockCard(PersonaArsene.ID);
         UnlockTracker.unlockCard(PersonaMichael.ID);
@@ -521,6 +524,12 @@ public class DefaultMod implements
     public void receivePostBattle(AbstractRoom var1) {
         ArcanaEnums.changeArcana(null); //clears the active Arcana after battle
         AbstractPersonaCard.changePersona(null); //clears the active Persona after battle
+    }
+
+    @Override
+    public void receivePostDeath() {
+        ArcanaEnums.changeArcana(null); //clears the active Arcana after death
+        AbstractPersonaCard.changePersona(null); //clears the active Persona after death
     }
     
     // ================ /LOAD THE KEYWORDS/ ===================    

@@ -3,6 +3,10 @@
     "NAME": "Severing Slash",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaStingingStrike": {
+    "NAME": "Stinging Strike",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:ArcanaArcaneArts": {
     "NAME": "Arcane Arts",
     "DESCRIPTION": "Arcana."
@@ -26,6 +30,26 @@
   "theWildCard:AttackCommonSavageBlow": {
     "NAME": "Savage Blow",
     "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
+  },
+  "theWildCard:AttackCommonWitchsStrike": {
+    "NAME": "Witch's Strike",
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal HP equal to damage. NL Exhaust."
+  },
+  "theWildCard:AttackCommonBristle": {
+    "NAME": "Bristle",
+    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Gain !M! Thorns."
+  },
+  "theWildCard:AttackCommonEbbAndFlow": {
+    "NAME": "Ebb and Flow",
+    "DESCRIPTION": "Arcana Fool. NL Deal !D! damage. NL Draw !M! cards."
+  },
+  "theWildCard:AttackCommonFlurryOfBlows": {
+    "NAME": "Flurry of Blows",
+    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage !M! times."
+  },
+  "theWildCard:AttackCommonCrush": {
+    "NAME": "Crush",
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Your next Attack costs 0."
   },
   "theWildCard:SkillCommonDebilitatingSpell": {
     "NAME": "Debilitating Spell",

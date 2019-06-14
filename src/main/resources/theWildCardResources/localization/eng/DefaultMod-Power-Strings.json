@@ -5,7 +5,11 @@
 },
 "theWildCard:StrengthLossPower": {
         "NAME": "Burst of Strength",
-        "DESCRIPTIONS": ["Lose Strength after your next attack"]
+        "DESCRIPTIONS": ["Lose Strength after your next Attack"]
+},
+"theWildCard:CrushPower": {
+        "NAME": "Crush",
+        "DESCRIPTIONS": ["Your next Attack costs 0"]
 },
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
