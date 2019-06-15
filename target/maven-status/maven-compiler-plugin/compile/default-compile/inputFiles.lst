@@ -8,6 +8,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\SkillCommonFortify.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\PersonaPaleRider.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\SkillCommonDebilitatingSpell.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonEbbAndFlow.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\relics\BottledPlaceholderField.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\SkillCommonTwoForOne.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\relics\BottledPlaceholderRelic.java
@@ -15,7 +16,9 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\RarePower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\variables\DefaultCustomVariable.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\CardTemplate.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonWitchsStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AbstractPersonaCard.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonFlurryOfBlows.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonHealersStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultCommonSkill.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaMichaelPower.java
@@ -33,9 +36,11 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonWardingBlow.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\characters\TheDefault.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonSavageBlow.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonBristle.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultAttackWithVariable.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\relics\PlaceholderRelic2.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\ArcanaSeveringSlash.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\CrushPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\variables\DefaultSecondMagicNumber.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultCommonAttack.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\relics\DefaultClickableRelic.java
@@ -44,6 +49,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultRareAttack.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\events\IdentityCrisisEvent.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AbstractArcanaCard.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\ArcanaStingingStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\PersonaPolydeuces.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultCommonPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\util\TextureLoader.java
@@ -55,5 +61,6 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AbstractDefaultCard.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\SkillCommonBurstOfStrength.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\orbs\DefaultOrb.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AttackCommonCrush.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\variables\ArcanaEnums.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\relics\PlaceholderRelic.java

@@ -9,6 +9,7 @@ import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.green.Backflip;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -155,12 +156,15 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(ArcanaSeveringSlash.ID);
+        //retVal.add(ArcanaSeveringSlash.ID);
         //retVal.add(ArcanaSeveringSlash.ID);
         retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaStingingStrike.ID);
-        retVal.add(ArcanaStingingStrike.ID);
+        //retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaArcaneArts.ID);
+        retVal.add(ArcanaArcaneArts.ID);
+
+        retVal.add(Backflip.ID);
         //retVal.add(ArcanaArcaneArts.ID);
         retVal.add(PersonaArsene.ID);
         retVal.add(PersonaMichael.ID);
