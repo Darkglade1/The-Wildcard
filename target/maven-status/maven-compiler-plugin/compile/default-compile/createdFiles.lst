@@ -46,7 +46,6 @@ theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class
 theWildCard\orbs\DefaultOrb.class
-theWildCard\powers\CrushPower.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class

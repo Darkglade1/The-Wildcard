@@ -76,8 +76,9 @@ public abstract class AbstractArcanaCard extends CustomCard {
         this.name = cardToTransform.name;
         this.target = cardToTransform.target;
         this.cost = cardToTransform.cost;
-        this.energyOnUse = cardToTransform.cost;
         this.costForTurn = cardToTransform.costForTurn;
+        this.isCostModified = false;
+        this.isCostModifiedForTurn = false;
         this.exhaust = cardToTransform.exhaust;
         this.purgeOnUse = cardToTransform.purgeOnUse;
         this.baseDamage = cardToTransform.baseDamage;
@@ -94,7 +95,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         if (cardToTransform != null) {
-            return cardToTransform.canUse(p, m);
+            return super.canUse(p, m);
         }
         return false;
     }
@@ -230,6 +231,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         this.name = languagePack.getCardStrings(cardID).NAME;
         this.cost = -1;
         this.costForTurn = this.cost;
+        this.isCostModified = false;
         this.isCostModifiedForTurn = false;
         this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
         this.exhaust = false;

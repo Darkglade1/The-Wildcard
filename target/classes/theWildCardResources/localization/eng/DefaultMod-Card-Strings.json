@@ -49,7 +49,7 @@
   },
   "theWildCard:AttackCommonCrush": {
     "NAME": "Crush",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Your next Attack costs 0."
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Attacks in your hand cost 0 this turn."
   },
   "theWildCard:SkillCommonDebilitatingSpell": {
     "NAME": "Debilitating Spell",
