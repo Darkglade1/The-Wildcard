@@ -31,6 +31,10 @@
         "NAME": "Pale Rider",
         "DESCRIPTIONS": ["At the start of your turn, apply #b2 Vulnerable to all enemies."]
 },
+"theWildCard:PersonaAlicePower": {
+        "NAME": "Alice",
+        "DESCRIPTIONS": ["Whenever you kill an enemy, gain #b2 [E]"]
+},
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]

@@ -49,7 +49,7 @@
   },
   "theWildCard:AttackCommonCrush": {
     "NAME": "Crush",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Attacks in your hand cost 0 this turn."
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
   },
   "theWildCard:SkillCommonDebilitatingSpell": {
     "NAME": "Debilitating Spell",
@@ -95,6 +95,11 @@
     "NAME": "Pale Rider",
     "DESCRIPTION": "Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies."
+  },
+  "theWildCard:PersonaAlice": {
+    "NAME": "Alice",
+    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever you kill an enemy, gain 2 [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever you kill an enemy, gain 2 [E]."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",

@@ -77,8 +77,7 @@ public class DefaultMod implements
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
         PostInitializeSubscriber,
-        PostBattleSubscriber,
-        PostDeathSubscriber{
+        OnStartBattleSubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
     public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
@@ -420,6 +419,7 @@ public class DefaultMod implements
         BaseMod.addCard(new PersonaPaleRider());
         BaseMod.addCard(new PersonaPolydeuces());
         BaseMod.addCard(new PersonaSakuya());
+        BaseMod.addCard(new PersonaAlice());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -445,6 +445,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(PersonaPaleRider.ID);
         UnlockTracker.unlockCard(PersonaPolydeuces.ID);
         UnlockTracker.unlockCard(PersonaSakuya.ID);
+        UnlockTracker.unlockCard(PersonaAlice.ID);
         
         logger.info("Done adding cards!");
     }
@@ -521,15 +522,9 @@ public class DefaultMod implements
     }
 
     @Override
-    public void receivePostBattle(AbstractRoom var1) {
-        ArcanaEnums.changeArcana(null); //clears the active Arcana after battle
-        AbstractPersonaCard.changePersona(null); //clears the active Persona after battle
-    }
-
-    @Override
-    public void receivePostDeath() {
-        ArcanaEnums.changeArcana(null); //clears the active Arcana after death
-        AbstractPersonaCard.changePersona(null); //clears the active Persona after death
+    public void receiveOnBattleStart(AbstractRoom var1) {
+        ArcanaEnums.changeArcana(null); //clears the active Arcana before battle
+        AbstractPersonaCard.changePersona(null); //clears the active Persona before battle
     }
     
     // ================ /LOAD THE KEYWORDS/ ===================    

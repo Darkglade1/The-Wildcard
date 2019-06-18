@@ -31,6 +31,7 @@ theWildCard\cards\AttackCommonHealersStrike.class
 theWildCard\cards\ArcanaArcaneArts.class
 theWildCard\cards\OrbSkill.class
 theWildCard\powers\PersonaPaleRiderPower.class
+theWildCard\cards\PersonaAlice.class
 theWildCard\powers\PersonaSakuyaPower.class
 theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
@@ -55,6 +56,7 @@ theWildCard\cards\AttackCommonEbbAndFlow.class
 theWildCard\cards\AbstractArcanaCard.class
 theWildCard\util\TextureLoader.class
 theWildCard\relics\BottledPlaceholderRelic.class
+theWildCard\powers\PersonaAlicePower.class
 theWildCard\cards\PersonaPaleRider.class
 theWildCard\powers\RarePower.class
 theWildCard\cards\ArcanaSeveringSlash.class
