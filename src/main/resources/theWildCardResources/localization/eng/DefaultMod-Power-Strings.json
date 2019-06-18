@@ -31,9 +31,13 @@
         "NAME": "Pale Rider",
         "DESCRIPTIONS": ["At the start of your turn, apply #b2 Vulnerable to all enemies."]
 },
+"theWildCard:PersonaScathachPower": {
+        "NAME": "Scathach",
+        "DESCRIPTIONS": ["Whenever an enemy dies, heal #b", " HP"]
+},
 "theWildCard:PersonaAlicePower": {
         "NAME": "Alice",
-        "DESCRIPTIONS": ["Whenever you kill an enemy, gain #b2 [E]"]
+        "DESCRIPTIONS": ["Whenever an enemy dies, gain #b", " [E]"]
 },
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",

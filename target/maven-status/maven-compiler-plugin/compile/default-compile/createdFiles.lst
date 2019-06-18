@@ -34,6 +34,8 @@ theWildCard\cards\OrbSkill.class
 theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\cards\PersonaAlice.class
 theWildCard\cards\OnKillPowerCard.class
+theWildCard\cards\PersonaScathach.class
+theWildCard\powers\PersonaScathachPower.class
 theWildCard\powers\PersonaSakuyaPower.class
 theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class

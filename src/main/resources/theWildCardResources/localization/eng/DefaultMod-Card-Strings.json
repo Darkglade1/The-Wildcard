@@ -96,10 +96,15 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies."
   },
+  "theWildCard:PersonaScathach": {
+    "NAME": "Scathach",
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP."
+  },
   "theWildCard:PersonaAlice": {
     "NAME": "Alice",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever you kill an enemy, gain 2 [E].",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever you kill an enemy, gain 2 [E]."
+    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever an enemy dies, gain !M! [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever an enemy dies, gain !M! [E]."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
