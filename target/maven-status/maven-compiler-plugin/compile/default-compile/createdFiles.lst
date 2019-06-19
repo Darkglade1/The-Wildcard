@@ -12,6 +12,7 @@ theWildCard\relics\PlaceholderRelic2.class
 theWildCard\cards\ArcanaStingingStrike.class
 theWildCard\variables\ArcanaEnums$Arcana.class
 theWildCard\cards\AttackCommonSweepingSlash.class
+theWildCard\powers\PersonaOdinPower.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\cards\PersonaSakuya.class
@@ -64,6 +65,7 @@ theWildCard\relics\BottledPlaceholderRelic.class
 theWildCard\powers\PersonaAlicePower.class
 theWildCard\cards\PersonaPaleRider.class
 theWildCard\powers\RarePower.class
+theWildCard\cards\PersonaOdin.class
 theWildCard\cards\ArcanaSeveringSlash.class
 theWildCard\cards\PersonaMichael.class
 theWildCard\cards\PersonaPolydeuces.class

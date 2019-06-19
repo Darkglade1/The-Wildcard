@@ -157,7 +157,7 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
         retVal.add(ArcanaSeveringSlash.ID);
-        //retVal.add(ArcanaSeveringSlash.ID);
+        retVal.add(ArcanaSeveringSlash.ID);
         retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaStingingStrike.ID);
         //retVal.add(ArcanaStingingStrike.ID);
@@ -166,14 +166,15 @@ public class TheDefault extends CustomPlayer {
 
         //retVal.add(Backflip.ID);
         //retVal.add(ArcanaArcaneArts.ID);
-        retVal.add(PersonaArsene.ID);
+        //retVal.add(PersonaArsene.ID);
         retVal.add(PersonaMichael.ID);
-        retVal.add(PersonaPaleRider.ID);
-        retVal.add(PersonaPolydeuces.ID);
-        retVal.add(PersonaSakuya.ID);
-        //retVal.add(PersonaScathach.ID);
+        //retVal.add(PersonaPaleRider.ID);
+        //retVal.add(PersonaPolydeuces.ID);
+        //retVal.add(PersonaSakuya.ID);
+        retVal.add(PersonaScathach.ID);
+        retVal.add(PersonaOdin.ID);
         retVal.add(PersonaLoki.ID);
-        //retVal.add(PersonaAlice.ID);
+        retVal.add(PersonaAlice.ID);
         return retVal;
     }
 

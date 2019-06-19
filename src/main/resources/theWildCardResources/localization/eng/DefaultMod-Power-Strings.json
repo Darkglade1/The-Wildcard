@@ -35,6 +35,10 @@
         "NAME": "Scathach",
         "DESCRIPTIONS": ["Whenever an enemy dies, heal #b", " HP"]
 },
+"theWildCard:PersonaOdinPower": {
+        "NAME": "Odin",
+        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block"]
+},
 "theWildCard:PersonaLokiPower": {
         "NAME": "Loki",
         "DESCRIPTIONS": ["At the start of your turn, draw #b", " cards"]

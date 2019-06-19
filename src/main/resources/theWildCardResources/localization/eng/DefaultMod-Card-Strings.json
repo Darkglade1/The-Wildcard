@@ -101,6 +101,11 @@
     "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP."
   },
+  "theWildCard:PersonaOdin": {
+    "NAME": "Odin",
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Block."
+  },
   "theWildCard:PersonaLoki": {
     "NAME": "Loki",
     "DESCRIPTION": "Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards.",

@@ -420,6 +420,7 @@ public class DefaultMod implements
         BaseMod.addCard(new PersonaPolydeuces());
         BaseMod.addCard(new PersonaSakuya());
         BaseMod.addCard(new PersonaScathach());
+        BaseMod.addCard(new PersonaOdin());
         BaseMod.addCard(new PersonaLoki());
         BaseMod.addCard(new PersonaAlice());
         
@@ -448,6 +449,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(PersonaPolydeuces.ID);
         UnlockTracker.unlockCard(PersonaSakuya.ID);
         UnlockTracker.unlockCard(PersonaScathach.ID);
+        UnlockTracker.unlockCard(PersonaOdin.ID);
         UnlockTracker.unlockCard(PersonaLoki.ID);
         UnlockTracker.unlockCard(PersonaAlice.ID);
         
