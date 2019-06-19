@@ -42,7 +42,7 @@ public class PersonaArsenePower extends AbstractPower {
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + PersonaArsene.STRENGTH + DESCRIPTIONS[1] + PersonaArsene.DEXTERITY + DESCRIPTIONS[2];
     }
 
     @Override

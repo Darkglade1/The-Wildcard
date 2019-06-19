@@ -20,6 +20,7 @@ theWildCard\cards\AttackCommonWitchsStrike.class
 theWildCard\cards\DefaultUncommonSkill.class
 theWildCard\patches\PowerOnKillPatch.class
 theWildCard\powers\PersonaMichaelPower.class
+theWildCard\cards\PersonaLoki.class
 theWildCard\cards\DefaultRarePower.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
@@ -72,4 +73,5 @@ theWildCard\relics\DefaultClickableRelic.class
 theWildCard\cards\AttackCommonFlurryOfBlows.class
 theWildCard\cards\AttackCommonSavageBlow.class
 theWildCard\patches\DefaultInsertPatch.class
+theWildCard\powers\PersonaLokiPower.class
 theWildCard\cards\CardTemplate.class

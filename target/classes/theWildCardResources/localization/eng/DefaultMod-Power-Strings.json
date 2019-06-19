@@ -13,27 +13,31 @@
 },
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
-        "DESCRIPTIONS": ["At the start of your turn, apply #b2 Weak to all enemies."]
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to all enemies."]
 },
 "theWildCard:PersonaPolydeucesPower": {
         "NAME": "Polydeuces",
-        "DESCRIPTIONS": ["Gain #b2 Dexterity."]
+        "DESCRIPTIONS": ["Gain #b", " Dexterity."]
 },
 "theWildCard:PersonaArsenePower": {
         "NAME": "Arsene",
-        "DESCRIPTIONS": ["Gain #b1 Strength and #b1 Dexterity."]
+        "DESCRIPTIONS": ["Gain #b", " Strength and #b", " Dexterity."]
 },
 "theWildCard:PersonaMichaelPower": {
         "NAME": "Michael",
-        "DESCRIPTIONS": ["Gain #b2 Strength."]
+        "DESCRIPTIONS": ["Gain #b", " Strength."]
 },
 "theWildCard:PersonaPaleRiderPower": {
         "NAME": "Pale Rider",
-        "DESCRIPTIONS": ["At the start of your turn, apply #b2 Vulnerable to all enemies."]
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Vulnerable to all enemies."]
 },
 "theWildCard:PersonaScathachPower": {
         "NAME": "Scathach",
         "DESCRIPTIONS": ["Whenever an enemy dies, heal #b", " HP"]
+},
+"theWildCard:PersonaLokiPower": {
+        "NAME": "Loki",
+        "DESCRIPTIONS": ["At the start of your turn, draw #b", " cards"]
 },
 "theWildCard:PersonaAlicePower": {
         "NAME": "Alice",

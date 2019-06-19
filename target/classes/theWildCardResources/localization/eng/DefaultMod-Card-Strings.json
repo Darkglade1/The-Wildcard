@@ -73,33 +73,38 @@
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply 1 Weak to all enemies. NL At the start of your turn, apply 2 Weak to all enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Apply 1 Weak to all enemies. NL At the start of your turn, apply 2 Weak to all enemies."
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies."
   },
   "theWildCard:PersonaPolydeuces": {
     "NAME": "Polydeuces",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL Gain 2 Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Gain 2 Dexterity."
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL Gain !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Gain !M! Dexterity."
   },
   "theWildCard:PersonaArsene": {
     "NAME": "Arsene",
-    "DESCRIPTION": "Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Gain 1 Strength and 1 Dexterity."
+    "DESCRIPTION": "Retain. NL Persona Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity."
   },
   "theWildCard:PersonaMichael": {
     "NAME": "Michael",
-    "DESCRIPTION": "Retain. NL Persona Judgement. NL Gain 2 Strength.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Gain 2 Strength."
+    "DESCRIPTION": "Retain. NL Persona Judgement. NL Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Gain !M! Strength."
   },
   "theWildCard:PersonaPaleRider": {
     "NAME": "Pale Rider",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply 1 Vulnerable to all enemies. NL At the start of your turn, apply 2 Vulnerable to all enemies."
+    "DESCRIPTION": "Retain. NL Persona Death. NL Apply !M! Vulnerable to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Vulnerable to all enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply !M! Vulnerable to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Vulnerable to all enemies."
   },
   "theWildCard:PersonaScathach": {
     "NAME": "Scathach",
     "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP."
+  },
+  "theWildCard:PersonaLoki": {
+    "NAME": "Loki",
+    "DESCRIPTION": "Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards."
   },
   "theWildCard:PersonaAlice": {
     "NAME": "Alice",

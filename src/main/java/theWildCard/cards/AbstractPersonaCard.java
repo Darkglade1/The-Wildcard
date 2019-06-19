@@ -1,6 +1,5 @@
 package theWildCard.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,7 +9,7 @@ import theWildCard.variables.ArcanaEnums;
 
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
-public abstract class AbstractPersonaCard extends CustomCard {
+public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     private static String activePersona;
     public ArcanaEnums.Arcana cardArcana;
@@ -23,7 +22,7 @@ public abstract class AbstractPersonaCard extends CustomCard {
                                final CardRarity rarity,
                                final CardTarget target) {
 
-        super(id, languagePack.getCardStrings(id).NAME, img, cost, languagePack.getCardStrings(id).DESCRIPTION, type, color, rarity, target);
+        super(id, img, cost, type, color, rarity, target);
 
         // Set all the things to their default values.
         isCostModified = false;

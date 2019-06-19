@@ -170,9 +170,10 @@ public class TheDefault extends CustomPlayer {
         retVal.add(PersonaMichael.ID);
         retVal.add(PersonaPaleRider.ID);
         retVal.add(PersonaPolydeuces.ID);
-        //retVal.add(PersonaSakuya.ID);
-        retVal.add(PersonaScathach.ID);
-        retVal.add(PersonaAlice.ID);
+        retVal.add(PersonaSakuya.ID);
+        //retVal.add(PersonaScathach.ID);
+        retVal.add(PersonaLoki.ID);
+        //retVal.add(PersonaAlice.ID);
         return retVal;
     }
 

@@ -21,6 +21,7 @@ public class PersonaPaleRider extends AbstractPersonaCard {
     public static final String IMG = makeCardPath("Attack.png");
 
     public static final int VULNERABLE = 1;
+    public static final int VULNERABLEPOWER = 2;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -33,6 +34,7 @@ public class PersonaPaleRider extends AbstractPersonaCard {
     public PersonaPaleRider() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = VULNERABLE;
+        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = VULNERABLEPOWER;
         cardArcana = ArcanaEnums.Arcana.DEATH;
     }
 

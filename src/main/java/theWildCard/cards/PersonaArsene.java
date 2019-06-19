@@ -18,9 +18,6 @@ public class PersonaArsene extends AbstractPersonaCard {
     public static final String ID = DefaultMod.makeID(PersonaArsene.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
-    public int defaultSecondMagicNumber;
-    public int defaultBaseSecondMagicNumber;
-
     public static final int STRENGTH = 1;
     public static final int DEXTERITY = 1;
 
