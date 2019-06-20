@@ -113,8 +113,8 @@
   },
   "theWildCard:PersonaAlice": {
     "NAME": "Alice",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever an enemy dies, gain !M! [E].",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever an enemy dies, gain !M! [E]."
+    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E]."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",

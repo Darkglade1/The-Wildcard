@@ -45,7 +45,7 @@
 },
 "theWildCard:PersonaAlicePower": {
         "NAME": "Alice",
-        "DESCRIPTIONS": ["Whenever an enemy dies, gain #b", " [E]"]
+        "DESCRIPTIONS": ["Whenever an enemy dies, gain [E] [E]"]
 },
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
