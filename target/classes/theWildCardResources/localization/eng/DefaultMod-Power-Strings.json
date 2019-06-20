@@ -33,19 +33,23 @@
 },
 "theWildCard:PersonaScathachPower": {
         "NAME": "Scathach",
-        "DESCRIPTIONS": ["Whenever an enemy dies, heal #b", " HP"]
+        "DESCRIPTIONS": ["Whenever an enemy dies, heal #b", " HP."]
 },
 "theWildCard:PersonaOdinPower": {
         "NAME": "Odin",
-        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block"]
+        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block."]
 },
 "theWildCard:PersonaLokiPower": {
         "NAME": "Loki",
-        "DESCRIPTIONS": ["At the start of your turn, draw #b", " cards"]
+        "DESCRIPTIONS": ["At the start of your turn, draw #b", " cards."]
+},
+"theWildCard:PersonaMetatronPower": {
+        "NAME": "Metatron",
+        "DESCRIPTIONS": ["Your Attacks damage ALL enemies."]
 },
 "theWildCard:PersonaAlicePower": {
         "NAME": "Alice",
-        "DESCRIPTIONS": ["Whenever an enemy dies, gain [E] [E]"]
+        "DESCRIPTIONS": ["Whenever an enemy dies, gain [E] [E] ."]
 },
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",

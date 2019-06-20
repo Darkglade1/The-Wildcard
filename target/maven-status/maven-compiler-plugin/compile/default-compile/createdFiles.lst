@@ -1,3 +1,4 @@
+theWildCard\cards\PersonaMetatron.class
 theWildCard\cards\DefaultUncommonPower.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\cards\DefaultUncommonAttack.class
@@ -49,6 +50,7 @@ theWildCard\patches\relics\BottledPlaceholderField.class
 theWildCard\cards\SkillCommonTwoForOne.class
 theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
+theWildCard\powers\PersonaMetatronPower.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class

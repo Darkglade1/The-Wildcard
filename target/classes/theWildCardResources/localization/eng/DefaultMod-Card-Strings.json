@@ -111,6 +111,11 @@
     "DESCRIPTION": "Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards."
   },
+  "theWildCard:PersonaMetatron": {
+    "NAME": "Metatron",
+    "DESCRIPTION": "Retain. NL Persona Judgement. NL Your Attacks damage ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Your Attacks damage ALL enemies."
+  },
   "theWildCard:PersonaAlice": {
     "NAME": "Alice",
     "DESCRIPTION": "Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E].",
