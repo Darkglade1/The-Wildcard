@@ -157,15 +157,17 @@ public class TheDefault extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
         retVal.add(ArcanaSeveringSlash.ID);
-        retVal.add(ArcanaSeveringSlash.ID);
-        retVal.add(ArcanaStingingStrike.ID);
+        //retVal.add(ArcanaSeveringSlash.ID);
+        //retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaStingingStrike.ID);
         //retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaArcaneArts.ID);
         //retVal.add(ArcanaArcaneArts.ID);
-
-        //retVal.add(Backflip.ID);
         //retVal.add(ArcanaArcaneArts.ID);
+        retVal.add(ArcanaArcanaArtistry.ID);
+        retVal.add(ArcanaArcanaArtistry.ID);
+
+
         //retVal.add(PersonaArsene.ID);
         //retVal.add(PersonaMichael.ID);
         //retVal.add(PersonaPaleRider.ID);
@@ -184,7 +186,7 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(PlaceholderRelic.ID);
-        retVal.add(PlaceholderRelic2.ID);
+        //retVal.add(PlaceholderRelic2.ID);
         retVal.add(DefaultClickableRelic.ID);
 
         UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);

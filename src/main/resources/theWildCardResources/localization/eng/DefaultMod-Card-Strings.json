@@ -11,6 +11,10 @@
     "NAME": "Arcane Arts",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaArcanaArtistry": {
+    "NAME": "Arcana Artistry",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:AttackCommonHealersStrike": {
     "NAME": "Healer's Strike",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
@@ -71,10 +75,14 @@
     "NAME": "Piercing Gaze",
     "DESCRIPTION": "Arcana Death. NL Apply !M! Vulnerable."
   },
+  "theWildCard:SkillUncommonVengeance": {
+    "NAME": "Vengeance",
+    "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain that much Strength. NL Exhaust."
+  },
   "theWildCard:SkillUncommonRampantBloodlust": {
     "NAME": "Rampant Bloodlust",
-    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If you do not kill an enemy, lose [E] [E] at the start of your next turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If you do not kill an enemy, lose [E] [E] [E] at the start of your next turn. NL Exhaust."
+    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If you do not kill an enemy, lose [E] [E] at the start of your next turn.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If you do not kill an enemy, lose [E] [E] [E] at the start of your next turn."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",

@@ -11,9 +11,13 @@
         "NAME": "Crush",
         "DESCRIPTIONS": ["Your next Attack this turn costs #b0."]
 },
+"theWildCard:VengeancePower": {
+        "NAME": "Vengeance",
+        "DESCRIPTIONS": ["Whenever you lose HP this turn, gain that much Strength."]
+},
 "theWildCard:RampantBloodlustPower": {
         "NAME": "Rampant Bloodlust",
-        "DESCRIPTIONS": ["If you do not kill an enemy, lose ", " at the start of your next turn."]
+        "DESCRIPTIONS": ["If you do not kill an enemy, lose", " at the start of your next turn."]
 },
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",

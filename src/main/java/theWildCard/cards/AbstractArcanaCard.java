@@ -69,8 +69,15 @@ public abstract class AbstractArcanaCard extends CustomCard {
         else {
             cardToTransform = deathCard;
         }
+
+        this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).DESCRIPTION;
+
         if (this.upgraded) {
             cardToTransform.upgrade();
+            //Sets the card description to the upgraded version, if it exists.
+            if (languagePack.getCardStrings(cardToTransform.cardID).UPGRADE_DESCRIPTION != null) {
+                this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).UPGRADE_DESCRIPTION;
+            }
         }
 
         this.name = cardToTransform.name;
@@ -80,6 +87,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         this.isCostModified = false;
         this.isCostModifiedForTurn = false;
         this.exhaust = cardToTransform.exhaust;
+        this.retain = cardToTransform.retain;
         this.purgeOnUse = cardToTransform.purgeOnUse;
         this.baseDamage = cardToTransform.baseDamage;
         this.baseBlock = cardToTransform.baseBlock;
@@ -87,7 +95,6 @@ public abstract class AbstractArcanaCard extends CustomCard {
         this.baseMagicNumber = cardToTransform.baseMagicNumber;
         this.baseHeal = cardToTransform.baseHeal;
         this.baseDiscard = cardToTransform.baseDiscard;
-        this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).DESCRIPTION;
 
         initializeDescription();
     }

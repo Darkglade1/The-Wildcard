@@ -34,6 +34,7 @@ theWildCard\cards\AttackCommonWardingBlow.class
 theWildCard\cards\AttackCommonHealersStrike.class
 theWildCard\cards\ArcanaArcaneArts.class
 theWildCard\cards\OrbSkill.class
+theWildCard\cards\SkillUncommonVengeance.class
 theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\cards\PersonaAlice.class
 theWildCard\cards\OnKillPowerCard.class
@@ -45,6 +46,7 @@ theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
 theWildCard\actions\UncommonPowerAction.class
+theWildCard\cards\ArcanaArcanaArtistry.class
 theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\cards\SkillCommonPiercingGaze.class
 theWildCard\patches\relics\BottledPlaceholderField.class
@@ -57,6 +59,7 @@ theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class
 theWildCard\orbs\DefaultOrb.class
+theWildCard\powers\VengeancePower.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class

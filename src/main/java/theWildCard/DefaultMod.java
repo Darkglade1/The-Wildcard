@@ -413,7 +413,7 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new ArcanaSeveringSlash());
         BaseMod.addCard(new ArcanaStingingStrike());
-        BaseMod.addCard(new SkillUncommonRampantBloodlust());
+        BaseMod.addCard(new ArcanaArcanaArtistry());
         BaseMod.addCard(new ArcanaArcaneArts());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
@@ -445,6 +445,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(ArcanaSeveringSlash.ID);
         UnlockTracker.unlockCard(ArcanaStingingStrike.ID);
         UnlockTracker.unlockCard(ArcanaArcaneArts.ID);
+        UnlockTracker.unlockCard(ArcanaArcanaArtistry.ID);
         UnlockTracker.unlockCard(PersonaArsene.ID);
         UnlockTracker.unlockCard(PersonaMichael.ID);
         UnlockTracker.unlockCard(PersonaPaleRider.ID);
