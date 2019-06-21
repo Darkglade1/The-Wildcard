@@ -71,6 +71,11 @@
     "NAME": "Piercing Gaze",
     "DESCRIPTION": "Arcana Death. NL Apply !M! Vulnerable."
   },
+  "theWildCard:SkillUncommonRampantBloodlust": {
+    "NAME": "Rampant Bloodlust",
+    "DESCRIPTION": "Arcana Death. NL Gain [E] [E] . NL If you do not kill an enemy, lose [E] [E] at the start of your next turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E] . NL If you do not kill an enemy, lose [E] [E] [E] at the start of your next turn. NL Exhaust."
+  },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",
     "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies.",

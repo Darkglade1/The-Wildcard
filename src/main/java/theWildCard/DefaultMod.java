@@ -413,6 +413,7 @@ public class DefaultMod implements
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new ArcanaSeveringSlash());
         BaseMod.addCard(new ArcanaStingingStrike());
+        BaseMod.addCard(new SkillUncommonRampantBloodlust());
         BaseMod.addCard(new ArcanaArcaneArts());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());

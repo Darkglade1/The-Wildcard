@@ -11,6 +11,10 @@
         "NAME": "Crush",
         "DESCRIPTIONS": ["Your next Attack this turn costs #b0."]
 },
+"theWildCard:RampantBloodlustPower": {
+        "NAME": "Rampant Bloodlust",
+        "DESCRIPTIONS": ["If you do not kill an enemy, lose ", " at the start of your next turn."]
+},
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
         "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to all enemies."]

@@ -40,6 +40,7 @@ theWildCard\cards\OnKillPowerCard.class
 theWildCard\cards\PersonaScathach.class
 theWildCard\powers\PersonaScathachPower.class
 theWildCard\powers\PersonaSakuyaPower.class
+theWildCard\powers\RampantBloodlustPower.class
 theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
@@ -47,6 +48,7 @@ theWildCard\actions\UncommonPowerAction.class
 theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\cards\SkillCommonPiercingGaze.class
 theWildCard\patches\relics\BottledPlaceholderField.class
+theWildCard\cards\SkillUncommonRampantBloodlust.class
 theWildCard\cards\SkillCommonTwoForOne.class
 theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
