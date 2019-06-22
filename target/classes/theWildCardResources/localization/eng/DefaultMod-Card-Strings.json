@@ -115,6 +115,11 @@
     "DESCRIPTION": "Arcana Fool. NL Draw !M! cards. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Arcana Fool. NL Draw !M! cards."
   },
+  "theWildCard:SkillUncommonExecute": {
+    "NAME": "Execute",
+    "DESCRIPTION": "Arcana Death. NL Kill non-boss enemy if it is below half HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill non-boss enemy if it is below half HP."
+  },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",
     "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies.",

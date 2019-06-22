@@ -6,6 +6,7 @@ theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\SkillCommonDebilitatingSpell.class
 theWildCard\cards\AttackCommonBristle.class
 theWildCard\cards\DefaultCommonPower.class
+theWildCard\cards\SkillUncommonExecute.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
 theWildCard\powers\PersonaPolydeucesPower.class
@@ -17,6 +18,7 @@ theWildCard\powers\PersonaOdinPower.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\cards\SkillUncommonSpikyShield.class
+theWildCard\actions\KillAction.class
 theWildCard\cards\PersonaSakuya.class
 theWildCard\cards\AttackCommonCrush.class
 theWildCard\cards\AttackCommonWitchsStrike.class
