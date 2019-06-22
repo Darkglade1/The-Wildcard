@@ -16,6 +16,7 @@ theWildCard\cards\AttackCommonSweepingSlash.class
 theWildCard\powers\PersonaOdinPower.class
 theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
+theWildCard\cards\SkillUncommonSpikyShield.class
 theWildCard\cards\PersonaSakuya.class
 theWildCard\cards\AttackCommonCrush.class
 theWildCard\cards\AttackCommonWitchsStrike.class

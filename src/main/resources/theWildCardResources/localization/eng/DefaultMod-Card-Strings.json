@@ -80,6 +80,10 @@
     "DESCRIPTION": "Arcana Priestess. NL Exhaust a random card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card.",
     "UPGRADE_DESCRIPTION": "Arcana Priestess. NL Exhaust a card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card."
   },
+  "theWildCard:SkillUncommonSpikyShield": {
+    "NAME": "Spiky Shield",
+    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! Thorns."
+  },
   "theWildCard:SkillUncommonVengeance": {
     "NAME": "Vengeance",
     "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain that much Strength. NL Exhaust."
