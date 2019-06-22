@@ -23,6 +23,7 @@ theWildCard\cards\AttackCommonWitchsStrike.class
 theWildCard\cards\DefaultUncommonSkill.class
 theWildCard\patches\PowerOnKillPatch.class
 theWildCard\powers\PersonaMichaelPower.class
+theWildCard\cards\ArcanaMagicMettle.class
 theWildCard\cards\PersonaLoki.class
 theWildCard\cards\DefaultRarePower.class
 theWildCard\cards\DefaultCommonAttack.class
@@ -30,6 +31,7 @@ theWildCard\potions\PlaceholderPotion.class
 theWildCard\cards\AbstractDefaultCard.class
 theWildCard\variables\ArcanaEnums.class
 theWildCard\cards\SkillCommonBurstOfStrength.class
+theWildCard\cards\SkillUncommonMassOffering.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\AttackCommonWardingBlow.class
 theWildCard\cards\AttackCommonHealersStrike.class

@@ -65,7 +65,7 @@ public class TheDefault extends CustomPlayer {
     public static final int STARTING_HP = 60;
     public static final int MAX_HP = 60;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 10;
+    public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
 
     // =============== /BASE STATS/ =================
@@ -161,11 +161,13 @@ public class TheDefault extends CustomPlayer {
         //retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaStingingStrike.ID);
         //retVal.add(ArcanaStingingStrike.ID);
-        retVal.add(ArcanaArcaneArts.ID);
         //retVal.add(ArcanaArcaneArts.ID);
         //retVal.add(ArcanaArcaneArts.ID);
+        //retVal.add(ArcanaArcaneArts.ID);
+        //retVal.add(ArcanaArcanaArtistry.ID);
         retVal.add(ArcanaArcanaArtistry.ID);
-        retVal.add(ArcanaArcanaArtistry.ID);
+        retVal.add(ArcanaMagicMettle.ID);
+        retVal.add(ArcanaMagicMettle.ID);
 
 
         //retVal.add(PersonaArsene.ID);

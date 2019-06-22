@@ -15,6 +15,10 @@
     "NAME": "Arcana Artistry",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaMagicMettle": {
+    "NAME": "Magic Mettle",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:AttackCommonHealersStrike": {
     "NAME": "Healer's Strike",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
@@ -96,6 +100,11 @@
     "NAME": "Rampant Bloodlust",
     "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If you do not kill an enemy, lose [E] [E] at the start of your next turn.",
     "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If you do not kill an enemy, lose [E] [E] [E] at the start of your next turn."
+  },
+  "theWildCard:SkillUncommonMassOffering": {
+    "NAME": "Mass Offering",
+    "DESCRIPTION": "Arcana Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards.",
+    "UPGRADE_DESCRIPTION": "Arcana Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",
