@@ -239,14 +239,23 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
             }
         }
     }
+
+    @Override
+    public AbstractCard makeCopy() {
+        if (cardToTransform != null) {
+            return cardToTransform.makeStatEquivalentCopy();
+        } else {
+            return super.makeCopy();
+        }
+    }
     
     private void resetCard() {
         this.name = languagePack.getCardStrings(cardID).NAME;
+        this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
         this.cost = -1;
         this.costForTurn = this.cost;
         this.isCostModified = false;
         this.isCostModifiedForTurn = false;
-        this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
         this.exhaust = false;
         this.purgeOnUse = false;
         this.retain = false;
