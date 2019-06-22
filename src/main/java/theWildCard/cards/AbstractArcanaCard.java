@@ -124,25 +124,6 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     }
 
     @Override
-    public void onMoveToDiscard() {
-        super.onMoveToDiscard();
-        resetCard();
-    }
-
-    @Override
-    public void triggerOnExhaust() {
-        super.triggerOnExhaust();
-        resetCard();
-    }
-
-    @Override
-    public void triggerWhenDrawn() {
-        if (ArcanaEnums.getActiveArcana() != null) {
-            transform();
-        }
-    }
-
-    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         cardToTransform.use(p, m);
     }
@@ -247,22 +228,5 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         } else {
             return super.makeCopy();
         }
-    }
-    
-    private void resetCard() {
-        this.name = languagePack.getCardStrings(cardID).NAME;
-        this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
-        this.cost = -1;
-        this.costForTurn = this.cost;
-        this.isCostModified = false;
-        this.isCostModifiedForTurn = false;
-        this.exhaust = false;
-        this.purgeOnUse = false;
-        this.retain = false;
-        if (this.upgraded) {
-            upgradeName();
-        }
-        resetAttributes();
-        initializeDescription();
     }
 }

@@ -1,11 +1,14 @@
 package theWildCard.cards;
 
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.tags.Tags;
 import theWildCard.variables.ArcanaEnums;
+
+import java.util.Iterator;
 
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
@@ -48,7 +51,21 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         removePersonaPower(p);
-        ArcanaEnums.changeArcana(cardArcana);
+        if (ArcanaEnums.getActiveArcana() != cardArcana) {
+            ArcanaEnums.changeArcana(cardArcana);
+            for (AbstractCard card: AbstractDungeon.player.hand.group) {
+                transformArcana(card);
+            }
+            for (AbstractCard card: AbstractDungeon.player.drawPile.group) {
+                transformArcana(card);
+            }
+            for (AbstractCard card: AbstractDungeon.player.discardPile.group) {
+                transformArcana(card);
+            }
+            for (AbstractCard card: AbstractDungeon.player.exhaustPile.group) {
+                transformArcana(card);
+            }
+        }
     }
 
     @Override
@@ -65,5 +82,11 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     public static void changePersona(String persona) {
         activePersona = persona;
+    }
+
+    private void transformArcana(AbstractCard card) {
+        if (card.hasTag(Tags.ARCANA)) {
+            ((AbstractArcanaCard)card).transform();
+        }
     }
 }
