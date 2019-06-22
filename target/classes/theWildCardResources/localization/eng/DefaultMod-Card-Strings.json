@@ -108,7 +108,12 @@
   },
   "theWildCard:SkillUncommonFortification": {
     "NAME": "Fortification",
-    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! #yPlated #yArmor."
+    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! Plated Armor."
+  },
+  "theWildCard:SkillUncommonOnTheRoad": {
+    "NAME": "On the Road",
+    "DESCRIPTION": "Arcana Fool. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Fool. NL Draw !M! cards."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",

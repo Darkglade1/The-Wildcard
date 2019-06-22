@@ -110,6 +110,11 @@
     "NAME": "Fortification",
     "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! Plated Armor."
   },
+  "theWildCard:SkillUncommonOnTheRoad": {
+    "NAME": "On the Road",
+    "DESCRIPTION": "Arcana Fool. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Fool. NL Draw !M! cards."
+  },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",
     "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies.",

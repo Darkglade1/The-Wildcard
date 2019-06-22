@@ -67,6 +67,7 @@ theWildCard\orbs\DefaultOrb.class
 theWildCard\powers\VengeancePower.class
 theWildCard\cards\SkillUncommonSleightOfHand.class
 theWildCard\events\IdentityCrisisEvent.class
+theWildCard\cards\SkillUncommonOnTheRoad.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\cards\AbstractPersonaCard.class
