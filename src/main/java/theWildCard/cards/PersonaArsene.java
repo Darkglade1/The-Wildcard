@@ -21,7 +21,7 @@ public class PersonaArsene extends AbstractPersonaCard {
     public static final int STRENGTH = 1;
     public static final int DEXTERITY = 1;
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;

@@ -214,7 +214,7 @@ public class TheDefault extends CustomPlayer {
     // Ascension 14 or higher. (ironclad loses 5, defect and silent lose 4 hp respectively)
     @Override
     public int getAscensionMaxHPLoss() {
-        return 0;
+        return 3;
     }
 
     // Should return the card color enum to be associated with your character.
@@ -245,7 +245,7 @@ public class TheDefault extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new PersonaArsene();
     }
 
     // The class name as it appears next to your player name in-game
