@@ -45,6 +45,7 @@ theWildCard\cards\PersonaScathach.class
 theWildCard\powers\PersonaScathachPower.class
 theWildCard\powers\PersonaSakuyaPower.class
 theWildCard\powers\RampantBloodlustPower.class
+theWildCard\cards\SkillUncommonFortification.class
 theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
