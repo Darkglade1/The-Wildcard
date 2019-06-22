@@ -84,6 +84,10 @@
     "NAME": "Spiky Shield",
     "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! Thorns."
   },
+  "theWildCard:SkillUncommonSleightOfHand": {
+    "NAME": "Sleight of Hand",
+    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Apply !M! Vulnerable."
+  },
   "theWildCard:SkillUncommonVengeance": {
     "NAME": "Vengeance",
     "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain that much Strength. NL Exhaust."
