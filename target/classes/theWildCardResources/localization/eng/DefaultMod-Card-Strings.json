@@ -75,6 +75,11 @@
     "NAME": "Piercing Gaze",
     "DESCRIPTION": "Arcana Death. NL Apply !M! Vulnerable."
   },
+  "theWildCard:SkillUncommonSincereOffering": {
+    "NAME": "Sincere Offering",
+    "DESCRIPTION": "Arcana Priestess. NL Exhaust a random card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card.",
+    "UPGRADE_DESCRIPTION": "Arcana Priestess. NL Exhaust a card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card."
+  },
   "theWildCard:SkillUncommonVengeance": {
     "NAME": "Vengeance",
     "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain that much Strength. NL Exhaust."

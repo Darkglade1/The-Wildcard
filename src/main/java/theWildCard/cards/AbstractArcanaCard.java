@@ -1,6 +1,5 @@
 package theWildCard.cards;
 
-import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,20 +9,20 @@ import theWildCard.variables.ArcanaEnums;
 
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
-public abstract class AbstractArcanaCard extends CustomCard {
+public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     public ArcanaEnums.Arcana cardArcana;
-    public AbstractCard priestessCard;
-    public AbstractCard emperorCard;
-    public AbstractCard foolCard;
-    public AbstractCard judgementCard;
-    public AbstractCard deathCard;
-    public AbstractCard cardToTransform;
-    public AbstractCard cardToPreviewPriestess;
-    public AbstractCard cardToPreviewEmperor;
-    public AbstractCard cardToPreviewFool;
-    public AbstractCard cardToPreviewJudgement;
-    public AbstractCard cardToPreviewDeath;
+    public AbstractDefaultCard priestessCard;
+    public AbstractDefaultCard emperorCard;
+    public AbstractDefaultCard foolCard;
+    public AbstractDefaultCard judgementCard;
+    public AbstractDefaultCard deathCard;
+    public AbstractDefaultCard cardToTransform;
+    public AbstractDefaultCard cardToPreviewPriestess;
+    public AbstractDefaultCard cardToPreviewEmperor;
+    public AbstractDefaultCard cardToPreviewFool;
+    public AbstractDefaultCard cardToPreviewJudgement;
+    public AbstractDefaultCard cardToPreviewDeath;
 
 
     public AbstractArcanaCard(final String id,
@@ -34,7 +33,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
                               final CardRarity rarity,
                               final CardTarget target) {
 
-        super(id, languagePack.getCardStrings(id).NAME, img, cost, languagePack.getCardStrings(id).DESCRIPTION, type, color, rarity, target);
+        super(id, img, cost, type, color, rarity, target);
 
         // Set all the things to their default values.
         isCostModified = false;
@@ -93,6 +92,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         this.baseBlock = cardToTransform.baseBlock;
         this.baseDraw = cardToTransform.baseDraw;
         this.baseMagicNumber = cardToTransform.baseMagicNumber;
+        this.defaultBaseSecondMagicNumber = cardToTransform.defaultBaseSecondMagicNumber;
         this.baseHeal = cardToTransform.baseHeal;
         this.baseDiscard = cardToTransform.baseDiscard;
 
@@ -126,6 +126,12 @@ public abstract class AbstractArcanaCard extends CustomCard {
     @Override
     public void onMoveToDiscard() {
         super.onMoveToDiscard();
+        resetCard();
+    }
+
+    @Override
+    public void triggerOnExhaust() {
+        super.triggerOnExhaust();
         resetCard();
     }
 
@@ -243,6 +249,7 @@ public abstract class AbstractArcanaCard extends CustomCard {
         this.rawDescription = languagePack.getCardStrings(cardID).DESCRIPTION;
         this.exhaust = false;
         this.purgeOnUse = false;
+        this.retain = false;
         if (this.upgraded) {
             upgradeName();
         }

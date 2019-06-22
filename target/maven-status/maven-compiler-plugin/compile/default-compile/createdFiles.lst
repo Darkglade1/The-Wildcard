@@ -51,6 +51,7 @@ theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\cards\SkillCommonPiercingGaze.class
 theWildCard\patches\relics\BottledPlaceholderField.class
 theWildCard\cards\SkillUncommonRampantBloodlust.class
+theWildCard\cards\SkillUncommonSincereOffering.class
 theWildCard\cards\SkillCommonTwoForOne.class
 theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
