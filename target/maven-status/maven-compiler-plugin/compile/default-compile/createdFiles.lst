@@ -7,6 +7,7 @@ theWildCard\cards\SkillCommonDebilitatingSpell.class
 theWildCard\cards\AttackCommonBristle.class
 theWildCard\cards\DefaultCommonPower.class
 theWildCard\cards\SkillUncommonExecute.class
+theWildCard\cards\SkillUncommonRetribution.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
 theWildCard\powers\PersonaPolydeucesPower.class

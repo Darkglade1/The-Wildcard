@@ -32,6 +32,7 @@ public class AttackCommonSweepingSlash extends AbstractDefaultCard {
     public AttackCommonSweepingSlash() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        isMultiDamage = true;
     }
 
     @Override

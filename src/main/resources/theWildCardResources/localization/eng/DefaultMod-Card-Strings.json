@@ -115,10 +115,14 @@
     "DESCRIPTION": "Arcana Fool. NL Draw !M! cards. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Arcana Fool. NL Draw !M! cards."
   },
+  "theWildCard:SkillUncommonRetribution": {
+    "NAME": "Retribution",
+    "DESCRIPTION": "Arcana Judgement. NL Deal damage equal to target enemy’s intent to ALL enemies."
+  },
   "theWildCard:SkillUncommonExecute": {
     "NAME": "Execute",
-    "DESCRIPTION": "Arcana Death. NL Kill non-boss enemy if it is below half HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill non-boss enemy if it is below half HP."
+    "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",
