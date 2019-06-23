@@ -19,6 +19,10 @@
     "NAME": "Magic Mettle",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaPowerOfTheArcana": {
+    "NAME": "Power of the Arcana",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:AttackCommonHealersStrike": {
     "NAME": "Healer's Strike",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
@@ -123,6 +127,26 @@
     "NAME": "Execute",
     "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP."
+  },
+  "theWildCard:PowerUncommonSubduingPresence": {
+    "NAME": "Subduing Presence",
+    "DESCRIPTION": "Arcana Priestess. NL At the start of your turn, apply !M! Weak to ALL enemies."
+  },
+  "theWildCard:PowerUncommonRegalBearing": {
+    "NAME": "Regal Bearing",
+    "DESCRIPTION": "Arcana Emperor. NL Gain !M! Dexterity."
+  },
+  "theWildCard:PowerUncommonBalancingAct": {
+    "NAME": "Balancing Act",
+    "DESCRIPTION": "Arcana Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity."
+  },
+  "theWildCard:PowerUncommonRighteousFury": {
+    "NAME": "Righteous Fury",
+    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength."
+  },
+  "theWildCard:PowerUncommonVileAura": {
+    "NAME": "Vile Aura",
+    "DESCRIPTION": "Arcana Death. NL At the start of your turn, apply !M! Vulnerable to ALL enemies."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",

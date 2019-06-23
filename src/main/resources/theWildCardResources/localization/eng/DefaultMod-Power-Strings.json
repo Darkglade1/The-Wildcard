@@ -19,6 +19,14 @@
         "NAME": "Rampant Bloodlust",
         "DESCRIPTIONS": ["If you do not kill an enemy, lose", " at the start of your next turn."]
 },
+"theWildCard:SubduingPresencePower": {
+        "NAME": "Subduing Presence",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to ALL enemies."]
+},
+"theWildCard:VileAuraPower": {
+        "NAME": "Vile Aura",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Vulnerable to ALL enemies."]
+},
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
         "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to all enemies."]

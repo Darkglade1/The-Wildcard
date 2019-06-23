@@ -1,3 +1,4 @@
+theWildCard\cards\PowerUncommonRighteousFury.class
 theWildCard\cards\PersonaMetatron.class
 theWildCard\cards\DefaultUncommonPower.class
 theWildCard\variables\DefaultCustomVariable.class
@@ -26,6 +27,7 @@ theWildCard\cards\AttackCommonWitchsStrike.class
 theWildCard\cards\DefaultUncommonSkill.class
 theWildCard\patches\PowerOnKillPatch.class
 theWildCard\powers\PersonaMichaelPower.class
+theWildCard\cards\PowerUncommonRegalBearing.class
 theWildCard\cards\ArcanaMagicMettle.class
 theWildCard\cards\PersonaLoki.class
 theWildCard\cards\DefaultRarePower.class
@@ -38,10 +40,13 @@ theWildCard\cards\SkillUncommonMassOffering.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\AttackCommonWardingBlow.class
 theWildCard\cards\AttackCommonHealersStrike.class
+theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\ArcanaArcaneArts.class
 theWildCard\cards\OrbSkill.class
+theWildCard\cards\PowerUncommonBalancingAct.class
 theWildCard\cards\SkillUncommonVengeance.class
 theWildCard\powers\PersonaPaleRiderPower.class
+theWildCard\cards\PowerUncommonVileAura.class
 theWildCard\cards\PersonaAlice.class
 theWildCard\cards\OnKillPowerCard.class
 theWildCard\cards\PersonaScathach.class
@@ -76,6 +81,9 @@ theWildCard\cards\DefaultRareAttack.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\cards\AbstractPersonaCard.class
 theWildCard\cards\DefaultCommonSkill.class
+theWildCard\cards\PowerUncommonSubduingPresence.class
+theWildCard\powers\VileAuraPower.class
+theWildCard\cards\ArcanaPowerOfTheArcana.class
 theWildCard\cards\AttackCommonEbbAndFlow.class
 theWildCard\cards\AbstractArcanaCard.class
 theWildCard\util\TextureLoader.class
