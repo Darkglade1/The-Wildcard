@@ -67,6 +67,7 @@ theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class
 theWildCard\orbs\DefaultOrb.class
 theWildCard\powers\VengeancePower.class
+theWildCard\powers\CrushPower.class
 theWildCard\cards\SkillUncommonSleightOfHand.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\SkillUncommonOnTheRoad.class

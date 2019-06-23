@@ -9,7 +9,7 @@
 },
 "theWildCard:CrushPower": {
         "NAME": "Crush",
-        "DESCRIPTIONS": ["Your next Attack this turn costs #b0."]
+        "DESCRIPTIONS": ["Next turn, gain", " ."]
 },
 "theWildCard:VengeancePower": {
         "NAME": "Vengeance",

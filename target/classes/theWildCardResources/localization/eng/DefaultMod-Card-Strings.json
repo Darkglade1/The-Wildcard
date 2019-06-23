@@ -57,7 +57,7 @@
   },
   "theWildCard:AttackCommonCrush": {
     "NAME": "Crush",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. Next turn, gain [E] [E]."
   },
   "theWildCard:SkillCommonDebilitatingSpell": {
     "NAME": "Debilitating Spell",
