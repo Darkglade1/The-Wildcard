@@ -85,6 +85,8 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         this.costForTurn = cardToTransform.costForTurn;
         this.isCostModified = false;
         this.isCostModifiedForTurn = false;
+        this.energyOnUse = cardToTransform.energyOnUse;
+        this.freeToPlayOnce = cardToTransform.freeToPlayOnce;
         this.exhaust = cardToTransform.exhaust;
         this.retain = cardToTransform.retain;
         this.purgeOnUse = cardToTransform.purgeOnUse;

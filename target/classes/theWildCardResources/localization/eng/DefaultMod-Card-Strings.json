@@ -146,6 +146,10 @@
     "NAME": "Divine Whirl",
     "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage !M! times to ALL enemies."
   },
+  "theWildCard:AttackUncommonSuddenDeath": {
+    "NAME": "Sudden Death",
+    "DESCRIPTION": "Arcana Death. NL If X is at least !M!, kill target non-boss enemy. NL Deal !D! times X damage."
+  },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",
     "DESCRIPTION": "Arcana Priestess. NL At the start of your turn, apply !M! Weak to ALL enemies."

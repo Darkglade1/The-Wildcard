@@ -43,6 +43,7 @@ theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\SkillUncommonOnTheRoad.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\cards\DefaultCommonSkill.class
+theWildCard\cards\AttackUncommonSuddenDeath.class
 theWildCard\cards\PowerUncommonSubduingPresence.class
 theWildCard\powers\VileAuraPower.class
 theWildCard\cards\ArcanaPowerOfTheArcana.class
