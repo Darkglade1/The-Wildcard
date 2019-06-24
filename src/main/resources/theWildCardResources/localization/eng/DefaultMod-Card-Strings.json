@@ -107,8 +107,7 @@
   },
   "theWildCard:SkillUncommonMassOffering": {
     "NAME": "Mass Offering",
-    "DESCRIPTION": "Arcana Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards.",
-    "UPGRADE_DESCRIPTION": "Arcana Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards."
+    "DESCRIPTION": "Arcana Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards."
   },
   "theWildCard:SkillUncommonFortification": {
     "NAME": "Fortification",
@@ -125,8 +124,7 @@
   },
   "theWildCard:SkillUncommonExecute": {
     "NAME": "Execute",
-    "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP."
+    "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust."
   },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",
