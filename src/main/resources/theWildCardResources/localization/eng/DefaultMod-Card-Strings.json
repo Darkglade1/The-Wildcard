@@ -19,6 +19,10 @@
     "NAME": "Magic Mettle",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaArchaicAssault": {
+    "NAME": "Archaic Assault",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:ArcanaPowerOfTheArcana": {
     "NAME": "Power of the Arcana",
     "DESCRIPTION": "Arcana."
@@ -125,6 +129,22 @@
   "theWildCard:SkillUncommonExecute": {
     "NAME": "Execute",
     "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust."
+  },
+  "theWildCard:AttackUncommonAncientSeal": {
+    "NAME": "Ancient Seal",
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Target enemy loses Strength this turn equal to damage dealt."
+  },
+  "theWildCard:AttackUncommonCleansingBlow": {
+    "NAME": "Cleansing Blow",
+    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust."
+  },
+  "theWildCard:AttackUncommonJackOfAllTrades": {
+    "NAME": "Jack of All Trades",
+    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Deal !D! damage. NL Draw !M! card."
+  },
+  "theWildCard:AttackUncommonDivineWhirl": {
+    "NAME": "Divine Whirl",
+    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage !M! times to ALL enemies."
   },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",
