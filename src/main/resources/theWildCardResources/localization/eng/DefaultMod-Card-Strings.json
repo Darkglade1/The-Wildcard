@@ -23,6 +23,10 @@
     "NAME": "Archaic Assault",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaMagicalMight": {
+    "NAME": "Magical Might",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:ArcanaPowerOfTheArcana": {
     "NAME": "Power of the Arcana",
     "DESCRIPTION": "Arcana."
@@ -148,7 +152,11 @@
   },
   "theWildCard:AttackUncommonSuddenDeath": {
     "NAME": "Sudden Death",
-    "DESCRIPTION": "Arcana Death. NL If X is at least !M!, kill target non-boss enemy. NL Deal !D! times X damage."
+    "DESCRIPTION": "Arcana Death. NL If X is at least !M!, kill target non-boss enemy. NL Deal !D!X damage."
+  },
+  "theWildCard:AttackUncommonQuietPassing": {
+    "NAME": "Quiet Passing",
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL ALL enemies loses Strength equal to the amount of Weak on target enemy. NL Exhaust."
   },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",

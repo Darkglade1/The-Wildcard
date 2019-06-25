@@ -156,7 +156,7 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(ArcanaSeveringSlash.ID);
+        //retVal.add(ArcanaSeveringSlash.ID);
         //retVal.add(ArcanaSeveringSlash.ID);
         //retVal.add(ArcanaStingingStrike.ID);
         retVal.add(ArcanaStingingStrike.ID);
@@ -169,7 +169,9 @@ public class TheDefault extends CustomPlayer {
         retVal.add(ArcanaMagicMettle.ID);
         //retVal.add(ArcanaMagicMettle.ID);
         retVal.add(ArcanaArchaicAssault.ID);
-        retVal.add(ArcanaArchaicAssault.ID);
+        //retVal.add(ArcanaArchaicAssault.ID);
+        retVal.add(ArcanaMagicalMight.ID);
+        retVal.add(ArcanaMagicalMight.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);
 

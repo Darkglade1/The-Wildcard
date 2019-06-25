@@ -417,6 +417,7 @@ public class DefaultMod implements
         BaseMod.addCard(new ArcanaArcanaArtistry());
         BaseMod.addCard(new ArcanaMagicMettle());
         BaseMod.addCard(new ArcanaArchaicAssault());
+        BaseMod.addCard(new ArcanaMagicalMight());
         BaseMod.addCard(new ArcanaPowerOfTheArcana());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
@@ -451,6 +452,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(ArcanaArcanaArtistry.ID);
         UnlockTracker.unlockCard(ArcanaMagicMettle.ID);
         UnlockTracker.unlockCard(ArcanaArchaicAssault.ID);
+        UnlockTracker.unlockCard(ArcanaMagicalMight.ID);
         UnlockTracker.unlockCard(ArcanaPowerOfTheArcana.ID);
         UnlockTracker.unlockCard(PersonaArsene.ID);
         UnlockTracker.unlockCard(PersonaMichael.ID);

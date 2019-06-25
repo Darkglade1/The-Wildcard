@@ -1,6 +1,7 @@
 theWildCard\cards\PowerUncommonRighteousFury.class
 theWildCard\cards\ArcanaArchaicAssault.class
 theWildCard\cards\AttackUncommonJackOfAllTrades.class
+theWildCard\cards\ArcanaMagicalMight.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\AttackCommonBristle.class
@@ -54,6 +55,7 @@ theWildCard\powers\PersonaAlicePower.class
 theWildCard\cards\PersonaPolydeuces.class
 theWildCard\DefaultMod.class
 theWildCard\cards\AttackCommonSavageBlow.class
+theWildCard\cards\AttackUncommonQuietPassing.class
 theWildCard\powers\PersonaLokiPower.class
 theWildCard\cards\PersonaMetatron.class
 theWildCard\cards\AttackUncommonDivineWhirl.class
