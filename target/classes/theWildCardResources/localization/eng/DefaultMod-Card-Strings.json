@@ -158,6 +158,24 @@
     "NAME": "Quiet Passing",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL ALL enemies loses Strength equal to the amount of Weak on target enemy. NL Exhaust."
   },
+  "theWildCard:AttackUncommonShieldCrash": {
+    "NAME": "Shield Crash",
+    "DESCRIPTION": "Arcana Emperor. NL Deal damage equal to your Block to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Arcana Emperor. NL Deal !D! damage to ALL enemies."
+  },
+  "theWildCard:AttackUncommonOneTwo": {
+    "NAME": "One Two",
+    "DESCRIPTION": "Arcana Fool. NL Deal !D! damage twice. NL Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Arcana Fool. NL Deal !D! damage twice. NL Apply !M! Weak twice."
+  },
+  "theWildCard:AttackUncommonRelentlessBarrage": {
+    "NAME": "Relentless Barrage",
+    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage 2X times."
+  },
+  "theWildCard:AttackUncommonBrutalDemise": {
+    "NAME": "Brutal Demise",
+    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Gain [E] equal to the amount of Vulnerable on target enemy. NL Exhaust."
+  },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",
     "DESCRIPTION": "Arcana Priestess. NL At the start of your turn, apply !M! Weak to ALL enemies."

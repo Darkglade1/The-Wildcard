@@ -2,6 +2,7 @@ theWildCard\cards\PowerUncommonRighteousFury.class
 theWildCard\cards\ArcanaArchaicAssault.class
 theWildCard\cards\AttackUncommonJackOfAllTrades.class
 theWildCard\cards\ArcanaMagicalMight.class
+theWildCard\cards\AttackUncommonBrutalDemise.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\AttackCommonBristle.class
@@ -50,6 +51,7 @@ theWildCard\powers\VileAuraPower.class
 theWildCard\cards\ArcanaPowerOfTheArcana.class
 theWildCard\cards\AbstractArcanaCard.class
 theWildCard\util\TextureLoader.class
+theWildCard\cards\AttackUncommonShieldCrash.class
 theWildCard\relics\BottledPlaceholderRelic.class
 theWildCard\powers\PersonaAlicePower.class
 theWildCard\cards\PersonaPolydeuces.class
@@ -91,6 +93,7 @@ theWildCard\cards\ArcanaArcanaArtistry.class
 theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\cards\SkillCommonPiercingGaze.class
 theWildCard\cards\SkillCommonTwoForOne.class
+theWildCard\cards\AttackUncommonRelentlessBarrage.class
 theWildCard\powers\PersonaMetatronPower.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\orbs\DefaultOrb.class
@@ -109,5 +112,6 @@ theWildCard\cards\AttackUncommonCleansingBlow.class
 theWildCard\tags\Tags.class
 theWildCard\relics\DefaultClickableRelic.class
 theWildCard\cards\AttackCommonFlurryOfBlows.class
+theWildCard\cards\AttackUncommonOneTwo.class
 theWildCard\patches\DefaultInsertPatch.class
 theWildCard\cards\CardTemplate.class

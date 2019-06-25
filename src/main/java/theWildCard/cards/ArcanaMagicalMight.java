@@ -20,9 +20,9 @@ public class ArcanaMagicalMight extends AbstractArcanaCard {
     public ArcanaMagicalMight() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         priestessCard = new AttackUncommonQuietPassing();
-        emperorCard = new SkillUncommonFortification();
-        foolCard = new SkillUncommonOnTheRoad();
-        judgementCard = new SkillUncommonRetribution();
-        deathCard = new SkillUncommonExecute();
+        emperorCard = new AttackUncommonShieldCrash();
+        foolCard = new AttackUncommonOneTwo();
+        judgementCard = new AttackUncommonRelentlessBarrage();
+        deathCard = new AttackUncommonBrutalDemise();
     }
 }
