@@ -31,6 +31,7 @@ theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\cards\OnKillPowerCard.class
 theWildCard\cards\PersonaScathach.class
 theWildCard\powers\PersonaScathachPower.class
+theWildCard\powers\PersonaThanatosPower.class
 theWildCard\powers\PersonaSakuyaPower.class
 theWildCard\powers\RampantBloodlustPower.class
 theWildCard\actions\UncommonPowerAction.class
@@ -71,6 +72,7 @@ theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
 theWildCard\cards\ArcanaStingingStrike.class
 theWildCard\cards\AttackCommonSweepingSlash.class
+theWildCard\cards\PersonaThanatos.class
 theWildCard\cards\SkillUncommonSpikyShield.class
 theWildCard\cards\AttackUncommonAncientSeal.class
 theWildCard\cards\AttackCommonCrush.class
@@ -87,6 +89,7 @@ theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\PowerUncommonVileAura.class
 theWildCard\cards\PersonaAlice.class
 theWildCard\cards\SkillUncommonFortification.class
+theWildCard\cards\PersonaSatanael.class
 theWildCard\cards\AttackCommonBalancedThrust.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class
@@ -103,6 +106,7 @@ theWildCard\powers\PersonaAmaterasuPower.class
 theWildCard\powers\CrushPower.class
 theWildCard\cards\SkillUncommonSleightOfHand.class
 theWildCard\util\IDCheckDontTouchPls.class
+theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\cards\AbstractPersonaCard.class
 theWildCard\cards\AttackCommonEbbAndFlow.class
 theWildCard\cards\PersonaCaesar.class

@@ -75,6 +75,14 @@
         "NAME": "Caesar",
         "DESCRIPTIONS": ["At the end of your turn, gain #b", " Artifact."]
 },
+"theWildCard:PersonaSatanaelPower": {
+        "NAME": "Satanael",
+        "DESCRIPTIONS": ["At the end of your turn, Retain up to #b", " cards."]
+},
+"theWildCard:PersonaThanatosPower": {
+        "NAME": "Thanatos",
+        "DESCRIPTIONS": ["Attacks that cost 2 or more are played twice."]
+},
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]

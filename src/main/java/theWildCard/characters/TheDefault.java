@@ -183,11 +183,14 @@ public class TheDefault extends CustomPlayer {
         //retVal.add(PersonaSakuya.ID);
         //retVal.add(PersonaScathach.ID);
         //retVal.add(PersonaOdin.ID);
-        retVal.add(PersonaLoki.ID);
+        //retVal.add(PersonaLoki.ID);
         retVal.add(PersonaMetatron.ID);
-        retVal.add(PersonaAlice.ID);
+        //retVal.add(PersonaAlice.ID);
         retVal.add(PersonaAmaterasu.ID);
         retVal.add(PersonaCaesar.ID);
+        retVal.add(PersonaSatanael.ID);
+        //retVal.add(PersonaLucifer.ID);
+        retVal.add(PersonaThanatos.ID);
         return retVal;
     }
 
