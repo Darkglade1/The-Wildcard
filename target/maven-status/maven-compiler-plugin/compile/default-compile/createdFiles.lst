@@ -59,6 +59,7 @@ theWildCard\DefaultMod.class
 theWildCard\cards\AttackCommonSavageBlow.class
 theWildCard\cards\AttackUncommonQuietPassing.class
 theWildCard\powers\PersonaLokiPower.class
+theWildCard\cards\PersonaAmaterasu.class
 theWildCard\cards\PersonaMetatron.class
 theWildCard\cards\AttackUncommonDivineWhirl.class
 theWildCard\cards\DefaultUncommonPower.class
@@ -98,14 +99,17 @@ theWildCard\powers\PersonaMetatronPower.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\orbs\DefaultOrb.class
 theWildCard\powers\VengeancePower.class
+theWildCard\powers\PersonaAmaterasuPower.class
 theWildCard\powers\CrushPower.class
 theWildCard\cards\SkillUncommonSleightOfHand.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\cards\AbstractPersonaCard.class
 theWildCard\cards\AttackCommonEbbAndFlow.class
+theWildCard\cards\PersonaCaesar.class
 theWildCard\cards\PersonaPaleRider.class
 theWildCard\powers\RarePower.class
 theWildCard\cards\PersonaOdin.class
+theWildCard\powers\PersonaCaesarPower.class
 theWildCard\cards\ArcanaSeveringSlash.class
 theWildCard\cards\PersonaMichael.class
 theWildCard\cards\AttackUncommonCleansingBlow.class

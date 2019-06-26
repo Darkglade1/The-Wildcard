@@ -246,6 +246,16 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E].",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E]."
   },
+  "theWildCard:PersonaAmaterasu": {
+    "NAME": "Amaterasu",
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever a card is exhausted, heal !M! HP. NL ALL your cards exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever a card is exhausted, heal !M! HP. NL ALL your cards exhaust."
+  },
+  "theWildCard:PersonaCaesar": {
+    "NAME": "Caesar",
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Artifact."
+  },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"

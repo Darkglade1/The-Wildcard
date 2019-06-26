@@ -67,6 +67,14 @@
         "NAME": "Alice",
         "DESCRIPTIONS": ["Whenever an enemy dies, gain [E] [E] ."]
 },
+"theWildCard:PersonaAmaterasuPower": {
+        "NAME": "Amaterasu",
+        "DESCRIPTIONS": ["Whenever a card is exhausted, heal #b", " HP. ALL your cards exhaust."]
+},
+"theWildCard:PersonaCaesarPower": {
+        "NAME": "Caesar",
+        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Artifact."]
+},
 "theWildCard:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
