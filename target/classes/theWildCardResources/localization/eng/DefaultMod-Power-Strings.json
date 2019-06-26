@@ -49,7 +49,7 @@
 },
 "theWildCard:PersonaScathachPower": {
         "NAME": "Scathach",
-        "DESCRIPTIONS": ["Whenever an enemy dies, heal #b", " HP."]
+        "DESCRIPTIONS": ["Whenever a non-minion enemy dies, raise your Max HP by #b", "."]
 },
 "theWildCard:PersonaOdinPower": {
         "NAME": "Odin",

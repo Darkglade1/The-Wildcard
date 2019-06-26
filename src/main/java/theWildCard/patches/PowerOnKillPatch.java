@@ -19,7 +19,7 @@ public class PowerOnKillPatch {
     public static void triggerOnKillPowers(AbstractMonster instance, boolean unused) {
         for (AbstractPower power : AbstractDungeon.player.powers) {
             if (power instanceof OnKillPowerCard) {
-                ((OnKillPowerCard)power).onKill();
+                ((OnKillPowerCard)power).onKill(instance.hasPower("Minion"));
             }
         }
     }

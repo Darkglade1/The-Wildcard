@@ -1,5 +1,5 @@
 package theWildCard.cards;
 
 public interface OnKillPowerCard {
-    void onKill();
+    void onKill(boolean isMinion);
 }

@@ -16,7 +16,7 @@ public class PersonaScathach extends AbstractPersonaCard {
     public static final String ID = DefaultMod.makeID(PersonaScathach.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
-    public static final int HEAL = 5;
+    public static final int HEAL = 2;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

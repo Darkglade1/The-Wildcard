@@ -63,7 +63,7 @@ public class RampantBloodlustPower extends AbstractPower implements OnKillPowerC
     }
 
     @Override
-    public void onKill() {
+    public void onKill(boolean isMinion) {
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
     }
 }

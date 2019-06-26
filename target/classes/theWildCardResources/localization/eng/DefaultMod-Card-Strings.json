@@ -223,8 +223,8 @@
   },
   "theWildCard:PersonaScathach": {
     "NAME": "Scathach",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever an enemy dies, heal !M! HP."
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever a non-minion enemy dies, raise your Max HP by !M!.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever a non-minion enemy dies, raise your Max HP by !M!."
   },
   "theWildCard:PersonaOdin": {
     "NAME": "Odin",
