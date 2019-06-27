@@ -85,6 +85,7 @@ theWildCard\cards\ArcanaMagicMettle.class
 theWildCard\cards\PersonaLoki.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
+theWildCard\cards\SkillRareCountdown.class
 theWildCard\cards\SkillRareLastRites.class
 theWildCard\cards\SkillCommonBurstOfStrength.class
 theWildCard\cards\DefaultRareSkill.class

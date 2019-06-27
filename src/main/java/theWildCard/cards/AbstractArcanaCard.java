@@ -223,16 +223,13 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         }
     }
 
-//    @Override
-//    public AbstractCard makeStatEquivalentCopy() {
-//        if (cardToTransform != null) {
-//            AbstractCard card = cardToTransform.makeStatEquivalentCopy();
-//            card.energyOnUse = this.energyOnUse;
-//            return card;
-//        } else {
-//            return super.makeStatEquivalentCopy();
-//        }
-//    }
+    @Override
+    public void atTurnStart() {
+        super.atTurnStart();
+        if (cardToTransform != null) {
+            cardToTransform.atTurnStart();
+        }
+    }
 
     @Override
     public AbstractCard makeCopy() {

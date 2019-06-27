@@ -23,6 +23,6 @@ public class ArcanaFinalHour extends AbstractArcanaCard {
         emperorCard = new SkillRareBlessingOfKings();
         foolCard = new SkillRareEndOfTheLine();
         judgementCard = new SkillRareLastStand();
-        deathCard = new SkillCommonPiercingGaze();
+        deathCard = new SkillRareCountdown();
     }
 }

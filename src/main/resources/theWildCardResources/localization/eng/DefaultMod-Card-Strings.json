@@ -196,6 +196,10 @@
     "NAME": "Last Stand",
     "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength. NL Next turn, you die. NL Exhaust."
   },
+  "theWildCard:SkillRareCountdown": {
+    "NAME": "Countdown",
+    "DESCRIPTION": "Arcana Death. NL Retain. NL At the start of your turn, reduce this card's cost by 1. NL Kill target enemy. NL Exhaust."
+  },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",
     "DESCRIPTION": "Arcana Priestess. NL At the start of your turn, apply !M! Weak to ALL enemies."
