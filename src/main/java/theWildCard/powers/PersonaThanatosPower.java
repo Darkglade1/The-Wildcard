@@ -48,8 +48,6 @@ public class PersonaThanatosPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        System.out.println(card.cost);
-        System.out.println(card.energyOnUse);
         if (card.type == AbstractCard.CardType.ATTACK && (card.costForTurn >= 2 || card.cost == -1 && card.energyOnUse >= 2)) {
             this.flash();
             AbstractMonster m = null;
@@ -67,7 +65,7 @@ public class PersonaThanatosPower extends AbstractPower {
             tmp.cost = 0; //see above
             tmp.applyPowers();
             tmp.purgeOnUse = true;
-            AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m));
+            AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse));
         }
     }
 }
