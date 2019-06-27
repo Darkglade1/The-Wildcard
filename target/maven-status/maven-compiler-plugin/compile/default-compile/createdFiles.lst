@@ -7,6 +7,7 @@ theWildCard\variables\DefaultCustomVariable.class
 theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\AttackCommonBristle.class
 theWildCard\cards\SkillUncommonExecute.class
+theWildCard\cards\SkillRareEndOfTheLine.class
 theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\variables\ArcanaEnums$Arcana.class
@@ -27,6 +28,7 @@ theWildCard\cards\ArcanaArcaneArts.class
 theWildCard\cards\OrbSkill.class
 theWildCard\cards\PowerUncommonBalancingAct.class
 theWildCard\cards\SkillUncommonVengeance.class
+theWildCard\cards\ArcanaFinalHour.class
 theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\cards\OnKillPowerCard.class
 theWildCard\cards\PersonaScathach.class
@@ -47,6 +49,7 @@ theWildCard\cards\SkillUncommonOnTheRoad.class
 theWildCard\cards\DefaultRareAttack.class
 theWildCard\cards\DefaultCommonSkill.class
 theWildCard\cards\AttackUncommonSuddenDeath.class
+theWildCard\powers\LastStandPower.class
 theWildCard\cards\PowerUncommonSubduingPresence.class
 theWildCard\powers\VileAuraPower.class
 theWildCard\cards\ArcanaPowerOfTheArcana.class
@@ -82,6 +85,7 @@ theWildCard\cards\ArcanaMagicMettle.class
 theWildCard\cards\PersonaLoki.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
+theWildCard\cards\SkillRareLastRites.class
 theWildCard\cards\SkillCommonBurstOfStrength.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\AttackCommonWardingBlow.class
@@ -110,6 +114,7 @@ theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\cards\AbstractPersonaCard.class
 theWildCard\cards\AttackCommonEbbAndFlow.class
 theWildCard\cards\PersonaCaesar.class
+theWildCard\cards\SkillRareBlessingOfKings.class
 theWildCard\cards\PersonaPaleRider.class
 theWildCard\powers\RarePower.class
 theWildCard\cards\PersonaOdin.class
@@ -118,6 +123,7 @@ theWildCard\cards\ArcanaSeveringSlash.class
 theWildCard\cards\PersonaMichael.class
 theWildCard\cards\AttackUncommonCleansingBlow.class
 theWildCard\tags\Tags.class
+theWildCard\cards\SkillRareLastStand.class
 theWildCard\relics\DefaultClickableRelic.class
 theWildCard\cards\AttackCommonFlurryOfBlows.class
 theWildCard\cards\AttackUncommonOneTwo.class

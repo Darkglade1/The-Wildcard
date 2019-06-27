@@ -27,6 +27,10 @@
     "NAME": "Magical Might",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaFinalHour": {
+    "NAME": "Final Hour",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:ArcanaPowerOfTheArcana": {
     "NAME": "Power of the Arcana",
     "DESCRIPTION": "Arcana."
@@ -110,8 +114,8 @@
   },
   "theWildCard:SkillUncommonRampantBloodlust": {
     "NAME": "Rampant Bloodlust",
-    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If you do not kill an enemy, lose [E] [E] at the start of your next turn.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If you do not kill an enemy, lose [E] [E] [E] at the start of your next turn."
+    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If you do not kill an enemy, lose [E] [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If you do not kill an enemy, lose [E] [E] [E] next turn."
   },
   "theWildCard:SkillUncommonMassOffering": {
     "NAME": "Mass Offering",
@@ -175,6 +179,22 @@
   "theWildCard:AttackUncommonBrutalDemise": {
     "NAME": "Brutal Demise",
     "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Gain [E] equal to the amount of Vulnerable on target enemy. NL Exhaust."
+  },
+  "theWildCard:SkillRareLastRites": {
+    "NAME": "Last Rites",
+    "DESCRIPTION": "Arcana Priestess. NL For each card in your exhaust pile, deal !D! damage and heal !M! HP. NL Exhaust."
+  },
+  "theWildCard:SkillRareBlessingOfKings": {
+    "NAME": "Blessing of Kings",
+    "DESCRIPTION": "Arcana Emperor. NL Remove all of your debuffs. NL Gain !M! Artifact. NL Gain !B! Block. NL Exhaust."
+  },
+  "theWildCard:SkillRareEndOfTheLine": {
+    "NAME": "End of the Line",
+    "DESCRIPTION": "Arcana Fool. NL Discard your hand, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust."
+  },
+  "theWildCard:SkillRareLastStand": {
+    "NAME": "Last Stand",
+    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength. NL Next turn, you die. NL Exhaust."
   },
   "theWildCard:PowerUncommonSubduingPresence": {
     "NAME": "Subduing Presence",
