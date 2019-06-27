@@ -165,12 +165,12 @@ public class TheDefault extends CustomPlayer {
         //retVal.add(ArcanaArcaneArts.ID);
         //retVal.add(ArcanaArcaneArts.ID);
         //retVal.add(ArcanaArcanaArtistry.ID);
-        //retVal.add(ArcanaArcanaArtistry.ID);
+        retVal.add(ArcanaArcanaArtistry.ID);
         retVal.add(ArcanaMagicMettle.ID);
         //retVal.add(ArcanaMagicMettle.ID);
         retVal.add(ArcanaArchaicAssault.ID);
         //retVal.add(ArcanaArchaicAssault.ID);
-        retVal.add(ArcanaMagicalMight.ID);
+        //retVal.add(ArcanaMagicalMight.ID);
         retVal.add(ArcanaMagicalMight.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);

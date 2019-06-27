@@ -3,10 +3,12 @@ package theWildCard.cards;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.CollectorCurseEffect;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import theWildCard.DefaultMod;
 import theWildCard.actions.KillAction;
@@ -37,6 +39,8 @@ public class SkillUncommonExecute extends AbstractDefaultCard {
         if (m.type != AbstractMonster.EnemyType.BOSS) {
             int threshold = (int) Math.ceil(((double)m.maxHealth) / 2);
             if (m.currentHealth < threshold) {
+                AbstractDungeon.actionManager.addToBottom(new SFXAction("MONSTER_COLLECTOR_DEBUFF"));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
                 AbstractDungeon.actionManager.addToBottom(new KillAction(m));
             }
         }

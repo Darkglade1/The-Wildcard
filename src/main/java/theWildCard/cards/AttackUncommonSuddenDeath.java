@@ -1,12 +1,15 @@
 package theWildCard.cards;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import com.megacrit.cardcrawl.vfx.CollectorCurseEffect;
 import theWildCard.DefaultMod;
 import theWildCard.actions.KillAction;
 import theWildCard.characters.TheDefault;
@@ -49,6 +52,8 @@ public class AttackUncommonSuddenDeath extends AbstractDefaultCard {
         }
         if (effect > 0) {
             if (effect >= magicNumber && m.type != AbstractMonster.EnemyType.BOSS) {
+                AbstractDungeon.actionManager.addToBottom(new SFXAction("MONSTER_COLLECTOR_DEBUFF"));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
                 AbstractDungeon.actionManager.addToBottom(new KillAction(m));
             } else {
                 int totalDamage = damage * effect;

@@ -1,16 +1,17 @@
 package theWildCard.cards;
 
 import basemod.ReflectionHacks;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import theWildCard.DefaultMod;
 import theWildCard.characters.TheDefault;
+
+import java.util.Iterator;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
@@ -41,14 +42,13 @@ public class SkillUncommonRetribution extends AbstractDefaultCard {
                 if ((Boolean) ReflectionHacks.getPrivate(m, AbstractMonster.class, "isMultiDmg")) {
                     damage *= (Integer) ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentMultiAmt");
                 }
-                int size = AbstractDungeon.getCurrRoom().monsters.monsters.size();
-                int[] newMultiDamage = new int[size];
-                for (int i = 0; i < newMultiDamage.length; i++) {
-                    newMultiDamage[i] = damage;
-                }
                 AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CleaveEffect(), 0.1F));
-                AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, newMultiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CleaveEffect(), 0.0F));
+                Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+                while(iterator.hasNext()) {
+                    AbstractMonster mo = (AbstractMonster)iterator.next();
+                    mo.damage(new DamageInfo(mo, damage, DamageInfo.DamageType.HP_LOSS));
+                }
             }
         }
     }

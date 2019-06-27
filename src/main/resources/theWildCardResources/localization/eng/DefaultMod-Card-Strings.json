@@ -128,7 +128,7 @@
   },
   "theWildCard:SkillUncommonRetribution": {
     "NAME": "Retribution",
-    "DESCRIPTION": "Arcana Judgement. NL Deal damage equal to target enemy’s intent to ALL enemies."
+    "DESCRIPTION": "Arcana Judgement. NL ALL enemies lose HP equal to target enemy's intent."
   },
   "theWildCard:SkillUncommonExecute": {
     "NAME": "Execute",
