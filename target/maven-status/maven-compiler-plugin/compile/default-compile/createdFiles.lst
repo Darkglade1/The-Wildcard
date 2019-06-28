@@ -25,11 +25,13 @@ theWildCard\variables\ArcanaEnums.class
 theWildCard\cards\SkillUncommonMassOffering.class
 theWildCard\cards\AttackCommonHealersStrike.class
 theWildCard\cards\ArcanaArcaneArts.class
+theWildCard\cards\PersonaLucifer.class
 theWildCard\cards\OrbSkill.class
 theWildCard\cards\PowerUncommonBalancingAct.class
 theWildCard\cards\SkillUncommonVengeance.class
 theWildCard\cards\ArcanaFinalHour.class
 theWildCard\powers\PersonaPaleRiderPower.class
+theWildCard\powers\PersonaLuciferPower.class
 theWildCard\cards\OnKillPowerCard.class
 theWildCard\cards\PersonaScathach.class
 theWildCard\powers\PersonaScathachPower.class

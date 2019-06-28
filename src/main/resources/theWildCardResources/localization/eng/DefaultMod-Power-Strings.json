@@ -83,6 +83,10 @@
         "NAME": "Satanael",
         "DESCRIPTIONS": ["At the end of your turn, Retain up to #b", " cards."]
 },
+"theWildCard:PersonaLuciferPower": {
+        "NAME": "Lucifer",
+        "DESCRIPTIONS": ["Whenever you gain Strength, gain twice as much."]
+},
 "theWildCard:PersonaThanatosPower": {
         "NAME": "Thanatos",
         "DESCRIPTIONS": ["Attacks that cost 2 or more are played twice."]

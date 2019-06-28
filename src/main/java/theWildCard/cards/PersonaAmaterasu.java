@@ -16,7 +16,7 @@ public class PersonaAmaterasu extends AbstractPersonaCard {
     public static final String ID = DefaultMod.makeID(PersonaAmaterasu.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
-    public static final int HEAL = 1;
+    public static final int HEAL = 2;
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

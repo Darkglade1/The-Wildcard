@@ -285,6 +285,11 @@
     "DESCRIPTION": "Retain. NL Persona Fool. NL At the end of your turn, Retain up to !M! cards.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL At the end of your turn, Retain up to !M! cards."
   },
+  "theWildCard:PersonaLucifer": {
+    "NAME": "Lucifer",
+    "DESCRIPTION": "Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much."
+  },
   "theWildCard:PersonaThanatos": {
     "NAME": "Thanatos",
     "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice.",

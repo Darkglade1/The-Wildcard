@@ -433,6 +433,7 @@ public class DefaultMod implements
         BaseMod.addCard(new PersonaAmaterasu());
         BaseMod.addCard(new PersonaCaesar());
         BaseMod.addCard(new PersonaSatanael());
+        BaseMod.addCard(new PersonaLucifer());
         BaseMod.addCard(new PersonaThanatos());
         
         logger.info("Making sure the cards are unlocked.");
@@ -473,6 +474,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(PersonaAmaterasu.ID);
         UnlockTracker.unlockCard(PersonaCaesar.ID);
         UnlockTracker.unlockCard(PersonaSatanael.ID);
+        UnlockTracker.unlockCard(PersonaLucifer.ID);
         UnlockTracker.unlockCard(PersonaThanatos.ID);
         
         logger.info("Done adding cards!");
