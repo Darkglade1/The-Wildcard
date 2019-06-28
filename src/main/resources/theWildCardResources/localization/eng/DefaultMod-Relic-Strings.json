@@ -6,6 +6,13 @@
       "Gain #b1 [E] ."
     ]
   },
+  "theWildCard:VelvetContractRelic": {
+    "NAME": "Velvet Contract",
+    "FLAVOR": "You didn't read the fine print, did you?",
+    "DESCRIPTIONS": [
+      "Whenever you draw a Persona, draw #b1 card."
+    ]
+  },
   "theWildCard:PlaceholderRelic2": {
     "NAME": "Placeholder Relic 2",
     "FLAVOR": "You feel stronger.",

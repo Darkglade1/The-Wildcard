@@ -27,6 +27,7 @@ import theWildCard.cards.*;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
 import theWildCard.relics.PlaceholderRelic2;
+import theWildCard.relics.VelvetContractRelic;
 
 import java.util.ArrayList;
 
@@ -65,7 +66,7 @@ public class TheDefault extends CustomPlayer {
     public static final int STARTING_HP = 60;
     public static final int MAX_HP = 60;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 10;
+    public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 3;
 
     // =============== /BASE STATS/ =================
@@ -201,6 +202,7 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(PlaceholderRelic.ID);
+        retVal.add(VelvetContractRelic.ID);
         //retVal.add(PlaceholderRelic2.ID);
         retVal.add(DefaultClickableRelic.ID);
 

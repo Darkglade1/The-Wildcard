@@ -30,6 +30,7 @@ import theWildCard.relics.BottledPlaceholderRelic;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
 import theWildCard.relics.PlaceholderRelic2;
+import theWildCard.relics.VelvetContractRelic;
 import theWildCard.util.IDCheckDontTouchPls;
 import theWildCard.util.TextureLoader;
 import theWildCard.variables.ArcanaEnums;
@@ -367,6 +368,7 @@ public class DefaultMod implements
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new VelvetContractRelic(), TheDefault.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_BLUE);
         

@@ -57,7 +57,7 @@
   },
   "theWildCard:AttackCommonWitchsStrike": {
     "NAME": "Witch's Strike",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal HP equal to damage. NL Exhaust."
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal HP equal to damage dealt. NL Exhaust."
   },
   "theWildCard:AttackCommonBristle": {
     "NAME": "Bristle",
