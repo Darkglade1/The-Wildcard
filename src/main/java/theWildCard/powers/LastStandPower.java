@@ -2,6 +2,7 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -44,7 +45,7 @@ public class LastStandPower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurn () {
+    public void atStartOfTurnPostDraw () {
         AbstractPlayer p = AbstractDungeon.player;
         p.isDead = true;
         AbstractDungeon.deathScreen = new DeathScreen(AbstractDungeon.getMonsters());
@@ -52,5 +53,11 @@ public class LastStandPower extends AbstractPower {
         if (p.currentBlock > 0) {
             p.loseBlock();
         }
+    }
+
+    @Override
+    public void onRemove() {
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
+                new LastStandPower(owner, owner), 0));
     }
 }

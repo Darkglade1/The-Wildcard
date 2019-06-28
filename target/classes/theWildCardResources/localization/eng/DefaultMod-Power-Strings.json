@@ -17,7 +17,7 @@
 },
 "theWildCard:LastStandPower": {
         "NAME": "Last Stand",
-        "DESCRIPTIONS": ["Next turn, you die. This effect cannot be removed or prevented."]
+        "DESCRIPTIONS": ["There is no escape from your impending demise . . ."]
 },
 "theWildCard:RampantBloodlustPower": {
         "NAME": "Rampant Bloodlust",

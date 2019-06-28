@@ -2,6 +2,7 @@ package theWildCard.cards;
 
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -9,6 +10,8 @@ import com.megacrit.cardcrawl.vfx.CollectorCurseEffect;
 import theWildCard.DefaultMod;
 import theWildCard.actions.KillAction;
 import theWildCard.characters.TheDefault;
+
+import java.util.Iterator;
 
 import static theWildCard.DefaultMod.makeCardPath;
 
@@ -25,10 +28,17 @@ public class SkillRareCountdown extends AbstractDefaultCard {
     private static final int COST = 10;
     private static final int UPGRADED_COST = 9;
 
+    private AbstractArcanaCard arcanaCard; //Reference to the Arcana card that can transform into this
+
     public SkillRareCountdown() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
         retain = true;
+    }
+
+    public SkillRareCountdown(AbstractArcanaCard arcanaCard) {
+        this();
+        this.arcanaCard = arcanaCard;
     }
 
     @Override
@@ -40,8 +50,19 @@ public class SkillRareCountdown extends AbstractDefaultCard {
 
     @Override
     public void atTurnStart() {
-        System.out.println("Hello");
-        modifyCostForCombat(-1);
+        if (arcanaCard != null) {
+            Iterator iterator = AbstractDungeon.player.hand.group.iterator();
+            while(iterator.hasNext()) {
+                AbstractCard c = (AbstractCard)iterator.next();
+                if (c == arcanaCard) {
+                    c.retain = true;
+                    c.modifyCostForCombat(-1); //Decreases the cost of the Arcana card via this card's effect
+                }
+            }
+        } else {
+            this.retain = true;
+            modifyCostForCombat(-1); //in case the player somehow obtains a standalone version of the card
+        }
     }
 
     @Override

@@ -44,13 +44,6 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         tags.add(Tags.ARCANA);
     }
 
-    @Override
-    public void triggerOnOtherCardPlayed(AbstractCard c) {
-        if (c.tags.contains(Tags.PERSONA)) {
-            transform();
-        }
-    }
-
     public void transform() {
         cardArcana = ArcanaEnums.getActiveArcana();
         if (cardArcana == ArcanaEnums.Arcana.PRIESTESS) {

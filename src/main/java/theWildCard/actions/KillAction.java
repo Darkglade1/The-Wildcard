@@ -24,13 +24,13 @@ public class KillAction extends AbstractGameAction {
 
     public void update() {
 
-        if (!m.id.equals("Darkling")) {
-            this.m.currentHealth = 0;
-            loseHP(999);
-            this.m.die();
+        if (!m.id.equals("Darkling") && !m.id.equals("AwakenedOne")) {
+            m.currentHealth = 0;
+            loseHP(9999);
+            m.die();
         } else {
-            //bandaid fix for Darklings due to their unique death effect
-            m.damage(new DamageInfo(m, 999, DamageInfo.DamageType.HP_LOSS));
+            //bandaid fix for Darklings and the Awakened One due to their unique death effects
+            m.damage(new DamageInfo(m, 9999, DamageInfo.DamageType.HP_LOSS));
         }
 
         if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
