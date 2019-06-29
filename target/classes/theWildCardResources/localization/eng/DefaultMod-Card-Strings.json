@@ -35,6 +35,10 @@
     "NAME": "Power of the Arcana",
     "DESCRIPTION": "Arcana."
   },
+  "theWildCard:ArcanaTheArcanaUnleashed": {
+    "NAME": "The Arcana Unleashed",
+    "DESCRIPTION": "Arcana."
+  },
   "theWildCard:AttackCommonHealersStrike": {
     "NAME": "Healer's Strike",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
@@ -57,7 +61,7 @@
   },
   "theWildCard:AttackCommonWitchsStrike": {
     "NAME": "Witch's Strike",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal HP equal to damage. NL Exhaust."
+    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal HP equal to damage dealt. NL Exhaust."
   },
   "theWildCard:AttackCommonBristle": {
     "NAME": "Bristle",
@@ -219,6 +223,26 @@
   "theWildCard:PowerUncommonVileAura": {
     "NAME": "Vile Aura",
     "DESCRIPTION": "Arcana Death. NL At the start of your turn, apply !M! Vulnerable to ALL enemies."
+  },
+  "theWildCard:PowerRareReincarnation": {
+    "NAME": "Reincarnation",
+    "DESCRIPTION": "Arcana Priestess. NL Whenever a card is exhausted, add !M! copy of it to your discard pile."
+  },
+  "theWildCard:PowerRareBulwark": {
+    "NAME": "Bulwark",
+    "DESCRIPTION": "Arcana Emperor. NL Whenever you play a Skill, gain !M! Plated Armor."
+  },
+  "theWildCard:PowerRareEncore": {
+    "NAME": "Encore",
+    "DESCRIPTION": "Arcana Fool. NL Whenever you play a card, draw !M! card."
+  },
+  "theWildCard:PowerRareMomentum": {
+    "NAME": "Momentum",
+    "DESCRIPTION": "Arcana Judgement. NL Whenever you deal damage with an Attack, gain !M! Strength this turn."
+  },
+  "theWildCard:PowerRareHarvest": {
+    "NAME": "Harvest",
+    "DESCRIPTION": "Arcana Death. NL At the start of your turn, gain [E]. Whenever an enemy dies, gain an additional [E] at the start of your turn."
   },
   "theWildCard:PersonaSakuya": {
     "NAME": "Sakuya",

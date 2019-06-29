@@ -22,7 +22,7 @@ public class SkillCommonFortify extends AbstractDefaultCard {
     private static final int COST = 1;
 
     private static final int BLOCK = 10;
-    private static final int UPGRADE_PLUS_BLOCK = 4;
+    private static final int UPGRADE_PLUS_BLOCK = 3;
 
     public SkillCommonFortify() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

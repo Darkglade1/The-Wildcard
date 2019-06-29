@@ -31,6 +31,26 @@
         "NAME": "Vile Aura",
         "DESCRIPTIONS": ["At the start of your turn, apply #b", " Vulnerable to ALL enemies."]
 },
+"theWildCard:ReincarnationPower": {
+        "NAME": "Reincarnation",
+        "DESCRIPTIONS": ["Whenever a card is exhausted, add #b", " copy", " copies", " of it to your discard pile."]
+},
+"theWildCard:BulwarkPower": {
+        "NAME": "Bulwark",
+        "DESCRIPTIONS": ["Whenever you play a Skill, gain #b", " Plated Armor."]
+},
+"theWildCard:EncorePower": {
+        "NAME": "Encore",
+        "DESCRIPTIONS": ["Whenever you play a card, draw #b", " card.", " cards."]
+},
+"theWildCard:MomentumPower": {
+        "NAME": "Momentum",
+        "DESCRIPTIONS": ["Whenever you deal damage with an Attack, gain #b", " Strength this turn."]
+},
+"theWildCard:HarvestPower": {
+        "NAME": "Harvest",
+        "DESCRIPTIONS": ["At the start of your turn, gain", " . Whenever an enemy dies, gain an additional", " at the start of your turn."]
+},
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
         "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to all enemies."]

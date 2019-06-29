@@ -422,6 +422,7 @@ public class DefaultMod implements
         BaseMod.addCard(new ArcanaMagicalMight());
         BaseMod.addCard(new ArcanaFinalHour());
         BaseMod.addCard(new ArcanaPowerOfTheArcana());
+        BaseMod.addCard(new ArcanaTheArcanaUnleashed());
         BaseMod.addCard(new PersonaArsene());
         BaseMod.addCard(new PersonaMichael());
         BaseMod.addCard(new PersonaPaleRider());
@@ -463,6 +464,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(ArcanaMagicalMight.ID);
         UnlockTracker.unlockCard(ArcanaFinalHour.ID);
         UnlockTracker.unlockCard(ArcanaPowerOfTheArcana.ID);
+        UnlockTracker.unlockCard(ArcanaTheArcanaUnleashed.ID);
         UnlockTracker.unlockCard(PersonaArsene.ID);
         UnlockTracker.unlockCard(PersonaMichael.ID);
         UnlockTracker.unlockCard(PersonaPaleRider.ID);
