@@ -2,6 +2,7 @@ package theWildCard.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import theWildCard.DefaultMod;
@@ -26,7 +27,7 @@ public class VelvetContractRelic extends CustomRelic {
     public void onCardDraw(AbstractCard drawnCard) {
         if (drawnCard instanceof AbstractPersonaCard) {
             this.flash();
-            AbstractDungeon.player.draw(1);
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
         }
     }
 

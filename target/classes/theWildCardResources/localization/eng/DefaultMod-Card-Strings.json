@@ -238,7 +238,7 @@
   },
   "theWildCard:PowerRareMomentum": {
     "NAME": "Momentum",
-    "DESCRIPTION": "Arcana Judgement. NL Whenever you deal damage with an Attack, gain !M! Strength this turn."
+    "DESCRIPTION": "Arcana Judgement. NL Whenever you deal damage, gain !M! Strength this turn."
   },
   "theWildCard:PowerRareHarvest": {
     "NAME": "Harvest",
@@ -301,8 +301,8 @@
   },
   "theWildCard:PersonaCaesar": {
     "NAME": "Caesar",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Artifact.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Artifact."
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL Gain !theWildCard:SecondMagic! Artifact. NL At the end of your turn, gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Gain !theWildCard:SecondMagic! Artifact. NL At the end of your turn, gain !M! Artifact."
   },
   "theWildCard:PersonaSatanael": {
     "NAME": "Satanael",

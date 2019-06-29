@@ -238,7 +238,7 @@
   },
   "theWildCard:PowerRareMomentum": {
     "NAME": "Momentum",
-    "DESCRIPTION": "Arcana Judgement. NL Whenever you deal damage with an Attack, gain !M! Strength this turn."
+    "DESCRIPTION": "Arcana Judgement. NL Whenever you deal damage, gain !M! Strength this turn."
   },
   "theWildCard:PowerRareHarvest": {
     "NAME": "Harvest",

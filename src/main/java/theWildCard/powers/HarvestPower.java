@@ -25,7 +25,7 @@ public class HarvestPower extends AbstractPower implements OnKillPowerCard {
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    private static int extraEnergy = 0;
+    private int extraEnergy = 0;
 
     public HarvestPower(AbstractCreature owner, int amount) {
         name = NAME;
@@ -51,6 +51,7 @@ public class HarvestPower extends AbstractPower implements OnKillPowerCard {
 
     @Override
     public void onKill(boolean isMinion) {
+        this.flash();
         extraEnergy += amount;
         updateDescription();
     }

@@ -45,7 +45,7 @@
 },
 "theWildCard:MomentumPower": {
         "NAME": "Momentum",
-        "DESCRIPTIONS": ["Whenever you deal damage with an Attack, gain #b", " Strength this turn."]
+        "DESCRIPTIONS": ["Whenever you deal damage, gain #b", " Strength this turn."]
 },
 "theWildCard:HarvestPower": {
         "NAME": "Harvest",

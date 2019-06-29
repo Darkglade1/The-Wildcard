@@ -2,6 +2,7 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -44,7 +45,7 @@ public class EncorePower extends AbstractPower {
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
         this.flash();
-        AbstractDungeon.player.draw(amount);
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, amount));
     }
 
     @Override
