@@ -34,5 +34,11 @@ public class PersonaThanatos extends AbstractPersonaCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new PersonaThanatosPower(p, p), 0));
         changePersona(PersonaThanatosPower.POWER_ID);
+//        System.out.println(AbstractDungeon.commonCardPool);
+//        System.out.println(AbstractDungeon.srcCommonCardPool);
+//        System.out.println(AbstractDungeon.uncommonCardPool);
+//        System.out.println(AbstractDungeon.srcUncommonCardPool);
+//        System.out.println(AbstractDungeon.rareCardPool);
+//        System.out.println(AbstractDungeon.srcRareCardPool);
     }
 }

@@ -20,6 +20,7 @@ theWildCard\cards\PersonaSakuya.class
 theWildCard\cards\AttackCommonWitchsStrike.class
 theWildCard\cards\DefaultUncommonSkill.class
 theWildCard\patches\PowerOnKillPatch.class
+theWildCard\patches\ArcanaDropRatePatchUncommon$Locator.class
 theWildCard\cards\DefaultRarePower.class
 theWildCard\powers\ReincarnationPower.class
 theWildCard\cards\AbstractDefaultCard.class
@@ -49,8 +50,10 @@ theWildCard\cards\SkillUncommonRampantBloodlust.class
 theWildCard\cards\SkillUncommonSincereOffering.class
 theWildCard\powers\CommonPower.class
 theWildCard\patches\relics\BottledPlaceholderField$MakeStatEquivalentCopy.class
+theWildCard\patches\ArcanaDropRatePatchCommon$Locator.class
 theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class
+theWildCard\patches\ArcanaDropRatePatchUncommon.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\SkillUncommonOnTheRoad.class
 theWildCard\cards\DefaultRareAttack.class
@@ -72,6 +75,8 @@ theWildCard\cards\AttackUncommonQuietPassing.class
 theWildCard\powers\PersonaLokiPower.class
 theWildCard\powers\HarvestPower.class
 theWildCard\powers\BulwarkPower.class
+theWildCard\patches\ArcanaDropRatePatchCommon.class
+theWildCard\patches\ArcanaDropRatePatchRare.class
 theWildCard\cards\PersonaAmaterasu.class
 theWildCard\cards\PersonaMetatron.class
 theWildCard\cards\AttackUncommonDivineWhirl.class
@@ -84,6 +89,7 @@ theWildCard\relics\PlaceholderRelic.class
 theWildCard\cards\PersonaArsene.class
 theWildCard\cards\ArcanaStingingStrike.class
 theWildCard\cards\AttackCommonSweepingSlash.class
+theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
 theWildCard\cards\PersonaThanatos.class
 theWildCard\cards\SkillUncommonSpikyShield.class
 theWildCard\cards\AttackUncommonAncientSeal.class
