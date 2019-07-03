@@ -319,6 +319,10 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice."
   },
+  "theWildCard:AttackCommonSacrificialStroke": {
+    "NAME": "Sacrificial Stroke",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust a random Persona in your hand."
+  },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"

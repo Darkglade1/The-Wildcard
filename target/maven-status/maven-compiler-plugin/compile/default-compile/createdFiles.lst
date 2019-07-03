@@ -27,6 +27,7 @@ theWildCard\cards\AbstractDefaultCard.class
 theWildCard\variables\ArcanaEnums.class
 theWildCard\cards\SkillUncommonMassOffering.class
 theWildCard\relics\VelvetContractRelic.class
+theWildCard\actions\ExhaustPersonaAction.class
 theWildCard\cards\AttackCommonHealersStrike.class
 theWildCard\cards\ArcanaArcaneArts.class
 theWildCard\cards\PersonaLucifer.class
@@ -54,6 +55,7 @@ theWildCard\patches\ArcanaDropRatePatchCommon$Locator.class
 theWildCard\cards\SkillCommonFortify.class
 theWildCard\powers\PersonaArsenePower.class
 theWildCard\patches\ArcanaDropRatePatchUncommon.class
+theWildCard\cards\AttackCommonSacrificialStroke.class
 theWildCard\events\IdentityCrisisEvent.class
 theWildCard\cards\SkillUncommonOnTheRoad.class
 theWildCard\cards\DefaultRareAttack.class

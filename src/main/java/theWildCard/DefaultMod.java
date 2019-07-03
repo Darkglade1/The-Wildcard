@@ -438,6 +438,7 @@ public class DefaultMod implements
         BaseMod.addCard(new PersonaSatanael());
         BaseMod.addCard(new PersonaLucifer());
         BaseMod.addCard(new PersonaThanatos());
+        BaseMod.addCard(new AttackCommonSacrificialStroke());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -480,6 +481,7 @@ public class DefaultMod implements
         UnlockTracker.unlockCard(PersonaSatanael.ID);
         UnlockTracker.unlockCard(PersonaLucifer.ID);
         UnlockTracker.unlockCard(PersonaThanatos.ID);
+        UnlockTracker.unlockCard(AttackCommonSacrificialStroke.ID);
         
         logger.info("Done adding cards!");
     }

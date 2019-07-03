@@ -178,7 +178,8 @@ public class TheDefault extends CustomPlayer {
         //retVal.add(ArcanaPowerOfTheArcana.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);
         retVal.add(ArcanaTheArcanaUnleashed.ID);
-        retVal.add(ArcanaTheArcanaUnleashed.ID);
+        //retVal.add(ArcanaTheArcanaUnleashed.ID);
+        retVal.add(AttackCommonSacrificialStroke.ID);
 
 
         //retVal.add(PersonaArsene.ID);

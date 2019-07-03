@@ -304,16 +304,16 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
             return;
         }
         float drawScale = 0.5f;
-        float yPosition1 = this.current_y - this.hb.height / 4.0f;
-        float yPosition2 = this.current_y + this.hb.height / 4.0f;
-        float xPosition1 = this.current_x + this.hb.width * 0.25f;
-        float xPosition2 = this.current_x - this.hb.width * 0.25f;
+        float yPosition1 = this.current_y - this.hb.height * (drawScale / 2);
+        float yPosition2 = this.current_y + this.hb.height * (drawScale / 2);
+        float xPosition1 = this.current_x + this.hb.width * (drawScale / 2);
+        float xPosition2 = this.current_x - this.hb.width * (drawScale / 2);
         float xPosition3;
 
         if (this.current_x > Settings.WIDTH * 0.75F) {
-            xPosition3 = this.current_x + this.hb.width * 0.75f;
+            xPosition3 = this.current_x + this.hb.width * (drawScale * 1.5f);
         } else {
-            xPosition3 = this.current_x - this.hb.width * 0.75f;
+            xPosition3 = this.current_x - this.hb.width * (drawScale * 1.5f);
         }
 
         if (cardToPreviewPriestess != null) {
