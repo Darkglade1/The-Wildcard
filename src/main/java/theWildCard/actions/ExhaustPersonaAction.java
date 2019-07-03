@@ -33,22 +33,13 @@ public class ExhaustPersonaAction extends AbstractGameAction {
                 this.isDone = true;
                 return;
             }
-
-//            if (!this.anyNumber && personaCards.size() <= this.amount) {
-//                this.amount = personaCards.size();
-//                numExhausted = this.amount;
-//
-//                for (int i = 0; i < this.p.hand.size(); i++) {
-//                    AbstractCard c = personaCards.getTopCard();
-//                    this.p.hand.moveToExhaustPile(c);
-//                }
-//
-//                CardCrawlGame.dungeon.checkForPactAchievement();
-//                return;
-//            }
-
+            if (this.amount > personaCards.size()) {
+                this.amount = personaCards.size();
+            }
             for(int i = 0; i < this.amount; ++i) {
-                this.p.hand.moveToExhaustPile(personaCards.getRandomCard(AbstractDungeon.cardRandomRng));
+                AbstractCard cardToExhaust = personaCards.getRandomCard(AbstractDungeon.cardRandomRng);
+                this.p.hand.moveToExhaustPile(cardToExhaust);
+                personaCards.removeCard(cardToExhaust);
             }
 
             CardCrawlGame.dungeon.checkForPactAchievement();
@@ -56,9 +47,4 @@ public class ExhaustPersonaAction extends AbstractGameAction {
 
         this.tickDuration();
     }
-
-//    static {
-//        uiStrings = CardCrawlGame.languagePack.getUIString("ExhaustAction");
-//        TEXT = uiStrings.TEXT;
-//    }
 }

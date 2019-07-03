@@ -63,6 +63,7 @@ theWildCard\cards\DefaultCommonSkill.class
 theWildCard\cards\AttackUncommonSuddenDeath.class
 theWildCard\powers\LastStandPower.class
 theWildCard\cards\PowerUncommonSubduingPresence.class
+theWildCard\cards\SkillCommonUnburden.class
 theWildCard\powers\VileAuraPower.class
 theWildCard\cards\ArcanaPowerOfTheArcana.class
 theWildCard\cards\AbstractArcanaCard.class
@@ -94,6 +95,7 @@ theWildCard\cards\AttackCommonSweepingSlash.class
 theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
 theWildCard\cards\PersonaThanatos.class
 theWildCard\cards\SkillUncommonSpikyShield.class
+theWildCard\cards\SkillCommonPatience.class
 theWildCard\cards\AttackUncommonAncientSeal.class
 theWildCard\cards\AttackCommonCrush.class
 theWildCard\powers\MomentumPower.class

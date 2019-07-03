@@ -160,7 +160,7 @@ public class TheDefault extends CustomPlayer {
         //retVal.add(ArcanaSeveringSlash.ID);
         //retVal.add(ArcanaSeveringSlash.ID);
         //retVal.add(ArcanaStingingStrike.ID);
-        retVal.add(ArcanaStingingStrike.ID);
+        //retVal.add(ArcanaStingingStrike.ID);
         //retVal.add(ArcanaStingingStrike.ID);
         //retVal.add(ArcanaArcaneArts.ID);
         //retVal.add(ArcanaArcaneArts.ID);
@@ -177,8 +177,10 @@ public class TheDefault extends CustomPlayer {
         retVal.add(ArcanaFinalHour.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);
         //retVal.add(ArcanaPowerOfTheArcana.ID);
-        retVal.add(ArcanaTheArcanaUnleashed.ID);
         //retVal.add(ArcanaTheArcanaUnleashed.ID);
+        //retVal.add(ArcanaTheArcanaUnleashed.ID);
+        retVal.add(SkillCommonUnburden.ID);
+        retVal.add(SkillCommonPatience.ID);
         retVal.add(AttackCommonSacrificialStroke.ID);
 
 

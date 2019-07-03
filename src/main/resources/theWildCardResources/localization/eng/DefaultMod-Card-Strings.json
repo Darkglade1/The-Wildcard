@@ -319,9 +319,18 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice."
   },
+  "theWildCard:SkillCommonUnburden": {
+    "NAME": "Unburden",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust !M! random Persona in your hand."
+  },
   "theWildCard:AttackCommonSacrificialStroke": {
     "NAME": "Sacrificial Stroke",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust a random Persona in your hand."
+  },
+  "theWildCard:SkillCommonPatience": {
+    "NAME": "Patience",
+    "DESCRIPTION": "Draw a card. NL Next turn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Draw a card. NL Next turn, draw !M! cards."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
