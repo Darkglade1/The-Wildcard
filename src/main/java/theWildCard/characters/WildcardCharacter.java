@@ -172,31 +172,31 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(SeveringSlash.ID);
-        retVal.add(SeveringSlash.ID);
-        retVal.add(StingingStrike.ID);
-        retVal.add(StingingStrike.ID);
-        retVal.add(StingingStrike.ID);
-        retVal.add(ArcaneArts.ID);
-        retVal.add(ArcaneArts.ID);
-        retVal.add(ArcaneArts.ID);
-        retVal.add(ArcanaArtistry.ID);
-        retVal.add(ArcanaArtistry.ID);
-        retVal.add(MagicMettle.ID);
-        retVal.add(MagicMettle.ID);
-        retVal.add(ArchaicAssault.ID);
+//        retVal.add(SeveringSlash.ID);
+//        retVal.add(SeveringSlash.ID);
+//        retVal.add(StingingStrike.ID);
+//        retVal.add(StingingStrike.ID);
+//        retVal.add(StingingStrike.ID);
+//        retVal.add(ArcaneArts.ID);
+//        retVal.add(ArcaneArts.ID);
+//        retVal.add(ArcaneArts.ID);
+//        retVal.add(ArcanaArtistry.ID);
+//        retVal.add(ArcanaArtistry.ID);
+//        retVal.add(MagicMettle.ID);
+//        retVal.add(MagicMettle.ID);
+//        retVal.add(ArchaicAssault.ID);
         retVal.add(ArchaicAssault.ID);
         retVal.add(MagicalMight.ID);
         retVal.add(MagicalMight.ID);
-        //retVal.add(FinalHour.ID);
+        retVal.add(FinalHour.ID);
         retVal.add(FinalHour.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(TheArcanaUnleashed.ID);
         //retVal.add(TheArcanaUnleashed.ID);
-        retVal.add(Unburden.ID);
-        retVal.add(Patience.ID);
-        retVal.add(SacrificialStroke.ID);
+        //retVal.add(Unburden.ID);
+        //retVal.add(Patience.ID);
+        //retVal.add(SacrificialStroke.ID);
 
 
         //retVal.add(Arsene.ID);

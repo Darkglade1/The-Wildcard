@@ -36,7 +36,7 @@ public class EndOfTheLine extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, p.hand.group.size(), true));
+        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, -1, false));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new NoDrawPower(p)));
     }

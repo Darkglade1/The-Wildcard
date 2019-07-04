@@ -7,6 +7,10 @@
         "NAME": "Burst of Strength",
         "DESCRIPTIONS": ["Lose #b", " Strength after your next Attack."]
 },
+"theWildCard:LoseThornsPower": {
+        "NAME": "Wall of Thorns",
+        "DESCRIPTIONS": ["Lose #b", " Thorns next turn."]
+},
 "theWildCard:CrushPower": {
         "NAME": "Crush",
         "DESCRIPTIONS": ["Next turn, gain", " ."]

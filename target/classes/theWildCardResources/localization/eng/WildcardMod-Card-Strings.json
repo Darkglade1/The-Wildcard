@@ -166,10 +166,9 @@
     "NAME": "Quiet Passing",
     "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL ALL enemies loses Strength equal to the amount of Weak on target enemy. NL Exhaust."
   },
-  "theWildCard:ShieldCrash": {
-    "NAME": "Shield Crash",
-    "DESCRIPTION": "Arcana Emperor. NL Deal damage equal to your Block to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Arcana Emperor. NL Deal !D! damage to ALL enemies."
+  "theWildCard:WallOfThorns": {
+    "NAME": "Wall of Thorns",
+    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Gain !M! Thorns this turn."
   },
   "theWildCard:OneTwo": {
     "NAME": "One Two",

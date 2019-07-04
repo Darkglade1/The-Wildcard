@@ -5,7 +5,7 @@ import theWildCard.cards.Attack.Uncommon.BrutalDemise;
 import theWildCard.cards.Attack.Uncommon.OneTwo;
 import theWildCard.cards.Attack.Uncommon.QuietPassing;
 import theWildCard.cards.Attack.Uncommon.RelentlessBarrage;
-import theWildCard.cards.Attack.Uncommon.ShieldCrash;
+import theWildCard.cards.Attack.Uncommon.WallOfThorns;
 import theWildCard.characters.WildcardCharacter;
 
 import static theWildCard.WildcardMod.makeCardPath;
@@ -25,7 +25,7 @@ public class MagicalMight extends AbstractArcanaCard {
     public MagicalMight() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         priestessCard = new QuietPassing();
-        emperorCard = new ShieldCrash();
+        emperorCard = new WallOfThorns();
         foolCard = new OneTwo();
         judgementCard = new RelentlessBarrage();
         deathCard = new BrutalDemise();
