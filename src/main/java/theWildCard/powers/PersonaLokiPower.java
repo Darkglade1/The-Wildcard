@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.DefaultMod;
-import theWildCard.cards.PersonaLoki;
+import theWildCard.cards.Persona.Loki;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.DefaultMod.makePowerPath;
@@ -23,7 +23,7 @@ public class PersonaLokiPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final int DRAW = PersonaLoki.DRAWPOWER;
+    private static final int DRAW = Loki.DRAWPOWER;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));

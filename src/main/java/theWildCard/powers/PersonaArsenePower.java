@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theWildCard.DefaultMod;
-import theWildCard.cards.PersonaArsene;
+import theWildCard.cards.Persona.Arsene;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.DefaultMod.makePowerPath;
@@ -42,13 +42,13 @@ public class PersonaArsenePower extends AbstractPower {
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        description = DESCRIPTIONS[0] + PersonaArsene.STRENGTH + DESCRIPTIONS[1] + PersonaArsene.DEXTERITY + DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] + Arsene.STRENGTH + DESCRIPTIONS[1] + Arsene.DEXTERITY + DESCRIPTIONS[2];
     }
 
     @Override
     public void onRemove() {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, -PersonaArsene.STRENGTH), -PersonaArsene.STRENGTH));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, -PersonaArsene.DEXTERITY), -PersonaArsene.DEXTERITY));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, -Arsene.STRENGTH), -Arsene.STRENGTH));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, -Arsene.DEXTERITY), -Arsene.DEXTERITY));
     }
 }

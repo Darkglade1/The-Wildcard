@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.DefaultMod;
-import theWildCard.cards.PersonaOdin;
+import theWildCard.cards.Persona.Odin;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.DefaultMod.makePowerPath;
@@ -23,7 +23,7 @@ public class PersonaOdinPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final int BLOCK = PersonaOdin.BLOCK;
+    private static final int BLOCK = Odin.BLOCK;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));

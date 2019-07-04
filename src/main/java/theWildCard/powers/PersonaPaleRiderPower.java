@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import theWildCard.DefaultMod;
-import theWildCard.cards.PersonaPaleRider;
+import theWildCard.cards.Persona.PaleRider;
 import theWildCard.util.TextureLoader;
 
 import java.util.Iterator;
@@ -28,7 +28,7 @@ public class PersonaPaleRiderPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final int VULNERABLE = PersonaPaleRider.VULNERABLEPOWER;
+    private static final int VULNERABLE = PaleRider.VULNERABLEPOWER;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));

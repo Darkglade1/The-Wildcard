@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CtBehavior;
-import theWildCard.cards.AbstractArcanaCard;
+import theWildCard.cards.Arcana.AbstractArcanaCard;
 
 @SpirePatch(
         clz = AbstractDungeon.class,

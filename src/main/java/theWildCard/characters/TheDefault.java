@@ -9,7 +9,6 @@ import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.green.Backflip;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
@@ -23,7 +22,23 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theWildCard.DefaultMod;
-import theWildCard.cards.*;
+import theWildCard.cards.Arcana.ArcanaArtistry;
+import theWildCard.cards.Arcana.ArcaneArts;
+import theWildCard.cards.Arcana.ArchaicAssault;
+import theWildCard.cards.Arcana.FinalHour;
+import theWildCard.cards.Arcana.MagicMettle;
+import theWildCard.cards.Arcana.MagicalMight;
+import theWildCard.cards.Arcana.SeveringSlash;
+import theWildCard.cards.Arcana.StingingStrike;
+import theWildCard.cards.Attack.Common.SacrificialStroke;
+import theWildCard.cards.Persona.Amaterasu;
+import theWildCard.cards.Persona.Arsene;
+import theWildCard.cards.Persona.Caesar;
+import theWildCard.cards.Persona.Lucifer;
+import theWildCard.cards.Persona.Satanael;
+import theWildCard.cards.Persona.Thanatos;
+import theWildCard.cards.Skill.Common.Patience;
+import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
 import theWildCard.relics.PlaceholderRelic2;
@@ -157,48 +172,48 @@ public class TheDefault extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        //retVal.add(ArcanaSeveringSlash.ID);
-        //retVal.add(ArcanaSeveringSlash.ID);
-        //retVal.add(ArcanaStingingStrike.ID);
-        //retVal.add(ArcanaStingingStrike.ID);
-        //retVal.add(ArcanaStingingStrike.ID);
-        //retVal.add(ArcanaArcaneArts.ID);
-        //retVal.add(ArcanaArcaneArts.ID);
-        //retVal.add(ArcanaArcaneArts.ID);
-        //retVal.add(ArcanaArcanaArtistry.ID);
-        //retVal.add(ArcanaArcanaArtistry.ID);
-        //retVal.add(ArcanaMagicMettle.ID);
-        //retVal.add(ArcanaMagicMettle.ID);
-        //retVal.add(ArcanaArchaicAssault.ID);
-        //retVal.add(ArcanaArchaicAssault.ID);
-        //retVal.add(ArcanaMagicalMight.ID);
-        retVal.add(ArcanaMagicalMight.ID);
-        //retVal.add(ArcanaFinalHour.ID);
-        retVal.add(ArcanaFinalHour.ID);
-        //retVal.add(ArcanaPowerOfTheArcana.ID);
-        //retVal.add(ArcanaPowerOfTheArcana.ID);
-        //retVal.add(ArcanaTheArcanaUnleashed.ID);
-        //retVal.add(ArcanaTheArcanaUnleashed.ID);
-        retVal.add(SkillCommonUnburden.ID);
-        retVal.add(SkillCommonPatience.ID);
-        retVal.add(AttackCommonSacrificialStroke.ID);
+        retVal.add(SeveringSlash.ID);
+        retVal.add(SeveringSlash.ID);
+        retVal.add(StingingStrike.ID);
+        retVal.add(StingingStrike.ID);
+        retVal.add(StingingStrike.ID);
+        retVal.add(ArcaneArts.ID);
+        retVal.add(ArcaneArts.ID);
+        retVal.add(ArcaneArts.ID);
+        retVal.add(ArcanaArtistry.ID);
+        retVal.add(ArcanaArtistry.ID);
+        retVal.add(MagicMettle.ID);
+        retVal.add(MagicMettle.ID);
+        retVal.add(ArchaicAssault.ID);
+        retVal.add(ArchaicAssault.ID);
+        retVal.add(MagicalMight.ID);
+        retVal.add(MagicalMight.ID);
+        //retVal.add(FinalHour.ID);
+        retVal.add(FinalHour.ID);
+        //retVal.add(PowerOfTheArcana.ID);
+        //retVal.add(PowerOfTheArcana.ID);
+        //retVal.add(TheArcanaUnleashed.ID);
+        //retVal.add(TheArcanaUnleashed.ID);
+        retVal.add(Unburden.ID);
+        retVal.add(Patience.ID);
+        retVal.add(SacrificialStroke.ID);
 
 
-        //retVal.add(PersonaArsene.ID);
-        //retVal.add(PersonaMichael.ID);
-        //retVal.add(PersonaPaleRider.ID);
-        //retVal.add(PersonaPolydeuces.ID);
-        //retVal.add(PersonaSakuya.ID);
-        //retVal.add(PersonaScathach.ID);
-        //retVal.add(PersonaOdin.ID);
-        //retVal.add(PersonaLoki.ID);
-        //retVal.add(PersonaMetatron.ID);
-        //retVal.add(PersonaAlice.ID);
-        retVal.add(PersonaAmaterasu.ID);
-        retVal.add(PersonaCaesar.ID);
-        retVal.add(PersonaSatanael.ID);
-        retVal.add(PersonaLucifer.ID);
-        retVal.add(PersonaThanatos.ID);
+        //retVal.add(Arsene.ID);
+        //retVal.add(Michael.ID);
+        //retVal.add(PaleRider.ID);
+        //retVal.add(Polydeuces.ID);
+        //retVal.add(Sakuya.ID);
+        //retVal.add(Scathach.ID);
+        //retVal.add(Odin.ID);
+        //retVal.add(Loki.ID);
+        //retVal.add(Metatron.ID);
+        //retVal.add(Alice.ID);
+        retVal.add(Amaterasu.ID);
+        retVal.add(Caesar.ID);
+        retVal.add(Satanael.ID);
+        retVal.add(Lucifer.ID);
+        retVal.add(Thanatos.ID);
         return retVal;
     }
 
@@ -267,7 +282,7 @@ public class TheDefault extends CustomPlayer {
     //Which card should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new PersonaArsene();
+        return new Arsene();
     }
 
     // The class name as it appears next to your player name in-game

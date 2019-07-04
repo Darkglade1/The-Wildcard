@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import theWildCard.DefaultMod;
-import theWildCard.cards.PersonaPolydeuces;
+import theWildCard.cards.Persona.Polydeuces;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.DefaultMod.makePowerPath;
@@ -41,12 +41,12 @@ public class PersonaPolydeucesPower extends AbstractPower {
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        description = DESCRIPTIONS[0] + PersonaPolydeuces.DEXTERITY + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + Polydeuces.DEXTERITY + DESCRIPTIONS[1];
     }
 
     @Override
     public void onRemove() {
         AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, -PersonaPolydeuces.DEXTERITY), -PersonaPolydeuces.DEXTERITY));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, -Polydeuces.DEXTERITY), -Polydeuces.DEXTERITY));
     }
 }
