@@ -1,25 +1,25 @@
 package theWildCard.cards.Arcana;
 
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.cards.Power.Uncommon.BalancingAct;
 import theWildCard.cards.Power.Uncommon.RegalBearing;
 import theWildCard.cards.Power.Uncommon.RighteousFury;
 import theWildCard.cards.Power.Uncommon.SubduingPresence;
 import theWildCard.cards.Power.Uncommon.VileAura;
-import theWildCard.characters.TheDefault;
+import theWildCard.characters.WildcardCharacter;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class PowerOfTheArcana extends AbstractArcanaCard {
 
 
-    public static final String ID = DefaultMod.makeID(PowerOfTheArcana.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(PowerOfTheArcana.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SeveringSlash.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
     private static final int COST = -1;
 
     public PowerOfTheArcana() {

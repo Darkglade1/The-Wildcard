@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theWildCard.DefaultMod;
-import theWildCard.characters.TheDefault;
+import theWildCard.WildcardMod;
+import theWildCard.characters.WildcardCharacter;
 import theWildCard.orbs.DefaultOrb;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class OrbSkill extends AbstractDefaultCard {
 
@@ -22,7 +22,7 @@ public class OrbSkill extends AbstractDefaultCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(OrbSkill.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(OrbSkill.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Skill.png");
@@ -38,7 +38,7 @@ public class OrbSkill extends AbstractDefaultCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 1;
 

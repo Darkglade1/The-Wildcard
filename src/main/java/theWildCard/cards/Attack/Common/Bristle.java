@@ -8,21 +8,21 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.ThornsPower;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.cards.AbstractDefaultCard;
-import theWildCard.characters.TheDefault;
+import theWildCard.characters.WildcardCharacter;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class Bristle extends AbstractDefaultCard {
 
-    public static final String ID = DefaultMod.makeID(Bristle.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(Bristle.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Bristle.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 1;
 

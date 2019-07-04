@@ -5,10 +5,10 @@ import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theWildCard.DefaultMod;
-import theWildCard.characters.TheDefault;
+import theWildCard.WildcardMod;
+import theWildCard.characters.WildcardCharacter;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class DefaultCommonSkill extends AbstractDefaultCard {
 
@@ -21,7 +21,7 @@ public class DefaultCommonSkill extends AbstractDefaultCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = DefaultMod.makeID(DefaultCommonSkill.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(DefaultCommonSkill.class.getSimpleName());
     public static final String IMG = makeCardPath("Skill.png");
 
     // /TEXT DECLARATION/
@@ -32,7 +32,7 @@ public class DefaultCommonSkill extends AbstractDefaultCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 1;
     private static final int BLOCK = 5;

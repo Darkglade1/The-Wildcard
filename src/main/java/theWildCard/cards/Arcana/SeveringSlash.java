@@ -1,25 +1,25 @@
 package theWildCard.cards.Arcana;
 
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.cards.Attack.Common.BalancedThrust;
 import theWildCard.cards.Attack.Common.HealersStrike;
 import theWildCard.cards.Attack.Common.SavageBlow;
 import theWildCard.cards.Attack.Common.SweepingSlash;
 import theWildCard.cards.Attack.Common.WardingBlow;
-import theWildCard.characters.TheDefault;
+import theWildCard.characters.WildcardCharacter;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class SeveringSlash extends AbstractArcanaCard {
 
 
-    public static final String ID = DefaultMod.makeID(SeveringSlash.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(SeveringSlash.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SeveringSlash.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
     private static final int COST = -1;
 
     public SeveringSlash() {

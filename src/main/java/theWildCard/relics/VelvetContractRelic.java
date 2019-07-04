@@ -5,16 +5,16 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.cards.Persona.AbstractPersonaCard;
 import theWildCard.util.TextureLoader;
 
-import static theWildCard.DefaultMod.makeRelicOutlinePath;
-import static theWildCard.DefaultMod.makeRelicPath;
+import static theWildCard.WildcardMod.makeRelicOutlinePath;
+import static theWildCard.WildcardMod.makeRelicPath;
 
 public class VelvetContractRelic extends CustomRelic {
 
-    public static final String ID = DefaultMod.makeID("VelvetContractRelic");
+    public static final String ID = WildcardMod.makeID("VelvetContractRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));

@@ -5,22 +5,22 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.cards.AbstractDefaultCard;
-import theWildCard.characters.TheDefault;
+import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.LastStandPower;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class LastStand extends AbstractDefaultCard {
 
-    public static final String ID = DefaultMod.makeID(LastStand.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(LastStand.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("LastStand.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 0;
 

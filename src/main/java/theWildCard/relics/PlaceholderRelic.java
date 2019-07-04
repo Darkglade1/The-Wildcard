@@ -3,11 +3,11 @@ package theWildCard.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.util.TextureLoader;
 
-import static theWildCard.DefaultMod.makeRelicOutlinePath;
-import static theWildCard.DefaultMod.makeRelicPath;
+import static theWildCard.WildcardMod.makeRelicOutlinePath;
+import static theWildCard.WildcardMod.makeRelicPath;
 
 public class PlaceholderRelic extends CustomRelic {
 
@@ -18,7 +18,7 @@ public class PlaceholderRelic extends CustomRelic {
      */
 
     // ID, images, text.
-    public static final String ID = DefaultMod.makeID("PlaceholderRelic");
+    public static final String ID = WildcardMod.makeID("PlaceholderRelic");
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));

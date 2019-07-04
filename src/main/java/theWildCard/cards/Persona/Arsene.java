@@ -6,16 +6,16 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
-import theWildCard.DefaultMod;
-import theWildCard.characters.TheDefault;
+import theWildCard.WildcardMod;
+import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaArsenePower;
 import theWildCard.variables.ArcanaEnums;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class Arsene extends AbstractPersonaCard {
 
-    public static final String ID = DefaultMod.makeID(Arsene.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(Arsene.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");
 
     public static final int STRENGTH = 1;
@@ -24,7 +24,7 @@ public class Arsene extends AbstractPersonaCard {
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 0;
 

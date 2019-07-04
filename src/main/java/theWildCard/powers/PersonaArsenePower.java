@@ -11,16 +11,16 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.util.TextureLoader;
 
-import static theWildCard.DefaultMod.makePowerPath;
+import static theWildCard.WildcardMod.makePowerPath;
 
 public class PersonaArsenePower extends AbstractPower {
     public AbstractCreature source;
 
-    public static final String POWER_ID = DefaultMod.makeID("PersonaArsenePower");
+    public static final String POWER_ID = WildcardMod.makeID("PersonaArsenePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

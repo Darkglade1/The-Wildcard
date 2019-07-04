@@ -11,14 +11,14 @@ package theWildCard.powers;
         import com.megacrit.cardcrawl.localization.PowerStrings;
         import com.megacrit.cardcrawl.powers.AbstractPower;
         import com.megacrit.cardcrawl.powers.StrengthPower;
-        import theWildCard.DefaultMod;
+        import theWildCard.WildcardMod;
         import theWildCard.util.TextureLoader;
-        import static theWildCard.DefaultMod.makePowerPath;
+        import static theWildCard.WildcardMod.makePowerPath;
 
 
 public class StrengthLossPower extends AbstractPower {
 
-    public static final String POWER_ID = DefaultMod.makeID("StrengthLossPower");
+    public static final String POWER_ID = WildcardMod.makeID("StrengthLossPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

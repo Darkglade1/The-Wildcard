@@ -52,7 +52,7 @@ import theWildCard.cards.Persona.Scathach;
 import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Unburden;
-import theWildCard.characters.TheDefault;
+import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.IdentityCrisisEvent;
 import theWildCard.potions.PlaceholderPotion;
 import theWildCard.relics.BottledPlaceholderRelic;
@@ -100,7 +100,7 @@ import java.util.Properties;
  */
 
 @SpireInitializer
-public class DefaultMod implements
+public class WildcardMod implements
         EditCardsSubscriber,
         EditRelicsSubscriber,
         EditStringsSubscriber,
@@ -110,7 +110,7 @@ public class DefaultMod implements
         OnStartBattleSubscriber {
     // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
     // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
-    public static final Logger logger = LogManager.getLogger(DefaultMod.class.getName());
+    public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
 
     // Mod-settings settings. This is if you want an on/off savable button
@@ -194,7 +194,7 @@ public class DefaultMod implements
     
     // =============== SUBSCRIBE, CREATE THE COLOR_BLUE, INITIALIZE =================
     
-    public DefaultMod() {
+    public WildcardMod() {
         logger.info("Subscribe to BaseMod hooks");
         
         BaseMod.subscribe(this);
@@ -225,9 +225,9 @@ public class DefaultMod implements
         
         logger.info("Done subscribing");
         
-        logger.info("Creating the color " + TheDefault.Enums.COLOR_BLUE.toString());
+        logger.info("Creating the color " + WildcardCharacter.Enums.COLOR_BLUE.toString());
         
-        BaseMod.addColor(TheDefault.Enums.COLOR_BLUE, DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE,
+        BaseMod.addColor(WildcardCharacter.Enums.COLOR_BLUE, DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE,
                 DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE, DEFAULT_BLUE,
                 ATTACK_BLUE, SKILL_BLUE, POWER_BLUE, ENERGY_ORB_BLUE,
                 ATTACK_BLUE_PORTRAIT, SKILL_BLUE_PORTRAIT, POWER_BLUE_PORTRAIT,
@@ -259,7 +259,7 @@ public class DefaultMod implements
     public static void setModID(String ID) { // DON'T EDIT
         Gson coolG = new Gson(); // EY DON'T EDIT THIS
         //   String IDjson = Gdx.files.internal("IDCheckStringsDONT-EDIT-AT-ALL.json").readString(String.valueOf(StandardCharsets.UTF_8)); // i hate u Gdx.files
-        InputStream in = DefaultMod.class.getResourceAsStream("/IDCheckStringsDONT-EDIT-AT-ALL.json"); // DON'T EDIT THIS ETHER
+        InputStream in = WildcardMod.class.getResourceAsStream("/IDCheckStringsDONT-EDIT-AT-ALL.json"); // DON'T EDIT THIS ETHER
         IDCheckDontTouchPls EXCEPTION_STRINGS = coolG.fromJson(new InputStreamReader(in, StandardCharsets.UTF_8), IDCheckDontTouchPls.class); // OR THIS, DON'T EDIT IT
         logger.info("You are attempting to set your mod ID as: " + ID); // NO WHY
         if (ID.equals(EXCEPTION_STRINGS.DEFAULTID)) { // DO *NOT* CHANGE THIS ESPECIALLY, TO EDIT YOUR MOD ID, SCROLL UP JUST A LITTLE, IT'S JUST ABOVE
@@ -279,9 +279,9 @@ public class DefaultMod implements
     private static void pathCheck() { // ALSO NO
         Gson coolG = new Gson(); // NNOPE DON'T EDIT THIS
         //   String IDjson = Gdx.files.internal("IDCheckStringsDONT-EDIT-AT-ALL.json").readString(String.valueOf(StandardCharsets.UTF_8)); // i still hate u btw Gdx.files
-        InputStream in = DefaultMod.class.getResourceAsStream("/IDCheckStringsDONT-EDIT-AT-ALL.json"); // DON'T EDIT THISSSSS
+        InputStream in = WildcardMod.class.getResourceAsStream("/IDCheckStringsDONT-EDIT-AT-ALL.json"); // DON'T EDIT THISSSSS
         IDCheckDontTouchPls EXCEPTION_STRINGS = coolG.fromJson(new InputStreamReader(in, StandardCharsets.UTF_8), IDCheckDontTouchPls.class); // NAH, NO EDIT
-        String packageName = DefaultMod.class.getPackage().getName(); // STILL NO EDIT ZONE
+        String packageName = WildcardMod.class.getPackage().getName(); // STILL NO EDIT ZONE
         FileHandle resourcePathExists = Gdx.files.internal(getModID() + "Resources"); // PLEASE DON'T EDIT THINGS HERE, THANKS
         if (!modID.equals(EXCEPTION_STRINGS.DEVID)) { // LEAVE THIS EDIT-LESS
             if (!packageName.equals(getModID())) { // NOT HERE ETHER
@@ -299,7 +299,7 @@ public class DefaultMod implements
     @SuppressWarnings("unused")
     public static void initialize() {
         logger.info("========================= Initializing Default Mod. Hi. =========================");
-        DefaultMod defaultmod = new DefaultMod();
+        WildcardMod defaultmod = new WildcardMod();
         logger.info("========================= /Default Mod Initialized. Hello World./ =========================");
     }
     
@@ -310,13 +310,13 @@ public class DefaultMod implements
     
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + WildcardCharacter.Enums.THE_DEFAULT.toString());
         
-        BaseMod.addCharacter(new TheDefault("the Default", TheDefault.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new WildcardCharacter("the Default", WildcardCharacter.Enums.THE_DEFAULT),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, WildcardCharacter.Enums.THE_DEFAULT);
         
         receiveEditPotions();
-        logger.info("Added " + TheDefault.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + WildcardCharacter.Enums.THE_DEFAULT.toString());
     }
     
     // =============== /LOAD THE CHARACTER/ =================
@@ -381,7 +381,7 @@ public class DefaultMod implements
         // Class Specific Potion. If you want your potion to not be class-specific,
         // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheDefault.Enums.THE_DEFAULT);
+        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, WildcardCharacter.Enums.THE_DEFAULT);
         
         logger.info("Done editing potions");
     }
@@ -396,10 +396,10 @@ public class DefaultMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheDefault.Enums.COLOR_BLUE);
-        BaseMod.addRelicToCustomPool(new VelvetContractRelic(), TheDefault.Enums.COLOR_BLUE);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheDefault.Enums.COLOR_BLUE);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheDefault.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new VelvetContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         
         // This adds a relic to the Shared pool. Every character can find this relic.
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
@@ -535,31 +535,31 @@ public class DefaultMod implements
         
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Card-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Card-Strings.json");
         
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Power-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Power-Strings.json");
         
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Relic-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Relic-Strings.json");
         
         // Event Strings
         BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Event-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Event-Strings.json");
         
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Potion-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Potion-Strings.json");
         
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Character-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Character-Strings.json");
         
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/eng/DefaultMod-Orb-Strings.json");
+                getModID() + "Resources/localization/eng/WildcardMod-Orb-Strings.json");
         
         logger.info("Done edittting strings");
     }
@@ -579,7 +579,7 @@ public class DefaultMod implements
         // In Keyword-Strings.json you would have PROPER_NAME as A Long Keyword and the first element in NAMES be a long keyword, and the second element be a_long_keyword
         
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/DefaultMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/WildcardMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
         
         if (keywords != null) {

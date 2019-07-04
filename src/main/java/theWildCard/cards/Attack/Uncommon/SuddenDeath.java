@@ -10,22 +10,22 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.CollectorCurseEffect;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.actions.KillAction;
 import theWildCard.cards.AbstractDefaultCard;
-import theWildCard.characters.TheDefault;
+import theWildCard.characters.WildcardCharacter;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 public class SuddenDeath extends AbstractDefaultCard {
 
-    public static final String ID = DefaultMod.makeID(SuddenDeath.class.getSimpleName());
+    public static final String ID = WildcardMod.makeID(SuddenDeath.class.getSimpleName());
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SuddenDeath.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = -1;
 

@@ -6,10 +6,10 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theWildCard.DefaultMod;
-import theWildCard.characters.TheDefault;
+import theWildCard.WildcardMod;
+import theWildCard.characters.WildcardCharacter;
 
-import static theWildCard.DefaultMod.makeCardPath;
+import static theWildCard.WildcardMod.makeCardPath;
 
 // public class ${NAME} extends AbstractDynamicCard
 public class CardTemplate extends AbstractDefaultCard {
@@ -34,8 +34,8 @@ public class CardTemplate extends AbstractDefaultCard {
 
     // TEXT DECLARATION
 
-    // public static final String ID = DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
-    public static final String ID = DefaultMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
+    // public static final String ID = WildcardMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
+    public static final String ID = WildcardMod.makeID("DefaultCommonAttack"); // DELETE THIS ONE.
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("${NAME}.png");
     // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
@@ -48,7 +48,7 @@ public class CardTemplate extends AbstractDefaultCard {
     private static final CardRarity RARITY = CardRarity.COMMON; //  Up to you, I like auto-complete on these
     private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
     private static final CardType TYPE = CardType.ATTACK;       //
-    public static final CardColor COLOR = TheDefault.Enums.COLOR_BLUE;
+    public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 1;  // COST = ${COST}
     private static final int UPGRADED_COST = 0; // UPGRADED_COST = ${UPGRADED_COST}

@@ -1,0 +1,118 @@
+{
+"theWildCard:CommonPower": {
+        "NAME": "Placeholder Power",
+        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
+},
+"theWildCard:StrengthLossPower": {
+        "NAME": "Burst of Strength",
+        "DESCRIPTIONS": ["Lose #b", " Strength after your next Attack."]
+},
+"theWildCard:CrushPower": {
+        "NAME": "Crush",
+        "DESCRIPTIONS": ["Next turn, gain", " ."]
+},
+"theWildCard:VengeancePower": {
+        "NAME": "Vengeance",
+        "DESCRIPTIONS": ["Whenever you lose HP this turn, gain that much Strength."]
+},
+"theWildCard:LastStandPower": {
+        "NAME": "Last Stand",
+        "DESCRIPTIONS": ["There is no escape from your impending demise . . ."]
+},
+"theWildCard:RampantBloodlustPower": {
+        "NAME": "Rampant Bloodlust",
+        "DESCRIPTIONS": ["If you do not kill an enemy, lose", " next turn."]
+},
+"theWildCard:SubduingPresencePower": {
+        "NAME": "Subduing Presence",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to ALL enemies."]
+},
+"theWildCard:VileAuraPower": {
+        "NAME": "Vile Aura",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Vulnerable to ALL enemies."]
+},
+"theWildCard:ReincarnationPower": {
+        "NAME": "Reincarnation",
+        "DESCRIPTIONS": ["Whenever a card is exhausted, add #b", " copy", " copies", " of it to your discard pile."]
+},
+"theWildCard:BulwarkPower": {
+        "NAME": "Bulwark",
+        "DESCRIPTIONS": ["Whenever you play a Skill, gain #b", " Plated Armor."]
+},
+"theWildCard:EncorePower": {
+        "NAME": "Encore",
+        "DESCRIPTIONS": ["Whenever you play a card, draw #b", " card.", " cards."]
+},
+"theWildCard:MomentumPower": {
+        "NAME": "Momentum",
+        "DESCRIPTIONS": ["Whenever you deal damage, gain #b", " Strength this turn."]
+},
+"theWildCard:HarvestPower": {
+        "NAME": "Harvest",
+        "DESCRIPTIONS": ["At the start of your turn, gain", " . Whenever an enemy dies, gain an additional", " at the start of your turn."]
+},
+"theWildCard:PersonaSakuyaPower": {
+        "NAME": "Sakuya",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to all enemies."]
+},
+"theWildCard:PersonaPolydeucesPower": {
+        "NAME": "Polydeuces",
+        "DESCRIPTIONS": ["Gain #b", " Dexterity."]
+},
+"theWildCard:PersonaArsenePower": {
+        "NAME": "Arsene",
+        "DESCRIPTIONS": ["Gain #b", " Strength and #b", " Dexterity."]
+},
+"theWildCard:PersonaMichaelPower": {
+        "NAME": "Michael",
+        "DESCRIPTIONS": ["Gain #b", " Strength."]
+},
+"theWildCard:PersonaPaleRiderPower": {
+        "NAME": "Pale Rider",
+        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Vulnerable to all enemies."]
+},
+"theWildCard:PersonaScathachPower": {
+        "NAME": "Scathach",
+        "DESCRIPTIONS": ["Whenever a non-minion enemy dies, raise your Max HP by #b", "."]
+},
+"theWildCard:PersonaOdinPower": {
+        "NAME": "Odin",
+        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block."]
+},
+"theWildCard:PersonaLokiPower": {
+        "NAME": "Loki",
+        "DESCRIPTIONS": ["At the start of your turn, draw #b", " cards."]
+},
+"theWildCard:PersonaMetatronPower": {
+        "NAME": "Metatron",
+        "DESCRIPTIONS": ["Your Attacks damage ALL enemies."]
+},
+"theWildCard:PersonaAlicePower": {
+        "NAME": "Alice",
+        "DESCRIPTIONS": ["Whenever an enemy dies, gain [E] [E] ."]
+},
+"theWildCard:PersonaAmaterasuPower": {
+        "NAME": "Amaterasu",
+        "DESCRIPTIONS": ["Whenever a card is exhausted, heal #b", " HP. ALL your cards exhaust."]
+},
+"theWildCard:PersonaCaesarPower": {
+        "NAME": "Caesar",
+        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Artifact."]
+},
+"theWildCard:PersonaSatanaelPower": {
+        "NAME": "Satanael",
+        "DESCRIPTIONS": ["At the end of your turn, Retain up to #b", " cards."]
+},
+"theWildCard:PersonaLuciferPower": {
+        "NAME": "Lucifer",
+        "DESCRIPTIONS": ["Whenever you gain Strength, gain twice as much."]
+},
+"theWildCard:PersonaThanatosPower": {
+        "NAME": "Thanatos",
+        "DESCRIPTIONS": ["Attacks that cost 2 or more are played twice."]
+},
+"theWildCard:RarePower": {
+        "NAME": "Placeholder Power",
+        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
+}
+}

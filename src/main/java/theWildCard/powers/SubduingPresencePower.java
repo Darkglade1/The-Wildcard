@@ -12,17 +12,17 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
-import theWildCard.DefaultMod;
+import theWildCard.WildcardMod;
 import theWildCard.util.TextureLoader;
 
 import java.util.Iterator;
 
-import static theWildCard.DefaultMod.makePowerPath;
+import static theWildCard.WildcardMod.makePowerPath;
 
 
 public class SubduingPresencePower extends AbstractPower {
 
-    public static final String POWER_ID = DefaultMod.makeID("SubduingPresencePower");
+    public static final String POWER_ID = WildcardMod.makeID("SubduingPresencePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

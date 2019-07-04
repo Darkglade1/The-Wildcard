@@ -1,18 +1,17 @@
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\cards\Skill\Uncommon\Retribution.class
 theWildCard\cards\Skill\Uncommon\SincereOffering.class
-theWildCard\characters\TheDefault$Enums.class
 theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
 theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
 theWildCard\variables\ArcanaEnums$Arcana.class
+theWildCard\characters\WildcardCharacter.class
 theWildCard\cards\Power\Rare\Harvest.class
 theWildCard\cards\Attack\Common\SavageBlow.class
 theWildCard\cards\Power\Rare\Bulwark.class
 theWildCard\powers\PersonaOdinPower.class
-theWildCard\characters\TheDefault.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\actions\KillAction.class
 theWildCard\cards\Arcana\ArchaicAssault.class
@@ -80,7 +79,6 @@ theWildCard\cards\Persona\Scathach.class
 theWildCard\cards\Arcana\AbstractArcanaCard.class
 theWildCard\cards\Skill\Common\Unburden.class
 theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class
-theWildCard\DefaultMod.class
 theWildCard\cards\Arcana\FinalHour.class
 theWildCard\cards\Skill\Common\PiercingGaze.class
 theWildCard\cards\Attack\Common\WitchsStrike.class
@@ -134,6 +132,7 @@ theWildCard\cards\Attack\Common\SacrificialStroke.class
 theWildCard\powers\PersonaMetatronPower.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\Arcana\MagicalMight.class
+theWildCard\characters\WildcardCharacter$Enums.class
 theWildCard\cards\Skill\Rare\LastRites.class
 theWildCard\orbs\DefaultOrb.class
 theWildCard\powers\VengeancePower.class
@@ -154,3 +153,4 @@ theWildCard\cards\Attack\Uncommon\SuddenDeath.class
 theWildCard\relics\DefaultClickableRelic.class
 theWildCard\patches\DefaultInsertPatch.class
 theWildCard\cards\CardTemplate.class
+theWildCard\WildcardMod.class
