@@ -6,11 +6,16 @@
       "Gain #b1 [E] ."
     ]
   },
+  "theWildCard:BlankContractRelic": {
+    "NAME": "Blank Contract",
+    "FLAVOR": "An endless sea of possibilities awaits . . .",
+    "DESCRIPTIONS": ["The first #b3 times you draw a Persona each combat, draw a card."]
+  },
   "theWildCard:VelvetContractRelic": {
     "NAME": "Velvet Contract",
-    "FLAVOR": "You didn't read the fine print, did you?",
+    "FLAVOR": "The contract is sealed, and with it, your fate.",
     "DESCRIPTIONS": [
-      "Whenever you draw a Persona, draw #b1 card."
+      "Replaces [#2aecd7]Blank [#2aecd7]Contract. Whenever you draw a Persona, draw a card."
     ]
   },
   "theWildCard:PlaceholderRelic2": {

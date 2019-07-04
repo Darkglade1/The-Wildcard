@@ -39,6 +39,7 @@ import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Unburden;
+import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
 import theWildCard.relics.PlaceholderRelic2;
@@ -222,7 +223,7 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         retVal.add(PlaceholderRelic.ID);
-        retVal.add(VelvetContractRelic.ID);
+        retVal.add(BlankContractRelic.ID);
         //retVal.add(PlaceholderRelic2.ID);
         retVal.add(DefaultClickableRelic.ID);
 

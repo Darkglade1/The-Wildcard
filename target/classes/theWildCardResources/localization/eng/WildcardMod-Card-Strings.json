@@ -193,7 +193,7 @@
   },
   "theWildCard:EndOfTheLine": {
     "NAME": "End of the Line",
-    "DESCRIPTION": "Arcana Fool. NL Discard your hand, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust."
+    "DESCRIPTION": "Arcana Fool. NL Discard any number of cards, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust."
   },
   "theWildCard:LastStand": {
     "NAME": "Last Stand",

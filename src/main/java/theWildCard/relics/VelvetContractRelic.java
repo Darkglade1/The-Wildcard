@@ -20,7 +20,7 @@ public class VelvetContractRelic extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
 
     public VelvetContractRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
     @Override
@@ -29,6 +29,25 @@ public class VelvetContractRelic extends CustomRelic {
             this.flash();
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
         }
+    }
+
+    @Override
+    public void obtain() {
+        if (AbstractDungeon.player.hasRelic(BlankContractRelic.ID)) {
+            for (int i = 0; i < AbstractDungeon.player.relics.size(); i++) {
+                if ((AbstractDungeon.player.relics.get(i)).relicId.equals(BlankContractRelic.ID)) {
+                    instantObtain(AbstractDungeon.player, i, true);
+                    break;
+                }
+            }
+        } else {
+            super.obtain();
+        }
+    }
+
+    @Override
+    public boolean canSpawn() {
+        return AbstractDungeon.player.hasRelic(BlankContractRelic.ID);
     }
 
     @Override

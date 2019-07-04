@@ -110,6 +110,7 @@ theWildCard\cards\Persona\Amaterasu.class
 theWildCard\cards\Power\Uncommon\RegalBearing.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\potions\PlaceholderPotion.class
+theWildCard\relics\BlankContractRelic.class
 theWildCard\cards\Attack\Common\SweepingSlash.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\Persona\Loki.class

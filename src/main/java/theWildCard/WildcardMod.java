@@ -55,6 +55,7 @@ import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.IdentityCrisisEvent;
 import theWildCard.potions.PlaceholderPotion;
+import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.BottledPlaceholderRelic;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
@@ -397,6 +398,7 @@ public class WildcardMod implements
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new BlankContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new VelvetContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), WildcardCharacter.Enums.COLOR_BLUE);
