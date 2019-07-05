@@ -4,6 +4,8 @@ theWildCard\cards\Skill\Uncommon\Retribution.class
 theWildCard\cards\Skill\Uncommon\SincereOffering.class
 theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$MasterDeckRenderOrderPatch.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$DrawPileRenderOrderPatch.class
 theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
@@ -31,6 +33,7 @@ theWildCard\cards\AbstractDefaultCard.class
 theWildCard\cards\Persona\Metatron.class
 theWildCard\cards\Arcana\ArcaneArts.class
 theWildCard\variables\ArcanaEnums.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$DrawPileRenderOrderPatch$Locator.class
 theWildCard\relics\VelvetContractRelic.class
 theWildCard\actions\ExhaustPersonaAction.class
 theWildCard\cards\OrbSkill.class
@@ -117,6 +120,7 @@ theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\Persona\Loki.class
 theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\Attack\Common\Crush.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch$Locator.class
 theWildCard\cards\Arcana\StingingStrike.class
 theWildCard\cards\Persona\Sakuya.class
 theWildCard\cards\Arcana\SeveringSlash.class
@@ -131,6 +135,7 @@ theWildCard\cards\Persona\Caesar.class
 theWildCard\cards\Attack\Uncommon\AncientSeal.class
 theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\cards\Attack\Common\SacrificialStroke.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch.class
 theWildCard\powers\PersonaMetatronPower.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\Arcana\MagicalMight.class
