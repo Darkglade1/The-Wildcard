@@ -185,11 +185,11 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
             return;
         }
 
-        //renders the preview above the Arcana card in combat scenarios
+        //renders the preview around the Arcana card in combat scenarios
         if (!(AbstractDungeon.screen == AbstractDungeon.CurrentScreen.CARD_REWARD ||
                 AbstractDungeon.screen == AbstractDungeon.CurrentScreen.MASTER_DECK_VIEW ||
                 AbstractDungeon.player == null)) {
-            renderAboveArcana(sb);
+            renderAroundArcana(sb);
             return;
         }
 
@@ -254,7 +254,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         }
     }
 
-    private void renderAboveArcana(SpriteBatch sb) {
+    private void renderAroundArcana(SpriteBatch sb) {
         float drawScale = 0.5f;
         float yPosition1 = this.current_y + this.hb.height * 0.75f;
         float yPosition2 = this.current_y + this.hb.height * 0.25f;
