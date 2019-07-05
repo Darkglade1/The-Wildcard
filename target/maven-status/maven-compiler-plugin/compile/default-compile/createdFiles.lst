@@ -14,6 +14,7 @@ theWildCard\characters\WildcardCharacter.class
 theWildCard\cards\Power\Rare\Harvest.class
 theWildCard\cards\Attack\Common\SavageBlow.class
 theWildCard\cards\Power\Rare\Bulwark.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$DiscardPileRenderOrderPatch$Locator.class
 theWildCard\powers\PersonaOdinPower.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\actions\KillAction.class
@@ -90,6 +91,7 @@ theWildCard\cards\Attack\Uncommon\QuietPassing.class
 theWildCard\powers\PersonaLokiPower.class
 theWildCard\cards\Persona\Odin.class
 theWildCard\powers\HarvestPower.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardRewardRenderOrderPatch.class
 theWildCard\powers\BulwarkPower.class
 theWildCard\patches\ArcanaDropRatePatchCommon.class
 theWildCard\patches\ArcanaDropRatePatchRare.class
@@ -104,6 +106,7 @@ theWildCard\cards\Skill\Uncommon\OnTheRoad.class
 theWildCard\cards\Arcana\PowerOfTheArcana.class
 theWildCard\cards\Persona\AbstractPersonaCard.class
 theWildCard\relics\PlaceholderRelic.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$DiscardPileRenderOrderPatch.class
 theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\cards\Persona\PaleRider.class

@@ -10,23 +10,26 @@ import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.screens.DiscardPileViewScreen;
 import com.megacrit.cardcrawl.screens.DrawPileViewScreen;
 import com.megacrit.cardcrawl.screens.MasterDeckViewScreen;
 import com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen;
 import com.megacrit.cardcrawl.screens.mainMenu.ScrollBar;
 import javassist.CtBehavior;
 
-@SpirePatch(
-        clz = AbstractDungeon.class,
-        method = "render"
-)
-
 // A patch to force the Arcana preview to render last on various screens so the previews aren't covered up by as many things
 public class ArcanaPreviewRenderOrderPatch {
-    @SpirePostfixPatch()
-    public static void changeRenderOrder(AbstractDungeon instance, SpriteBatch sb) {
-        if (instance.screen == AbstractDungeon.CurrentScreen.CARD_REWARD) {
-            instance.cardRewardScreen.render(sb);  //prevents the banner from covering up Arcana previews in the card reward screen
+    //prevents the banner from covering up Arcana previews in the card reward screen
+    @SpirePatch(
+            clz = AbstractDungeon.class,
+            method = "render"
+    )
+    public static class CardRewardRenderOrderPatch {
+        @SpirePostfixPatch()
+        public static void changeRenderOrder(AbstractDungeon instance, SpriteBatch sb) {
+            if (instance.screen == AbstractDungeon.CurrentScreen.CARD_REWARD) {
+                instance.cardRewardScreen.render(sb);
+            }
         }
     }
 
@@ -54,6 +57,34 @@ public class ArcanaPreviewRenderOrderPatch {
                 drawPileCopy.render(sb);
             } else {
                 drawPileCopy.renderExceptOneCard(sb, hoveredCard);
+                hoveredCard.renderHoverShadow(sb);
+                hoveredCard.render(sb);
+                hoveredCard.renderCardTip(sb);
+            }
+        }
+        private static class Locator extends SpireInsertLocator {
+            @Override
+            public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
+                Matcher finalMatcher = new Matcher.MethodCallMatcher(ScrollBar.class, "render");
+                int[] lines = LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
+                lines[0]++;
+                return lines;
+            }
+        }
+    }
+
+    //prevents the scroll bar in the discard pile view from covering up the Arcana previews
+    @SpirePatch(
+            clz = DiscardPileViewScreen.class,
+            method = "render"
+    )
+    public static class DiscardPileRenderOrderPatch {
+        @SpireInsertPatch(locator = DiscardPileRenderOrderPatch.Locator.class, localvars = {"hoveredCard"})
+        public static void changeRenderOrder(DiscardPileViewScreen instance, SpriteBatch sb, AbstractCard hoveredCard) {
+            if (hoveredCard == null) {
+                AbstractDungeon.player.discardPile.render(sb);
+            } else {
+                AbstractDungeon.player.discardPile.renderExceptOneCard(sb, hoveredCard);
                 hoveredCard.renderHoverShadow(sb);
                 hoveredCard.render(sb);
                 hoveredCard.renderCardTip(sb);
