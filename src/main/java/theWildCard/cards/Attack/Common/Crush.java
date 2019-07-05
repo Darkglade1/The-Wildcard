@@ -26,8 +26,8 @@ public class Crush extends AbstractDefaultCard {
 
     private static final int COST = 3;
 
-    private static final int DAMAGE = 28;
-    private static final int UPGRADE_PLUS_DMG = 10;
+    private static final int DAMAGE = 22;
+    private static final int UPGRADE_PLUS_DMG = 8;
 
     private static final int ENERGY = 2;
 
