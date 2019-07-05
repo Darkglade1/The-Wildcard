@@ -166,10 +166,164 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         cardToPreviewDeath = null;
     }
 
-//    @Override
-//    public void renderCardTip(SpriteBatch sb) {
-//        super.renderCardTip(sb);
-//        //Shows a preview of the different forms of the Arcana card above it when hovered over
+    @Override
+    public void renderCardTip(SpriteBatch sb) {
+        super.renderCardTip(sb);
+        showPreview(sb);
+    }
+
+    @Override
+    public void renderInLibrary(SpriteBatch sb) {
+        super.renderInLibrary(sb);
+        showPreview(sb);
+    }
+
+    //Shows a preview of the different forms of the Arcana card above it when hovered over
+    private void showPreview(SpriteBatch sb) {
+        //Removes the preview when the player is manipulating the card
+        if (AbstractDungeon.player != null && (AbstractDungeon.player.isDraggingCard || AbstractDungeon.player.inSingleTargetMode)) {
+            return;
+        }
+
+        //renders the preview above the Arcana card in combat scenarios
+        if (!(AbstractDungeon.screen == AbstractDungeon.CurrentScreen.CARD_REWARD ||
+                AbstractDungeon.screen == AbstractDungeon.CurrentScreen.MASTER_DECK_VIEW ||
+                AbstractDungeon.player == null)) {
+            renderAboveArcana(sb);
+            return;
+        }
+
+        float drawScale = 0.5f;
+        float yPosition1 = this.current_y - this.hb.height * 0.25f;
+        float yPosition2 = this.current_y + this.hb.height * 0.25f;
+        float yPosition3 = this.current_y;
+        float xPosition1 = this.current_x + this.hb.width * 0.25f;
+        float xPosition2 = this.current_x - this.hb.width * 0.25f;
+        float xPosition3;
+
+        if (this.current_x > Settings.WIDTH * 0.75F) {
+            xPosition3 = this.current_x + this.hb.width * (drawScale * 1.5f);
+        } else {
+            xPosition3 = this.current_x - this.hb.width * (drawScale * 1.5f);
+        }
+
+        if (cardToPreviewPriestess != null) {
+            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewEmperor != null) {
+            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition2;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewFool != null) {
+            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition3;
+                card.current_y = yPosition3;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewJudgement != null) {
+            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition2;
+                card.current_y = yPosition2;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewDeath != null) {
+            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition2;
+                card.render(sb);
+            }
+        }
+    }
+
+    private void renderAboveArcana(SpriteBatch sb) {
+        float drawScale = 0.5f;
+        float yPosition1 = this.current_y + this.hb.height * 0.75f;
+        float yPosition2 = this.current_y + this.hb.height * 0.25f;
+        float yPosition3 = this.current_y - this.hb.height * 0.25f;
+        float xPosition1;
+        float xPosition2;
+        float xPosition3;
+        float xOffset1 = -this.hb.width * 0.75f;
+        float xOffset2 = -this.hb.width * 0.25f;
+        float xOffset3 = this.hb.width * 0.25f;
+
+        if (this.current_x > Settings.WIDTH * 0.75F) {
+            xOffset1 = -xOffset1;
+            xOffset2 = -xOffset2;
+            xOffset3 = -xOffset3;
+        }
+
+        xPosition1 = this.current_x + xOffset1;
+        xPosition2 = this.current_x + xOffset2;
+        xPosition3 = this.current_x + xOffset3;
+
+        if (cardToPreviewPriestess != null) {
+            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition3;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewEmperor != null) {
+            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition2;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewFool != null) {
+            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewJudgement != null) {
+            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition2;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewDeath != null) {
+            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition3;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+    }
+
+//    private void renderAboveArcana(SpriteBatch sb) {
 //        float drawScale = 0.5f;
 //        float yPosition = this.current_y + this.hb.height/1.35f;
 //        if (cardToPreviewPriestess != null) {
@@ -218,151 +372,6 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 //            }
 //        }
 //    }
-
-//    @Override
-//    public void renderCardTip(SpriteBatch sb) {
-//        super.renderCardTip(sb);
-//        //Shows a preview of the different forms of the Arcana card above it when hovered over
-//        if (AbstractDungeon.player != null && AbstractDungeon.player.isDraggingCard) {
-//            return;
-//        }
-//        float drawScale = 0.5f;
-//        float yPosition1 = this.current_y - this.hb.height / 4.0f;
-//        float yPosition2 = this.current_y + this.hb.height / 4.0f;
-//
-//
-////        if (this.current_x > Settings.WIDTH * 0.75F) {
-////            this.current_x += (AbstractCard.IMG_WIDTH / 2.0F + AbstractCard.IMG_WIDTH / 2.0F / 1.5F + 16.0F) * this.drawScale;
-////        } else {
-////            this.current_x -= (AbstractCard.IMG_WIDTH / 2.0F + AbstractCard.IMG_WIDTH / 2.0F / 1.5F + 16.0F) * this.drawScale;
-////        }
-////
-////        this.current_y += (AbstractCard.IMG_HEIGHT / 2.0F - AbstractCard.IMG_HEIGHT / 2.0F / 1.5F) * this.drawScale;
-//
-//
-//        if (cardToPreviewPriestess != null) {
-//            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width * 0.75f;
-//                card.current_y = yPosition1;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewEmperor != null) {
-//            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width * 1.25f;
-//                card.current_y = yPosition1;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewFool != null) {
-//            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width * 1.75f;
-//                card.current_y = this.current_y;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewJudgement != null) {
-//            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width * 1.25f;
-//                card.current_y = yPosition2;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewDeath != null) {
-//            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width * 0.75f;
-//                card.current_y = yPosition2;
-//                card.render(sb);
-//            }
-//        }
-//    }
-
-    @Override
-    public void renderCardTip(SpriteBatch sb) {
-        super.renderCardTip(sb);
-        showPreview(sb);
-    }
-
-    @Override
-    public void renderInLibrary(SpriteBatch sb) {
-        super.renderInLibrary(sb);
-        showPreview(sb);
-    }
-
-    private void showPreview(SpriteBatch sb) {
-        //Shows a preview of the different forms of the Arcana card above it when hovered over
-        if (AbstractDungeon.player != null && (AbstractDungeon.player.isDraggingCard || AbstractDungeon.player.inSingleTargetMode)) {
-            return;
-        }
-        float drawScale = 0.5f;
-        float yPosition1 = this.current_y - this.hb.height * (drawScale / 2);
-        float yPosition2 = this.current_y + this.hb.height * (drawScale / 2);
-        float xPosition1 = this.current_x + this.hb.width * (drawScale / 2);
-        float xPosition2 = this.current_x - this.hb.width * (drawScale / 2);
-        float xPosition3;
-
-        if (this.current_x > Settings.WIDTH * 0.75F) {
-            xPosition3 = this.current_x + this.hb.width * (drawScale * 1.5f);
-        } else {
-            xPosition3 = this.current_x - this.hb.width * (drawScale * 1.5f);
-        }
-
-        if (cardToPreviewPriestess != null) {
-            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition1;
-                card.current_y = yPosition1;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewEmperor != null) {
-            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition2;
-                card.current_y = yPosition1;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewFool != null) {
-            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition3;
-                card.current_y = this.current_y;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewJudgement != null) {
-            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition2;
-                card.current_y = yPosition2;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewDeath != null) {
-            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition1;
-                card.current_y = yPosition2;
-                card.render(sb);
-            }
-        }
-    }
 
     @Override
     public void atTurnStart() {

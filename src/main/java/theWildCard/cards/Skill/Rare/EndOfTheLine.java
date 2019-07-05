@@ -11,6 +11,7 @@ import theWildCard.WildcardMod;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.characters.WildcardCharacter;
 
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 import static theWildCard.WildcardMod.makeCardPath;
 
 public class EndOfTheLine extends AbstractDefaultCard {
@@ -24,7 +25,6 @@ public class EndOfTheLine extends AbstractDefaultCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 0;
 
     private static final int DRAW = 10;
 
@@ -36,7 +36,11 @@ public class EndOfTheLine extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, -1, false));
+        if (upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, -1, false));
+        } else {
+            AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, p.hand.size(), true));
+        }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new NoDrawPower(p)));
     }
@@ -45,7 +49,7 @@ public class EndOfTheLine extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADED_COST);
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
