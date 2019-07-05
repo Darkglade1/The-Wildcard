@@ -55,7 +55,7 @@ public class VengeancePower extends AbstractPower {
         this.flash();
         for (int i = 0; i < amount; i++) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner,
-                    new StrengthPower(this.owner, damageAmount), damageAmount));
+                    new StrengthPower(this.owner, damageAmount / 2), damageAmount / 2));
         }
         return damageAmount;
     }

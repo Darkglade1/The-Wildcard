@@ -17,7 +17,7 @@
 },
 "theWildCard:VengeancePower": {
         "NAME": "Vengeance",
-        "DESCRIPTIONS": ["Whenever you lose HP this turn, gain that much Strength."]
+        "DESCRIPTIONS": ["Whenever you lose HP this turn, gain half that amount as Strength."]
 },
 "theWildCard:LastStandPower": {
         "NAME": "Last Stand",

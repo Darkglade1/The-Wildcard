@@ -181,22 +181,22 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(ArcaneArts.ID);
 //        retVal.add(ArcaneArts.ID);
 //        retVal.add(ArcaneArts.ID);
-//        retVal.add(ArcanaArtistry.ID);
-//        retVal.add(ArcanaArtistry.ID);
+        retVal.add(ArcanaArtistry.ID);
+        retVal.add(ArcanaArtistry.ID);
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(ArchaicAssault.ID);
         retVal.add(ArchaicAssault.ID);
-        retVal.add(MagicalMight.ID);
-        retVal.add(MagicalMight.ID);
-        retVal.add(FinalHour.ID);
+        //retVal.add(MagicalMight.ID);
+        //retVal.add(MagicalMight.ID);
+        //retVal.add(FinalHour.ID);
         retVal.add(FinalHour.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(TheArcanaUnleashed.ID);
         //retVal.add(TheArcanaUnleashed.ID);
         //retVal.add(Unburden.ID);
-        //retVal.add(Patience.ID);
+        retVal.add(Patience.ID);
         //retVal.add(SacrificialStroke.ID);
 
 

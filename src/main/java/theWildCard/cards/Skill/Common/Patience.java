@@ -23,9 +23,9 @@ public class Patience extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 0;
+    private static final int COST = 1;
 
-    private static final int DRAW = 1;
+    private static final int DRAW = 2;
 
     private static final int DRAW_POWER = 1;
     private static final int DRAW_POWER_UPGRADE = 1;

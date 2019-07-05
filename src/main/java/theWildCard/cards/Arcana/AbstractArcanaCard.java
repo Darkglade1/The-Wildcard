@@ -169,13 +169,13 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     @Override
     public void renderCardTip(SpriteBatch sb) {
         super.renderCardTip(sb);
-        showPreview(sb);
+        renderAroundArcana(sb);
     }
 
     @Override
     public void renderInLibrary(SpriteBatch sb) {
         super.renderInLibrary(sb);
-        showPreview(sb);
+        renderAroundArcana(sb);
     }
 
     //Shows a preview of the different forms of the Arcana card above it when hovered over

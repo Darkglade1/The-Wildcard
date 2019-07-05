@@ -114,7 +114,7 @@
   },
   "theWildCard:Vengeance": {
     "NAME": "Vengeance",
-    "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain that much Strength. NL Exhaust."
+    "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain half that amount as Strength. NL Exhaust."
   },
   "theWildCard:RampantBloodlust": {
     "NAME": "Rampant Bloodlust",
@@ -329,8 +329,8 @@
   },
   "theWildCard:Patience": {
     "NAME": "Patience",
-    "DESCRIPTION": "Draw a card. NL Next turn, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Draw a card. NL Next turn, draw !M! cards."
+    "DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! cards."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",
