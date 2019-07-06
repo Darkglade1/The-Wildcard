@@ -166,95 +166,10 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         cardToPreviewDeath = null;
     }
 
+    //Piggybacks off the keyword tooltip popup to also show the Arcana previews
     @Override
     public void renderCardTip(SpriteBatch sb) {
         super.renderCardTip(sb);
-        renderAroundArcana(sb);
-    }
-
-    @Override
-    public void renderInLibrary(SpriteBatch sb) {
-        super.renderInLibrary(sb);
-        renderAroundArcana(sb);
-    }
-
-    //Shows a preview of the different forms of the Arcana card above it when hovered over
-    private void showPreview(SpriteBatch sb) {
-        //Removes the preview when the player is manipulating the card
-        if (AbstractDungeon.player != null && (AbstractDungeon.player.isDraggingCard || AbstractDungeon.player.inSingleTargetMode)) {
-            return;
-        }
-
-        //renders the preview around the Arcana card in combat scenarios
-        if (!(AbstractDungeon.screen == AbstractDungeon.CurrentScreen.CARD_REWARD ||
-                AbstractDungeon.screen == AbstractDungeon.CurrentScreen.MASTER_DECK_VIEW ||
-                AbstractDungeon.player == null)) {
-            renderAroundArcana(sb);
-            return;
-        }
-
-        float drawScale = 0.5f;
-        float yPosition1 = this.current_y - this.hb.height * 0.25f;
-        float yPosition2 = this.current_y + this.hb.height * 0.25f;
-        float yPosition3 = this.current_y;
-        float xPosition1 = this.current_x + this.hb.width * 0.25f;
-        float xPosition2 = this.current_x - this.hb.width * 0.25f;
-        float xPosition3;
-
-        if (this.current_x > Settings.WIDTH * 0.75F) {
-            xPosition3 = this.current_x + this.hb.width * (drawScale * 1.5f);
-        } else {
-            xPosition3 = this.current_x - this.hb.width * (drawScale * 1.5f);
-        }
-
-        if (cardToPreviewPriestess != null) {
-            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition1;
-                card.current_y = yPosition1;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewEmperor != null) {
-            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition2;
-                card.current_y = yPosition1;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewFool != null) {
-            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition3;
-                card.current_y = yPosition3;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewJudgement != null) {
-            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition2;
-                card.current_y = yPosition2;
-                card.render(sb);
-            }
-        }
-        if (cardToPreviewDeath != null) {
-            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
-            if (card != null) {
-                card.drawScale = drawScale;
-                card.current_x = xPosition1;
-                card.current_y = yPosition2;
-                card.render(sb);
-            }
-        }
-    }
-
-    private void renderAroundArcana(SpriteBatch sb) {
         float drawScale = 0.5f;
         float yPosition1 = this.current_y + this.hb.height * 0.75f;
         float yPosition2 = this.current_y + this.hb.height * 0.25f;
@@ -322,56 +237,6 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
             }
         }
     }
-
-//    private void renderAboveArcana(SpriteBatch sb) {
-//        float drawScale = 0.5f;
-//        float yPosition = this.current_y + this.hb.height/1.35f;
-//        if (cardToPreviewPriestess != null) {
-//            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width;
-//                card.current_y = yPosition;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewEmperor != null) {
-//            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x - this.hb.width/2;
-//                card.current_y = yPosition;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewFool != null) {
-//            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x;
-//                card.current_y = yPosition;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewJudgement != null) {
-//            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x + this.hb.width/2;
-//                card.current_y = yPosition;
-//                card.render(sb);
-//            }
-//        }
-//        if (cardToPreviewDeath != null) {
-//            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
-//            if (card != null) {
-//                card.drawScale = drawScale;
-//                card.current_x = this.current_x + this.hb.width;
-//                card.current_y = yPosition;
-//                card.render(sb);
-//            }
-//        }
-//    }
 
     @Override
     public void atTurnStart() {

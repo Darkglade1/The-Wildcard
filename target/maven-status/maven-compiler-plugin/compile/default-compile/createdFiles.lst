@@ -4,8 +4,6 @@ theWildCard\cards\Skill\Uncommon\Retribution.class
 theWildCard\cards\Skill\Uncommon\SincereOffering.class
 theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
-theWildCard\patches\ArcanaPreviewRenderOrderPatch$MasterDeckRenderOrderPatch.class
-theWildCard\patches\ArcanaPreviewRenderOrderPatch$DrawPileRenderOrderPatch.class
 theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
@@ -14,7 +12,6 @@ theWildCard\characters\WildcardCharacter.class
 theWildCard\cards\Power\Rare\Harvest.class
 theWildCard\cards\Attack\Common\SavageBlow.class
 theWildCard\cards\Power\Rare\Bulwark.class
-theWildCard\patches\ArcanaPreviewRenderOrderPatch$DiscardPileRenderOrderPatch$Locator.class
 theWildCard\powers\PersonaOdinPower.class
 theWildCard\cards\DefaultAttackWithVariable.class
 theWildCard\actions\KillAction.class
@@ -34,7 +31,6 @@ theWildCard\cards\AbstractDefaultCard.class
 theWildCard\cards\Persona\Metatron.class
 theWildCard\cards\Arcana\ArcaneArts.class
 theWildCard\variables\ArcanaEnums.class
-theWildCard\patches\ArcanaPreviewRenderOrderPatch$DrawPileRenderOrderPatch$Locator.class
 theWildCard\relics\VelvetContractRelic.class
 theWildCard\actions\ExhaustPersonaAction.class
 theWildCard\cards\OrbSkill.class
@@ -91,7 +87,6 @@ theWildCard\cards\Attack\Uncommon\QuietPassing.class
 theWildCard\powers\PersonaLokiPower.class
 theWildCard\cards\Persona\Odin.class
 theWildCard\powers\HarvestPower.class
-theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardRewardRenderOrderPatch.class
 theWildCard\powers\BulwarkPower.class
 theWildCard\patches\ArcanaDropRatePatchCommon.class
 theWildCard\patches\ArcanaDropRatePatchRare.class
@@ -106,7 +101,6 @@ theWildCard\cards\Skill\Uncommon\OnTheRoad.class
 theWildCard\cards\Arcana\PowerOfTheArcana.class
 theWildCard\cards\Persona\AbstractPersonaCard.class
 theWildCard\relics\PlaceholderRelic.class
-theWildCard\patches\ArcanaPreviewRenderOrderPatch$DiscardPileRenderOrderPatch.class
 theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\cards\Persona\PaleRider.class
@@ -130,6 +124,7 @@ theWildCard\cards\Arcana\SeveringSlash.class
 theWildCard\cards\Attack\Common\EbbAndFlow.class
 theWildCard\cards\Attack\Common\Bristle.class
 theWildCard\powers\EncorePower.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$GeneralRenderOrderPatch.class
 theWildCard\variables\DefaultSecondMagicNumber.class
 theWildCard\cards\Attack\Uncommon\WallOfThorns.class
 theWildCard\cards\Attack\Common\BalancedThrust.class
