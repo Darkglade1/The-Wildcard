@@ -48,7 +48,7 @@ public class PersonaThanatosPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (card.type == AbstractCard.CardType.ATTACK && (card.costForTurn >= 2 || card.cost == -1 && card.energyOnUse >= 2)) {
+        if (!card.purgeOnUse && card.type == AbstractCard.CardType.ATTACK && (card.costForTurn >= 2 || card.cost == -1 && card.energyOnUse >= 2)) {
             this.flash();
             AbstractMonster m = null;
             if (action.target != null) {
@@ -61,11 +61,9 @@ public class PersonaThanatosPower extends AbstractPower {
             tmp.target_x = (float) Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
             tmp.target_y = (float) Settings.HEIGHT / 2.0F;
             tmp.freeToPlayOnce = true;
-            tmp.costForTurn = 0; //ensures that it doesn't trigger this power again
-            tmp.cost = 0; //see above
             tmp.applyPowers();
             tmp.purgeOnUse = true;
-            AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse));
+            AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true));
         }
     }
 }

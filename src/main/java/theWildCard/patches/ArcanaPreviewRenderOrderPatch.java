@@ -20,15 +20,22 @@ import javassist.CtBehavior;
 // A patch to force the Arcana preview to render last on various screens so the previews aren't covered up by as many things
 public class ArcanaPreviewRenderOrderPatch {
     //prevents the banner from covering up Arcana previews in the card reward screen
+    //Also prevents the preview from being covered up by the top status bar containing HP, floor #, gold, potions, etc.
     @SpirePatch(
             clz = AbstractDungeon.class,
             method = "render"
     )
-    public static class CardRewardRenderOrderPatch {
+    public static class GeneralRenderOrderPatch {
         @SpirePostfixPatch()
         public static void changeRenderOrder(AbstractDungeon instance, SpriteBatch sb) {
             if (instance.screen == AbstractDungeon.CurrentScreen.CARD_REWARD) {
                 instance.cardRewardScreen.render(sb);
+            }
+            if (instance.screen == AbstractDungeon.CurrentScreen.GAME_DECK_VIEW) {
+                AbstractDungeon.player.drawPile.renderTip(sb);
+            }
+            if (instance.screen == AbstractDungeon.CurrentScreen.MASTER_DECK_VIEW) {
+                AbstractDungeon.player.masterDeck.renderTip(sb);
             }
         }
     }
