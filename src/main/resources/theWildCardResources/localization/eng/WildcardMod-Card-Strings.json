@@ -319,18 +319,26 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice."
   },
+  "theWildCard:MaskChange": {
+    "NAME": "Mask Change",
+    "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your deck into your hand."
+  },
+  "theWildCard:Impatience": {
+    "NAME": "Impatience",
+    "DESCRIPTION": "Draw !M! cards. NL Next turn, draw !theWildCard:SecondMagic! less cards."
+  },
   "theWildCard:Unburden": {
     "NAME": "Unburden",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust !M! random Persona in your hand."
   },
+  "theWildCard:Patience": {
+    "NAME": "Patience",
+    "DESCRIPTION": "Draw !theWildCard:SecondMagic! cards. NL Next turn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Draw !theWildCard:SecondMagic! cards. NL Next turn, draw !M! cards."
+  },
   "theWildCard:SacrificialStroke": {
     "NAME": "Sacrificial Stroke",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust a random Persona in your hand."
-  },
-  "theWildCard:Patience": {
-    "NAME": "Patience",
-    "DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! cards."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",

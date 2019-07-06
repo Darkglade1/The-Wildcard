@@ -39,6 +39,8 @@ import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Unburden;
+import theWildCard.cards.Skill.Uncommon.Impatience;
+import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
@@ -181,8 +183,8 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(ArcaneArts.ID);
 //        retVal.add(ArcaneArts.ID);
 //        retVal.add(ArcaneArts.ID);
-        retVal.add(ArcanaArtistry.ID);
-        retVal.add(ArcanaArtistry.ID);
+        //retVal.add(ArcanaArtistry.ID);
+        //retVal.add(ArcanaArtistry.ID);
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(ArchaicAssault.ID);
@@ -195,6 +197,8 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(TheArcanaUnleashed.ID);
         //retVal.add(TheArcanaUnleashed.ID);
+        retVal.add(MaskChange.ID);
+        retVal.add(Impatience.ID);
         //retVal.add(Unburden.ID);
         retVal.add(Patience.ID);
         //retVal.add(SacrificialStroke.ID);

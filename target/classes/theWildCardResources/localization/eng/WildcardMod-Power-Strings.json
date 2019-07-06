@@ -11,6 +11,10 @@
         "NAME": "Wall of Thorns",
         "DESCRIPTIONS": ["Lose #b", " Thorns next turn."]
 },
+"theWildCard:LoseDrawPower": {
+        "NAME": "Impatience",
+        "DESCRIPTIONS": ["Draw #b", " less cards next turn."]
+},
 "theWildCard:CrushPower": {
         "NAME": "Crush",
         "DESCRIPTIONS": ["Next turn, gain", " ."]
