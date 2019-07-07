@@ -29,21 +29,31 @@ public class LoseDrawPower extends AbstractPower {
         //loads textures
         this.loadRegion("lessdraw");
 
+        //caps the debuff at 5 since that's functionally how far it can go
+        if (this.amount > 5) {
+            this.amount = 5;
+        }
+
         updateDescription();
     }
 
     @Override
-    public void atEndOfRound() {
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        //caps the debuff at 5 since that's functionally how far it can go
+        if (this.amount > 5) {
+            this.amount = 5;
+        }
+    }
+
+    @Override
+    public void atStartOfTurn() {
         AbstractDungeon.player.gameHandSize -= amount;
     }
 
     @Override
-    public void onRemove() {
-        AbstractDungeon.player.gameHandSize += amount;
-    }
-
-    @Override
     public void atStartOfTurnPostDraw () {
+        AbstractDungeon.player.gameHandSize += amount;
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
     }
     @Override

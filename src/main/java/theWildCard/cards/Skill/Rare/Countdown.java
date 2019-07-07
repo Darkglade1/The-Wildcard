@@ -27,8 +27,8 @@ public class Countdown extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 10;
-    private static final int UPGRADED_COST = 9;
+    private static final int COST = 13;
+    private static final int UPGRADED_COST = 12;
 
     private AbstractArcanaCard arcanaCard; //Reference to the Arcana card that can transform into this
 
