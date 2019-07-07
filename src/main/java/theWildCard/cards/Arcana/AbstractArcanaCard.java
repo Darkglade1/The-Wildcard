@@ -47,8 +47,11 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         tags.add(Tags.ARCANA);
     }
 
-    public void transform() {
+    public void changeArcana() {
         cardArcana = ArcanaEnums.getActiveArcana();
+    }
+
+    public void transform() {
         if (cardArcana == ArcanaEnums.Arcana.PRIESTESS) {
             cardToTransform = priestessCard;
         }
@@ -66,7 +69,6 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         }
 
         this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).DESCRIPTION;
-
         if (this.upgraded) {
             cardToTransform.upgrade();
             //Sets the card description to the upgraded version, if it exists.
@@ -248,10 +250,9 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     @Override
     public AbstractCard makeCopy() {
-        if (cardToTransform != null) {
-            return cardToTransform.makeCopy();
-        } else {
-            return super.makeCopy();
-        }
+        AbstractArcanaCard card = (AbstractArcanaCard)super.makeCopy();
+        card.cardArcana = this.cardArcana;
+        card.transform();
+        return card;
     }
 }
