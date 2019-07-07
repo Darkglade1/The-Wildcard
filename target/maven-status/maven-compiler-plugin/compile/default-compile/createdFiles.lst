@@ -71,6 +71,7 @@ theWildCard\cards\DefaultCommonSkill.class
 theWildCard\powers\LastStandPower.class
 theWildCard\cards\Persona\Polydeuces.class
 theWildCard\powers\VileAuraPower.class
+theWildCard\actions\LockArcanaAction.class
 theWildCard\util\TextureLoader.class
 theWildCard\cards\Arcana\ArcanaArtistry.class
 theWildCard\relics\BottledPlaceholderRelic.class
@@ -83,6 +84,7 @@ theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class
 theWildCard\cards\Skill\Common\Proficiency.class
 theWildCard\cards\Arcana\FinalHour.class
 theWildCard\cards\Skill\Common\PiercingGaze.class
+theWildCard\cards\Skill\Uncommon\Lock.class
 theWildCard\cards\Attack\Common\WitchsStrike.class
 theWildCard\cards\Attack\Uncommon\QuietPassing.class
 theWildCard\powers\PersonaLokiPower.class

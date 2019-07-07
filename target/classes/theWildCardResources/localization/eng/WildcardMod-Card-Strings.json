@@ -323,6 +323,10 @@
     "NAME": "Deicide",
     "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
   },
+  "theWildCard:Lock": {
+    "NAME": "Lock",
+    "DESCRIPTION": "Choose up to !M! Arcana in your hand. They no longer transform."
+  },
   "theWildCard:MaskChange": {
     "NAME": "Mask Change",
     "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your deck into your hand."

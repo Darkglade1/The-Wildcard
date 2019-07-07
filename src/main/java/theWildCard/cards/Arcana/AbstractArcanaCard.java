@@ -26,6 +26,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     public AbstractDefaultCard cardToPreviewFool;
     public AbstractDefaultCard cardToPreviewJudgement;
     public AbstractDefaultCard cardToPreviewDeath;
+    public boolean isLocked = false;
 
 
     public AbstractArcanaCard(final String id,
@@ -48,7 +49,10 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     }
 
     public void changeArcana() {
-        cardArcana = ArcanaEnums.getActiveArcana();
+        if (!isLocked) {
+            cardArcana = ArcanaEnums.getActiveArcana();
+            transform();
+        }
     }
 
     public void transform() {
@@ -64,39 +68,41 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         else if (cardArcana == ArcanaEnums.Arcana.JUDGEMENT) {
             cardToTransform = judgementCard;
         }
-        else {
+        else if (cardArcana == ArcanaEnums.Arcana.DEATH){
             cardToTransform = deathCard;
         }
 
-        this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).DESCRIPTION;
-        if (this.upgraded) {
-            cardToTransform.upgrade();
-            //Sets the card description to the upgraded version, if it exists.
-            if (languagePack.getCardStrings(cardToTransform.cardID).UPGRADE_DESCRIPTION != null) {
-                this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).UPGRADE_DESCRIPTION;
+        if (cardToTransform != null) {
+            this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).DESCRIPTION;
+            if (this.upgraded) {
+                cardToTransform.upgrade();
+                //Sets the card description to the upgraded version, if it exists.
+                if (languagePack.getCardStrings(cardToTransform.cardID).UPGRADE_DESCRIPTION != null) {
+                    this.rawDescription = languagePack.getCardStrings(cardToTransform.cardID).UPGRADE_DESCRIPTION;
+                }
             }
+
+            this.name = cardToTransform.name;
+            this.target = cardToTransform.target;
+            this.cost = cardToTransform.cost;
+            this.costForTurn = cardToTransform.costForTurn;
+            this.isCostModified = false;
+            this.isCostModifiedForTurn = false;
+            this.energyOnUse = cardToTransform.energyOnUse;
+            this.freeToPlayOnce = cardToTransform.freeToPlayOnce;
+            this.exhaust = cardToTransform.exhaust;
+            this.retain = cardToTransform.retain;
+            this.purgeOnUse = cardToTransform.purgeOnUse;
+            this.baseDamage = cardToTransform.baseDamage;
+            this.baseBlock = cardToTransform.baseBlock;
+            this.baseDraw = cardToTransform.baseDraw;
+            this.baseMagicNumber = cardToTransform.baseMagicNumber;
+            this.defaultBaseSecondMagicNumber = cardToTransform.defaultBaseSecondMagicNumber;
+            this.baseHeal = cardToTransform.baseHeal;
+            this.baseDiscard = cardToTransform.baseDiscard;
+
+            initializeDescription();
         }
-
-        this.name = cardToTransform.name;
-        this.target = cardToTransform.target;
-        this.cost = cardToTransform.cost;
-        this.costForTurn = cardToTransform.costForTurn;
-        this.isCostModified = false;
-        this.isCostModifiedForTurn = false;
-        this.energyOnUse = cardToTransform.energyOnUse;
-        this.freeToPlayOnce = cardToTransform.freeToPlayOnce;
-        this.exhaust = cardToTransform.exhaust;
-        this.retain = cardToTransform.retain;
-        this.purgeOnUse = cardToTransform.purgeOnUse;
-        this.baseDamage = cardToTransform.baseDamage;
-        this.baseBlock = cardToTransform.baseBlock;
-        this.baseDraw = cardToTransform.baseDraw;
-        this.baseMagicNumber = cardToTransform.baseMagicNumber;
-        this.defaultBaseSecondMagicNumber = cardToTransform.defaultBaseSecondMagicNumber;
-        this.baseHeal = cardToTransform.baseHeal;
-        this.baseDiscard = cardToTransform.baseDiscard;
-
-        initializeDescription();
     }
 
     @Override
@@ -137,22 +143,25 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     @Override
     public void hover() {
-        try {
-            //Sets up these variables to indicate that a preview should be shown
-            cardToPreviewPriestess = priestessCard;
-            cardToPreviewEmperor = emperorCard;
-            cardToPreviewFool = foolCard;
-            cardToPreviewJudgement = judgementCard;
-            cardToPreviewDeath = deathCard;
-            if (upgraded) {
-                cardToPreviewPriestess.upgrade();
-                cardToPreviewEmperor.upgrade();
-                cardToPreviewFool.upgrade();
-                cardToPreviewJudgement.upgrade();
-                cardToPreviewDeath.upgrade();
+        //Locked cards no longer show an Arcana preview
+        if (!isLocked) {
+            try {
+                //Sets up these variables to indicate that a preview should be shown
+                cardToPreviewPriestess = priestessCard;
+                cardToPreviewEmperor = emperorCard;
+                cardToPreviewFool = foolCard;
+                cardToPreviewJudgement = judgementCard;
+                cardToPreviewDeath = deathCard;
+                if (upgraded) {
+                    cardToPreviewPriestess.upgrade();
+                    cardToPreviewEmperor.upgrade();
+                    cardToPreviewFool.upgrade();
+                    cardToPreviewJudgement.upgrade();
+                    cardToPreviewDeath.upgrade();
+                }
+            } catch (Throwable e) {
+                System.out.println(e.toString());
             }
-        } catch (Throwable e) {
-            System.out.println(e.toString());
         }
         super.hover();
     }
@@ -253,6 +262,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         AbstractArcanaCard card = (AbstractArcanaCard)super.makeCopy();
         card.cardArcana = this.cardArcana;
         card.transform();
+        card.isLocked = this.isLocked;
         return card;
     }
 }

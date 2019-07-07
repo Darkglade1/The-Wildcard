@@ -43,6 +43,7 @@ import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
+import theWildCard.cards.Skill.Uncommon.Lock;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.relics.BlankContractRelic;
@@ -179,7 +180,7 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-//        retVal.add(SeveringSlash.ID);
+        retVal.add(SeveringSlash.ID);
 //        retVal.add(SeveringSlash.ID);
 //        retVal.add(StingingStrike.ID);
 //        retVal.add(StingingStrike.ID);
@@ -196,12 +197,13 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(MagicalMight.ID);
         //retVal.add(MagicalMight.ID);
         //retVal.add(FinalHour.ID);
-        retVal.add(FinalHour.ID);
+        //retVal.add(FinalHour.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(TheArcanaUnleashed.ID);
         retVal.add(TheArcanaUnleashed.ID);
-        retVal.add(Deicide.ID);
+        //retVal.add(Deicide.ID);
+        retVal.add(Lock.ID);
         //retVal.add(MaskChange.ID);
         retVal.add(ShieldOfMany.ID);
         //retVal.add(Impatience.ID);

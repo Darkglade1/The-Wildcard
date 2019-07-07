@@ -86,9 +86,8 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     private void transformArcana(AbstractCard card) {
         if (card.hasTag(Tags.ARCANA)) {
-            AbstractArcanaCard arcana = (AbstractArcanaCard)card;
+            AbstractArcanaCard arcana = (AbstractArcanaCard) card;
             arcana.changeArcana();
-            arcana.transform();
         }
     }
 }

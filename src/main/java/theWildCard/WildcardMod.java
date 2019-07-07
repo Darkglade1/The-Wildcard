@@ -55,6 +55,7 @@ import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
+import theWildCard.cards.Skill.Uncommon.Lock;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.characters.WildcardCharacter;
@@ -475,6 +476,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Lucifer());
         BaseMod.addCard(new Thanatos());
         BaseMod.addCard(new Deicide());
+        BaseMod.addCard(new Lock());
         BaseMod.addCard(new MaskChange());
         BaseMod.addCard(new ShieldOfMany());
         BaseMod.addCard(new Impatience());
@@ -525,6 +527,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Lucifer.ID);
         UnlockTracker.unlockCard(Thanatos.ID);
         UnlockTracker.unlockCard(Deicide.ID);
+        UnlockTracker.unlockCard(Lock.ID);
         UnlockTracker.unlockCard(MaskChange.ID);
         UnlockTracker.unlockCard(ShieldOfMany.ID);
         UnlockTracker.unlockCard(Impatience.ID);
