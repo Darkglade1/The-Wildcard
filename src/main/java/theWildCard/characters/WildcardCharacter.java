@@ -30,6 +30,7 @@ import theWildCard.cards.Arcana.MagicMettle;
 import theWildCard.cards.Arcana.MagicalMight;
 import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
+import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Persona.Amaterasu;
 import theWildCard.cards.Persona.Arsene;
@@ -38,9 +39,12 @@ import theWildCard.cards.Persona.Lucifer;
 import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Skill.Common.Patience;
+import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
+import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
+import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
@@ -188,7 +192,7 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(ArchaicAssault.ID);
-        retVal.add(ArchaicAssault.ID);
+        //retVal.add(ArchaicAssault.ID);
         //retVal.add(MagicalMight.ID);
         //retVal.add(MagicalMight.ID);
         //retVal.add(FinalHour.ID);
@@ -196,11 +200,14 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(PowerOfTheArcana.ID);
         //retVal.add(TheArcanaUnleashed.ID);
-        //retVal.add(TheArcanaUnleashed.ID);
-        retVal.add(MaskChange.ID);
-        retVal.add(Impatience.ID);
+        retVal.add(TheArcanaUnleashed.ID);
+        retVal.add(Deicide.ID);
+        //retVal.add(MaskChange.ID);
+        retVal.add(ShieldOfMany.ID);
+        //retVal.add(Impatience.ID);
         //retVal.add(Unburden.ID);
-        retVal.add(Patience.ID);
+        //retVal.add(Patience.ID);
+        retVal.add(Proficiency.ID);
         //retVal.add(SacrificialStroke.ID);
 
 

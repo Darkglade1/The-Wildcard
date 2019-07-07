@@ -80,6 +80,7 @@ theWildCard\cards\Persona\Scathach.class
 theWildCard\cards\Arcana\AbstractArcanaCard.class
 theWildCard\cards\Skill\Common\Unburden.class
 theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class
+theWildCard\cards\Skill\Common\Proficiency.class
 theWildCard\cards\Arcana\FinalHour.class
 theWildCard\cards\Skill\Common\PiercingGaze.class
 theWildCard\cards\Attack\Common\WitchsStrike.class
@@ -110,6 +111,7 @@ theWildCard\powers\PersonaMichaelPower.class
 theWildCard\cards\Persona\Amaterasu.class
 theWildCard\cards\Power\Uncommon\RegalBearing.class
 theWildCard\cards\DefaultCommonAttack.class
+theWildCard\cards\Skill\Uncommon\ShieldOfMany.class
 theWildCard\potions\PlaceholderPotion.class
 theWildCard\relics\BlankContractRelic.class
 theWildCard\cards\Attack\Common\SweepingSlash.class
@@ -151,6 +153,7 @@ theWildCard\powers\LoseDrawPower.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
+theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Skill\Common\TwoForOne.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class
 theWildCard\powers\RarePower.class

@@ -51,9 +51,12 @@ import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Scathach;
 import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Skill.Common.Patience;
+import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
+import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
+import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.IdentityCrisisEvent;
 import theWildCard.potions.PlaceholderPotion;
@@ -471,10 +474,13 @@ public class WildcardMod implements
         BaseMod.addCard(new Satanael());
         BaseMod.addCard(new Lucifer());
         BaseMod.addCard(new Thanatos());
+        BaseMod.addCard(new Deicide());
         BaseMod.addCard(new MaskChange());
+        BaseMod.addCard(new ShieldOfMany());
         BaseMod.addCard(new Impatience());
         BaseMod.addCard(new Unburden());
         BaseMod.addCard(new Patience());
+        BaseMod.addCard(new Proficiency());
         BaseMod.addCard(new SacrificialStroke());
         
         logger.info("Making sure the cards are unlocked.");
@@ -518,10 +524,13 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Satanael.ID);
         UnlockTracker.unlockCard(Lucifer.ID);
         UnlockTracker.unlockCard(Thanatos.ID);
+        UnlockTracker.unlockCard(Deicide.ID);
         UnlockTracker.unlockCard(MaskChange.ID);
+        UnlockTracker.unlockCard(ShieldOfMany.ID);
         UnlockTracker.unlockCard(Impatience.ID);
         UnlockTracker.unlockCard(Unburden.ID);
         UnlockTracker.unlockCard(Patience.ID);
+        UnlockTracker.unlockCard(Proficiency.ID);
         UnlockTracker.unlockCard(SacrificialStroke.ID);
         
         logger.info("Done adding cards!");

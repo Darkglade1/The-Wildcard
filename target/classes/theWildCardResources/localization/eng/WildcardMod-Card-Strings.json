@@ -319,9 +319,17 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice."
   },
+  "theWildCard:Deicide": {
+    "NAME": "Deicide",
+    "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
+  },
   "theWildCard:MaskChange": {
     "NAME": "Mask Change",
     "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your deck into your hand."
+  },
+  "theWildCard:ShieldOfMany": {
+    "NAME": "Shield of Many",
+    "DESCRIPTION": "Gain !B! Block for each Persona in your hand."
   },
   "theWildCard:Impatience": {
     "NAME": "Impatience",
@@ -335,6 +343,11 @@
     "NAME": "Patience",
     "DESCRIPTION": "Draw !theWildCard:SecondMagic! cards. NL Next turn, draw !M! card.",
     "UPGRADE_DESCRIPTION": "Draw !theWildCard:SecondMagic! cards. NL Next turn, draw !M! cards."
+  },
+  "theWildCard:Proficiency": {
+    "NAME": "Proficiency",
+    "DESCRIPTION": "Put !M! cards from your discard pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put !M! cards from your discard pile into your hand."
   },
   "theWildCard:SacrificialStroke": {
     "NAME": "Sacrificial Stroke",
