@@ -143,25 +143,22 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     @Override
     public void hover() {
-        //Locked cards no longer show an Arcana preview
-        if (!isLocked) {
-            try {
-                //Sets up these variables to indicate that a preview should be shown
-                cardToPreviewPriestess = priestessCard;
-                cardToPreviewEmperor = emperorCard;
-                cardToPreviewFool = foolCard;
-                cardToPreviewJudgement = judgementCard;
-                cardToPreviewDeath = deathCard;
-                if (upgraded) {
-                    cardToPreviewPriestess.upgrade();
-                    cardToPreviewEmperor.upgrade();
-                    cardToPreviewFool.upgrade();
-                    cardToPreviewJudgement.upgrade();
-                    cardToPreviewDeath.upgrade();
-                }
-            } catch (Throwable e) {
-                System.out.println(e.toString());
+        try {
+            //Sets up these variables to indicate that a preview should be shown
+            cardToPreviewPriestess = priestessCard;
+            cardToPreviewEmperor = emperorCard;
+            cardToPreviewFool = foolCard;
+            cardToPreviewJudgement = judgementCard;
+            cardToPreviewDeath = deathCard;
+            if (upgraded) {
+                cardToPreviewPriestess.upgrade();
+                cardToPreviewEmperor.upgrade();
+                cardToPreviewFool.upgrade();
+                cardToPreviewJudgement.upgrade();
+                cardToPreviewDeath.upgrade();
             }
+        } catch (Throwable e) {
+            System.out.println(e.toString());
         }
         super.hover();
     }
@@ -181,6 +178,10 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     @Override
     public void renderCardTip(SpriteBatch sb) {
         super.renderCardTip(sb);
+        //Removes the preview when the player is manipulating the card or if the card is locked
+        if (isLocked || (AbstractDungeon.player != null && (AbstractDungeon.player.isDraggingCard || AbstractDungeon.player.inSingleTargetMode))) {
+            return;
+        }
         float drawScale = 0.5f;
         float yPosition1 = this.current_y + this.hb.height * 0.75f;
         float yPosition2 = this.current_y + this.hb.height * 0.25f;
