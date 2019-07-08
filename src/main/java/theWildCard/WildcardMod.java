@@ -58,6 +58,7 @@ import theWildCard.cards.Skill.Uncommon.Impatience;
 import theWildCard.cards.Skill.Uncommon.Lock;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
+import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.IdentityCrisisEvent;
 import theWildCard.potions.PlaceholderPotion;
@@ -478,6 +479,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Deicide());
         BaseMod.addCard(new Lock());
         BaseMod.addCard(new MaskChange());
+        BaseMod.addCard(new UnendingRitual());
         BaseMod.addCard(new ShieldOfMany());
         BaseMod.addCard(new Impatience());
         BaseMod.addCard(new Unburden());
@@ -529,6 +531,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Deicide.ID);
         UnlockTracker.unlockCard(Lock.ID);
         UnlockTracker.unlockCard(MaskChange.ID);
+        UnlockTracker.unlockCard(UnendingRitual.ID);
         UnlockTracker.unlockCard(ShieldOfMany.ID);
         UnlockTracker.unlockCard(Impatience.ID);
         UnlockTracker.unlockCard(Unburden.ID);

@@ -10,6 +10,9 @@ import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.tags.Tags;
 import theWildCard.variables.ArcanaEnums;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 public abstract class AbstractArcanaCard extends AbstractDefaultCard {
@@ -265,5 +268,38 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         card.transform();
         card.isLocked = this.isLocked;
         return card;
+    }
+
+    public static AbstractArcanaCard returnTrulyRandomArcana() {
+        ArrayList<AbstractCard> list = new ArrayList();
+        Iterator iterator = AbstractDungeon.srcCommonCardPool.group.iterator();
+
+        AbstractCard c;
+        while(iterator.hasNext()) {
+            c = (AbstractCard)iterator.next();
+            if (c instanceof AbstractArcanaCard && !(list.contains(c))) {
+                list.add(c);
+            }
+        }
+
+        iterator = AbstractDungeon.srcUncommonCardPool.group.iterator();
+
+        while(iterator.hasNext()) {
+            c = (AbstractCard)iterator.next();
+            if (c instanceof AbstractArcanaCard && !(list.contains(c))) {
+                list.add(c);
+            }
+        }
+
+        iterator = AbstractDungeon.srcRareCardPool.group.iterator();
+
+        while(iterator.hasNext()) {
+            c = (AbstractCard)iterator.next();
+            if (c instanceof AbstractArcanaCard && !(list.contains(c))) {
+                list.add(c);
+            }
+        }
+
+        return (AbstractArcanaCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
     }
 }

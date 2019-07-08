@@ -46,6 +46,7 @@ import theWildCard.cards.Skill.Uncommon.Impatience;
 import theWildCard.cards.Skill.Uncommon.Lock;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
+import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.DefaultClickableRelic;
 import theWildCard.relics.PlaceholderRelic;
@@ -205,11 +206,13 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(Deicide.ID);
         retVal.add(Lock.ID);
         //retVal.add(MaskChange.ID);
-        retVal.add(ShieldOfMany.ID);
+        retVal.add(UnendingRitual.ID);
+        retVal.add(UnendingRitual.ID);
+        //retVal.add(ShieldOfMany.ID);
         //retVal.add(Impatience.ID);
         //retVal.add(Unburden.ID);
         //retVal.add(Patience.ID);
-        retVal.add(Proficiency.ID);
+        //retVal.add(Proficiency.ID);
         //retVal.add(SacrificialStroke.ID);
 
 

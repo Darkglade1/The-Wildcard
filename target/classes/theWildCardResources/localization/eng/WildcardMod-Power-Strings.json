@@ -19,6 +19,14 @@
         "NAME": "Crush",
         "DESCRIPTIONS": ["Next turn, gain", " ."]
 },
+"theWildCard:UnendingRitualPower": {
+        "NAME": "Unending Ritual",
+        "DESCRIPTIONS": ["Whenever you play an Arcana this turn, add #b", " random Arcana to your hand."]
+},
+"theWildCard:UpgradedUnendingRitualPower": {
+        "NAME": "Unending Ritual",
+        "DESCRIPTIONS": ["Whenever you play an Arcana this turn, add #b", " random upgraded Arcana to your hand."]
+},
 "theWildCard:VengeancePower": {
         "NAME": "Vengeance",
         "DESCRIPTIONS": ["Whenever you lose HP this turn, gain half that amount as Strength."]

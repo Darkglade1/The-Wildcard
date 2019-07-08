@@ -90,6 +90,7 @@ theWildCard\cards\Attack\Uncommon\QuietPassing.class
 theWildCard\powers\PersonaLokiPower.class
 theWildCard\cards\Persona\Odin.class
 theWildCard\powers\HarvestPower.class
+theWildCard\powers\UnendingRitualPower.class
 theWildCard\powers\BulwarkPower.class
 theWildCard\patches\ArcanaDropRatePatchCommon.class
 theWildCard\patches\ArcanaDropRatePatchRare.class
@@ -104,6 +105,7 @@ theWildCard\cards\Skill\Uncommon\OnTheRoad.class
 theWildCard\cards\Arcana\PowerOfTheArcana.class
 theWildCard\cards\Persona\AbstractPersonaCard.class
 theWildCard\relics\PlaceholderRelic.class
+theWildCard\powers\UpgradedUnendingRitualPower.class
 theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\cards\Persona\PaleRider.class
@@ -159,6 +161,7 @@ theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Skill\Common\TwoForOne.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class
 theWildCard\powers\RarePower.class
+theWildCard\cards\Skill\Uncommon\UnendingRitual.class
 theWildCard\cards\Skill\Common\Fortify.class
 theWildCard\powers\PersonaCaesarPower.class
 theWildCard\cards\Power\Uncommon\VileAura.class

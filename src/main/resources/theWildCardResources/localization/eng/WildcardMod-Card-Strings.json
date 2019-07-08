@@ -331,6 +331,11 @@
     "NAME": "Mask Change",
     "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your deck into your hand."
   },
+  "theWildCard:UnendingRitual": {
+    "NAME": "Unending Ritual",
+    "DESCRIPTION": "Whenever you play an Arcana this turn, add a random Arcana to your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you play an Arcana this turn, add a random upgraded Arcana to your hand."
+  },
   "theWildCard:ShieldOfMany": {
     "NAME": "Shield of Many",
     "DESCRIPTION": "Gain !B! Block for each Persona in your hand."
