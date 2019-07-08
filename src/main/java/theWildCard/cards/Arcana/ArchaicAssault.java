@@ -17,7 +17,7 @@ public class ArchaicAssault extends AbstractArcanaCard {
     public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SeveringSlash.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
     private static final int COST = -1;

@@ -358,6 +358,14 @@
     "DESCRIPTION": "Put !M! cards from your discard pile into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Put !M! cards from your discard pile into your hand."
   },
+  "theWildCard:Providence": {
+    "NAME": "Providence",
+    "DESCRIPTION": "Deal !D! damage. NL If you have no Persona in your hand, gain !B! Block and heal !M! HP."
+  },
+  "theWildCard:CryOfAgony": {
+    "NAME": "Cry of Agony",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies. NL Exhaust ALL Persona in your hand."
+  },
   "theWildCard:SacrificialStroke": {
     "NAME": "Sacrificial Stroke",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust a random Persona in your hand."

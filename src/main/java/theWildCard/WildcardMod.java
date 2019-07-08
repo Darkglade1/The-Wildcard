@@ -34,6 +34,8 @@ import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
+import theWildCard.cards.Attack.Uncommon.CryOfAgony;
+import theWildCard.cards.Attack.Uncommon.Providence;
 import theWildCard.cards.Persona.AbstractPersonaCard;
 import theWildCard.cards.Persona.Alice;
 import theWildCard.cards.Persona.Amaterasu;
@@ -485,6 +487,8 @@ public class WildcardMod implements
         BaseMod.addCard(new Unburden());
         BaseMod.addCard(new Patience());
         BaseMod.addCard(new Proficiency());
+        BaseMod.addCard(new Providence());
+        BaseMod.addCard(new CryOfAgony());
         BaseMod.addCard(new SacrificialStroke());
         
         logger.info("Making sure the cards are unlocked.");
@@ -537,6 +541,8 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Unburden.ID);
         UnlockTracker.unlockCard(Patience.ID);
         UnlockTracker.unlockCard(Proficiency.ID);
+        UnlockTracker.unlockCard(Providence.ID);
+        UnlockTracker.unlockCard(CryOfAgony.ID);
         UnlockTracker.unlockCard(SacrificialStroke.ID);
         
         logger.info("Done adding cards!");

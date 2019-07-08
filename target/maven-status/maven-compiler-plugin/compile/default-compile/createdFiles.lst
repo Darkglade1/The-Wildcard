@@ -100,6 +100,7 @@ theWildCard\cards\DefaultUncommonPower.class
 theWildCard\cards\Attack\Uncommon\OneTwo.class
 theWildCard\cards\DefaultUncommonAttack.class
 theWildCard\cards\Arcana\TheArcanaUnleashed.class
+theWildCard\cards\Attack\Uncommon\CryOfAgony.class
 theWildCard\cards\DefaultCommonPower.class
 theWildCard\cards\Skill\Uncommon\OnTheRoad.class
 theWildCard\cards\Arcana\PowerOfTheArcana.class
@@ -107,6 +108,7 @@ theWildCard\cards\Persona\AbstractPersonaCard.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\powers\UpgradedUnendingRitualPower.class
 theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
+theWildCard\cards\Attack\Uncommon\Providence.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\cards\Persona\PaleRider.class
 theWildCard\powers\MomentumPower.class

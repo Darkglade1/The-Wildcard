@@ -32,6 +32,8 @@ import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
+import theWildCard.cards.Attack.Uncommon.CryOfAgony;
+import theWildCard.cards.Attack.Uncommon.Providence;
 import theWildCard.cards.Persona.Amaterasu;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.cards.Persona.Caesar;
@@ -194,7 +196,7 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(MagicMettle.ID);
 //        retVal.add(ArchaicAssault.ID);
-        //retVal.add(ArchaicAssault.ID);
+        retVal.add(ArchaicAssault.ID);
         //retVal.add(MagicalMight.ID);
         //retVal.add(MagicalMight.ID);
         //retVal.add(FinalHour.ID);
@@ -204,15 +206,17 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(TheArcanaUnleashed.ID);
         retVal.add(TheArcanaUnleashed.ID);
         //retVal.add(Deicide.ID);
-        retVal.add(Lock.ID);
+        //retVal.add(Lock.ID);
         //retVal.add(MaskChange.ID);
-        retVal.add(UnendingRitual.ID);
-        retVal.add(UnendingRitual.ID);
+        //retVal.add(UnendingRitual.ID);
+        //retVal.add(UnendingRitual.ID);
         //retVal.add(ShieldOfMany.ID);
         //retVal.add(Impatience.ID);
         //retVal.add(Unburden.ID);
         //retVal.add(Patience.ID);
         //retVal.add(Proficiency.ID);
+        retVal.add(Providence.ID);
+        retVal.add(CryOfAgony.ID);
         //retVal.add(SacrificialStroke.ID);
 
 

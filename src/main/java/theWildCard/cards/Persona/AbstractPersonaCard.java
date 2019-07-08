@@ -84,6 +84,15 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
         activePersona = persona;
     }
 
+    public static boolean checkForPersonaInHand() {
+        for (AbstractCard card : AbstractDungeon.player.hand.group) {
+            if (card instanceof AbstractPersonaCard) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private void transformArcana(AbstractCard card) {
         if (card.hasTag(Tags.ARCANA)) {
             AbstractArcanaCard arcana = (AbstractArcanaCard) card;
