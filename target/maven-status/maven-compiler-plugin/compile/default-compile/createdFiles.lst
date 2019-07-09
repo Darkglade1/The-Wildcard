@@ -136,6 +136,7 @@ theWildCard\cards\Attack\Common\Bristle.class
 theWildCard\powers\EncorePower.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$GeneralRenderOrderPatch.class
 theWildCard\variables\DefaultSecondMagicNumber.class
+theWildCard\cards\Attack\Common\StalwartBlade.class
 theWildCard\cards\Attack\Uncommon\WallOfThorns.class
 theWildCard\cards\Attack\Common\BalancedThrust.class
 theWildCard\cards\DefaultSecondMagicNumberSkill.class

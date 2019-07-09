@@ -372,7 +372,11 @@
   },
   "theWildCard:EnergizedStroke": {
     "NAME": "Energized Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Discard a card. If an Arcana was discarded this way, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Deal !D! damage. NL Discard a card. Deal !D! damage to ALL enemies for each Arcana discarded this way."
+  },
+  "theWildCard:StalwartBlade": {
+    "NAME": "Stalwart Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards. Gain !B! Block for each Arcana discarded this way."
   },
   "theWildCard:DefaultCommonAttack": {
     "NAME": "Strike",

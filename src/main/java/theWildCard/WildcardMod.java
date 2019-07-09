@@ -35,6 +35,7 @@ import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
+import theWildCard.cards.Attack.Common.StalwartBlade;
 import theWildCard.cards.Attack.Uncommon.CryOfAgony;
 import theWildCard.cards.Attack.Uncommon.Providence;
 import theWildCard.cards.Persona.AbstractPersonaCard;
@@ -492,6 +493,7 @@ public class WildcardMod implements
         BaseMod.addCard(new CryOfAgony());
         BaseMod.addCard(new SacrificialStroke());
         BaseMod.addCard(new EnergizedStroke());
+        BaseMod.addCard(new StalwartBlade());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -547,6 +549,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(CryOfAgony.ID);
         UnlockTracker.unlockCard(SacrificialStroke.ID);
         UnlockTracker.unlockCard(EnergizedStroke.ID);
+        UnlockTracker.unlockCard(StalwartBlade.ID);
         
         logger.info("Done adding cards!");
     }

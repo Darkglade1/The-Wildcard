@@ -33,6 +33,7 @@ import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
+import theWildCard.cards.Attack.Common.StalwartBlade;
 import theWildCard.cards.Attack.Uncommon.CryOfAgony;
 import theWildCard.cards.Attack.Uncommon.Providence;
 import theWildCard.cards.Persona.Amaterasu;
@@ -220,7 +221,8 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(CryOfAgony.ID);
         //retVal.add(SacrificialStroke.ID);
         retVal.add(EnergizedStroke.ID);
-        retVal.add(EnergizedStroke.ID);
+        //retVal.add(EnergizedStroke.ID);
+        retVal.add(StalwartBlade.ID);
 
 
         //retVal.add(Arsene.ID);
