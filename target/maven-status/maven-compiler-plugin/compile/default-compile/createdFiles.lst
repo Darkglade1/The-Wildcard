@@ -4,6 +4,7 @@ theWildCard\cards\Skill\Uncommon\Retribution.class
 theWildCard\cards\Skill\Uncommon\SincereOffering.class
 theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
+theWildCard\cards\Attack\Uncommon\Salvation.class
 theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\relics\PlaceholderRelic2.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
@@ -25,6 +26,7 @@ theWildCard\cards\Power\Uncommon\BalancingAct.class
 theWildCard\cards\DefaultRarePower.class
 theWildCard\cards\Persona\Arsene.class
 theWildCard\cards\Skill\Uncommon\RampantBloodlust.class
+theWildCard\cards\Attack\Rare\Overwhelm.class
 theWildCard\powers\ReincarnationPower.class
 theWildCard\cards\Persona\Thanatos.class
 theWildCard\cards\AbstractDefaultCard.class
@@ -123,12 +125,14 @@ theWildCard\cards\Skill\Uncommon\ShieldOfMany.class
 theWildCard\potions\PlaceholderPotion.class
 theWildCard\relics\BlankContractRelic.class
 theWildCard\cards\Attack\Common\SweepingSlash.class
+theWildCard\cards\Attack\Uncommon\IdentityTheft.class
 theWildCard\cards\DefaultRareSkill.class
 theWildCard\cards\Persona\Loki.class
 theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\Attack\Common\Crush.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch$Locator.class
 theWildCard\cards\Arcana\StingingStrike.class
+theWildCard\cards\Attack\Uncommon\LadyLuck.class
 theWildCard\cards\Persona\Sakuya.class
 theWildCard\cards\Arcana\SeveringSlash.class
 theWildCard\cards\Attack\Common\EbbAndFlow.class
@@ -144,6 +148,7 @@ theWildCard\cards\Persona\Caesar.class
 theWildCard\cards\Attack\Uncommon\AncientSeal.class
 theWildCard\patches\DefaultInsertPatch$Locator.class
 theWildCard\cards\Attack\Common\SacrificialStroke.class
+theWildCard\cards\Attack\Rare\Ruination.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch.class
 theWildCard\powers\PersonaMetatronPower.class
 theWildCard\powers\StrengthLossPower.class
@@ -174,6 +179,7 @@ theWildCard\cards\Power\Uncommon\VileAura.class
 theWildCard\powers\LoseThornsPower.class
 theWildCard\tags\Tags.class
 theWildCard\cards\Attack\Uncommon\SuddenDeath.class
+theWildCard\cards\Attack\Rare\Devastate.class
 theWildCard\relics\DefaultClickableRelic.class
 theWildCard\patches\DefaultInsertPatch.class
 theWildCard\cards\CardTemplate.class

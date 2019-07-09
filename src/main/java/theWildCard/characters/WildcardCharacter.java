@@ -34,8 +34,14 @@ import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Attack.Common.StalwartBlade;
+import theWildCard.cards.Attack.Rare.Devastate;
+import theWildCard.cards.Attack.Rare.Overwhelm;
+import theWildCard.cards.Attack.Rare.Ruination;
 import theWildCard.cards.Attack.Uncommon.CryOfAgony;
+import theWildCard.cards.Attack.Uncommon.IdentityTheft;
+import theWildCard.cards.Attack.Uncommon.LadyLuck;
 import theWildCard.cards.Attack.Uncommon.Providence;
+import theWildCard.cards.Attack.Uncommon.Salvation;
 import theWildCard.cards.Persona.Amaterasu;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.cards.Persona.Caesar;
@@ -217,12 +223,18 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(Unburden.ID);
         //retVal.add(Patience.ID);
         //retVal.add(Proficiency.ID);
+        retVal.add(Overwhelm.ID);
+        retVal.add(Devastate.ID);
+        retVal.add(Ruination.ID);
+        retVal.add(LadyLuck.ID);
+        retVal.add(IdentityTheft.ID);
+        retVal.add(Salvation.ID);
         //retVal.add(Providence.ID);
         //retVal.add(CryOfAgony.ID);
         //retVal.add(SacrificialStroke.ID);
-        retVal.add(EnergizedStroke.ID);
         //retVal.add(EnergizedStroke.ID);
-        retVal.add(StalwartBlade.ID);
+        //retVal.add(EnergizedStroke.ID);
+        //retVal.add(StalwartBlade.ID);
 
 
         //retVal.add(Arsene.ID);

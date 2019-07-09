@@ -358,6 +358,30 @@
     "DESCRIPTION": "Put !M! cards from your discard pile into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Put !M! cards from your discard pile into your hand."
   },
+  "theWildCard:Overwhelm": {
+    "NAME": "Overwhelm",
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
+  },
+  "theWildCard:Devastate": {
+    "NAME": "Devastate",
+    "DESCRIPTION": "If there are no Persona in your deck, deal !D! damage to ALL enemies."
+  },
+  "theWildCard:Ruination": {
+    "NAME": "Ruination",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to ALL enemies. NL Exhaust ALL your Persona. NL Exhaust."
+  },
+  "theWildCard:LadyLuck": {
+    "NAME": "Lady Luck",
+    "DESCRIPTION": "Draw X cards. NL Discard X cards. Deal !D! damage to a random enemy for each Arcana discarded this way."
+  },
+  "theWildCard:IdentityTheft": {
+    "NAME": "Identity Theft",
+    "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand."
+  },
+  "theWildCard:Salvation": {
+    "NAME": "Salvation",
+    "DESCRIPTION": "Deal !D! damage. NL If you have no Persona in your hand, draw !M! cards."
+  },
   "theWildCard:Providence": {
     "NAME": "Providence",
     "DESCRIPTION": "Deal !D! damage. NL If you have no Persona in your hand, gain !B! Block and heal !M! HP."
