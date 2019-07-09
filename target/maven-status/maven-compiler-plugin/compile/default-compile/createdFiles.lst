@@ -57,6 +57,7 @@ theWildCard\patches\ArcanaDropRatePatchCommon$Locator.class
 theWildCard\cards\Arcana\MagicMettle.class
 theWildCard\cards\Skill\Uncommon\SleightOfHand.class
 theWildCard\powers\PersonaArsenePower.class
+theWildCard\actions\DiscardArcanaAction.class
 theWildCard\cards\Persona\Lucifer.class
 theWildCard\cards\Skill\Uncommon\Execute.class
 theWildCard\patches\ArcanaDropRatePatchUncommon.class
@@ -94,6 +95,7 @@ theWildCard\powers\UnendingRitualPower.class
 theWildCard\powers\BulwarkPower.class
 theWildCard\patches\ArcanaDropRatePatchCommon.class
 theWildCard\patches\ArcanaDropRatePatchRare.class
+theWildCard\cards\Attack\Common\EnergizedStroke.class
 theWildCard\cards\Power\Uncommon\RighteousFury.class
 theWildCard\cards\Attack\Uncommon\CleansingBlow.class
 theWildCard\cards\DefaultUncommonPower.class
@@ -159,6 +161,7 @@ theWildCard\powers\LoseDrawPower.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
+theWildCard\cards\OnDiscardArcanaCard.class
 theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Skill\Common\TwoForOne.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class

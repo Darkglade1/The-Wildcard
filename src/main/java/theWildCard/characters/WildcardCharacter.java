@@ -31,6 +31,7 @@ import theWildCard.cards.Arcana.MagicalMight;
 import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
+import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Attack.Uncommon.CryOfAgony;
 import theWildCard.cards.Attack.Uncommon.Providence;
@@ -215,9 +216,11 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(Unburden.ID);
         //retVal.add(Patience.ID);
         //retVal.add(Proficiency.ID);
-        retVal.add(Providence.ID);
-        retVal.add(CryOfAgony.ID);
+        //retVal.add(Providence.ID);
+        //retVal.add(CryOfAgony.ID);
         //retVal.add(SacrificialStroke.ID);
+        retVal.add(EnergizedStroke.ID);
+        retVal.add(EnergizedStroke.ID);
 
 
         //retVal.add(Arsene.ID);
