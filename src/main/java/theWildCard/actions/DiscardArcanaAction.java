@@ -44,7 +44,7 @@ public class DiscardArcanaAction extends AbstractGameAction {
             if (this.p.hand.size() <= this.amount) {
                 this.amount = this.p.hand.size();
 
-                for(int i = 0; i < this.p.hand.size(); ++i) {
+                for(int i = 0; i < this.amount; ++i) {
                     AbstractCard c = this.p.hand.getTopCard();
                     this.p.hand.moveToDiscardPile(c);
                     if (!this.endTurn) {

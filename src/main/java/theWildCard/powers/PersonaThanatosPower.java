@@ -56,12 +56,17 @@ public class PersonaThanatosPower extends AbstractPower {
             }
 
             AbstractCard tmp = card.makeSameInstanceOf();
+            AbstractDungeon.player.limbo.addToBottom(tmp);
             tmp.current_x = card.current_x;
             tmp.current_y = card.current_y;
             tmp.target_x = (float) Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
             tmp.target_y = (float) Settings.HEIGHT / 2.0F;
             tmp.freeToPlayOnce = true;
-            tmp.applyPowers();
+
+            if (m != null) {
+                tmp.calculateCardDamage(m);
+            }
+
             tmp.purgeOnUse = true;
             AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true));
         }
