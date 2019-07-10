@@ -1,4 +1,5 @@
 theWildCard\patches\ArcanaPreviewRenderOrderPatch.class
+theWildCard\cards\Power\Rare\TheUniverse.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\cards\Skill\Uncommon\Retribution.class
 theWildCard\cards\Skill\Uncommon\SincereOffering.class
@@ -22,6 +23,7 @@ theWildCard\cards\DefaultUncommonSkill.class
 theWildCard\patches\PowerOnKillPatch.class
 theWildCard\cards\Persona\Satanael.class
 theWildCard\patches\ArcanaDropRatePatchUncommon$Locator.class
+theWildCard\cards\Power\Uncommon\Abstinence.class
 theWildCard\cards\Power\Uncommon\BalancingAct.class
 theWildCard\cards\DefaultRarePower.class
 theWildCard\cards\Persona\Arsene.class
@@ -59,6 +61,7 @@ theWildCard\patches\ArcanaDropRatePatchCommon$Locator.class
 theWildCard\cards\Arcana\MagicMettle.class
 theWildCard\cards\Skill\Uncommon\SleightOfHand.class
 theWildCard\powers\PersonaArsenePower.class
+theWildCard\powers\AbstinencePower.class
 theWildCard\actions\DiscardArcanaAction.class
 theWildCard\cards\Persona\Lucifer.class
 theWildCard\cards\Skill\Uncommon\Execute.class
@@ -116,11 +119,13 @@ theWildCard\patches\ArcanaDropRatePatchRare$Locator.class
 theWildCard\cards\Attack\Uncommon\Providence.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\cards\Persona\PaleRider.class
+theWildCard\cards\Power\Uncommon\ManOfManyFaces.class
 theWildCard\powers\MomentumPower.class
 theWildCard\cards\Attack\Uncommon\DivineWhirl.class
 theWildCard\powers\PersonaMichaelPower.class
 theWildCard\cards\Persona\Amaterasu.class
 theWildCard\cards\Power\Uncommon\RegalBearing.class
+theWildCard\powers\TheUniversePower.class
 theWildCard\cards\DefaultCommonAttack.class
 theWildCard\cards\Skill\Uncommon\ShieldOfMany.class
 theWildCard\potions\PlaceholderPotion.class
@@ -141,6 +146,7 @@ theWildCard\cards\Attack\Common\Bristle.class
 theWildCard\powers\EncorePower.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$GeneralRenderOrderPatch.class
 theWildCard\variables\DefaultSecondMagicNumber.class
+theWildCard\cards\OnDiscardArcanaPower.class
 theWildCard\cards\Attack\Common\StalwartBlade.class
 theWildCard\cards\Attack\Uncommon\WallOfThorns.class
 theWildCard\cards\Attack\Common\BalancedThrust.class
@@ -171,7 +177,10 @@ theWildCard\actions\PersonaFromDeckToHandAction.class
 theWildCard\cards\OnDiscardArcanaCard.class
 theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Skill\Common\TwoForOne.class
+theWildCard\cards\Power\Rare\FuelForTheFire.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class
+theWildCard\powers\FuelForTheFirePower.class
+theWildCard\powers\ManOfManyFacesPower.class
 theWildCard\powers\RarePower.class
 theWildCard\cards\Skill\Uncommon\UnendingRitual.class
 theWildCard\cards\Skill\Common\Fortify.class

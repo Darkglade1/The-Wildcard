@@ -9,8 +9,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.cards.Arcana.AbstractArcanaCard;
 import theWildCard.cards.OnDiscardArcanaCard;
+import theWildCard.cards.OnDiscardArcanaPower;
 
 import java.util.Iterator;
 
@@ -52,6 +54,13 @@ public class DiscardArcanaAction extends AbstractGameAction {
                     }
                     if (c instanceof AbstractArcanaCard) {
                         sourceCard.onDiscardArcana();
+                        Iterator iterator = this.p.powers.iterator();
+                        while(iterator.hasNext()) {
+                            AbstractPower power = (AbstractPower)iterator.next();
+                            if (power instanceof OnDiscardArcanaPower) {
+                                ((OnDiscardArcanaPower)power).onDiscardArcana();
+                            }
+                        }
                     }
 
                     GameActionManager.incrementDiscard(this.endTurn);
@@ -86,6 +95,13 @@ public class DiscardArcanaAction extends AbstractGameAction {
                 c.triggerOnManualDiscard();
                 if (c instanceof AbstractArcanaCard) {
                     sourceCard.onDiscardArcana();
+                    Iterator iterator = this.p.powers.iterator();
+                    while(iterator.hasNext()) {
+                        AbstractPower power = (AbstractPower)iterator.next();
+                        if (power instanceof OnDiscardArcanaPower) {
+                            ((OnDiscardArcanaPower)power).onDiscardArcana();
+                        }
+                    }
                 }
                 GameActionManager.incrementDiscard(this.endTurn);
             }
@@ -100,6 +116,13 @@ public class DiscardArcanaAction extends AbstractGameAction {
                 c.triggerOnManualDiscard();
                 if (c instanceof AbstractArcanaCard) {
                     sourceCard.onDiscardArcana();
+                    Iterator iterator = this.p.powers.iterator();
+                    while(iterator.hasNext()) {
+                        AbstractPower power = (AbstractPower)iterator.next();
+                        if (power instanceof OnDiscardArcanaPower) {
+                            ((OnDiscardArcanaPower)power).onDiscardArcana();
+                        }
+                    }
                 }
                 GameActionManager.incrementDiscard(this.endTurn);
             }

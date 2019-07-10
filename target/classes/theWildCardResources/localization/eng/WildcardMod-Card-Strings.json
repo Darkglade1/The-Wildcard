@@ -319,6 +319,22 @@
     "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice.",
     "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice."
   },
+  "theWildCard:TheUniverse": {
+    "NAME": "The Universe",
+    "DESCRIPTION": "At the start of your turn, add a random Persona to your hand."
+  },
+  "theWildCard:FuelForTheFire": {
+    "NAME": "Fuel for the Fire",
+    "DESCRIPTION": "Whenever you exhaust a Persona or discard an Arcana, draw a card."
+  },
+  "theWildCard:ManOfManyFaces": {
+    "NAME": "Man of Many Faces",
+    "DESCRIPTION": "Whenever you play a Persona, draw a card."
+  },
+  "theWildCard:Abstinence": {
+    "NAME": "Abstinence",
+    "DESCRIPTION": "If you have no Persona in your hand at the end of your turn, gain !M! Block."
+  },
   "theWildCard:Deicide": {
     "NAME": "Deicide",
     "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."

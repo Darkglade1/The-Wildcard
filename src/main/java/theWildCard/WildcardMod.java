@@ -61,6 +61,10 @@ import theWildCard.cards.Persona.Sakuya;
 import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Scathach;
 import theWildCard.cards.Persona.Thanatos;
+import theWildCard.cards.Power.Rare.FuelForTheFire;
+import theWildCard.cards.Power.Rare.TheUniverse;
+import theWildCard.cards.Power.Uncommon.Abstinence;
+import theWildCard.cards.Power.Uncommon.ManOfManyFaces;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
@@ -447,21 +451,6 @@ public class WildcardMod implements
         
         logger.info("Adding cards");
         // Add the cards
-        // Don't comment out/delete these cards (yet). You need 1 of each type and rarity (technically) for your game not to crash
-        // when generating card rewards/shop screen items.
-        
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
-        BaseMod.addCard(new DefaultCommonAttack());
-        BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new DefaultCommonSkill());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonSkill());
-        BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
-        BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRareSkill());
-        BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new SeveringSlash());
         BaseMod.addCard(new StingingStrike());
         BaseMod.addCard(new ArcaneArts());
@@ -487,6 +476,10 @@ public class WildcardMod implements
         BaseMod.addCard(new Satanael());
         BaseMod.addCard(new Lucifer());
         BaseMod.addCard(new Thanatos());
+        BaseMod.addCard(new TheUniverse());
+        BaseMod.addCard(new FuelForTheFire());
+        BaseMod.addCard(new ManOfManyFaces());
+        BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
         BaseMod.addCard(new Lock());
         BaseMod.addCard(new MaskChange());
@@ -511,20 +504,6 @@ public class WildcardMod implements
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
-        // This is so that they are all "seen" in the library, for people who like to look at the card list
-        // before playing your mod.
-        UnlockTracker.unlockCard(OrbSkill.ID);
-        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
-        UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRareSkill.ID);
-        UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(SeveringSlash.ID);
         UnlockTracker.unlockCard(StingingStrike.ID);
         UnlockTracker.unlockCard(ArcaneArts.ID);
@@ -550,6 +529,10 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Satanael.ID);
         UnlockTracker.unlockCard(Lucifer.ID);
         UnlockTracker.unlockCard(Thanatos.ID);
+        UnlockTracker.unlockCard(TheUniverse.ID);
+        UnlockTracker.unlockCard(FuelForTheFire.ID);
+        UnlockTracker.unlockCard(ManOfManyFaces.ID);
+        UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
         UnlockTracker.unlockCard(Lock.ID);
         UnlockTracker.unlockCard(MaskChange.ID);

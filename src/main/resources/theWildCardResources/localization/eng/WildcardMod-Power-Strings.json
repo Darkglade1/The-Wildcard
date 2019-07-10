@@ -39,6 +39,22 @@
         "NAME": "Rampant Bloodlust",
         "DESCRIPTIONS": ["If you do not kill an enemy, lose", " next turn."]
 },
+"theWildCard:TheUniversePower": {
+        "NAME": "The Universe",
+        "DESCRIPTIONS": ["At the start of your turn, add #b", " random Persona to your hand."]
+},
+"theWildCard:FuelForTheFirePower": {
+        "NAME": "Fuel for the Fire",
+        "DESCRIPTIONS": ["Whenever you exhaust a Persona or discard an Arcana, draw #b", " card.", " cards."]
+},
+"theWildCard:ManOfManyFacesPower": {
+        "NAME": "Man of Many Faces",
+        "DESCRIPTIONS": ["Whenever you play a Persona, draw #b", " card.", " cards."]
+},
+"theWildCard:AbstinencePower": {
+        "NAME": "Abstinence",
+        "DESCRIPTIONS": ["If you have no Persona in your hand at the end of your turn, gain #b", " Block."]
+},
 "theWildCard:SubduingPresencePower": {
         "NAME": "Subduing Presence",
         "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to ALL enemies."]
