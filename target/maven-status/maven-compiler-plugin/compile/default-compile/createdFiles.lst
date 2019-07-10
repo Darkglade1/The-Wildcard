@@ -108,6 +108,7 @@ theWildCard\cards\Attack\Uncommon\CryOfAgony.class
 theWildCard\cards\DefaultCommonPower.class
 theWildCard\cards\Skill\Uncommon\OnTheRoad.class
 theWildCard\cards\Arcana\PowerOfTheArcana.class
+theWildCard\cards\Attack\Rare\AllOutAttack.class
 theWildCard\cards\Persona\AbstractPersonaCard.class
 theWildCard\relics\PlaceholderRelic.class
 theWildCard\powers\UpgradedUnendingRitualPower.class

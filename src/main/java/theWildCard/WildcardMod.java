@@ -36,6 +36,7 @@ import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Attack.Common.StalwartBlade;
+import theWildCard.cards.Attack.Rare.AllOutAttack;
 import theWildCard.cards.Attack.Rare.Devastate;
 import theWildCard.cards.Attack.Rare.Overwhelm;
 import theWildCard.cards.Attack.Rare.Ruination;
@@ -495,6 +496,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Unburden());
         BaseMod.addCard(new Patience());
         BaseMod.addCard(new Proficiency());
+        BaseMod.addCard(new AllOutAttack());
         BaseMod.addCard(new Overwhelm());
         BaseMod.addCard(new Devastate());
         BaseMod.addCard(new Ruination());
@@ -557,6 +559,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Unburden.ID);
         UnlockTracker.unlockCard(Patience.ID);
         UnlockTracker.unlockCard(Proficiency.ID);
+        UnlockTracker.unlockCard(AllOutAttack.ID);
         UnlockTracker.unlockCard(Overwhelm.ID);
         UnlockTracker.unlockCard(Devastate.ID);
         UnlockTracker.unlockCard(Ruination.ID);

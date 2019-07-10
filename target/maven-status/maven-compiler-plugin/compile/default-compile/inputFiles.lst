@@ -3,6 +3,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\util\IDCheckDontTouchPls.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\MagicMettle.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultUncommonPower.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\IdentityTheft.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaSakuyaPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\WitchsStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\SeveringSlash.java
@@ -51,6 +52,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\events\IdentityCrisisEvent.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\HarvestPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaAmaterasuPower.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\actions\DiscardArcanaAction.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Rare\LastRites.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaSatanaelPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\relics\BlankContractRelic.java
@@ -58,8 +60,10 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultCommonPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\PowerOfTheArcana.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Common\DebilitatingSpell.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\EnergizedStroke.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\AncientSeal.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\ArcaneArts.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Rare\Overwhelm.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\DefaultInsertPatch.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\Crush.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Caesar.java
@@ -73,6 +77,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\variables\ArcanaEnums.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\WardingBlow.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\VengeancePower.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\LadyLuck.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\characters\WildcardCharacter.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Scathach.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaAlicePower.java
@@ -98,11 +103,13 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\RarePower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\CardTemplate.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\OnTheRoad.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Rare\Devastate.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Alice.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\ArchaicAssault.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\DefaultUncommonSkill.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Amaterasu.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\potions\PlaceholderPotion.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Rare\Ruination.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\UnendingRitual.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Thanatos.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\DivineWhirl.java
@@ -116,6 +123,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaPaleRiderPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Polydeuces.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\Providence.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\OnDiscardArcanaCard.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\SincereOffering.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Power\Uncommon\BalancingAct.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\actions\KillAction.java
@@ -137,6 +145,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\SweepingSlash.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\StingingStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\WildcardMod.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\Salvation.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\ReincarnationPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Metatron.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\SacrificialStroke.java
@@ -144,12 +153,14 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Loki.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\ArcanaDropRatePatchUncommon.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\util\TextureLoader.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Rare\AllOutAttack.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\QuietPassing.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaOdinPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Power\Rare\Momentum.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\RampantBloodlust.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\SpikyShield.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\actions\UncommonPowerAction.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\StalwartBlade.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\AbstractDefaultCard.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\FinalHour.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Common\Fortify.java

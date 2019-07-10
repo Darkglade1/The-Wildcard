@@ -358,6 +358,11 @@
     "DESCRIPTION": "Put !M! cards from your discard pile into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Put !M! cards from your discard pile into your hand."
   },
+  "theWildCard:AllOutAttack": {
+    "NAME": "All Out Attack",
+    "DESCRIPTION": "For each Persona in your deck, play a copy of a random Attack from your deck. NL Ethereal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "For each Persona in your deck, play a copy of a random Attack from your deck. NL Exhaust."
+  },
   "theWildCard:Overwhelm": {
     "NAME": "Overwhelm",
     "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
