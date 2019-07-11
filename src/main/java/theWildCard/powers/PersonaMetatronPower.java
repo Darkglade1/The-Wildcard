@@ -35,6 +35,7 @@ public class PersonaMetatronPower extends AbstractPower {
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
     private static boolean isValid = false;
+    private static AbstractCard usedCard;
 
     public PersonaMetatronPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;
@@ -58,13 +59,14 @@ public class PersonaMetatronPower extends AbstractPower {
         if (card.type == AbstractCard.CardType.ATTACK) {
             if (card.target == AbstractCard.CardTarget.ENEMY || card.target == AbstractCard.CardTarget.SELF_AND_ENEMY) {
                 isValid = true;
+                usedCard = card;
             }
         }
     }
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (isValid) {
+        if (isValid && usedCard != null) {
             AbstractPlayer p = AbstractDungeon.player;
             Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
             while (iterator.hasNext()) {
@@ -72,9 +74,11 @@ public class PersonaMetatronPower extends AbstractPower {
                 if (target != mo && !mo.isDeadOrEscaped()) {
                     AbstractDungeon.actionManager.addToTop(new SFXAction("ATTACK_HEAVY"));
                     AbstractDungeon.actionManager.addToTop(new VFXAction(p, new CleaveEffect(), 0.1F));
-                    info.owner = target; //sets owner to target so the damage method doesn't call this onAttack and create an infinite loop
+                    usedCard.calculateCardDamage(mo); //Allows Metatron to adjust damage based on if Vulnerable/other effects are on the other monsters
+                    //sets damageInfo's owner to target so the damage method doesn't call this onAttack and create an infinite loop
                     //Prefer setting this to target over null to ensure that certain monster powers still work (like the bug's Curl Up)
-                    mo.damage(info);
+                    DamageInfo damageInfo = new DamageInfo(target, usedCard.damage, info.type);
+                    mo.damage(damageInfo);
                 }
             }
         }
@@ -84,6 +88,7 @@ public class PersonaMetatronPower extends AbstractPower {
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (isValid) {
             isValid = false;
+            usedCard = null;
         }
     }
 }

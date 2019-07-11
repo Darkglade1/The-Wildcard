@@ -206,15 +206,15 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
+        retVal.add(SeveringSlash.ID);
 //        retVal.add(SeveringSlash.ID);
-//        retVal.add(SeveringSlash.ID);
 //        retVal.add(StingingStrike.ID);
-//        retVal.add(StingingStrike.ID);
+        retVal.add(StingingStrike.ID);
 //        retVal.add(StingingStrike.ID);
 //        retVal.add(ArcaneArts.ID);
 //        retVal.add(ArcaneArts.ID);
 //        retVal.add(ArcaneArts.ID);
-        retVal.add(ArcanaArtistry.ID);
+        //retVal.add(ArcanaArtistry.ID);
         //retVal.add(ArcanaArtistry.ID);
 //        retVal.add(MagicMettle.ID);
         retVal.add(MagicMettle.ID);
@@ -234,7 +234,7 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(FuelForTheFire.ID);
 //        retVal.add(ManOfManyFaces.ID);
 //        retVal.add(ManOfManyFaces.ID);
-       retVal.add(Attunement.ID);
+       //retVal.add(Attunement.ID);
         //retVal.add(Abstinence.ID);
 //        retVal.add(Abstinence.ID);
         //retVal.add(Deicide.ID);
@@ -262,20 +262,20 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(StalwartBlade.ID);
 
 
-        retVal.add(Arsene.ID);
-        retVal.add(Michael.ID);
-        retVal.add(PaleRider.ID);
-        retVal.add(Polydeuces.ID);
-        retVal.add(Sakuya.ID);
-        retVal.add(Scathach.ID);
-        retVal.add(Odin.ID);
-        retVal.add(Loki.ID);
+//        retVal.add(Arsene.ID);
+//        retVal.add(Michael.ID);
+//        retVal.add(PaleRider.ID);
+//        retVal.add(Polydeuces.ID);
+//        retVal.add(Sakuya.ID);
+//        retVal.add(Scathach.ID);
+//        retVal.add(Odin.ID);
+//        retVal.add(Loki.ID);
         retVal.add(Metatron.ID);
-        retVal.add(Alice.ID);
+//        retVal.add(Alice.ID);
         retVal.add(Amaterasu.ID);
         retVal.add(Caesar.ID);
         retVal.add(Satanael.ID);
-        retVal.add(Lucifer.ID);
+        //retVal.add(Lucifer.ID);
         retVal.add(Thanatos.ID);
         return retVal;
     }
