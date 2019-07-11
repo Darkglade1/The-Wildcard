@@ -7,11 +7,17 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInsertLocator;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen;
 import com.megacrit.cardcrawl.screens.mainMenu.ScrollBar;
+import com.megacrit.cardcrawl.shop.ShopScreen;
 import javassist.CtBehavior;
+import theWildCard.cards.Arcana.AbstractArcanaCard;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 // A patch to force the Arcana preview to render last on various screens so the previews aren't covered up by as many things
 public class ArcanaPreviewRenderOrderPatch {
@@ -36,6 +42,15 @@ public class ArcanaPreviewRenderOrderPatch {
             if (instance.screen == AbstractDungeon.CurrentScreen.DISCARD_VIEW) {
                 AbstractDungeon.player.discardPile.renderTip(sb);
             }
+            if (instance.screen == AbstractDungeon.CurrentScreen.SHOP) {
+                if (AbstractArcanaCard.shopCards != null) {
+                    Iterator iterator = AbstractArcanaCard.shopCards.iterator();
+                    while(iterator.hasNext()) {
+                        AbstractCard c = (AbstractCard)iterator.next();
+                        c.renderCardTip(sb);
+                    }
+                }
+            }
         }
     }
 
@@ -57,6 +72,25 @@ public class ArcanaPreviewRenderOrderPatch {
                 int[] lines = LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
                 lines[0]++;
                 return lines;
+            }
+        }
+    }
+
+    //Extracts the shop cards so their card tips can be rendered last so Arcana preview isn't covered up by the top bar
+    @SpirePatch(
+            clz = ShopScreen.class,
+            method = "render"
+    )
+    public static class ShopScreenRenderOrderPatch {
+        @SpireInsertPatch(locator = ShopScreenRenderOrderPatch.Locator.class, localvars = {"coloredCards"})
+        public static void changeRenderOrder(ShopScreen instance, SpriteBatch sb, ArrayList<AbstractCard> coloredCards) {
+            AbstractArcanaCard.shopCards = coloredCards;
+        }
+        private static class Locator extends SpireInsertLocator {
+            @Override
+            public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
+                Matcher finalMatcher = new Matcher.MethodCallMatcher(ShopScreen.class, "renderCardsAndPrices");
+                return LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
             }
         }
     }

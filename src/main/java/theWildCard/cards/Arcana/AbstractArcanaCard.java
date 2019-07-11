@@ -31,6 +31,8 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     public AbstractDefaultCard cardToPreviewDeath;
     public boolean isLocked = false;
 
+    public static ArrayList<AbstractCard> shopCards;
+
 
     public AbstractArcanaCard(final String id,
                               final String img,

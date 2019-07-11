@@ -121,6 +121,7 @@ theWildCard\cards\Attack\Uncommon\Providence.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\cards\Persona\PaleRider.class
 theWildCard\cards\Power\Uncommon\ManOfManyFaces.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch.class
 theWildCard\powers\MomentumPower.class
 theWildCard\cards\Attack\Uncommon\DivineWhirl.class
 theWildCard\powers\PersonaMichaelPower.class
@@ -165,6 +166,7 @@ theWildCard\characters\WildcardCharacter$Enums.class
 theWildCard\cards\Skill\Rare\LastRites.class
 theWildCard\cards\Skill\Uncommon\Impatience.class
 theWildCard\orbs\DefaultOrb.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch$Locator.class
 theWildCard\powers\VengeancePower.class
 theWildCard\cards\Skill\Uncommon\MaskChange.class
 theWildCard\powers\PersonaAmaterasuPower.class
