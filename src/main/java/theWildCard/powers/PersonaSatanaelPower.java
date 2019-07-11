@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
+import theWildCard.cards.Persona.Satanael;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makePowerPath;
@@ -21,18 +22,17 @@ public class PersonaSatanaelPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    public static int RETAIN;
+    public static int RETAIN = Satanael.RETAIN;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public PersonaSatanaelPower(final AbstractCreature owner, final AbstractCreature source, int amount) {
+    public PersonaSatanaelPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.source = source;
-        RETAIN = amount;
 
         type = PowerType.BUFF;
         isTurnBased = false;

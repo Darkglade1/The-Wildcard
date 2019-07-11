@@ -331,6 +331,11 @@
     "NAME": "Man of Many Faces",
     "DESCRIPTION": "Whenever you play a Persona, draw a card."
   },
+  "theWildCard:Attunement": {
+    "NAME": "Attunement",
+    "DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona."
+  },
   "theWildCard:Abstinence": {
     "NAME": "Abstinence",
     "DESCRIPTION": "If you have no Persona in your hand at the end of your turn, gain !M! Block."

@@ -28,18 +28,16 @@ public class Caesar extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Caesar() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.EMPEROR, new PersonaCaesarPower(AbstractDungeon.player, AbstractDungeon.player, ARTIFACT));
         magicNumber = baseMagicNumber = ARTIFACT;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = INITIAL_ARTIFACT;
-        cardArcana = ArcanaEnums.Arcana.EMPEROR;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ArtifactPower(p, INITIAL_ARTIFACT), INITIAL_ARTIFACT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaCaesarPower(p, p, ARTIFACT), 0));
-        changePersona(PersonaCaesarPower.POWER_ID);
+        if (AbstractPersonaCard.canChangePersona) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ArtifactPower(p, INITIAL_ARTIFACT), INITIAL_ARTIFACT));
+        }
     }
 }

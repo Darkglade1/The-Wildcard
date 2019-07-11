@@ -1,9 +1,6 @@
 package theWildCard.cards.Persona;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaOdinPower;
@@ -26,16 +23,7 @@ public class Odin extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Odin() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.EMPEROR, new PersonaOdinPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = BLOCK;
-        cardArcana = ArcanaEnums.Arcana.EMPEROR;
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaOdinPower(p, p), 0));
-        changePersona(PersonaOdinPower.POWER_ID);
     }
 }

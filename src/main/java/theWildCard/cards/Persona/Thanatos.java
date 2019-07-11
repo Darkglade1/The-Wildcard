@@ -1,9 +1,6 @@
 package theWildCard.cards.Persona;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaThanatosPower;
@@ -24,21 +21,6 @@ public class Thanatos extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Thanatos() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        cardArcana = ArcanaEnums.Arcana.DEATH;
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaThanatosPower(p, p), 0));
-        changePersona(PersonaThanatosPower.POWER_ID);
-//        System.out.println(AbstractDungeon.commonCardPool);
-//        System.out.println(AbstractDungeon.srcCommonCardPool);
-//        System.out.println(AbstractDungeon.uncommonCardPool);
-//        System.out.println(AbstractDungeon.srcUncommonCardPool);
-//        System.out.println(AbstractDungeon.rareCardPool);
-//        System.out.println(AbstractDungeon.srcRareCardPool);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.DEATH, new PersonaThanatosPower(AbstractDungeon.player, AbstractDungeon.player));
     }
 }

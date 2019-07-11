@@ -27,18 +27,16 @@ public class Polydeuces extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Polydeuces() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.EMPEROR, new PersonaPolydeucesPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = DEXTERITY;
-        cardArcana = ArcanaEnums.Arcana.EMPEROR;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new DexterityPower(p, magicNumber), magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaPolydeucesPower(p, p), 0));
-        changePersona(PersonaPolydeucesPower.POWER_ID);
+        if (AbstractPersonaCard.canChangePersona) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new DexterityPower(p, magicNumber), magicNumber));
+        }
     }
 }

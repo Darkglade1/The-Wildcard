@@ -1,6 +1,5 @@
 package theWildCard.cards.Persona;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -18,7 +17,7 @@ public class Loki extends AbstractPersonaCard {
     public static final String IMG = makeCardPath("Attack.png");
 
     public static final int DRAW = 1;
-    public static final int DRAWPOWER = 2;
+    public static final int DRAW_POWER = 2;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -28,18 +27,16 @@ public class Loki extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Loki() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.FOOL, new PersonaLokiPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = DRAW;
-        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DRAWPOWER;
-        cardArcana = ArcanaEnums.Arcana.FOOL;
+        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DRAW_POWER;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaLokiPower(p, p), 0));
-        changePersona(PersonaLokiPower.POWER_ID);
+        if (AbstractPersonaCard.canChangePersona) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
+        }
     }
 }

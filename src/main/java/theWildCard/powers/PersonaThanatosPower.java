@@ -56,6 +56,7 @@ public class PersonaThanatosPower extends AbstractPower {
             }
 
             AbstractCard tmp = card.makeSameInstanceOf();
+
             AbstractDungeon.player.limbo.addToBottom(tmp);
             tmp.current_x = card.current_x;
             tmp.current_y = card.current_y;

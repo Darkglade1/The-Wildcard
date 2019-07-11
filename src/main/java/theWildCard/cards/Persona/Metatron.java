@@ -25,15 +25,6 @@ public class Metatron extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Metatron() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        cardArcana = ArcanaEnums.Arcana.JUDGEMENT;
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaMetatronPower(p, p), 0));
-        changePersona(PersonaMetatronPower.POWER_ID);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.JUDGEMENT, new PersonaMetatronPower(AbstractDungeon.player, AbstractDungeon.player));
     }
 }

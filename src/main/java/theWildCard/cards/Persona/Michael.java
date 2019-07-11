@@ -28,19 +28,17 @@ public class Michael extends AbstractPersonaCard {
 
 
     public Michael() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.JUDGEMENT, new PersonaMichaelPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = STRENGTH;
-        cardArcana = ArcanaEnums.Arcana.JUDGEMENT;
     }
 
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new StrengthPower(p, magicNumber), magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaMichaelPower(p, p), 0));
-        changePersona(PersonaMichaelPower.POWER_ID);
+        if (AbstractPersonaCard.canChangePersona) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new StrengthPower(p, magicNumber), magicNumber));
+        }
     }
 }

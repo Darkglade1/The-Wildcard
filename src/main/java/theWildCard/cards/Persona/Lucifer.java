@@ -1,9 +1,6 @@
 package theWildCard.cards.Persona;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaLuciferPower;
@@ -24,15 +21,6 @@ public class Lucifer extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Lucifer() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        cardArcana = ArcanaEnums.Arcana.JUDGEMENT;
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaLuciferPower(p, p), 0));
-        changePersona(PersonaLuciferPower.POWER_ID);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.JUDGEMENT, new PersonaLuciferPower(AbstractDungeon.player, AbstractDungeon.player));
     }
 }

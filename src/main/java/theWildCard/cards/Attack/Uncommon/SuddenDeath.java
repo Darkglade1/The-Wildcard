@@ -47,6 +47,8 @@ public class SuddenDeath extends AbstractDefaultCard {
         if (energyOnUse > 0) {
             effect = energyOnUse;
         }
+        System.out.println(effect);
+        System.out.println(energyOnUse);
         if (p.hasRelic("Chemical X")) {
             effect += 2;
             p.getRelic("Chemical X").flash();

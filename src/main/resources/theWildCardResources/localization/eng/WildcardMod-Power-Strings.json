@@ -51,6 +51,10 @@
         "NAME": "Man of Many Faces",
         "DESCRIPTIONS": ["Whenever you play a Persona, draw #b", " card.", " cards."]
 },
+"theWildCard:AttunementPower": {
+        "NAME": "Attunement",
+        "DESCRIPTIONS": ["Whenever you play your active Persona again, gain #b", " Strength and #b", " Dexterity. You can no longer change Persona."]
+},
 "theWildCard:AbstinencePower": {
         "NAME": "Abstinence",
         "DESCRIPTIONS": ["If you have no Persona in your hand at the end of your turn, gain #b", " Block."]

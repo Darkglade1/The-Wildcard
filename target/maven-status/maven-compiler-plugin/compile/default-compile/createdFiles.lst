@@ -42,6 +42,7 @@ theWildCard\cards\Skill\Uncommon\SpikyShield.class
 theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\powers\PersonaLuciferPower.class
 theWildCard\cards\Attack\Common\FlurryOfBlows.class
+theWildCard\cards\Power\Uncommon\Attunement.class
 theWildCard\cards\Power\Uncommon\SubduingPresence.class
 theWildCard\cards\OnKillPowerCard.class
 theWildCard\powers\PersonaScathachPower.class
@@ -180,6 +181,7 @@ theWildCard\cards\Skill\Common\TwoForOne.class
 theWildCard\cards\Power\Rare\FuelForTheFire.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class
 theWildCard\powers\FuelForTheFirePower.class
+theWildCard\powers\AttunementPower.class
 theWildCard\powers\ManOfManyFacesPower.class
 theWildCard\powers\RarePower.class
 theWildCard\cards\Skill\Uncommon\UnendingRitual.class

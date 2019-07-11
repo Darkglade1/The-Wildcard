@@ -1,9 +1,6 @@
 package theWildCard.cards.Persona;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaScathachPower;
@@ -26,16 +23,7 @@ public class Scathach extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Scathach() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.PRIESTESS, new PersonaScathachPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = HEAL;
-        cardArcana = ArcanaEnums.Arcana.PRIESTESS;
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaScathachPower(p, p, HEAL), 0));
-        changePersona(PersonaScathachPower.POWER_ID);
     }
 }

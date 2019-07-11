@@ -21,7 +21,7 @@ public class Sakuya extends AbstractPersonaCard {
     public static final String IMG = makeCardPath("Attack.png");
 
     public static final int WEAK = 1;
-    public static final int WEAKPOWER = 2;
+    public static final int WEAK_POWER = 2;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -31,22 +31,20 @@ public class Sakuya extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Sakuya() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.PRIESTESS, new PersonaSakuyaPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = WEAK;
-        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = WEAKPOWER;
-        cardArcana = ArcanaEnums.Arcana.PRIESTESS;
+        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = WEAK_POWER;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
-        Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        while(iterator.hasNext()) {
-            AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        if (AbstractPersonaCard.canChangePersona) {
+            Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+            while(iterator.hasNext()) {
+                AbstractMonster mo = (AbstractMonster)iterator.next();
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+            }
         }
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaSakuyaPower(p, p), 0));
-        changePersona(PersonaSakuyaPower.POWER_ID);
     }
 }

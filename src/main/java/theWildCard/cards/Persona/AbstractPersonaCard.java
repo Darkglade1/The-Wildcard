@@ -1,10 +1,12 @@
 package theWildCard.cards.Persona;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.cards.Arcana.AbstractArcanaCard;
 import theWildCard.tags.Tags;
@@ -18,7 +20,9 @@ import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     private static String activePersona;
-    public ArcanaEnums.Arcana cardArcana;
+    public static boolean canChangePersona = true;
+    private ArcanaEnums.Arcana cardArcana;
+    private AbstractPower personaPower;
 
     public AbstractPersonaCard(final String id,
                                final String img,
@@ -26,7 +30,9 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
                                final CardType type,
                                final CardColor color,
                                final CardRarity rarity,
-                               final CardTarget target) {
+                               final CardTarget target,
+                               final ArcanaEnums.Arcana cardArcana,
+                               final AbstractPower personaPower) {
 
         super(id, img, cost, type, color, rarity, target);
 
@@ -37,6 +43,8 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
         isBlockModified = false;
         isMagicNumberModified = false;
         this.retain = true;
+        this.cardArcana = cardArcana;
+        this.personaPower = personaPower;
         tags.add(Tags.PERSONA);
     }
 
@@ -53,20 +61,30 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        removePersonaPower(p);
-        if (ArcanaEnums.getActiveArcana() != cardArcana) {
-            ArcanaEnums.changeArcana(cardArcana);
-            for (AbstractCard card: AbstractDungeon.player.hand.group) {
-                transformArcana(card);
+        if (canChangePersona) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    personaPower, 0));
+            removePersonaPower(p);
+            activePersona = personaPower.ID;
+            if (ArcanaEnums.getActiveArcana() != cardArcana) {
+                ArcanaEnums.changeArcana(cardArcana);
+                for (AbstractCard card: AbstractDungeon.player.hand.group) {
+                    transformArcana(card);
+                }
+                for (AbstractCard card: AbstractDungeon.player.drawPile.group) {
+                    transformArcana(card);
+                }
+                for (AbstractCard card: AbstractDungeon.player.discardPile.group) {
+                    transformArcana(card);
+                }
+                for (AbstractCard card: AbstractDungeon.player.exhaustPile.group) {
+                    transformArcana(card);
+                }
             }
-            for (AbstractCard card: AbstractDungeon.player.drawPile.group) {
-                transformArcana(card);
-            }
-            for (AbstractCard card: AbstractDungeon.player.discardPile.group) {
-                transformArcana(card);
-            }
-            for (AbstractCard card: AbstractDungeon.player.exhaustPile.group) {
-                transformArcana(card);
+        } else {
+            if (personaPower.ID.equals(activePersona)) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                        personaPower, 0));
             }
         }
     }
@@ -77,7 +95,7 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
         this.retain = true;
     }
 
-    public void removePersonaPower(AbstractPlayer p) {
+    private void removePersonaPower(AbstractPlayer p) {
         if (activePersona != null) {
             AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(p, p, activePersona));
         }
@@ -85,6 +103,10 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     public static void changePersona(String persona) {
         activePersona = persona;
+    }
+
+    public static String getActivePersona() {
+        return activePersona;
     }
 
     public static boolean checkForPersonaInHand() {

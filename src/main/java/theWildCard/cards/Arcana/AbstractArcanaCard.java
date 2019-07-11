@@ -263,11 +263,28 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     @Override
     public AbstractCard makeCopy() {
-        AbstractArcanaCard card = (AbstractArcanaCard)super.makeCopy();
+        AbstractArcanaCard card;
+        try {
+            card = this.getClass().newInstance();
+        } catch (IllegalAccessException | InstantiationException var2) {
+            throw new RuntimeException("BaseMod failed to auto-generate makeCopy for card: " + this.cardID);
+        }
         card.cardArcana = this.cardArcana;
         card.transform();
         card.isLocked = this.isLocked;
         return card;
+    }
+
+    @Override
+    public AbstractCard makeSameInstanceOf() {
+        if (cardToTransform != null) {
+            //This is needed to ensure that X cost Arcana cards can be multi-casted(Double-Tap, Burst, etc.) properly.
+            AbstractCard card = cardToTransform.makeStatEquivalentCopy();
+            card.uuid = this.uuid;
+            return card;
+        } else {
+            return super.makeSameInstanceOf();
+        }
     }
 
     public static AbstractArcanaCard returnTrulyRandomArcana() {

@@ -30,22 +30,20 @@ public class Arsene extends AbstractPersonaCard {
 
 
     public Arsene() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.FOOL, new PersonaArsenePower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = STRENGTH;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DEXTERITY;
-        cardArcana = ArcanaEnums.Arcana.FOOL;
     }
 
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.use(p, m);
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new StrengthPower(p, magicNumber), magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new DexterityPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PersonaArsenePower(p, p), 0));
-       changePersona(PersonaArsenePower.POWER_ID);
+        if (AbstractPersonaCard.canChangePersona) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new StrengthPower(p, magicNumber), magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
+                    new DexterityPower(p, defaultSecondMagicNumber), defaultSecondMagicNumber));
+        }
     }
 }

@@ -64,6 +64,7 @@ import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Power.Rare.FuelForTheFire;
 import theWildCard.cards.Power.Rare.TheUniverse;
 import theWildCard.cards.Power.Uncommon.Abstinence;
+import theWildCard.cards.Power.Uncommon.Attunement;
 import theWildCard.cards.Power.Uncommon.ManOfManyFaces;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Proficiency;
@@ -479,6 +480,7 @@ public class WildcardMod implements
         BaseMod.addCard(new TheUniverse());
         BaseMod.addCard(new FuelForTheFire());
         BaseMod.addCard(new ManOfManyFaces());
+        BaseMod.addCard(new Attunement());
         BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
         BaseMod.addCard(new Lock());
@@ -532,6 +534,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(TheUniverse.ID);
         UnlockTracker.unlockCard(FuelForTheFire.ID);
         UnlockTracker.unlockCard(ManOfManyFaces.ID);
+        UnlockTracker.unlockCard(Attunement.ID);
         UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
         UnlockTracker.unlockCard(Lock.ID);
@@ -633,6 +636,7 @@ public class WildcardMod implements
     public void receiveOnBattleStart(AbstractRoom var1) {
         ArcanaEnums.changeArcana(null); //clears the active Arcana before battle
         AbstractPersonaCard.changePersona(null); //clears the active Persona before battle
+        AbstractPersonaCard.canChangePersona = true; //clears the effect from Attunement if present
     }
     
     // ================ /LOAD THE KEYWORDS/ ===================    
