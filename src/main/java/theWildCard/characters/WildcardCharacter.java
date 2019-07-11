@@ -18,65 +18,23 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theWildCard.WildcardMod;
-import theWildCard.cards.Arcana.ArcanaArtistry;
-import theWildCard.cards.Arcana.ArcaneArts;
 import theWildCard.cards.Arcana.ArchaicAssault;
-import theWildCard.cards.Arcana.FinalHour;
 import theWildCard.cards.Arcana.MagicMettle;
 import theWildCard.cards.Arcana.MagicalMight;
 import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
-import theWildCard.cards.Arcana.TheArcanaUnleashed;
-import theWildCard.cards.Attack.Common.EnergizedStroke;
-import theWildCard.cards.Attack.Common.SacrificialStroke;
-import theWildCard.cards.Attack.Common.StalwartBlade;
-import theWildCard.cards.Attack.Rare.AllOutAttack;
-import theWildCard.cards.Attack.Rare.Devastate;
-import theWildCard.cards.Attack.Rare.Overwhelm;
-import theWildCard.cards.Attack.Rare.Ruination;
-import theWildCard.cards.Attack.Uncommon.CryOfAgony;
-import theWildCard.cards.Attack.Uncommon.IdentityTheft;
-import theWildCard.cards.Attack.Uncommon.LadyLuck;
-import theWildCard.cards.Attack.Uncommon.Providence;
-import theWildCard.cards.Attack.Uncommon.Salvation;
-import theWildCard.cards.Persona.Alice;
+import theWildCard.cards.Attack.Common.BasicStrike;
 import theWildCard.cards.Persona.Amaterasu;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.cards.Persona.Caesar;
-import theWildCard.cards.Persona.Loki;
-import theWildCard.cards.Persona.Lucifer;
 import theWildCard.cards.Persona.Metatron;
-import theWildCard.cards.Persona.Michael;
-import theWildCard.cards.Persona.Odin;
-import theWildCard.cards.Persona.PaleRider;
-import theWildCard.cards.Persona.Polydeuces;
-import theWildCard.cards.Persona.Sakuya;
 import theWildCard.cards.Persona.Satanael;
-import theWildCard.cards.Persona.Scathach;
 import theWildCard.cards.Persona.Thanatos;
-import theWildCard.cards.Power.Rare.FuelForTheFire;
-import theWildCard.cards.Power.Rare.TheUniverse;
-import theWildCard.cards.Power.Uncommon.Abstinence;
-import theWildCard.cards.Power.Uncommon.Attunement;
-import theWildCard.cards.Power.Uncommon.ManOfManyFaces;
-import theWildCard.cards.Skill.Common.Patience;
-import theWildCard.cards.Skill.Common.Proficiency;
-import theWildCard.cards.Skill.Common.Unburden;
-import theWildCard.cards.Skill.Rare.Deicide;
-import theWildCard.cards.Skill.Uncommon.Impatience;
-import theWildCard.cards.Skill.Uncommon.Lock;
-import theWildCard.cards.Skill.Uncommon.MaskChange;
-import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
-import theWildCard.cards.Skill.Uncommon.UnendingRitual;
+import theWildCard.cards.Skill.Common.BasicDefend;
 import theWildCard.relics.BlankContractRelic;
-import theWildCard.relics.DefaultClickableRelic;
-import theWildCard.relics.PlaceholderRelic;
-import theWildCard.relics.PlaceholderRelic2;
-import theWildCard.relics.VelvetContractRelic;
 
 import java.util.ArrayList;
 
@@ -206,6 +164,8 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
+        retVal.add(BasicStrike.ID);
+        retVal.add(BasicDefend.ID);
         retVal.add(SeveringSlash.ID);
 //        retVal.add(SeveringSlash.ID);
 //        retVal.add(StingingStrike.ID);
@@ -283,16 +243,7 @@ public class WildcardCharacter extends CustomPlayer {
     // Starting Relics	
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-
-        retVal.add(PlaceholderRelic.ID);
         retVal.add(BlankContractRelic.ID);
-        //retVal.add(PlaceholderRelic2.ID);
-        retVal.add(DefaultClickableRelic.ID);
-
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
-
         return retVal;
     }
 

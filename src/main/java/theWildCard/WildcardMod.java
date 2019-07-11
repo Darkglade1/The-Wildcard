@@ -3,8 +3,13 @@ package theWildCard;
 import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
-import basemod.helpers.RelicType;
-import basemod.interfaces.*;
+import basemod.interfaces.EditCardsSubscriber;
+import basemod.interfaces.EditCharactersSubscriber;
+import basemod.interfaces.EditKeywordsSubscriber;
+import basemod.interfaces.EditRelicsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.OnStartBattleSubscriber;
+import basemod.interfaces.PostInitializeSubscriber;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -17,12 +22,17 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.localization.OrbStrings;
+import com.megacrit.cardcrawl.localization.PotionStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import theWildCard.cards.*;
 import theWildCard.cards.Arcana.ArcanaArtistry;
 import theWildCard.cards.Arcana.ArcaneArts;
 import theWildCard.cards.Arcana.ArchaicAssault;
@@ -33,6 +43,7 @@ import theWildCard.cards.Arcana.PowerOfTheArcana;
 import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
+import theWildCard.cards.Attack.Common.BasicStrike;
 import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Attack.Common.StalwartBlade;
@@ -66,6 +77,7 @@ import theWildCard.cards.Power.Rare.TheUniverse;
 import theWildCard.cards.Power.Uncommon.Abstinence;
 import theWildCard.cards.Power.Uncommon.Attunement;
 import theWildCard.cards.Power.Uncommon.ManOfManyFaces;
+import theWildCard.cards.Skill.Common.BasicDefend;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
@@ -77,12 +89,7 @@ import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.IdentityCrisisEvent;
-import theWildCard.potions.PlaceholderPotion;
 import theWildCard.relics.BlankContractRelic;
-import theWildCard.relics.BottledPlaceholderRelic;
-import theWildCard.relics.DefaultClickableRelic;
-import theWildCard.relics.PlaceholderRelic;
-import theWildCard.relics.PlaceholderRelic2;
 import theWildCard.relics.VelvetContractRelic;
 import theWildCard.util.IDCheckDontTouchPls;
 import theWildCard.util.TextureLoader;
@@ -95,34 +102,6 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
-//TODO: DON'T MASS RENAME/REFACTOR
-//TODO: DON'T MASS RENAME/REFACTOR
-//TODO: DON'T MASS RENAME/REFACTOR
-//TODO: DON'T MASS RENAME/REFACTOR
-// Please don't just mass replace "theWildCard" with "yourMod" everywhere.
-// It'll be a bigger pain for you. You only need to replace it in 3 places.
-// I comment those places below, under the place where you set your ID.
-
-//TODO: FIRST THINGS FIRST: RENAME YOUR PACKAGE AND ID NAMES FIRST-THING!!!
-// Right click the package (Open the project pane on the left. Folder with black dot on it. The name's at the very top) -> Refactor -> Rename, and name it whatever you wanna call your mod.
-// Scroll down in this file. Change the ID from "theWildCard:" to "yourModName:" or whatever your heart desires (don't use spaces). Dw, you'll see it.
-// In the JSON strings (resources>localization>eng>[all them files] make sure they all go "yourModName:" rather than "theWildCard". You can ctrl+R to replace in 1 file, or ctrl+shift+r to mass replace in specific files/directories (Be careful.).
-// Start with the DefaultCommon cards - they are the most commented cards since I don't feel it's necessary to put identical comments on every card.
-// After you sorta get the hang of how to make cards, check out the card template which will make your life easier
-
-/*
- * With that out of the way:
- * Welcome to this super over-commented Slay the Spire modding base.
- * Use it to make your own mod of any type. - If you want to add any standard in-game content (character,
- * cards, relics), this is a good starting point.
- * It features 1 character with a minimal set of things: 1 card of each type, 1 debuff, couple of relics, etc.
- * If you're new to modding, you basically *need* the BaseMod wiki for whatever you wish to add
- * https://github.com/daviscook477/BaseMod/wiki - work your way through with this base.
- * Feel free to use this in any way you like, of course. MIT licence applies. Happy modding!
- *
- * And pls. Read the comments.
- */
-
 @SpireInitializer
 public class WildcardMod implements
         EditCardsSubscriber,
@@ -132,8 +111,7 @@ public class WildcardMod implements
         EditCharactersSubscriber,
         PostInitializeSubscriber,
         OnStartBattleSubscriber {
-    // Make sure to implement the subscribers *you* are using (read basemod wiki). Editing cards? EditCardsSubscriber.
-    // Making relics? EditRelicsSubscriber. etc., etc., for a full list and how to make your own, visit the basemod wiki.
+
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
 
@@ -152,11 +130,6 @@ public class WildcardMod implements
     // Colors (RGB)
     // Character Color
     public static final Color DEFAULT_BLUE = CardHelper.getColor(11.0f, 11.0f, 96.0f);
-    
-    // Potion Colors in RGB
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f); // Near White
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f); // Super Dark Red/Brown
   
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_BLUE = "theWildCardResources/images/512/bg_attack_blue.png";
@@ -222,30 +195,8 @@ public class WildcardMod implements
         logger.info("Subscribe to BaseMod hooks");
         
         BaseMod.subscribe(this);
-        
-      /*
-           (   ( /(  (     ( /( (            (  `   ( /( )\ )    )\ ))\ )
-           )\  )\()) )\    )\()))\ )   (     )\))(  )\()|()/(   (()/(()/(
-         (((_)((_)((((_)( ((_)\(()/(   )\   ((_)()\((_)\ /(_))   /(_))(_))
-         )\___ _((_)\ _ )\ _((_)/(_))_((_)  (_()((_) ((_|_))_  _(_))(_))_
-        ((/ __| || (_)_\(_) \| |/ __| __| |  \/  |/ _ \|   \  |_ _||   (_)
-         | (__| __ |/ _ \ | .` | (_ | _|  | |\/| | (_) | |) |  | | | |) |
-          \___|_||_/_/ \_\|_|\_|\___|___| |_|  |_|\___/|___/  |___||___(_)
-      */
-      
+
         setModID("theWildCard");
-        // cool
-        // TODO: NOW READ THIS!!!!!!!!!!!!!!!:
-        
-        // 1. Go to your resources folder in the project panel, and refactor> rename theWildCardResources to
-        // yourModIDResources.
-        
-        // 2. Click on the localization > eng folder and press ctrl+shift+r, then select "Directory" (rather than in Project)
-        // replace all instances of theWildCard with yourModID.
-        // Because your mod ID isn't the default. Your cards (and everything else) should have Your mod id. Not mine.
-        
-        // 3. FINALLY and most importantly: Scroll up a bit. You may have noticed the image locations above don't use getModID()
-        // Change their locations to reflect your actual ID rather than theWildCard. They get loaded before getID is a thing.
         
         logger.info("Done subscribing");
         
@@ -338,8 +289,7 @@ public class WildcardMod implements
         
         BaseMod.addCharacter(new WildcardCharacter("the Default", WildcardCharacter.Enums.THE_DEFAULT),
                 THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, WildcardCharacter.Enums.THE_DEFAULT);
-        
-        receiveEditPotions();
+
         logger.info("Added " + WildcardCharacter.Enums.THE_DEFAULT.toString());
     }
     
@@ -397,20 +347,7 @@ public class WildcardMod implements
     // =============== / POST-INITIALIZE/ =================
     
     
-    // ================ ADD POTIONS ===================
-    
-    public void receiveEditPotions() {
-        logger.info("Beginning to edit potions");
-        
-        // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheDefaultEnum.THE_DEFAULT".
-        // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, WildcardCharacter.Enums.THE_DEFAULT);
-        
-        logger.info("Done editing potions");
-    }
-    
-    // ================ /ADD POTIONS/ ===================
+
     
     
     // ================ ADD RELICS ===================
@@ -420,17 +357,9 @@ public class WildcardMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new BlankContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new VelvetContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), WildcardCharacter.Enums.COLOR_BLUE);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), WildcardCharacter.Enums.COLOR_BLUE);
-        
-        // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-        
-        // Mark relics as seen (the others are all starters so they're marked as seen in the character file
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
+
         logger.info("Done adding relics!");
     }
     
@@ -503,6 +432,8 @@ public class WildcardMod implements
         BaseMod.addCard(new SacrificialStroke());
         BaseMod.addCard(new EnergizedStroke());
         BaseMod.addCard(new StalwartBlade());
+        BaseMod.addCard(new BasicStrike());
+        BaseMod.addCard(new BasicDefend());
         
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
@@ -557,6 +488,8 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(SacrificialStroke.ID);
         UnlockTracker.unlockCard(EnergizedStroke.ID);
         UnlockTracker.unlockCard(StalwartBlade.ID);
+        UnlockTracker.unlockCard(BasicStrike.ID);
+        UnlockTracker.unlockCard(BasicDefend.ID);
         
         logger.info("Done adding cards!");
     }

@@ -428,11 +428,11 @@
     "NAME": "Stalwart Blade",
     "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards. Gain !B! Block for each Arcana discarded this way."
   },
-  "theWildCard:DefaultCommonAttack": {
+  "theWildCard:BasicStrike": {
     "NAME": "Strike",
-    "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+    "DESCRIPTION": "Deal !D! damage."
   },
-  "theWildCard:DefaultCommonSkill": {
+  "theWildCard:BasicDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
