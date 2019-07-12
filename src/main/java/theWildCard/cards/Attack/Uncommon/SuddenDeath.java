@@ -47,8 +47,6 @@ public class SuddenDeath extends AbstractDefaultCard {
         if (energyOnUse > 0) {
             effect = energyOnUse;
         }
-        System.out.println(effect);
-        System.out.println(energyOnUse);
         if (p.hasRelic("Chemical X")) {
             effect += 2;
             p.getRelic("Chemical X").flash();
@@ -59,9 +57,8 @@ public class SuddenDeath extends AbstractDefaultCard {
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new CollectorCurseEffect(m.hb.cX, m.hb.cY), 2.0F));
                 AbstractDungeon.actionManager.addToBottom(new KillAction(m));
             } else {
-                int totalDamage = damage * effect;
                 AbstractDungeon.actionManager.addToBottom(
-                        new DamageAction(m, new DamageInfo(p, totalDamage, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+                        new DamageAction(m, new DamageInfo(p, damage * effect, damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
             }
             if (!this.freeToPlayOnce) {
                 p.energy.use(EnergyPanel.totalCount);

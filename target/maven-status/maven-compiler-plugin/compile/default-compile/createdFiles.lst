@@ -48,6 +48,7 @@ theWildCard\powers\PersonaSakuyaPower.class
 theWildCard\powers\RampantBloodlustPower.class
 theWildCard\cards\Attack\Uncommon\BrutalDemise.class
 theWildCard\cards\Skill\Uncommon\Fortification.class
+theWildCard\powers\SafeguardPower.class
 theWildCard\cards\Power\Rare\Reincarnation.class
 theWildCard\cards\Attack\Common\HealersStrike.class
 theWildCard\patches\ArcanaDropRatePatchCommon$Locator.class
@@ -112,6 +113,7 @@ theWildCard\powers\MomentumPower.class
 theWildCard\cards\Attack\Uncommon\DivineWhirl.class
 theWildCard\powers\PersonaMichaelPower.class
 theWildCard\cards\Persona\Amaterasu.class
+theWildCard\cards\Attack\Common\CallToAdventure.class
 theWildCard\cards\Power\Uncommon\RegalBearing.class
 theWildCard\powers\TheUniversePower.class
 theWildCard\cards\Skill\Uncommon\ShieldOfMany.class
@@ -146,6 +148,7 @@ theWildCard\cards\Arcana\MagicalMight.class
 theWildCard\characters\WildcardCharacter$Enums.class
 theWildCard\cards\Skill\Rare\LastRites.class
 theWildCard\cards\Skill\Uncommon\Impatience.class
+theWildCard\cards\Power\Uncommon\Safeguard.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch$Locator.class
 theWildCard\powers\VengeancePower.class
 theWildCard\cards\Skill\Uncommon\MaskChange.class

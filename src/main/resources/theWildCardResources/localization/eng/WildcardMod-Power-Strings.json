@@ -51,6 +51,10 @@
         "NAME": "Man of Many Faces",
         "DESCRIPTIONS": ["Whenever you play a Persona, draw #b", " card.", " cards."]
 },
+"theWildCard:SafeguardPower": {
+        "NAME": "Safeguard",
+        "DESCRIPTIONS": ["Whenever you play an Arcana, gain #b", " Block."]
+},
 "theWildCard:AttunementPower": {
         "NAME": "Attunement",
         "DESCRIPTIONS": ["Whenever you play your active Persona again, gain #b", " Strength and #b", " Dexterity. You can no longer change Persona."]

@@ -27,12 +27,14 @@ import theWildCard.cards.Arcana.MagicalMight;
 import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Attack.Common.BasicStrike;
+import theWildCard.cards.Attack.Common.CallToAdventure;
 import theWildCard.cards.Persona.Amaterasu;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.cards.Persona.Caesar;
 import theWildCard.cards.Persona.Metatron;
 import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Thanatos;
+import theWildCard.cards.Power.Uncommon.Safeguard;
 import theWildCard.cards.Skill.Common.BasicDefend;
 import theWildCard.relics.BlankContractRelic;
 
@@ -164,8 +166,9 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicDefend.ID);
+       // retVal.add(BasicStrike.ID);
+        //retVal.add(BasicDefend.ID);
+        retVal.add(CallToAdventure.ID);
         retVal.add(SeveringSlash.ID);
 //        retVal.add(SeveringSlash.ID);
 //        retVal.add(StingingStrike.ID);
@@ -177,10 +180,10 @@ public class WildcardCharacter extends CustomPlayer {
         //retVal.add(ArcanaArtistry.ID);
         //retVal.add(ArcanaArtistry.ID);
 //        retVal.add(MagicMettle.ID);
-        retVal.add(MagicMettle.ID);
+        //retVal.add(MagicMettle.ID);
 //        retVal.add(ArchaicAssault.ID);
         retVal.add(ArchaicAssault.ID);
-        retVal.add(MagicalMight.ID);
+        //retVal.add(MagicalMight.ID);
         //retVal.add(MagicalMight.ID);
         //retVal.add(FinalHour.ID);
         //retVal.add(FinalHour.ID);
@@ -194,6 +197,7 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(FuelForTheFire.ID);
 //        retVal.add(ManOfManyFaces.ID);
 //        retVal.add(ManOfManyFaces.ID);
+        retVal.add(Safeguard.ID);
        //retVal.add(Attunement.ID);
         //retVal.add(Abstinence.ID);
 //        retVal.add(Abstinence.ID);

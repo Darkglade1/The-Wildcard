@@ -74,10 +74,12 @@ public class PersonaMetatronPower extends AbstractPower {
                 if (target != mo && !mo.isDeadOrEscaped()) {
                     AbstractDungeon.actionManager.addToTop(new SFXAction("ATTACK_HEAVY"));
                     AbstractDungeon.actionManager.addToTop(new VFXAction(p, new CleaveEffect(), 0.1F));
+                    int multiplier = damageAmount / usedCard.damage; //Accounts for instances where the card modifies the damage in the use method so that it differs from its damage value
                     usedCard.calculateCardDamage(mo); //Allows Metatron to adjust damage based on if Vulnerable/other effects are on the other monsters
+                    int newDamage = usedCard.damage * multiplier;
                     //sets damageInfo's owner to target so the damage method doesn't call this onAttack and create an infinite loop
                     //Prefer setting this to target over null to ensure that certain monster powers still work (like the bug's Curl Up)
-                    DamageInfo damageInfo = new DamageInfo(target, usedCard.damage, info.type);
+                    DamageInfo damageInfo = new DamageInfo(target, newDamage, info.type);
                     mo.damage(damageInfo);
                 }
             }

@@ -44,6 +44,7 @@ import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Arcana.TheArcanaUnleashed;
 import theWildCard.cards.Attack.Common.BasicStrike;
+import theWildCard.cards.Attack.Common.CallToAdventure;
 import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Attack.Common.StalwartBlade;
@@ -77,6 +78,7 @@ import theWildCard.cards.Power.Rare.TheUniverse;
 import theWildCard.cards.Power.Uncommon.Abstinence;
 import theWildCard.cards.Power.Uncommon.Attunement;
 import theWildCard.cards.Power.Uncommon.ManOfManyFaces;
+import theWildCard.cards.Power.Uncommon.Safeguard;
 import theWildCard.cards.Skill.Common.BasicDefend;
 import theWildCard.cards.Skill.Common.Patience;
 import theWildCard.cards.Skill.Common.Proficiency;
@@ -409,6 +411,7 @@ public class WildcardMod implements
         BaseMod.addCard(new TheUniverse());
         BaseMod.addCard(new FuelForTheFire());
         BaseMod.addCard(new ManOfManyFaces());
+        BaseMod.addCard(new Safeguard());
         BaseMod.addCard(new Attunement());
         BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
@@ -432,6 +435,7 @@ public class WildcardMod implements
         BaseMod.addCard(new SacrificialStroke());
         BaseMod.addCard(new EnergizedStroke());
         BaseMod.addCard(new StalwartBlade());
+        BaseMod.addCard(new CallToAdventure());
         BaseMod.addCard(new BasicStrike());
         BaseMod.addCard(new BasicDefend());
         
@@ -465,6 +469,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(TheUniverse.ID);
         UnlockTracker.unlockCard(FuelForTheFire.ID);
         UnlockTracker.unlockCard(ManOfManyFaces.ID);
+        UnlockTracker.unlockCard(Safeguard.ID);
         UnlockTracker.unlockCard(Attunement.ID);
         UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
@@ -488,6 +493,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(SacrificialStroke.ID);
         UnlockTracker.unlockCard(EnergizedStroke.ID);
         UnlockTracker.unlockCard(StalwartBlade.ID);
+        UnlockTracker.unlockCard(CallToAdventure.ID);
         UnlockTracker.unlockCard(BasicStrike.ID);
         UnlockTracker.unlockCard(BasicDefend.ID);
         

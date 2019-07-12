@@ -331,6 +331,10 @@
     "NAME": "Man of Many Faces",
     "DESCRIPTION": "Whenever you play a Persona, draw a card."
   },
+  "theWildCard:Safeguard": {
+    "NAME": "Safeguard",
+    "DESCRIPTION": "Whenever you play an Arcana, gain !M! Block."
+  },
   "theWildCard:Attunement": {
     "NAME": "Attunement",
     "DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona. NL Ethereal.",
@@ -427,6 +431,10 @@
   "theWildCard:StalwartBlade": {
     "NAME": "Stalwart Blade",
     "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards. Gain !B! Block for each Arcana discarded this way."
+  },
+  "theWildCard:CallToAdventure": {
+    "NAME": "Call to Adventure",
+    "DESCRIPTION": "Deal !D! damage twice. NL Gain !M! Vulnerable."
   },
   "theWildCard:BasicStrike": {
     "NAME": "Strike",
