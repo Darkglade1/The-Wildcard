@@ -76,7 +76,7 @@ public class WildcardCharacter extends CustomPlayer {
     public static final int MAX_HP = 60;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
-    public static final int ORB_SLOTS = 3;
+    public static final int ORB_SLOTS = 0;
 
     // =============== /BASE STATS/ =================
 
@@ -114,7 +114,7 @@ public class WildcardCharacter extends CustomPlayer {
         super(name, setClass, orbTextures,
                 "theWildCardResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "theWildCardResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "theWildCardResources/images/char/defaultCharacter/Spriter/WildCardCharacter.scml"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
@@ -131,12 +131,12 @@ public class WildcardCharacter extends CustomPlayer {
 
         // =============== ANIMATIONS =================  
 
-        loadAnimation(
-                THE_DEFAULT_SKELETON_ATLAS,
-                THE_DEFAULT_SKELETON_JSON,
-                1.0f);
-        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
-        e.setTime(e.getEndTime() * MathUtils.random());
+//        loadAnimation(
+//                THE_DEFAULT_SKELETON_ATLAS,
+//                THE_DEFAULT_SKELETON_JSON,
+//                1.0f);
+//        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
+//        e.setTime(e.getEndTime() * MathUtils.random());
 
         // =============== /ANIMATIONS/ =================
 

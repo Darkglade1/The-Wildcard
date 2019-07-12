@@ -147,8 +147,8 @@ public class WildcardMod implements
     private static final String ENERGY_ORB_BLUE_PORTRAIT = "theWildCardResources/images/1024/card_orb.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "theWildCardResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "theWildCardResources/images/charSelect/DefaultCharacterPortraitBG.png";
+    private static final String THE_DEFAULT_BUTTON = "theWildCardResources/images/charSelect/WildCardCharacterButton.png";
+    private static final String THE_DEFAULT_PORTRAIT = "theWildCardResources/images/charSelect/WildCardBackground.png";
     public static final String THE_DEFAULT_SHOULDER_1 = "theWildCardResources/images/char/defaultCharacter/shoulder.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "theWildCardResources/images/char/defaultCharacter/shoulder2.png";
     public static final String THE_DEFAULT_CORPSE = "theWildCardResources/images/char/defaultCharacter/corpse.png";
