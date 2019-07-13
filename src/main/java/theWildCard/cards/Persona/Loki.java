@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Loki extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Loki.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Loki.png");
 
     public static final int DRAW = 1;
     public static final int DRAW_POWER = 2;

@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Satanael extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Satanael.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Satanael.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

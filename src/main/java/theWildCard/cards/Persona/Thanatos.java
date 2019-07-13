@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Thanatos extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Thanatos.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Thanatos.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

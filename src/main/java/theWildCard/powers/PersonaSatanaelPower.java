@@ -24,8 +24,8 @@ public class PersonaSatanaelPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     public static int RETAIN = Satanael.RETAIN;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("SatanaelPower84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("SatanaelPower32.png"));
 
     public PersonaSatanaelPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;
