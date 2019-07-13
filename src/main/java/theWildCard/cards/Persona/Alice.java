@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Alice extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Alice.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Alice.png");
 
     public static final int ENERGY_GAIN = 2;
 
@@ -23,7 +23,7 @@ public class Alice extends AbstractPersonaCard {
     private static final int COST = 0;
 
     public Alice() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.DEATH, new PersonaAlicePower(AbstractDungeon.player, AbstractDungeon.player, ENERGY_GAIN));
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.DEATH, new PersonaAlicePower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = ENERGY_GAIN;
     }
 }

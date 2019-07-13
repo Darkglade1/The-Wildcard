@@ -30,8 +30,8 @@ public class PersonaPaleRiderPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final int VULNERABLE = PaleRider.VULNERABLE_POWER;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("PaleRiderPower84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("PaleRiderPower32.png"));
 
     public PersonaPaleRiderPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;

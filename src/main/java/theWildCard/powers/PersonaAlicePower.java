@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
 import theWildCard.cards.OnKillPowerCard;
+import theWildCard.cards.Persona.Alice;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makePowerPath;
@@ -22,19 +23,18 @@ public class PersonaAlicePower extends AbstractPower implements OnKillPowerCard 
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static int ENERGYGAIN;
+    private static int ENERGY_GAIN = Alice.ENERGY_GAIN;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("AlicePower84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("AlicePower32.png"));
 
 
-    public PersonaAlicePower(final AbstractCreature owner, final AbstractCreature source, int amount) {
+    public PersonaAlicePower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.source = source;
-        ENERGYGAIN = amount;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -49,6 +49,6 @@ public class PersonaAlicePower extends AbstractPower implements OnKillPowerCard 
     @Override
     public void onKill(boolean isMinion) {
         AbstractPlayer p = AbstractDungeon.player;
-        p.gainEnergy(ENERGYGAIN);
+        p.gainEnergy(ENERGY_GAIN);
     }
 }

@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Metatron extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Metatron.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Metatron.png");
 
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

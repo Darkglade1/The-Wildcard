@@ -18,7 +18,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class PaleRider extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(PaleRider.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("PaleRider.png");
 
     public static final int VULNERABLE = 1;
     public static final int VULNERABLE_POWER = 2;

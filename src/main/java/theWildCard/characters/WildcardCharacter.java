@@ -28,11 +28,16 @@ import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Arcana.StingingStrike;
 import theWildCard.cards.Attack.Common.BasicStrike;
 import theWildCard.cards.Attack.Common.CallToAdventure;
+import theWildCard.cards.Persona.Alice;
 import theWildCard.cards.Persona.Amaterasu;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.cards.Persona.Caesar;
 import theWildCard.cards.Persona.Loki;
+import theWildCard.cards.Persona.Lucifer;
 import theWildCard.cards.Persona.Metatron;
+import theWildCard.cards.Persona.Michael;
+import theWildCard.cards.Persona.PaleRider;
+import theWildCard.cards.Persona.Sakuya;
 import theWildCard.cards.Persona.Satanael;
 import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Power.Uncommon.Safeguard;
@@ -169,7 +174,7 @@ public class WildcardCharacter extends CustomPlayer {
         logger.info("Begin loading starter Deck Strings");
        // retVal.add(BasicStrike.ID);
         //retVal.add(BasicDefend.ID);
-        retVal.add(CallToAdventure.ID);
+        //retVal.add(CallToAdventure.ID);
         retVal.add(SeveringSlash.ID);
 //        retVal.add(SeveringSlash.ID);
 //        retVal.add(StingingStrike.ID);
@@ -198,7 +203,7 @@ public class WildcardCharacter extends CustomPlayer {
 //        retVal.add(FuelForTheFire.ID);
 //        retVal.add(ManOfManyFaces.ID);
 //        retVal.add(ManOfManyFaces.ID);
-        retVal.add(Safeguard.ID);
+        //retVal.add(Safeguard.ID);
        //retVal.add(Attunement.ID);
         //retVal.add(Abstinence.ID);
 //        retVal.add(Abstinence.ID);
@@ -228,19 +233,19 @@ public class WildcardCharacter extends CustomPlayer {
 
 
         retVal.add(Arsene.ID);
-//        retVal.add(Michael.ID);
-//        retVal.add(PaleRider.ID);
+        retVal.add(Michael.ID);
+        retVal.add(PaleRider.ID);
 //        retVal.add(Polydeuces.ID);
-//        retVal.add(Sakuya.ID);
+        retVal.add(Sakuya.ID);
 //        retVal.add(Scathach.ID);
 //        retVal.add(Odin.ID);
         retVal.add(Loki.ID);
-        //retVal.add(Metatron.ID);
-//        retVal.add(Alice.ID);
-        //retVal.add(Amaterasu.ID);
-        retVal.add(Caesar.ID);
+        retVal.add(Metatron.ID);
+        retVal.add(Alice.ID);
+        retVal.add(Amaterasu.ID);
+        //retVal.add(Caesar.ID);
         retVal.add(Satanael.ID);
-        //retVal.add(Lucifer.ID);
+        retVal.add(Lucifer.ID);
         retVal.add(Thanatos.ID);
         return retVal;
     }

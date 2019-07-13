@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Amaterasu extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Amaterasu.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Amaterasu.png");
 
     public static final int HEAL = 2;
 
