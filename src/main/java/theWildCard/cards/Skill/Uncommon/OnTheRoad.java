@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class OnTheRoad extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(OnTheRoad.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("OnTheRoad.png");
+    public static final String IMG = makeCardPath("FoolSkill.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -14,7 +14,7 @@ public class StingingStrike extends AbstractArcanaCard {
 
 
     public static final String ID = WildcardMod.makeID(StingingStrike.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SeveringSlash.png");
+    public static final String IMG = makeCardPath("ArcanaAttack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

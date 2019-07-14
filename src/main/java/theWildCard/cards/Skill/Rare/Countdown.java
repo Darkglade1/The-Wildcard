@@ -20,7 +20,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Countdown extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Countdown.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Countdown.png");
+    public static final String IMG = makeCardPath("DeathSkill.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -24,8 +24,8 @@ public class LastStandPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("LastStand84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("LastStand32.png"));
 
     public LastStandPower(AbstractCreature owner, AbstractCreature source) {
         name = NAME;

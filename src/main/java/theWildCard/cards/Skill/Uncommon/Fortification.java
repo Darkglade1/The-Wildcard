@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Fortification extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Fortification.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Fortification.png");
+    public static final String IMG = makeCardPath("EmperorSkill.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

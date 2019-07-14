@@ -17,7 +17,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class SweepingSlash extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(SweepingSlash.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SweepingSlash.png");
+    public static final String IMG = makeCardPath("JudgementAttack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

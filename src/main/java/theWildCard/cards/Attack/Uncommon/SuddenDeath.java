@@ -20,7 +20,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class SuddenDeath extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(SuddenDeath.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SuddenDeath.png");
+    public static final String IMG = makeCardPath("DeathAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

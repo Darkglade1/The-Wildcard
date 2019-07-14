@@ -19,7 +19,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class QuietPassing extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(QuietPassing.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("QuietPassing.png");
+    public static final String IMG = makeCardPath("PriestessAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

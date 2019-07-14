@@ -17,7 +17,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class RelentlessBarrage extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(RelentlessBarrage.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("RelentlessBarrage.png");
+    public static final String IMG = makeCardPath("JudgementAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -17,7 +17,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Crush extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Crush.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Crush.png");
+    public static final String IMG = makeCardPath("DeathAttack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

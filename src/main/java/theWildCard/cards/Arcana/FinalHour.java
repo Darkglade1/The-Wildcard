@@ -14,7 +14,7 @@ public class FinalHour extends AbstractArcanaCard {
 
 
     public static final String ID = WildcardMod.makeID(FinalHour.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("SeveringSlash.png");
+    public static final String IMG = makeCardPath("ArcanaSkill.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -105,6 +105,9 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
             this.defaultBaseSecondMagicNumber = cardToTransform.defaultBaseSecondMagicNumber;
             this.baseHeal = cardToTransform.baseHeal;
             this.baseDiscard = cardToTransform.baseDiscard;
+            this.isLocked = cardToTransform.isLocked;
+            this.misc = cardToTransform.misc;
+            loadCardImage(cardToTransform.textureImg);
 
             initializeDescription();
         }

@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class WitchsStrike extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(WitchsStrike.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("WitchsStrike.png");
+    public static final String IMG = makeCardPath("PriestessAttack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

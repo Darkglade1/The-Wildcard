@@ -18,7 +18,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class AncientSeal extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(AncientSeal.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("AncientSeal.png");
+    public static final String IMG = makeCardPath("PriestessAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
