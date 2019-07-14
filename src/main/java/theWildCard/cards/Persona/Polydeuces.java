@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Polydeuces extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Polydeuces.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Polydeuces.png");
 
     public static final int DEXTERITY = 2;
 

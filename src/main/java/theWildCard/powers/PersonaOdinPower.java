@@ -25,8 +25,8 @@ public class PersonaOdinPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final int BLOCK = Odin.BLOCK;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("OdinPower84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("OdinPower32.png"));
 
     public PersonaOdinPower(final AbstractCreature owner, final AbstractCreature source) {
         name = NAME;

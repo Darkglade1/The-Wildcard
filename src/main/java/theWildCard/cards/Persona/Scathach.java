@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Scathach extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Scathach.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Scathach.png");
 
     public static final int HEAL = 2;
 

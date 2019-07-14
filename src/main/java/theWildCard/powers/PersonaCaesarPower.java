@@ -25,8 +25,8 @@ public class PersonaCaesarPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static int ARTIFACT;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("CaesarPower84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("CaesarPower32.png"));
 
     public PersonaCaesarPower(final AbstractCreature owner, final AbstractCreature source, int amount) {
         name = NAME;

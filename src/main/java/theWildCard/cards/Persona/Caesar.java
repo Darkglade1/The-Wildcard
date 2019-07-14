@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Caesar extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Caesar.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Caesar.png");
 
     public static final int INITIAL_ARTIFACT = 1;
     public static final int ARTIFACT = 2;

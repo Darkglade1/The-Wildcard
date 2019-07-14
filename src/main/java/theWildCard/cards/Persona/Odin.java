@@ -11,7 +11,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Odin extends AbstractPersonaCard {
 
     public static final String ID = WildcardMod.makeID(Odin.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Odin.png");
 
     public static final int BLOCK = 10;
 
