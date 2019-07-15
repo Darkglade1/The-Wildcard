@@ -18,7 +18,7 @@ import static theWildCard.cards.Persona.AbstractPersonaCard.checkForPersonaInHan
 public class Providence extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Providence.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Providence.png");
+    public static final String IMG = makeCardPath("Providence.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

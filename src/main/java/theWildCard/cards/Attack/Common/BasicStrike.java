@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class BasicStrike extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(BasicStrike.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("BasicStrike.png");
 
     private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;

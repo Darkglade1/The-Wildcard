@@ -18,7 +18,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class LadyLuck extends AbstractDefaultCard implements OnDiscardArcanaCard {
 
     public static final String ID = WildcardMod.makeID(LadyLuck.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("LadyLuck.png");
+    public static final String IMG = makeCardPath("LadyLuck.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

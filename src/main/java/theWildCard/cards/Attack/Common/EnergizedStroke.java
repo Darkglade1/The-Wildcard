@@ -21,7 +21,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class EnergizedStroke extends AbstractDefaultCard implements OnDiscardArcanaCard {
 
     public static final String ID = WildcardMod.makeID(EnergizedStroke.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("EnergizedStroke.png");
+    public static final String IMG = makeCardPath("EnergizedStroke.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

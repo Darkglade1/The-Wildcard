@@ -18,7 +18,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Overwhelm extends AbstractDefaultCard implements OnDiscardArcanaCard {
 
     public static final String ID = WildcardMod.makeID(Overwhelm.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Overwhelm.png");
+    public static final String IMG = makeCardPath("Overwhelm.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;

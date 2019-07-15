@@ -22,7 +22,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Ruination extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Ruination.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Ruination.png");
+    public static final String IMG = makeCardPath("Ruination.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
