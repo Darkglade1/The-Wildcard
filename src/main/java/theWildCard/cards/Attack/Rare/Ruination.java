@@ -34,7 +34,8 @@ public class Ruination extends AbstractDefaultCard {
     private static final int DAMAGE = 15;
     private static final int UPGRADE_PLUS_DMG = 5;
 
-    private static final int VULNERABLE = 99;
+    private static final int VULNERABLE = 5;
+    private static final int UPGRADE_PLUS_VULNERABLE = 1;
 
     public Ruination() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -89,6 +90,7 @@ public class Ruination extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_PLUS_VULNERABLE);
             initializeDescription();
         }
     }

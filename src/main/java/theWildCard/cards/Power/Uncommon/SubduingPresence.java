@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class SubduingPresence extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(SubduingPresence.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("BalancingAct.png");
+    public static final String IMG = makeCardPath("PriestessPower.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

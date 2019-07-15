@@ -394,7 +394,7 @@
   },
   "theWildCard:Devastate": {
     "NAME": "Devastate",
-    "DESCRIPTION": "If there are no Persona in your deck, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "If there are no Persona in your hand, deck, or discard pile, deal !D! damage to ALL enemies."
   },
   "theWildCard:Ruination": {
     "NAME": "Ruination",

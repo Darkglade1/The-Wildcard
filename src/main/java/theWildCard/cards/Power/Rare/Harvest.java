@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Harvest extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Harvest.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Harvest.png");
+    public static final String IMG = makeCardPath("DeathPower.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

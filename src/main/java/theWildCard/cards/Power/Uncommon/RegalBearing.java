@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class RegalBearing extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(RegalBearing.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("BalancingAct.png");
+    public static final String IMG = makeCardPath("EmperorPower.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Reincarnation extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Reincarnation.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Reincarnation.png");
+    public static final String IMG = makeCardPath("PriestessPower.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

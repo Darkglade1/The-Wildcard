@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Encore extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Encore.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Encore.png");
+    public static final String IMG = makeCardPath("FoolPower.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

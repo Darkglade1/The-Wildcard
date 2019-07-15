@@ -20,7 +20,7 @@ public class Lock extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     private static final int CARDS = 1;
     private static final int UPGRADE_PLUS_CARDS = 1;

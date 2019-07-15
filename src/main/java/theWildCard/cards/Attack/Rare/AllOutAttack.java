@@ -20,7 +20,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class AllOutAttack extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(AllOutAttack.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("AllOutAttack.png");
+    public static final String IMG = makeCardPath("AllOutAttack.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

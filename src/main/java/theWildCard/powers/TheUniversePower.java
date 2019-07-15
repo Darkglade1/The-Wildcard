@@ -23,8 +23,8 @@ public class TheUniversePower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("TheUniverse84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("TheUniverse32.png"));
 
     public TheUniversePower(AbstractCreature owner, int amount) {
         name = NAME;

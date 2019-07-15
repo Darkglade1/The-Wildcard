@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Momentum extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Momentum.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Momentum.png");
+    public static final String IMG = makeCardPath("JudgementPower.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

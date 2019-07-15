@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class TheUniverse extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(TheUniverse.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("TheUniverse.png");
+    public static final String IMG = makeCardPath("TheUniverse.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
