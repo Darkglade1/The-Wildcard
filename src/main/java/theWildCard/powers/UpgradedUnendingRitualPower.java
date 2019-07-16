@@ -1,7 +1,5 @@
 package theWildCard.powers;
 
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -14,9 +12,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
 import theWildCard.cards.Arcana.AbstractArcanaCard;
 import theWildCard.tags.Tags;
-import theWildCard.util.TextureLoader;
 
-import static theWildCard.WildcardMod.makePowerPath;
 import static theWildCard.cards.Arcana.AbstractArcanaCard.returnTrulyRandomArcana;
 
 
@@ -26,9 +22,6 @@ public class UpgradedUnendingRitualPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
     public UpgradedUnendingRitualPower(AbstractCreature owner, int amount) {
         name = NAME;
@@ -41,8 +34,7 @@ public class UpgradedUnendingRitualPower extends AbstractPower {
         isTurnBased = false;
 
         //loads textures
-        this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+        this.loadRegion("evolve");
 
         updateDescription();
     }
