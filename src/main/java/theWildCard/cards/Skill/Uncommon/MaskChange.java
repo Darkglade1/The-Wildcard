@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class MaskChange extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(MaskChange.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("MaskChange.png");
+    public static final String IMG = makeCardPath("MaskChange.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

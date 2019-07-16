@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Patience extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Patience.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Patience.png");
+    public static final String IMG = makeCardPath("Patience.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

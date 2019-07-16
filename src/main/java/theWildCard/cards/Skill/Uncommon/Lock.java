@@ -13,7 +13,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Lock extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Lock.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Lock.png");
+    public static final String IMG = makeCardPath("Lock.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

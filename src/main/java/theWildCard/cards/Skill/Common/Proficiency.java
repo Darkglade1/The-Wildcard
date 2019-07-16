@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Proficiency extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Proficiency.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Proficiency.png");
+    public static final String IMG = makeCardPath("Proficiency.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
