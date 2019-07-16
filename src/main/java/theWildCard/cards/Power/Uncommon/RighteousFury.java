@@ -24,7 +24,7 @@ public class RighteousFury extends AbstractDefaultCard {
     private static final int COST = 1;
 
     private static final int STRENGTH = 2;
-    private static final int UPGRADE_PLUS_STRENGTH = 2;
+    private static final int UPGRADE_PLUS_STRENGTH = 1;
 
     public RighteousFury() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

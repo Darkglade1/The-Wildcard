@@ -2,6 +2,7 @@ package theWildCard.cards.Arcana;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -32,6 +33,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     public boolean isLocked = false;
 
     public static ArrayList<AbstractCard> shopCards;
+    public static CardGroup gridSelectCards;
 
 
     public AbstractArcanaCard(final String id,

@@ -24,7 +24,6 @@ public class Execute extends AbstractDefaultCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 3;
-    private static final int UPGRADED_COST = 2;
 
     public Execute() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -47,7 +46,7 @@ public class Execute extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADED_COST);
+            this.exhaust = false;
             initializeDescription();
         }
     }

@@ -18,7 +18,7 @@ public class Caesar extends AbstractPersonaCard {
     public static final String IMG = makeCardPath("Caesar.png");
 
     public static final int INITIAL_ARTIFACT = 1;
-    public static final int ARTIFACT = 2;
+    public static final int ARTIFACT = 1;
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

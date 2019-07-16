@@ -140,7 +140,8 @@
   },
   "theWildCard:Execute": {
     "NAME": "Execute",
-    "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust."
+    "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP."
   },
   "theWildCard:AncientSeal": {
     "NAME": "Ancient Seal",

@@ -123,8 +123,10 @@ theWildCard\cards\Persona\Alice.class
 theWildCard\cards\Skill\Uncommon\MassOffering.class
 theWildCard\cards\Skill\Rare\LastStand.class
 theWildCard\cards\Skill\Common\DebilitatingSpell.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrderPatch.class
 theWildCard\powers\LastStandPower.class
 theWildCard\cards\Persona\Polydeuces.class
+theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrderPatch$Locator.class
 theWildCard\cards\Persona\Scathach.class
 theWildCard\cards\Skill\Common\Unburden.class
 theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class

@@ -27,7 +27,6 @@ public class BalancingAct extends AbstractDefaultCard {
     private static final int STRENGTH = 1;
     private static final int DEXTERITY = 1;
     private static final int UPGRADE_PLUS_STRENGTH = 1;
-    private static final int UPGRADE_PLUS_DEXTERITY = 1;
 
     public BalancingAct() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -48,7 +47,6 @@ public class BalancingAct extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS_STRENGTH);
-            upgradeDefaultSecondMagicNumber(UPGRADE_PLUS_DEXTERITY);
             initializeDescription();
         }
     }

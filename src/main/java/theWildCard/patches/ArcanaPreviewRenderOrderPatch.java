@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen;
 import com.megacrit.cardcrawl.screens.mainMenu.ScrollBar;
+import com.megacrit.cardcrawl.screens.select.GridCardSelectScreen;
 import com.megacrit.cardcrawl.shop.ShopScreen;
 import javassist.CtBehavior;
 import theWildCard.cards.Arcana.AbstractArcanaCard;
@@ -49,6 +50,11 @@ public class ArcanaPreviewRenderOrderPatch {
                         AbstractCard c = (AbstractCard)iterator.next();
                         c.renderCardTip(sb);
                     }
+                }
+            }
+            if (instance.screen == AbstractDungeon.CurrentScreen.GRID) {
+                if (AbstractArcanaCard.gridSelectCards != null) {
+                    AbstractArcanaCard.gridSelectCards.renderTip(sb);
                 }
             }
         }
@@ -91,6 +97,27 @@ public class ArcanaPreviewRenderOrderPatch {
             public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
                 Matcher finalMatcher = new Matcher.MethodCallMatcher(ShopScreen.class, "renderCardsAndPrices");
                 return LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
+            }
+        }
+    }
+
+    //Extracts the gridSelect cards so their card tips can be rendered last so Arcana preview isn't covered up by the top bar
+    @SpirePatch(
+            clz = GridCardSelectScreen.class,
+            method = "render"
+    )
+    public static class GridCardSelectScreenRenderOrderPatch {
+        @SpireInsertPatch(locator = GridCardSelectScreenRenderOrderPatch.Locator.class, localvars = {"targetGroup"})
+        public static void changeRenderOrder(GridCardSelectScreen instance, SpriteBatch sb, CardGroup targetGroup) {
+            AbstractArcanaCard.gridSelectCards = targetGroup;
+        }
+        private static class Locator extends SpireInsertLocator {
+            @Override
+            public int[] Locate(CtBehavior ctMethodToPatch) throws Exception {
+                Matcher finalMatcher = new Matcher.MethodCallMatcher(ScrollBar.class, "render");
+                int[] lines = LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
+                lines[0]++;
+                return lines;
             }
         }
     }

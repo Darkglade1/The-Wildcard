@@ -24,7 +24,7 @@ public class RegalBearing extends AbstractDefaultCard {
     private static final int COST = 1;
 
     private static final int DEXTERITY = 2;
-    private static final int UPGRADE_PLUS_DEXTERITY = 2;
+    private static final int UPGRADE_PLUS_DEXTERITY = 1;
 
     public RegalBearing() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
