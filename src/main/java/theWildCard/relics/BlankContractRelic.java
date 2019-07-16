@@ -16,8 +16,8 @@ public class BlankContractRelic extends CustomRelic {
 
     public static final String ID = WildcardMod.makeID("BlankContractRelic");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("BlankContract.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("BlankContract.png"));
 
     private static final int triggerCap = 3;
 
