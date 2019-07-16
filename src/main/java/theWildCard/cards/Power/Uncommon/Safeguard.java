@@ -14,7 +14,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Safeguard extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Safeguard.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Safeguard.png");
+    public static final String IMG = makeCardPath("Safeguard.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class Attunement extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(Attunement.class.getSimpleName());
-    public static final String IMG = makeCardPath("Attack.png");// "public static final String IMG = makeCardPath("Attunement.png");
+    public static final String IMG = makeCardPath("Attunement.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
