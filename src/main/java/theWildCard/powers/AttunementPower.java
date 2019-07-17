@@ -48,17 +48,6 @@ public class AttunementPower extends AbstractPower {
         }
     }
 
-//    @Override
-//    public void onAfterCardPlayed(AbstractCard card) {
-//        if (card instanceof AbstractPersonaCard) {
-//            if (((AbstractPersonaCard)card).cardID.equals(AbstractPersonaCard.getActivePersona())) {
-//
-//            }
-//        }
-//        this.flash();
-//        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, amount));
-//    }
-
     @Override
     public void updateDescription() {
         description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];

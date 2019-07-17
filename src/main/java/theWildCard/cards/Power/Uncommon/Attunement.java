@@ -24,9 +24,9 @@ public class Attunement extends AbstractDefaultCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 2;
-    private static final int UPGRADED_COST = 1;
 
     private static final int STR_DEX_GAIN = 1;
+    private static final int UPGRADE_STR_DEX_GAIN = 1;
 
     public Attunement() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -44,7 +44,7 @@ public class Attunement extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADED_COST);
+            upgradeMagicNumber(UPGRADE_STR_DEX_GAIN);
             initializeDescription();
         }
     }

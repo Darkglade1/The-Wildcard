@@ -66,8 +66,8 @@ public class PersonaMetatronPower extends AbstractPower {
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (isValid && usedCard != null) {
-            AbstractPlayer p = AbstractDungeon.player;
+        AbstractPlayer p = AbstractDungeon.player;
+        if (isValid && usedCard != null && info.owner == p) {
             Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
             while (iterator.hasNext()) {
                 AbstractMonster mo = (AbstractMonster) iterator.next();
@@ -77,9 +77,9 @@ public class PersonaMetatronPower extends AbstractPower {
                     int multiplier = damageAmount / usedCard.damage; //Accounts for instances where the card modifies the damage in the use method so that it differs from its damage value
                     usedCard.calculateCardDamage(mo); //Allows Metatron to adjust damage based on if Vulnerable/other effects are on the other monsters
                     int newDamage = usedCard.damage * multiplier;
-                    //sets damageInfo's owner to target so the damage method doesn't call this onAttack and create an infinite loop
-                    //Prefer setting this to target over null to ensure that certain monster powers still work (like the bug's Curl Up)
-                    DamageInfo damageInfo = new DamageInfo(target, newDamage, info.type);
+                    //sets damageInfo's owner to mo so the damage method doesn't call this onAttack and create an infinite loop
+                    //Prefer this over null to ensure that certain monster powers still work (like the bug's Curl Up)
+                    DamageInfo damageInfo = new DamageInfo(mo, newDamage, info.type);
                     mo.damage(damageInfo);
                 }
             }

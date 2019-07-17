@@ -148,6 +148,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            transform(); //allows the Arcana to update properly when upgraded in combat
         }
     }
 
@@ -188,6 +189,10 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     @Override
     public void renderCardTip(SpriteBatch sb) {
         super.renderCardTip(sb);
+        if (AbstractDungeon.screen == AbstractDungeon.CurrentScreen.SHOP) {
+            renderInShop(sb);
+            return;
+        }
         //Removes the preview when the player is manipulating the card or if the card is locked
         if (isLocked || (AbstractDungeon.player != null && (AbstractDungeon.player.isDraggingCard || AbstractDungeon.player.inSingleTargetMode))) {
             return;
@@ -196,6 +201,76 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         float yPosition1 = this.current_y + this.hb.height * 0.75f;
         float yPosition2 = this.current_y + this.hb.height * 0.25f;
         float yPosition3 = this.current_y - this.hb.height * 0.25f;
+        float xPosition1;
+        float xPosition2;
+        float xPosition3;
+        float xOffset1 = -this.hb.width * 0.75f;
+        float xOffset2 = -this.hb.width * 0.25f;
+        float xOffset3 = this.hb.width * 0.25f;
+
+        if (this.current_x > Settings.WIDTH * 0.75F) {
+            xOffset1 = -xOffset1;
+            xOffset2 = -xOffset2;
+            xOffset3 = -xOffset3;
+        }
+
+        xPosition1 = this.current_x + xOffset1;
+        xPosition2 = this.current_x + xOffset2;
+        xPosition3 = this.current_x + xOffset3;
+
+        if (cardToPreviewPriestess != null) {
+            AbstractCard card = cardToPreviewPriestess.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition3;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewEmperor != null) {
+            AbstractCard card = cardToPreviewEmperor.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition2;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewFool != null) {
+            AbstractCard card = cardToPreviewFool.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition1;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewJudgement != null) {
+            AbstractCard card = cardToPreviewJudgement.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition2;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+        if (cardToPreviewDeath != null) {
+            AbstractCard card = cardToPreviewDeath.makeStatEquivalentCopy();
+            if (card != null) {
+                card.drawScale = drawScale;
+                card.current_x = xPosition3;
+                card.current_y = yPosition1;
+                card.render(sb);
+            }
+        }
+    }
+
+    //changes the Arcana preview to render below the Arcana in the shop so it doesn't clip out of the screen
+    private void renderInShop(SpriteBatch sb) {
+        float drawScale = 0.5f;
+        float yPosition1 = this.current_y - this.hb.height * 0.75f;
+        float yPosition2 = this.current_y - this.hb.height * 0.25f;
+        float yPosition3 = this.current_y + this.hb.height * 0.25f;
         float xPosition1;
         float xPosition2;
         float xPosition3;

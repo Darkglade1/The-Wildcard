@@ -125,7 +125,7 @@
 },
 "theWildCard:PersonaMetatronPower": {
         "NAME": "Metatron",
-        "DESCRIPTIONS": ["Your Attacks damage ALL enemies."]
+        "DESCRIPTIONS": ["Your single target Attacks deal damage to ALL enemies."]
 },
 "theWildCard:PersonaAlicePower": {
         "NAME": "Alice",
