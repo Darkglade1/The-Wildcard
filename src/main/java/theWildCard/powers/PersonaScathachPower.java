@@ -47,6 +47,7 @@ public class PersonaScathachPower extends AbstractPower implements OnKillPowerCa
     @Override
     public void onKill(boolean isMinion) {
         if (!isMinion) {
+            this.flash();
             AbstractDungeon.player.increaseMaxHp(HEAL, false);
         }
     }

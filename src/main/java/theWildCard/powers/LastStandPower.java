@@ -46,6 +46,7 @@ public class LastStandPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw () {
+        this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         p.isDead = true;
         AbstractDungeon.deathScreen = new DeathScreen(AbstractDungeon.getMonsters());

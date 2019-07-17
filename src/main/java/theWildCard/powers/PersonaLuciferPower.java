@@ -46,6 +46,7 @@ public class PersonaLuciferPower extends AbstractPower {
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power instanceof StrengthPower && power.amount > 0) {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, null,
                     new StrengthPower(this.owner, power.amount), power.amount));
         }

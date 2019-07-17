@@ -47,6 +47,7 @@ public class PersonaLokiPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
+        this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
     }

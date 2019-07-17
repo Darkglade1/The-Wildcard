@@ -47,6 +47,7 @@ public class PersonaSatanaelPower extends AbstractPower {
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         if (isPlayer && !AbstractDungeon.player.hand.isEmpty() && !AbstractDungeon.player.hasRelic("Runic Pyramid") && !AbstractDungeon.player.hasPower("Equilibrium")) {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(new RetainCardsAction(owner, RETAIN));
         }
     }

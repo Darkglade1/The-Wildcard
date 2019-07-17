@@ -68,6 +68,7 @@ public class PersonaMetatronPower extends AbstractPower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         AbstractPlayer p = AbstractDungeon.player;
         if (isValid && usedCard != null && info.owner == p) {
+            this.flash();
             Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
             while (iterator.hasNext()) {
                 AbstractMonster mo = (AbstractMonster) iterator.next();

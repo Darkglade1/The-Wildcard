@@ -44,6 +44,7 @@ public class CrushPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw () {
+        this.flash();
         AbstractDungeon.player.gainEnergy(amount);
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
     }

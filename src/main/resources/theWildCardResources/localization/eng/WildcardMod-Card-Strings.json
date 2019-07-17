@@ -375,8 +375,8 @@
   },
   "theWildCard:Patience": {
     "NAME": "Patience",
-    "DESCRIPTION": "Draw !theWildCard:SecondMagic! cards. NL Next turn, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Draw !theWildCard:SecondMagic! cards. NL Next turn, draw !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !theWildCard:SecondMagic! card. NL Next turn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !theWildCard:SecondMagic! card. NL Next turn, draw !M! cards."
   },
   "theWildCard:Proficiency": {
     "NAME": "Proficiency",
@@ -401,7 +401,7 @@
   },
   "theWildCard:LadyLuck": {
     "NAME": "Lady Luck",
-    "DESCRIPTION": "Draw X cards. NL Discard X cards. Deal !D! damage to a random enemy for each Arcana discarded this way."
+    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Deal !D! damage to a random enemy for each Arcana discarded this way."
   },
   "theWildCard:IdentityTheft": {
     "NAME": "Identity Theft",

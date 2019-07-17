@@ -48,6 +48,7 @@ public class PersonaCaesarPower extends AbstractPower {
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
+        this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ArtifactPower(p, ARTIFACT), ARTIFACT));
     }

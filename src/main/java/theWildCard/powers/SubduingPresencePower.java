@@ -40,6 +40,7 @@ public class SubduingPresencePower extends AbstractPower {
 
     @Override
     public void atStartOfTurn () {
+        this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while(iterator.hasNext()) {

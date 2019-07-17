@@ -48,6 +48,7 @@ public class PersonaAlicePower extends AbstractPower implements OnKillPowerCard 
 
     @Override
     public void onKill(boolean isMinion) {
+        this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         p.gainEnergy(ENERGY_GAIN);
     }

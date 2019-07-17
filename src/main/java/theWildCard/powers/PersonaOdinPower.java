@@ -47,6 +47,7 @@ public class PersonaOdinPower extends AbstractPower {
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
+        this.flash();
         AbstractPlayer p = AbstractDungeon.player;
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, BLOCK));
     }

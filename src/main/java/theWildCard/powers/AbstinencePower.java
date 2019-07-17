@@ -36,6 +36,7 @@ public class AbstinencePower extends AbstractPower {
     @Override
     public void atEndOfTurn (boolean isPlayer) {
         if (!AbstractPersonaCard.checkForPersonaInHand()) {
+            this.flash();
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, amount));
         }
     }

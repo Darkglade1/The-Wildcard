@@ -45,6 +45,7 @@ public class TheUniversePower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
+        this.flash();
         for (int i = 0 ; i < amount; i++) {
             AbstractPersonaCard c = (AbstractPersonaCard)returnTrulyRandomPersona().makeCopy();
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));

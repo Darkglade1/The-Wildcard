@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import theWildCard.WildcardMod;
 import theWildCard.actions.DiscardArcanaAction;
 import theWildCard.cards.AbstractDefaultCard;
@@ -25,33 +24,23 @@ public class LadyLuck extends AbstractDefaultCard implements OnDiscardArcanaCard
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = -1;
+    private static final int COST = 1;
 
-    private static final int DAMAGE = 13;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int DRAW = 2;
+
+    private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
     public LadyLuck() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = DRAW;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int effect = EnergyPanel.totalCount;
-        if (energyOnUse > 0) {
-            effect = energyOnUse;
-        }
-        if (p.hasRelic("Chemical X")) {
-            effect += 2;
-            p.getRelic("Chemical X").flash();
-        }
-        if (effect > 0) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, effect));
-            AbstractDungeon.actionManager.addToBottom(new DiscardArcanaAction(p, p, effect, false, false, this));
-            if (!this.freeToPlayOnce) {
-                p.energy.use(EnergyPanel.totalCount);
-            }
-        }
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DiscardArcanaAction(p, p, -1, false, false, this));
     }
 
     @Override
