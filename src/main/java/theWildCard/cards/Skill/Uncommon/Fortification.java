@@ -27,7 +27,7 @@ public class Fortification extends AbstractDefaultCard {
     private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 2;
 
-    private static final int PLATED_ARMOR = 4;
+    private static final int PLATED_ARMOR = 3;
     private static final int UPGRADE_PLUS_PLATED_ARMOR = 1;
 
     public Fortification() {

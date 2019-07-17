@@ -24,13 +24,13 @@ public class Attunement extends AbstractDefaultCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 2;
+    private static final int UPGRADED_COST = 1;
 
     private static final int STR_DEX_GAIN = 1;
 
     public Attunement() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = STR_DEX_GAIN;
-        isEthereal = true;
     }
 
     @Override
@@ -44,8 +44,7 @@ public class Attunement extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = false;
-            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
+            upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
     }

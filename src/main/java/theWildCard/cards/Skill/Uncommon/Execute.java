@@ -11,6 +11,7 @@ import theWildCard.actions.KillAction;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.characters.WildcardCharacter;
 
+import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 import static theWildCard.WildcardMod.makeCardPath;
 
 public class Execute extends AbstractDefaultCard {
@@ -47,6 +48,7 @@ public class Execute extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             this.exhaust = false;
+            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

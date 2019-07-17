@@ -28,11 +28,11 @@ public class AllOutAttack extends AbstractDefaultCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 3;
+    private static final int UPGRADED_COST = 2;
 
     public AllOutAttack() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         exhaust = true;
-        isEthereal = true;
     }
 
     @Override
@@ -96,8 +96,7 @@ public class AllOutAttack extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = false;
-            rawDescription = languagePack.getCardStrings(cardID).UPGRADE_DESCRIPTION;
+            upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
     }

@@ -338,8 +338,7 @@
   },
   "theWildCard:Attunement": {
     "NAME": "Attunement",
-    "DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona."
+    "DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona."
   },
   "theWildCard:Abstinence": {
     "NAME": "Abstinence",
@@ -386,8 +385,7 @@
   },
   "theWildCard:AllOutAttack": {
     "NAME": "All Out Attack",
-    "DESCRIPTION": "For each Persona in your deck, play a copy of a random Attack from your deck. NL Ethereal. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "For each Persona in your deck, play a copy of a random Attack from your deck. NL Exhaust."
+    "DESCRIPTION": "For each Persona in your deck, play a copy of a random Attack from your deck. NL Exhaust."
   },
   "theWildCard:Overwhelm": {
     "NAME": "Overwhelm",

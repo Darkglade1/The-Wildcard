@@ -13,7 +13,7 @@ public class Scathach extends AbstractPersonaCard {
     public static final String ID = WildcardMod.makeID(Scathach.class.getSimpleName());
     public static final String IMG = makeCardPath("Scathach.png");
 
-    public static final int HEAL = 2;
+    public static final int HEAL = 1;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
