@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class SincereOffering extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(SincereOffering.class.getSimpleName());
-    public static final String IMG = makeCardPath("PriestessSkill.png");
+    public static final String IMG = makeCardPath("ArcanaArtistry.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

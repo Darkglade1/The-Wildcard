@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class RampantBloodlust extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(RampantBloodlust.class.getSimpleName());
-    public static final String IMG = makeCardPath("DeathSkill.png");
+    public static final String IMG = makeCardPath("ArcanaArtistry.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

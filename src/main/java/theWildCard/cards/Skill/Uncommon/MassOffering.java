@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class MassOffering extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(MassOffering.class.getSimpleName());
-    public static final String IMG = makeCardPath("PriestessSkill.png");
+    public static final String IMG = makeCardPath("MagicMettle.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class LastStand extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(LastStand.class.getSimpleName());
-    public static final String IMG = makeCardPath("JudgementSkill.png");
+    public static final String IMG = makeCardPath("FinalHour.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;

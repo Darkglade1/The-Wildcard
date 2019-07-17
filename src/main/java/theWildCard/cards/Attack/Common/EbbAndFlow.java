@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class EbbAndFlow extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(EbbAndFlow.class.getSimpleName());
-    public static final String IMG = makeCardPath("FoolAttack.png");
+    public static final String IMG = makeCardPath("StingingStrike.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

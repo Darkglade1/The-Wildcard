@@ -18,7 +18,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class DivineWhirl extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(DivineWhirl.class.getSimpleName());
-    public static final String IMG = makeCardPath("JudgementAttack.png");
+    public static final String IMG = makeCardPath("ArchaicAssault.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;

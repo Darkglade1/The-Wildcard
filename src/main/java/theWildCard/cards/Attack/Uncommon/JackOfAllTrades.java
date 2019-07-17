@@ -17,7 +17,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class JackOfAllTrades extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(JackOfAllTrades.class.getSimpleName());
-    public static final String IMG = makeCardPath("FoolAttack.png");
+    public static final String IMG = makeCardPath("ArchaicAssault.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

@@ -14,7 +14,7 @@ public class ArcaneArts extends AbstractArcanaCard {
 
 
     public static final String ID = WildcardMod.makeID(ArcaneArts.class.getSimpleName());
-    public static final String IMG = makeCardPath("ArcanaSkill.png");
+    public static final String IMG = makeCardPath("ArcaneArts.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

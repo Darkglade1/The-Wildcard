@@ -16,7 +16,7 @@ public class SavageBlow extends AbstractDefaultCard {
 
 
     public static final String ID = WildcardMod.makeID(SavageBlow.class.getSimpleName());
-    public static final String IMG = makeCardPath("DeathAttack.png");
+    public static final String IMG = makeCardPath("SeveringSlash.png");
 
 
     private static final CardRarity RARITY = CardRarity.COMMON;
