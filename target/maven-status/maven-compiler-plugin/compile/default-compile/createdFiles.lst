@@ -40,6 +40,7 @@ theWildCard\cards\Power\Rare\Encore.class
 theWildCard\powers\PersonaAlicePower.class
 theWildCard\cards\Arcana\AbstractArcanaCard.class
 theWildCard\cards\Skill\Common\Proficiency.class
+theWildCard\patches\SingleCardViewPopupPatch.class
 theWildCard\cards\Arcana\FinalHour.class
 theWildCard\cards\Skill\Uncommon\Lock.class
 theWildCard\cards\Attack\Common\WitchsStrike.class
@@ -105,6 +106,7 @@ theWildCard\cards\Persona\Satanael.class
 theWildCard\cards\Persona\Arsene.class
 theWildCard\cards\Skill\Uncommon\RampantBloodlust.class
 theWildCard\cards\Attack\Rare\Overwhelm.class
+theWildCard\patches\SingleCardViewPopupPatch$RenderArcanaPreviewPatch.class
 theWildCard\powers\ReincarnationPower.class
 theWildCard\cards\Persona\Thanatos.class
 theWildCard\cards\AbstractDefaultCard.class
@@ -116,6 +118,7 @@ theWildCard\cards\Power\Uncommon\SubduingPresence.class
 theWildCard\powers\PersonaScathachPower.class
 theWildCard\powers\RampantBloodlustPower.class
 theWildCard\cards\Attack\Uncommon\BrutalDemise.class
+theWildCard\patches\SingleCardViewPopupPatch$RenderArcanaPreviewPatch$Locator.class
 theWildCard\cards\Power\Rare\Reincarnation.class
 theWildCard\actions\DiscardArcanaAction.class
 theWildCard\patches\ArcanaDropRatePatchUncommon.class
