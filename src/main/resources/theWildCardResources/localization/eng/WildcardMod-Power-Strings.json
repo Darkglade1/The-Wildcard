@@ -145,7 +145,7 @@
 },
 "theWildCard:PersonaLuciferPower": {
         "NAME": "Lucifer",
-        "DESCRIPTIONS": ["Whenever you gain Strength, gain twice as much. At the end of your turn lose #b", " Dexterity."]
+        "DESCRIPTIONS": ["Whenever you gain Strength, gain twice as much. At the end of your turn, lose #b", " Dexterity."]
 },
 "theWildCard:PersonaThanatosPower": {
         "NAME": "Thanatos",

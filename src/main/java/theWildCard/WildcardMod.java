@@ -19,7 +19,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -90,7 +89,6 @@ import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.characters.WildcardCharacter;
-import theWildCard.events.IdentityCrisisEvent;
 import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.VelvetContractRelic;
 import theWildCard.util.IDCheckDontTouchPls;
@@ -172,10 +170,6 @@ public class WildcardMod implements
     
     public static String makeRelicOutlinePath(String resourcePath) {
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
-    }
-    
-    public static String makeOrbPath(String resourcePath) {
-        return getModID() + "Resources/orbs/" + resourcePath;
     }
     
     public static String makePowerPath(String resourcePath) {
@@ -287,12 +281,12 @@ public class WildcardMod implements
     
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + WildcardCharacter.Enums.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + WildcardCharacter.Enums.THE_WILD_CARD.toString());
         
-        BaseMod.addCharacter(new WildcardCharacter("the Default", WildcardCharacter.Enums.THE_DEFAULT),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, WildcardCharacter.Enums.THE_DEFAULT);
+        BaseMod.addCharacter(new WildcardCharacter("the Default", WildcardCharacter.Enums.THE_WILD_CARD),
+                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, WildcardCharacter.Enums.THE_WILD_CARD);
 
-        logger.info("Added " + WildcardCharacter.Enums.THE_DEFAULT.toString());
+        logger.info("Added " + WildcardCharacter.Enums.THE_WILD_CARD.toString());
     }
     
     // =============== /LOAD THE CHARACTER/ =================

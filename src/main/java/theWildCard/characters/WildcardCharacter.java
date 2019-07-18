@@ -99,7 +99,7 @@ public class WildcardCharacter extends CustomPlayer {
 
     public static class Enums {
         @SpireEnum
-        public static AbstractPlayer.PlayerClass THE_DEFAULT;
+        public static AbstractPlayer.PlayerClass THE_WILD_CARD;
         @SpireEnum(name = "DEFAULT_BLUE_COLOR") // These two HAVE to have the same absolutely identical name.
         public static AbstractCard.CardColor COLOR_BLUE;
         @SpireEnum(name = "DEFAULT_BLUE_COLOR") @SuppressWarnings("unused")
@@ -123,7 +123,7 @@ public class WildcardCharacter extends CustomPlayer {
 
     // =============== STRINGS =================
 
-    private static final String ID = makeID("DefaultCharacter");
+    private static final String ID = makeID("WildCardCharacter");
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     private static final String[] NAMES = characterStrings.NAMES;
     private static final String[] TEXT = characterStrings.TEXT;
