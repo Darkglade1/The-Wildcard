@@ -23,7 +23,7 @@ public class Devastate extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     private static final int DAMAGE = 30;
     private static final int UPGRADE_PLUS_DMG = 10;
