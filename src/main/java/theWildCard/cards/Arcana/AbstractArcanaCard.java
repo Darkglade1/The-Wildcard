@@ -280,6 +280,13 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     }
 
     @Override
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractArcanaCard arcanaCard = (AbstractArcanaCard) super.makeStatEquivalentCopy();
+        arcanaCard.changeArcana();
+        return arcanaCard;
+    }
+
+    @Override
     public AbstractCard makeCopy() {
         AbstractArcanaCard card;
         try {

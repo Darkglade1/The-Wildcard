@@ -9,6 +9,7 @@ import basemod.interfaces.EditKeywordsSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
+import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -110,7 +111,8 @@ public class WildcardMod implements
         EditKeywordsSubscriber,
         EditCharactersSubscriber,
         PostInitializeSubscriber,
-        OnStartBattleSubscriber {
+        OnStartBattleSubscriber,
+        PostBattleSubscriber {
 
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
@@ -567,6 +569,13 @@ public class WildcardMod implements
 
     @Override
     public void receiveOnBattleStart(AbstractRoom var1) {
+        ArcanaEnums.changeArcana(null); //clears the active Arcana before battle in case post battle didn't trigger
+        AbstractPersonaCard.changePersona(null); //clears the active Persona before battle in case post battle didn't trigger
+        AbstractPersonaCard.canChangePersona = true; //clears the effect from Attunement if present in case post battle didn't trigger
+    }
+
+    @Override
+    public void receivePostBattle(AbstractRoom var1) {
         ArcanaEnums.changeArcana(null); //clears the active Arcana before battle
         AbstractPersonaCard.changePersona(null); //clears the active Persona before battle
         AbstractPersonaCard.canChangePersona = true; //clears the effect from Attunement if present
