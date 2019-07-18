@@ -22,7 +22,7 @@ public class PersonaScathachPower extends AbstractPower implements OnKillPowerCa
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static int HEAL = Scathach.HEAL;
+    private static final int HEAL = Scathach.HEAL;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("ScathachPower84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("ScathachPower32.png"));

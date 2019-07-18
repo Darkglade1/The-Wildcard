@@ -18,7 +18,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class WallOfThorns extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(WallOfThorns.class.getSimpleName());
-    public static final String IMG = makeCardPath("MagicalMight.png");
+    public static final String IMG = makeCardPath("EmperorAttack.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

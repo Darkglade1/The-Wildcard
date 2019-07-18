@@ -19,8 +19,10 @@ public class Lucifer extends AbstractPersonaCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 0;
+    public static final int DEX_LOSS = 2;
 
     public Lucifer() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.JUDGEMENT, new PersonaLuciferPower(AbstractDungeon.player, AbstractDungeon.player));
+        magicNumber = baseMagicNumber = DEX_LOSS;
     }
 }

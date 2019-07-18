@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class BalancedThrust extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(BalancedThrust.class.getSimpleName());
-    public static final String IMG = makeCardPath("SeveringSlash.png");
+    public static final String IMG = makeCardPath("FoolAttack.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

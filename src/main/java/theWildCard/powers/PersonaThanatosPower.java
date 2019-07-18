@@ -2,6 +2,7 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
+import theWildCard.cards.Persona.Thanatos;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makePowerPath;
@@ -25,6 +27,7 @@ public class PersonaThanatosPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private static final int HP_LOSS = Thanatos.HP_LOSS;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("ThanatosPower84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("ThanatosPower32.png"));
@@ -43,13 +46,14 @@ public class PersonaThanatosPower extends AbstractPower {
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + HP_LOSS + DESCRIPTIONS[1];
     }
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (!card.purgeOnUse && card.type == AbstractCard.CardType.ATTACK && (card.costForTurn >= 2 || card.cost == -1 && card.energyOnUse >= 2)) {
             this.flash();
+            AbstractDungeon.actionManager.addToBottom(new LoseHPAction(owner, owner, Thanatos.HP_LOSS));
             AbstractMonster m = null;
             if (action.target != null) {
                 m = (AbstractMonster) action.target;

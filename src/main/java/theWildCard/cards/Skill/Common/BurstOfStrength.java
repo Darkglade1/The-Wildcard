@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class BurstOfStrength extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(BurstOfStrength.class.getSimpleName());
-    public static final String IMG = makeCardPath("ArcaneArts.png");
+    public static final String IMG = makeCardPath("JudgementSkill.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

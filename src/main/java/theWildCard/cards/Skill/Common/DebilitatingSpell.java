@@ -15,7 +15,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class DebilitatingSpell extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(DebilitatingSpell.class.getSimpleName());
-    public static final String IMG = makeCardPath("ArcaneArts.png");
+    public static final String IMG = makeCardPath("PriestessSkill.png");
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;

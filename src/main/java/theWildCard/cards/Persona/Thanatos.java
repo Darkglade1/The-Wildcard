@@ -19,8 +19,10 @@ public class Thanatos extends AbstractPersonaCard {
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
     private static final int COST = 0;
+    public static final int HP_LOSS = 2;
 
     public Thanatos() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.DEATH, new PersonaThanatosPower(AbstractDungeon.player, AbstractDungeon.player));
+        magicNumber = baseMagicNumber = HP_LOSS;
     }
 }

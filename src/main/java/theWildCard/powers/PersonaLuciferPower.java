@@ -8,8 +8,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theWildCard.WildcardMod;
+import theWildCard.cards.Persona.Lucifer;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makePowerPath;
@@ -22,6 +24,7 @@ public class PersonaLuciferPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    private static final int DEX_LOSS = Lucifer.DEX_LOSS;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("LuciferPower84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("LuciferPower32.png"));
@@ -40,7 +43,7 @@ public class PersonaLuciferPower extends AbstractPower {
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + DEX_LOSS + DESCRIPTIONS[1];
     }
 
     @Override
@@ -50,5 +53,12 @@ public class PersonaLuciferPower extends AbstractPower {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, null,
                     new StrengthPower(this.owner, power.amount), power.amount));
         }
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        this.flash();
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner,
+                new DexterityPower(this.owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
     }
 }

@@ -16,7 +16,7 @@ import static theWildCard.WildcardMod.makeCardPath;
 public class BlessingOfKings extends AbstractDefaultCard {
 
     public static final String ID = WildcardMod.makeID(BlessingOfKings.class.getSimpleName());
-    public static final String IMG = makeCardPath("FinalHour.png");
+    public static final String IMG = makeCardPath("EmperorSkill.png");
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
