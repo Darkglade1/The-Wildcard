@@ -17,5 +17,24 @@
       "[Leave]",
       "Select card to remove."
     ]
+  },
+  "theWildCard:VelvetRoomPart1": {
+    "NAME": "The Velvet Room",
+    "DESCRIPTIONS": [
+      "As your feet carry you forward, you suddenly feel dizzy and lightheaded. NL When you finally reorient yourself, you find yourself in a strange room, being greeted by a strange woman in blue. NL NL \"Ah, a visitor! It’s been a long time since we’ve had one – please, take a seat.\"",
+      "You sit down, and the woman pulls out a deck of tarot cards. NL NL \"Now, why don’t we try a little divination? Your fate is in the cards, after all.\"",
+      "The woman deftly shuffles the deck and flips over a card, revealing . . .",
+      "\"You will face great challenge and adversity. But if you persevere against even overwhelming odds, there will be a light at the end, I am sure.\"",
+      "\"Oh? You don’t wish to hear of your fate?\" NL The woman seems disappointed. NL \"I understand. I suppose mortals like you may find it more interesting to be ignorant of coming events.\""
+    ],
+    "OPTIONS": [
+      "[The Priestess] #gGain ",
+      "[The Emperor] #gGain ",
+      "[The Fool] #gGain ",
+      "[Judgement] #gGain ",
+      "[Death] #gGain ",
+      "[Leave]",
+      "[Continue]"
+    ]
   }
 }

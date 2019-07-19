@@ -130,6 +130,7 @@ theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrde
 theWildCard\powers\LastStandPower.class
 theWildCard\cards\Persona\Polydeuces.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrderPatch$Locator.class
+theWildCard\events\VelvetRoomPart1.class
 theWildCard\cards\Persona\Scathach.class
 theWildCard\cards\Skill\Common\Unburden.class
 theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class
