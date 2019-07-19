@@ -391,8 +391,8 @@
     "NAME": "Overwhelm",
     "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
   },
-  "theWildCard:Devastate": {
-    "NAME": "Devastate",
+  "theWildCard:Desolation": {
+    "NAME": "Desolation",
     "DESCRIPTION": "If there are no Persona in your hand, deck, or discard pile, deal !D! damage to ALL enemies."
   },
   "theWildCard:Ruination": {
@@ -425,11 +425,11 @@
   },
   "theWildCard:EnergizedStroke": {
     "NAME": "Energized Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Discard a card. Deal !D! damage to ALL enemies for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Deal !D! damage to ALL enemies for each Arcana discarded this way."
   },
   "theWildCard:StalwartBlade": {
     "NAME": "Stalwart Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards. Gain !B! Block for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Gain !B! Block for each Arcana discarded this way."
   },
   "theWildCard:CallToAdventure": {
     "NAME": "Call to Adventure",

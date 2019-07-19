@@ -33,7 +33,7 @@ public class Deicide extends AbstractDefaultCard {
     private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 5;
 
-    private static final int THRESHOLD = 10;
+    private static final int THRESHOLD = 7;
 
     public Deicide() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

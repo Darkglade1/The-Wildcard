@@ -24,8 +24,8 @@ public class ShieldOfMany extends AbstractDefaultCard {
 
     private static final int COST = 1;
 
-    private static final int BLOCK = 4;
-    private static final int UPGRADE_PLUS_BLOCK = 1;
+    private static final int BLOCK = 5;
+    private static final int UPGRADE_PLUS_BLOCK = 2;
 
     public ShieldOfMany() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

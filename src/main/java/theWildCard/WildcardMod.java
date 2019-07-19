@@ -49,7 +49,7 @@ import theWildCard.cards.Attack.Common.EnergizedStroke;
 import theWildCard.cards.Attack.Common.SacrificialStroke;
 import theWildCard.cards.Attack.Common.StalwartBlade;
 import theWildCard.cards.Attack.Rare.AllOutAttack;
-import theWildCard.cards.Attack.Rare.Devastate;
+import theWildCard.cards.Attack.Rare.Desolation;
 import theWildCard.cards.Attack.Rare.Overwhelm;
 import theWildCard.cards.Attack.Rare.Ruination;
 import theWildCard.cards.Attack.Uncommon.CryOfAgony;
@@ -421,7 +421,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Proficiency());
         BaseMod.addCard(new AllOutAttack());
         BaseMod.addCard(new Overwhelm());
-        BaseMod.addCard(new Devastate());
+        BaseMod.addCard(new Desolation());
         BaseMod.addCard(new Ruination());
         BaseMod.addCard(new LadyLuck());
         BaseMod.addCard(new IdentityTheft());
@@ -479,7 +479,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Proficiency.ID);
         UnlockTracker.unlockCard(AllOutAttack.ID);
         UnlockTracker.unlockCard(Overwhelm.ID);
-        UnlockTracker.unlockCard(Devastate.ID);
+        UnlockTracker.unlockCard(Desolation.ID);
         UnlockTracker.unlockCard(Ruination.ID);
         UnlockTracker.unlockCard(LadyLuck.ID);
         UnlockTracker.unlockCard(IdentityTheft.ID);

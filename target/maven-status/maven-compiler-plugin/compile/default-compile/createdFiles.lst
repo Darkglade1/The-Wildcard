@@ -6,6 +6,7 @@ theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
 theWildCard\cards\Attack\Common\SavageBlow.class
 theWildCard\cards\Power\Rare\Bulwark.class
 theWildCard\cards\Arcana\ArchaicAssault.class
+theWildCard\cards\Attack\Rare\Desolation.class
 theWildCard\patches\ArcanaDropRatePatchUncommon$Locator.class
 theWildCard\cards\Power\Uncommon\Abstinence.class
 theWildCard\cards\Power\Uncommon\BalancingAct.class
@@ -87,7 +88,6 @@ theWildCard\powers\PersonaCaesarPower.class
 theWildCard\cards\Power\Uncommon\VileAura.class
 theWildCard\tags\Tags.class
 theWildCard\cards\Attack\Uncommon\SuddenDeath.class
-theWildCard\cards\Attack\Rare\Devastate.class
 theWildCard\WildcardMod.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch.class
 theWildCard\cards\Power\Rare\TheUniverse.class

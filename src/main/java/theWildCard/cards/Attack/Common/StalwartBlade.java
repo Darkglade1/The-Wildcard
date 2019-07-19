@@ -28,12 +28,12 @@ public class StalwartBlade extends AbstractDefaultCard implements OnDiscardArcan
     private static final int COST = 1;
 
     private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 2;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
-    private static final int BLOCK = 6;
+    private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 2;
 
-    private static final int DISCARD = 2;
+    private static final int DISCARD = 1;
 
     public StalwartBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
