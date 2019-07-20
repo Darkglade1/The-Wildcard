@@ -43,7 +43,6 @@ theWildCard\cards\Arcana\AbstractArcanaCard.class
 theWildCard\cards\Skill\Common\Proficiency.class
 theWildCard\patches\SingleCardViewPopupPatch.class
 theWildCard\cards\Arcana\FinalHour.class
-theWildCard\cards\Skill\Uncommon\Lock.class
 theWildCard\cards\Attack\Common\WitchsStrike.class
 theWildCard\cards\Persona\Odin.class
 theWildCard\powers\HarvestPower.class
@@ -183,3 +182,4 @@ theWildCard\cards\Skill\Uncommon\Vengeance.class
 theWildCard\powers\AttunementPower.class
 theWildCard\powers\ManOfManyFacesPower.class
 theWildCard\powers\LoseThornsPower.class
+theWildCard\cards\Skill\Uncommon\UnderLockAndKey.class

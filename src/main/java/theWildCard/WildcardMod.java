@@ -86,7 +86,7 @@ import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
-import theWildCard.cards.Skill.Uncommon.Lock;
+import theWildCard.cards.Skill.Uncommon.UnderLockAndKey;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.cards.Skill.Uncommon.UnendingRitual;
@@ -413,7 +413,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Attunement());
         BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
-        BaseMod.addCard(new Lock());
+        BaseMod.addCard(new UnderLockAndKey());
         BaseMod.addCard(new MaskChange());
         BaseMod.addCard(new UnendingRitual());
         BaseMod.addCard(new ShieldOfMany());
@@ -471,7 +471,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Attunement.ID);
         UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
-        UnlockTracker.unlockCard(Lock.ID);
+        UnlockTracker.unlockCard(UnderLockAndKey.ID);
         UnlockTracker.unlockCard(MaskChange.ID);
         UnlockTracker.unlockCard(UnendingRitual.ID);
         UnlockTracker.unlockCard(ShieldOfMany.ID);

@@ -348,9 +348,9 @@
     "NAME": "Deicide",
     "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
   },
-  "theWildCard:Lock": {
-    "NAME": "Lock",
-    "DESCRIPTION": "Choose up to !M! Arcana in your hand. They no longer transform."
+  "theWildCard:UnderLockAndKey": {
+    "NAME": "Under Lock and Key",
+    "DESCRIPTION": "Enemy loses !M! Strength this turn. NL Lock !theWildCard:SecondMagic! Arcana in your hand. (Locked Arcana can no longer transform)."
   },
   "theWildCard:MaskChange": {
     "NAME": "Mask Change",

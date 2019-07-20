@@ -24,8 +24,13 @@ public class LockArcanaAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == 0.5F) {
-            Iterator iterator = this.p.hand.group.iterator();
 
+            if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+                this.isDone = true;
+                return;
+            }
+
+            Iterator iterator = this.p.hand.group.iterator();
             while(iterator.hasNext()) {
                 AbstractCard c = (AbstractCard)iterator.next();
                 if (c instanceof AbstractArcanaCard && ((AbstractArcanaCard) c).isLocked) {
@@ -35,12 +40,26 @@ public class LockArcanaAction extends AbstractGameAction {
                     this.notArcana.add(c);
                 }
             }
+
             if (this.notArcana.size() == this.p.hand.group.size()) {
                 this.isDone = true;
                 return;
             }
+
+            if (this.p.hand.group.size() - this.notArcana.size() <= this.amount) {
+                Iterator var1 = this.p.hand.group.iterator();
+                while(var1.hasNext()) {
+                    AbstractCard c = (AbstractCard)var1.next();
+                    if (c instanceof AbstractArcanaCard) {
+                        ((AbstractArcanaCard) c).isLocked = true;
+                    }
+                }
+                this.isDone = true;
+                return;
+            }
+
             this.p.hand.group.removeAll(this.notArcana);
-            AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, false, true, false, false, true);
+            AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, false, false, false, false, false);
             AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25F));
             this.tickDuration();
         } else {
