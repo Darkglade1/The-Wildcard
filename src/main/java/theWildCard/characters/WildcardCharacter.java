@@ -116,18 +116,6 @@ public class WildcardCharacter extends CustomPlayer {
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
 
 
-        // =============== ANIMATIONS =================  
-
-//        loadAnimation(
-//                THE_DEFAULT_SKELETON_ATLAS,
-//                THE_DEFAULT_SKELETON_JSON,
-//                1.0f);
-//        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
-//        e.setTime(e.getEndTime() * MathUtils.random());
-
-        // =============== /ANIMATIONS/ =================
-
-
         // =============== TEXT BUBBLE LOCATION =================
 
         dialogX = (drawX + 0.0F * Settings.scale); // set location for text bubbles
