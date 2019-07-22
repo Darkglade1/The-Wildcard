@@ -10,6 +10,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.SetUnlocksSubscriber;
 import basemod.interfaces.StartGameSubscriber;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -111,7 +112,8 @@ public class WildcardMod implements
         PostInitializeSubscriber,
         OnStartBattleSubscriber,
         PostBattleSubscriber,
-        StartGameSubscriber {
+        StartGameSubscriber,
+        SetUnlocksSubscriber {
 
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
@@ -538,6 +540,14 @@ public class WildcardMod implements
     @Override
     public void receiveStartGame() {
         //used to clear these variables in case the player saves and quits then continues
+        ArcanaEnums.changeArcana(null);
+        AbstractPersonaCard.changePersona(null);
+        AbstractPersonaCard.canChangePersona = true;
+    }
+
+    @Override
+    public void receiveSetUnlocks() {
+        //used to clear these variables in case the player saves and quits then views the card library
         ArcanaEnums.changeArcana(null);
         AbstractPersonaCard.changePersona(null);
         AbstractPersonaCard.canChangePersona = true;
