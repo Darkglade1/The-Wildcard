@@ -11,6 +11,7 @@ import basemod.interfaces.EditStringsSubscriber;
 import basemod.interfaces.OnStartBattleSubscriber;
 import basemod.interfaces.PostBattleSubscriber;
 import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.StartGameSubscriber;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
@@ -114,7 +115,8 @@ public class WildcardMod implements
         EditCharactersSubscriber,
         PostInitializeSubscriber,
         OnStartBattleSubscriber,
-        PostBattleSubscriber {
+        PostBattleSubscriber,
+        StartGameSubscriber {
 
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
@@ -581,6 +583,14 @@ public class WildcardMod implements
         ArcanaEnums.changeArcana(null); //clears the active Arcana before battle
         AbstractPersonaCard.changePersona(null); //clears the active Persona before battle
         AbstractPersonaCard.canChangePersona = true; //clears the effect from Attunement if present
+    }
+
+    @Override
+    public void receiveStartGame() {
+        //used to clear these variables in case the player saves and quits then continues
+        ArcanaEnums.changeArcana(null);
+        AbstractPersonaCard.changePersona(null);
+        AbstractPersonaCard.canChangePersona = true;
     }
     
     // ================ /LOAD THE KEYWORDS/ ===================    

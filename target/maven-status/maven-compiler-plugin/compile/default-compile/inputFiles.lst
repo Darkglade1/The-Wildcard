@@ -6,6 +6,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\WitchsStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\SeveringSlash.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Odin.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\events\VelvetRoomPart1.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Common\TwoForOne.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\variables\DefaultCustomVariable.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\Vengeance.java
@@ -16,7 +17,6 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\ArcanaPreviewRenderOrderPatch.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\actions\ExhaustPersonaAction.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Common\Patience.java
-C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\Lock.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\tags\Tags.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\SleightOfHand.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\MassOffering.java
@@ -124,6 +124,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\Impatience.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Rare\Desolation.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\AbstractPersonaCard.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\UnderLockAndKey.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Power\Uncommon\ManOfManyFaces.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\FlurryOfBlows.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Arsene.java

@@ -77,14 +77,6 @@ public class Deicide extends AbstractDefaultCard {
                 AbstractMonster mo = notDeadMonsters.get(i);
                 AbstractDungeon.actionManager.addToBottom(new KillAction(mo));
             }
-
-//            iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-//            while(iterator.hasNext()) {
-//                AbstractMonster mo = (AbstractMonster)iterator.next();
-//                if (!mo.isDeadOrEscaped()) {
-//                    AbstractDungeon.actionManager.addToBottom(new KillAction(mo));
-//                }
-//            }
         }
     }
 
