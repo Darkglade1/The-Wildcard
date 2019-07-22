@@ -1,7 +1,6 @@
 package theWildCard;
 
 import basemod.BaseMod;
-import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
@@ -17,13 +16,10 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
@@ -87,9 +83,9 @@ import theWildCard.cards.Skill.Common.Proficiency;
 import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
-import theWildCard.cards.Skill.Uncommon.UnderLockAndKey;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
+import theWildCard.cards.Skill.Uncommon.UnderLockAndKey;
 import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.VelvetRoomPart1;
@@ -104,7 +100,6 @@ import theWildCard.variables.DefaultSecondMagicNumber;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Properties;
 
 @SpireInitializer
 public class WildcardMod implements
@@ -120,11 +115,6 @@ public class WildcardMod implements
 
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
-
-    // Mod-settings settings. This is if you want an on/off savable button
-    public static Properties theDefaultDefaultSettings = new Properties();
-    public static final String ENABLE_PLACEHOLDER_SETTINGS = "enablePlaceholder";
-    public static boolean enablePlaceholder = true; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
     private static final String MODNAME = "The Wild Card";
@@ -208,21 +198,6 @@ public class WildcardMod implements
         
         logger.info("Done creating the color");
         
-        
-        logger.info("Adding mod settings");
-        // This loads the mod settings.
-        // The actual mod Button is added below in receivePostInitialize()
-        theDefaultDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE"); // This is the default setting. It's actually set...
-        try {
-            SpireConfig config = new SpireConfig("defaultMod", "theDefaultConfig", theDefaultDefaultSettings); // ...right here
-            // the "fileName" parameter is the name of the file MTS will create where it will save our setting.
-            config.load(); // Load the setting and set the boolean to equal it
-            enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        logger.info("Done adding mod settings");
-        
     }
     
     // ====== NO EDIT AREA ======
@@ -305,27 +280,6 @@ public class WildcardMod implements
         
         // Create the Mod Menu
         ModPanel settingsPanel = new ModPanel();
-        
-        // Create the on/off button:
-        ModLabeledToggleButton enableNormalsButton = new ModLabeledToggleButton("This is the text which goes next to the checkbox.",
-                350.0f, 700.0f, Settings.CREAM_COLOR, FontHelper.charDescFont, // Position (trial and error it), color, font
-                enablePlaceholder, // Boolean it uses
-                settingsPanel, // The mod panel in which this button will be in
-                (label) -> {}, // thing??????? idk
-                (button) -> { // The actual button:
-            
-            enablePlaceholder = button.enabled; // The boolean true/false will be whether the button is enabled or not
-            try {
-                // And based on that boolean, set the settings and save them
-                SpireConfig config = new SpireConfig("defaultMod", "theDefaultConfig", theDefaultDefaultSettings);
-                config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enablePlaceholder);
-                config.save();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-        
-        settingsPanel.addUIElement(enableNormalsButton); // Add the button to the settings panel. Button is a go.
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
 
