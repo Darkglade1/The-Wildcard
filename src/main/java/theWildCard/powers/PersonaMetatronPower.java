@@ -68,11 +68,11 @@ public class PersonaMetatronPower extends AbstractPower {
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         AbstractPlayer p = AbstractDungeon.player;
         if (isValid && usedCard != null && info.owner == p) {
-            this.flash();
             Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
             while (iterator.hasNext()) {
                 AbstractMonster mo = (AbstractMonster) iterator.next();
                 if (target != mo && !mo.isDeadOrEscaped()) {
+                    this.flash();
                     AbstractDungeon.actionManager.addToTop(new SFXAction("ATTACK_HEAVY"));
                     AbstractDungeon.actionManager.addToTop(new VFXAction(p, new CleaveEffect(), 0.1F));
                     int multiplier = damageAmount / usedCard.damage; //Accounts for instances where the card modifies the damage in the use method so that it differs from its damage value
