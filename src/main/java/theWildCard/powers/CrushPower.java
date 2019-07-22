@@ -1,5 +1,6 @@
 package theWildCard.powers;
 
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -45,7 +46,7 @@ public class CrushPower extends AbstractPower {
     @Override
     public void atStartOfTurnPostDraw () {
         this.flash();
-        AbstractDungeon.player.gainEnergy(amount);
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(amount));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
     }
 }

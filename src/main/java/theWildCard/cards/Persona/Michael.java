@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
@@ -23,12 +24,13 @@ public class Michael extends AbstractPersonaCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
+    private static final ArcanaEnums.Arcana ARCANA = ArcanaEnums.Arcana.JUDGEMENT;
 
     private static final int COST = 0;
 
 
     public Michael() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.JUDGEMENT, new PersonaMichaelPower(AbstractDungeon.player, AbstractDungeon.player));
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaMichaelPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = STRENGTH;
     }
 

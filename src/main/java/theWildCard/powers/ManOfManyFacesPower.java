@@ -47,7 +47,7 @@ public class ManOfManyFacesPower extends AbstractPower {
     public void onAfterCardPlayed(AbstractCard card) {
         if (card instanceof AbstractPersonaCard) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, amount));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
         }
     }
 

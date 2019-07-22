@@ -38,7 +38,7 @@ public class SafeguardPower extends AbstractPower {
     public void onAfterCardPlayed(AbstractCard card) {
         if (card instanceof AbstractArcanaCard) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, amount));
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, amount));
         }
     }
 

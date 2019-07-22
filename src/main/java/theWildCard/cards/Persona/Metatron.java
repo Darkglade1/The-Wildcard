@@ -1,6 +1,7 @@
 package theWildCard.cards.Persona;
 
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaMetatronPower;
@@ -18,10 +19,11 @@ public class Metatron extends AbstractPersonaCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
+    private static final ArcanaEnums.Arcana ARCANA = ArcanaEnums.Arcana.JUDGEMENT;
 
     private static final int COST = 0;
 
     public Metatron() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.JUDGEMENT, new PersonaMetatronPower(AbstractDungeon.player, AbstractDungeon.player));
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaMetatronPower(AbstractDungeon.player, AbstractDungeon.player));
     }
 }

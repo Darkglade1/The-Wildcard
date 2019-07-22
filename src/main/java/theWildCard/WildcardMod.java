@@ -89,7 +89,7 @@ import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.cards.Skill.Uncommon.UnderLockAndKey;
 import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.characters.WildcardCharacter;
-import theWildCard.events.VelvetRoomPart1;
+import theWildCard.events.VelvetRoom;
 import theWildCard.relics.BlankContractRelic;
 import theWildCard.relics.VelvetContractRelic;
 import theWildCard.util.IDCheckDontTouchPls;
@@ -287,12 +287,8 @@ public class WildcardMod implements
 
         
         // =============== EVENTS =================
-        
-        // This event will be exclusive to the City (act 2). If you want an event that's present at any
-        // part of the game, simply don't include the dungeon ID
-        // If you want to have a character-specific event, look at slimebound (CityRemoveEventPatch).
-        // Essentially, you need to patch the game and say "if a player is not playing my character class, remove the event from the pool"
-        BaseMod.addEvent(VelvetRoomPart1.ID, VelvetRoomPart1.class, Exordium.ID);
+
+        BaseMod.addEvent(VelvetRoom.ID, VelvetRoom.class, Exordium.ID);
         
         // =============== /EVENTS/ =================
         logger.info("Done loading badge Image and mod options");
@@ -518,7 +514,6 @@ public class WildcardMod implements
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
-                //  getModID().toLowerCase() makes your keyword mod specific (it won't show up in other cards that use that word)
             }
         }
     }
@@ -552,8 +547,6 @@ public class WildcardMod implements
         AbstractPersonaCard.changePersona(null);
         AbstractPersonaCard.canChangePersona = true;
     }
-    
-    // ================ /LOAD THE KEYWORDS/ ===================    
     
     // this adds "ModName:" before the ID of any card/relic/power etc.
     // in order to avoid conflicts if any other mod uses the same ID.

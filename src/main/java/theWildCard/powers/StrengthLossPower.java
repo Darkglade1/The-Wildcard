@@ -39,8 +39,8 @@ public class StrengthLossPower extends AbstractPower {
     public void onAfterCardPlayed(AbstractCard usedCard) {
         if (usedCard.type == AbstractCard.CardType.ATTACK) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.amount), -this.amount));
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new StrengthPower(owner, -amount), -amount));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, ID));
         }
     }
 

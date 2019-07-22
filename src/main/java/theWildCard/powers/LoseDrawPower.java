@@ -55,7 +55,7 @@ public class LoseDrawPower extends AbstractPower {
     public void atStartOfTurnPostDraw () {
         this.flash();
         AbstractDungeon.player.gameHandSize += amount;
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
     }
     @Override
     public void updateDescription() {

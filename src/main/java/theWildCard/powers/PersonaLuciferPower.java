@@ -50,15 +50,16 @@ public class PersonaLuciferPower extends AbstractPower {
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power instanceof StrengthPower && power.amount > 0) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, null,
-                    new StrengthPower(this.owner, power.amount), power.amount));
+            //source is set to null so the extra strength doesn't trigger this power again and create an infinite loop
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, null,
+                    new StrengthPower(owner, power.amount), power.amount));
         }
     }
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner,
-                new DexterityPower(this.owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
+                new DexterityPower(owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
     }
 }

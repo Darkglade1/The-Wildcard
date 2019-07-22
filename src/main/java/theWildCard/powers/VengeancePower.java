@@ -37,7 +37,7 @@ public class VengeancePower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, ID));
     }
 
     @Override
@@ -45,8 +45,8 @@ public class VengeancePower extends AbstractPower {
         //Applies Strength for each stack of this power the player has
         this.flash();
         for (int i = 0; i < amount; i++) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner,
-                    new StrengthPower(this.owner, damageAmount / 2), damageAmount / 2));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
+                    new StrengthPower(owner, damageAmount / 2), damageAmount / 2));
         }
         return damageAmount;
     }

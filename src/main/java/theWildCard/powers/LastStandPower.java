@@ -58,6 +58,7 @@ public class LastStandPower extends AbstractPower {
 
     @Override
     public void onRemove() {
+        //reapplies itself if removed
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
                 new LastStandPower(owner, owner), 0));
     }

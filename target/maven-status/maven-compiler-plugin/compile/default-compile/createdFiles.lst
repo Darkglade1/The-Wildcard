@@ -32,7 +32,6 @@ theWildCard\cards\Skill\Common\BasicDefend.class
 theWildCard\cards\Persona\Lucifer.class
 theWildCard\cards\Skill\Uncommon\Execute.class
 theWildCard\cards\Skill\Common\Patience.class
-theWildCard\events\IdentityCrisisEvent.class
 theWildCard\powers\VileAuraPower.class
 theWildCard\actions\LockArcanaAction.class
 theWildCard\util\TextureLoader.class
@@ -129,7 +128,6 @@ theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrde
 theWildCard\powers\LastStandPower.class
 theWildCard\cards\Persona\Polydeuces.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrderPatch$Locator.class
-theWildCard\events\VelvetRoomPart1.class
 theWildCard\cards\Persona\Scathach.class
 theWildCard\cards\Skill\Common\Unburden.class
 theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class
@@ -142,6 +140,7 @@ theWildCard\cards\Attack\Uncommon\CleansingBlow.class
 theWildCard\cards\Arcana\TheArcanaUnleashed.class
 theWildCard\cards\Attack\Rare\AllOutAttack.class
 theWildCard\powers\UpgradedUnendingRitualPower.class
+theWildCard\events\VelvetRoom.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch.class
 theWildCard\cards\Attack\Common\CallToAdventure.class
@@ -173,6 +172,7 @@ theWildCard\powers\PersonaAmaterasuPower.class
 theWildCard\cards\Skill\Common\BurstOfStrength.class
 theWildCard\powers\CrushPower.class
 theWildCard\cards\Persona\Michael.class
+theWildCard\patches\EventRemovePatch.class
 theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
 theWildCard\cards\OnDiscardArcanaCard.class

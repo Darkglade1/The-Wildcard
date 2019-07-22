@@ -1,7 +1,7 @@
 package theWildCard.powers;
 
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -38,9 +38,8 @@ public class RampantBloodlustPower extends AbstractPower implements OnKillPowerC
     @Override
     public void atStartOfTurnPostDraw() {
         this.flash();
-        AbstractPlayer player = AbstractDungeon.player;
-        player.loseEnergy(amount);
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        AbstractDungeon.actionManager.addToBottom(new LoseEnergyAction(amount));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, ID));
     }
 
     // Update the description when you apply this power.
@@ -56,6 +55,6 @@ public class RampantBloodlustPower extends AbstractPower implements OnKillPowerC
     @Override
     public void onKill(boolean isMinion) {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, ID));
     }
 }

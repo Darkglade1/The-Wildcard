@@ -62,9 +62,9 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (canChangePersona) {
+            removePersonaPower(p);
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                     personaPower, 0));
-            removePersonaPower(p);
             activePersona = personaPower.ID;
             if (ArcanaEnums.getActiveArcana() != cardArcana) {
                 ArcanaEnums.changeArcana(cardArcana);
@@ -82,6 +82,7 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
                 }
             }
         } else {
+            //Needed to make Attunement work
             if (personaPower.ID.equals(activePersona)) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                         personaPower, 0));

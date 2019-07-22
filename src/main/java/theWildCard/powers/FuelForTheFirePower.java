@@ -39,14 +39,14 @@ public class FuelForTheFirePower extends AbstractPower implements OnDiscardArcan
     public void onExhaust(AbstractCard card) {
         if (card instanceof  AbstractPersonaCard) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, amount));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
         }
     }
 
     @Override
     public void onDiscardArcana() {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, amount));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
     }
 
     @Override

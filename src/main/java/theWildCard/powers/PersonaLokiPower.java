@@ -3,7 +3,6 @@ package theWildCard.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -48,7 +47,6 @@ public class PersonaLokiPower extends AbstractPower {
     @Override
     public void atStartOfTurn() {
         this.flash();
-        AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, DRAW));
     }
 }

@@ -4,8 +4,9 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaArsenePower;
@@ -25,12 +26,13 @@ public class Arsene extends AbstractPersonaCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
+    private static final ArcanaEnums.Arcana ARCANA = ArcanaEnums.Arcana.FOOL;
 
     private static final int COST = 0;
 
 
     public Arsene() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.FOOL, new PersonaArsenePower(AbstractDungeon.player, AbstractDungeon.player));
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaArsenePower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = STRENGTH;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DEXTERITY;
     }

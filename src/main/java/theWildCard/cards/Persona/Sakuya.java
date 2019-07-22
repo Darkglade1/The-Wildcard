@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
@@ -27,11 +28,12 @@ public class Sakuya extends AbstractPersonaCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
+    private static final ArcanaEnums.Arcana ARCANA = ArcanaEnums.Arcana.PRIESTESS;
 
     private static final int COST = 0;
 
     public Sakuya() {
-        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ArcanaEnums.Arcana.PRIESTESS, new PersonaSakuyaPower(AbstractDungeon.player, AbstractDungeon.player));
+        super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaSakuyaPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = WEAK;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = WEAK_POWER;
     }

@@ -2,7 +2,7 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -49,7 +49,6 @@ public class PersonaAlicePower extends AbstractPower implements OnKillPowerCard 
     @Override
     public void onKill(boolean isMinion) {
         this.flash();
-        AbstractPlayer p = AbstractDungeon.player;
-        p.gainEnergy(ENERGY_GAIN);
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_GAIN));
     }
 }

@@ -12,7 +12,6 @@ import theWildCard.tags.Tags;
 import java.util.Iterator;
 
 public class PersonaFromDeckToHandAction extends AbstractGameAction {
-    //private static final UIStrings uiStrings;
     public static final String[] TEXT;
     private AbstractPlayer p;
 

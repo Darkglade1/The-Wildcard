@@ -214,6 +214,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         float xOffset2 = -this.hb.width * 0.25f;
         float xOffset3 = this.hb.width * 0.25f;
 
+        //inverts the x position if the card is a certain amount to the right to prevent clipping issues
         if (this.current_x > Settings.WIDTH * 0.75F) {
             xOffset1 = -xOffset1;
             xOffset2 = -xOffset2;
@@ -281,6 +282,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     @Override
     public AbstractCard makeStatEquivalentCopy() {
+        //Needed so cards generated from Card potions transform when added to the player's hand
         AbstractArcanaCard arcanaCard = (AbstractArcanaCard) super.makeStatEquivalentCopy();
         arcanaCard.changeArcana();
         return arcanaCard;

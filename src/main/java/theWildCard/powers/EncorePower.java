@@ -36,7 +36,7 @@ public class EncorePower extends AbstractPower {
     @Override
     public void onAfterCardPlayed(AbstractCard card) {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, amount));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
     }
 
     @Override

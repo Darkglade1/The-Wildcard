@@ -2,7 +2,6 @@ package theWildCard.powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -41,11 +40,10 @@ public class SubduingPresencePower extends AbstractPower {
     @Override
     public void atStartOfTurn () {
         this.flash();
-        AbstractPlayer p = AbstractDungeon.player;
         Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
         while(iterator.hasNext()) {
             AbstractMonster mo = (AbstractMonster)iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new WeakPower(mo, amount, false), amount, true, AbstractGameAction.AttackEffect.NONE));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, owner, new WeakPower(mo, amount, false), amount, true, AbstractGameAction.AttackEffect.NONE));
         }
     }
 
