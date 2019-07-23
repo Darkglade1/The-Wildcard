@@ -4,6 +4,7 @@ theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
 theWildCard\cards\Attack\Common\SavageBlow.class
+theWildCard\cards\OnDiscardPersonaArcanaPower.class
 theWildCard\cards\Power\Rare\Bulwark.class
 theWildCard\cards\Arcana\ArchaicAssault.class
 theWildCard\cards\Attack\Rare\Desolation.class
@@ -67,7 +68,6 @@ theWildCard\cards\Attack\Uncommon\IdentityTheft.class
 theWildCard\cards\Persona\Loki.class
 theWildCard\cards\Attack\Common\EbbAndFlow.class
 theWildCard\cards\Attack\Common\Bristle.class
-theWildCard\cards\OnDiscardArcanaPower.class
 theWildCard\cards\Attack\Common\StalwartBlade.class
 theWildCard\cards\Attack\Common\BalancedThrust.class
 theWildCard\cards\Attack\Rare\Ruination.class
@@ -162,6 +162,7 @@ theWildCard\cards\Attack\Uncommon\WallOfThorns.class
 theWildCard\cards\Persona\Caesar.class
 theWildCard\cards\Attack\Uncommon\AncientSeal.class
 theWildCard\cards\Attack\Common\SacrificialStroke.class
+theWildCard\cards\OnDiscardPersonaArcanaCard.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\Arcana\MagicalMight.class
@@ -175,7 +176,6 @@ theWildCard\cards\Persona\Michael.class
 theWildCard\patches\EventRemovePatch.class
 theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
-theWildCard\cards\OnDiscardArcanaCard.class
 theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Power\Rare\FuelForTheFire.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class

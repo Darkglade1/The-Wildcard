@@ -17,12 +17,11 @@ import theWildCard.cards.Arcana.AbstractArcanaCard;
         method = "initializeCardPools"
 )
 
-// A patch that triples the drop rate of Arcana cards
+// A patch that increases the drop rate of Arcana cards
 public class ArcanaDropRatePatchRare {
     @SpireInsertPatch(locator = Locator.class, localvars = {"rareCardPool", "c"})
-    public static void tripleDropRate(AbstractDungeon instance, @ByRef CardGroup[] rareCardPool, AbstractCard c) {
+    public static void increaseDropRate(AbstractDungeon instance, @ByRef CardGroup[] rareCardPool, AbstractCard c) {
         if (c instanceof AbstractArcanaCard) {
-            rareCardPool[0].addToTop(c);
             rareCardPool[0].addToTop(c);
         }
     }

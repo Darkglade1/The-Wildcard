@@ -13,12 +13,12 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import theWildCard.WildcardMod;
 import theWildCard.actions.DiscardArcanaAction;
 import theWildCard.cards.AbstractDefaultCard;
-import theWildCard.cards.OnDiscardArcanaCard;
+import theWildCard.cards.OnDiscardPersonaArcanaCard;
 import theWildCard.characters.WildcardCharacter;
 
 import static theWildCard.WildcardMod.makeCardPath;
 
-public class EnergizedStroke extends AbstractDefaultCard implements OnDiscardArcanaCard {
+public class EnergizedStroke extends AbstractDefaultCard implements OnDiscardPersonaArcanaCard {
 
     public static final String ID = WildcardMod.makeID(EnergizedStroke.class.getSimpleName());
     public static final String IMG = makeCardPath("EnergizedStroke.png");
@@ -49,7 +49,7 @@ public class EnergizedStroke extends AbstractDefaultCard implements OnDiscardArc
     }
 
     @Override
-    public void onDiscardArcana() {
+    public void onDiscardPersonaArcana() {
         int size = AbstractDungeon.getCurrRoom().monsters.monsters.size();
 
         int[] newMultiDamage = new int[size];

@@ -326,7 +326,7 @@
   },
   "theWildCard:FuelForTheFire": {
     "NAME": "Fuel for the Fire",
-    "DESCRIPTION": "Whenever you exhaust a Persona or discard an Arcana, draw a card."
+    "DESCRIPTION": "Whenever you discard a Persona or an Arcana, draw a card."
   },
   "theWildCard:ManOfManyFaces": {
     "NAME": "Man of Many Faces",
@@ -389,7 +389,7 @@
   },
   "theWildCard:Overwhelm": {
     "NAME": "Overwhelm",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Persona or Arcana discarded this way."
   },
   "theWildCard:Desolation": {
     "NAME": "Desolation",
@@ -401,7 +401,7 @@
   },
   "theWildCard:LadyLuck": {
     "NAME": "Lady Luck",
-    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Deal !D! damage to a random enemy for each Arcana discarded this way."
+    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Deal !D! damage to a random enemy for each Persona or Arcana discarded this way."
   },
   "theWildCard:IdentityTheft": {
     "NAME": "Identity Theft",
@@ -425,11 +425,11 @@
   },
   "theWildCard:EnergizedStroke": {
     "NAME": "Energized Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Deal !D! damage to ALL enemies for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Deal !D! damage to ALL enemies for each Persona or Arcana discarded this way."
   },
   "theWildCard:StalwartBlade": {
     "NAME": "Stalwart Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Gain !B! Block for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Gain !B! Block for each Persona or Arcana discarded this way."
   },
   "theWildCard:CallToAdventure": {
     "NAME": "Call to Adventure",

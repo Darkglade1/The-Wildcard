@@ -45,7 +45,7 @@
 },
 "theWildCard:FuelForTheFirePower": {
         "NAME": "Fuel for the Fire",
-        "DESCRIPTIONS": ["Whenever you exhaust a Persona or discard an Arcana, draw #b", " card.", " cards."]
+        "DESCRIPTIONS": ["Whenever you discard a Persona or an Arcana, draw #b", " card.", " cards."]
 },
 "theWildCard:ManOfManyFacesPower": {
         "NAME": "Man of Many Faces",

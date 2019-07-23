@@ -11,8 +11,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.cards.Arcana.AbstractArcanaCard;
-import theWildCard.cards.OnDiscardArcanaCard;
-import theWildCard.cards.OnDiscardArcanaPower;
+import theWildCard.cards.OnDiscardPersonaArcanaCard;
+import theWildCard.cards.OnDiscardPersonaArcanaPower;
+import theWildCard.cards.Persona.AbstractPersonaCard;
 
 import java.util.Iterator;
 
@@ -24,9 +25,9 @@ public class DiscardArcanaAction extends AbstractGameAction {
     private boolean endTurn;
     public static int numDiscarded;
     private static final float DURATION;
-    private OnDiscardArcanaCard sourceCard;
+    private OnDiscardPersonaArcanaCard sourceCard;
 
-    public DiscardArcanaAction(AbstractCreature target, AbstractCreature source, int amount, boolean isRandom, boolean endTurn, OnDiscardArcanaCard sourceCard) {
+    public DiscardArcanaAction(AbstractCreature target, AbstractCreature source, int amount, boolean isRandom, boolean endTurn, OnDiscardPersonaArcanaCard sourceCard) {
         this.p = (AbstractPlayer)target;
         this.isRandom = isRandom;
         this.setValues(target, source, amount);
@@ -52,13 +53,13 @@ public class DiscardArcanaAction extends AbstractGameAction {
                     if (!this.endTurn) {
                         c.triggerOnManualDiscard();
                     }
-                    if (c instanceof AbstractArcanaCard) {
-                        sourceCard.onDiscardArcana();
+                    if (c instanceof AbstractArcanaCard || c instanceof AbstractPersonaCard) {
+                        sourceCard.onDiscardPersonaArcana();
                         Iterator iterator = this.p.powers.iterator();
                         while(iterator.hasNext()) {
                             AbstractPower power = (AbstractPower)iterator.next();
-                            if (power instanceof OnDiscardArcanaPower) {
-                                ((OnDiscardArcanaPower)power).onDiscardArcana();
+                            if (power instanceof OnDiscardPersonaArcanaPower) {
+                                ((OnDiscardPersonaArcanaPower)power).onDiscardPersonaArcana();
                             }
                         }
                     }
@@ -93,13 +94,13 @@ public class DiscardArcanaAction extends AbstractGameAction {
                 AbstractCard c = this.p.hand.getRandomCard(AbstractDungeon.cardRandomRng);
                 this.p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                if (c instanceof AbstractArcanaCard) {
-                    sourceCard.onDiscardArcana();
+                if (c instanceof AbstractArcanaCard || c instanceof AbstractPersonaCard) {
+                    sourceCard.onDiscardPersonaArcana();
                     Iterator iterator = this.p.powers.iterator();
                     while(iterator.hasNext()) {
                         AbstractPower power = (AbstractPower)iterator.next();
-                        if (power instanceof OnDiscardArcanaPower) {
-                            ((OnDiscardArcanaPower)power).onDiscardArcana();
+                        if (power instanceof OnDiscardPersonaArcanaPower) {
+                            ((OnDiscardPersonaArcanaPower)power).onDiscardPersonaArcana();
                         }
                     }
                 }
@@ -114,13 +115,13 @@ public class DiscardArcanaAction extends AbstractGameAction {
                 AbstractCard c = (AbstractCard)var4.next();
                 this.p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                if (c instanceof AbstractArcanaCard) {
-                    sourceCard.onDiscardArcana();
+                if (c instanceof AbstractArcanaCard || c instanceof AbstractPersonaCard) {
+                    sourceCard.onDiscardPersonaArcana();
                     Iterator iterator = this.p.powers.iterator();
                     while(iterator.hasNext()) {
                         AbstractPower power = (AbstractPower)iterator.next();
-                        if (power instanceof OnDiscardArcanaPower) {
-                            ((OnDiscardArcanaPower)power).onDiscardArcana();
+                        if (power instanceof OnDiscardPersonaArcanaPower) {
+                            ((OnDiscardPersonaArcanaPower)power).onDiscardPersonaArcana();
                         }
                     }
                 }
