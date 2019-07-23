@@ -1,12 +1,12 @@
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\util\IDCheckDontTouchPls.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\MagicMettle.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\EventRemovePatch.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\IdentityTheft.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaSakuyaPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\BasicStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\WitchsStrike.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\SeveringSlash.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Odin.java
-C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\events\VelvetRoomPart1.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Common\TwoForOne.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\variables\DefaultCustomVariable.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\Vengeance.java
@@ -27,6 +27,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\LastStandPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\SingleCardViewPopupPatch.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\UnendingRitualPower.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\events\VelvetRoom.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\RelentlessBarrage.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\VileAuraPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Rare\EndOfTheLine.java
@@ -43,7 +44,6 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\JackOfAllTrades.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\BalancedThrust.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\MagicalMight.java
-C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\events\IdentityCrisisEvent.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\HarvestPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaAmaterasuPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\actions\DiscardArcanaAction.java
@@ -89,9 +89,9 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Common\EbbAndFlow.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\relics\VelvetContractRelic.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaScathachPower.java
-C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\OnDiscardArcanaPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Arcana\ArcanaArtistry.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\ShieldOfMany.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\OnDiscardPersonaArcanaCard.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\patches\ArcanaDropRatePatchCommon.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\AttunementPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaPolydeucesPower.java
@@ -101,6 +101,7 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Power\Uncommon\Safeguard.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Amaterasu.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Rare\Ruination.java
+C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\OnDiscardPersonaArcanaPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\UnendingRitual.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Thanatos.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\DivineWhirl.java
@@ -113,7 +114,6 @@ C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\PersonaPaleRiderPower.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Persona\Polydeuces.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Attack\Uncommon\Providence.java
-C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\OnDiscardArcanaCard.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Skill\Uncommon\SincereOffering.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\cards\Power\Uncommon\BalancingAct.java
 C:\Users\jeffr\Documents\my_mods\TheDefault\StS-DefaultModBase-master\theDefault\src\main\java\theWildCard\powers\AbstinencePower.java

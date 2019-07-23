@@ -19,9 +19,12 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theWildCard.WildcardMod;
+import theWildCard.cards.Arcana.ArchaicAssault;
+import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Attack.Common.BasicStrike;
 import theWildCard.cards.Attack.Common.CallToAdventure;
 import theWildCard.cards.Persona.Arsene;
+import theWildCard.cards.Persona.Thanatos;
 import theWildCard.cards.Skill.Common.BasicDefend;
 import theWildCard.relics.BlankContractRelic;
 
@@ -141,16 +144,20 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicStrike.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(BasicDefend.ID);
-        retVal.add(CallToAdventure.ID);
-        retVal.add(Arsene.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicStrike.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(BasicDefend.ID);
+//        retVal.add(CallToAdventure.ID);
+//        retVal.add(Arsene.ID);
+
+        retVal.add(Thanatos.ID);
+        retVal.add(ArchaicAssault.ID);
+        retVal.add(SeveringSlash.ID);
 
         return retVal;
     }

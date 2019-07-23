@@ -32,7 +32,7 @@ public class SuddenDeath extends AbstractDefaultCard {
     private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int THRESHOLD = 7;
+    private static final int THRESHOLD = 9;
     private static final int UPGRADE_LOWER_THRESHOLD = -1;
 
     public SuddenDeath() {

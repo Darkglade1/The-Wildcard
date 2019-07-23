@@ -296,6 +296,7 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
         } catch (IllegalAccessException | InstantiationException var2) {
             throw new RuntimeException("BaseMod failed to auto-generate makeCopy for card: " + this.cardID);
         }
+        //in case the card is locked, transform it to the card Arcana instead of the active Arcana
         card.cardArcana = this.cardArcana;
         card.transform();
         card.isLocked = this.isLocked;
@@ -305,12 +306,15 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
     @Override
     public AbstractCard makeSameInstanceOf() {
         if (cardToTransform != null) {
-            //This is needed to ensure that X cost Arcana cards can be multi-casted(Double-Tap, Burst, etc.) properly.
-            AbstractCard card = cardToTransform.makeStatEquivalentCopy();
+            //Works properly with Bronze Orb's Stasis effect
+            AbstractCard card = this.makeCopy();
+            ((AbstractArcanaCard)card).changeArcana();
             card.uuid = this.uuid;
+            //Needed to ensure that X cost Arcana can be multi-casted properly (Double-Tap, Thanatos, etc.)
+            ((AbstractArcanaCard) card).cardToTransform.energyOnUse = this.energyOnUse;
             return card;
         } else {
-            return super.makeSameInstanceOf();
+            return super.makeSameInstanceOf(); //Needed so initializeDeck at the start of combat works properly
         }
     }
 
