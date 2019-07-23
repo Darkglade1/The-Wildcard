@@ -31,8 +31,8 @@ public class Ruination extends AbstractDefaultCard {
 
     private static final int COST = 2;
 
-    private static final int DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int DAMAGE = 25;
+    private static final int UPGRADE_PLUS_DMG = 7;
 
     private static final int VULNERABLE = 5;
     private static final int UPGRADE_PLUS_VULNERABLE = 1;
@@ -41,7 +41,6 @@ public class Ruination extends AbstractDefaultCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = VULNERABLE;
-        exhaust = true;
     }
 
     @Override

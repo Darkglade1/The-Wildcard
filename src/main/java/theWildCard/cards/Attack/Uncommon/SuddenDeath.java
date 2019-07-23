@@ -29,7 +29,7 @@ public class SuddenDeath extends AbstractDefaultCard {
 
     private static final int COST = -1;
 
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 8;
     private static final int UPGRADE_PLUS_DMG = 2;
 
     private static final int THRESHOLD = 7;
