@@ -110,6 +110,7 @@ theWildCard\cards\Persona\Thanatos.class
 theWildCard\cards\AbstractDefaultCard.class
 theWildCard\cards\Persona\Metatron.class
 theWildCard\actions\ExhaustPersonaAction.class
+theWildCard\cards\Skill\Uncommon\LadyLuck.class
 theWildCard\cards\Attack\Common\FlurryOfBlows.class
 theWildCard\cards\Power\Uncommon\Attunement.class
 theWildCard\cards\Power\Uncommon\SubduingPresence.class
@@ -152,7 +153,6 @@ theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\Attack\Common\Crush.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch$Locator.class
 theWildCard\cards\Arcana\StingingStrike.class
-theWildCard\cards\Attack\Uncommon\LadyLuck.class
 theWildCard\cards\Persona\Sakuya.class
 theWildCard\cards\Arcana\SeveringSlash.class
 theWildCard\powers\EncorePower.class
@@ -176,6 +176,7 @@ theWildCard\cards\Persona\Michael.class
 theWildCard\patches\EventRemovePatch.class
 theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
+theWildCard\cards\Attack\Uncommon\TheGreatSeal.class
 theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Power\Rare\FuelForTheFire.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class

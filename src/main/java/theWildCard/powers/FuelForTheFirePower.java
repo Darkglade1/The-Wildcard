@@ -1,6 +1,7 @@
 package theWildCard.powers;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -8,6 +9,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
 import theWildCard.cards.OnDiscardPersonaArcanaPower;
+import theWildCard.cards.Persona.AbstractPersonaCard;
 
 
 public class FuelForTheFirePower extends AbstractPower implements OnDiscardPersonaArcanaPower {
@@ -34,6 +36,14 @@ public class FuelForTheFirePower extends AbstractPower implements OnDiscardPerso
     }
 
     @Override
+    public void onExhaust(AbstractCard card) {
+        if (card instanceof AbstractPersonaCard) {
+            this.flash();
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
+        }
+    }
+
+    @Override
     public void onDiscardPersonaArcana() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(owner, amount));
@@ -42,9 +52,9 @@ public class FuelForTheFirePower extends AbstractPower implements OnDiscardPerso
     @Override
     public void updateDescription() {
         if (amount == 1) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + DESCRIPTIONS[3] + amount + DESCRIPTIONS[4];
         } else {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2] + DESCRIPTIONS[3] + amount + DESCRIPTIONS[5];
         }
     }
 }

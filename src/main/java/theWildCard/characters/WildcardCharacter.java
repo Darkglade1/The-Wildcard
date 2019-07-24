@@ -141,6 +141,7 @@ public class WildcardCharacter extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
 
         logger.info("Begin loading starter Deck Strings");
+
         retVal.add(BasicStrike.ID);
         retVal.add(BasicStrike.ID);
         retVal.add(BasicStrike.ID);

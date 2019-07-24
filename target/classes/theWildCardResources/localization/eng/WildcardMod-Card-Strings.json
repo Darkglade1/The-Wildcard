@@ -326,7 +326,7 @@
   },
   "theWildCard:FuelForTheFire": {
     "NAME": "Fuel for the Fire",
-    "DESCRIPTION": "Whenever you discard a Persona or an Arcana, draw a card."
+    "DESCRIPTION": "Whenever you exhaust a Persona, draw a card. NL Whenever you discard a Persona or an Arcana, draw a card."
   },
   "theWildCard:ManOfManyFaces": {
     "NAME": "Man of Many Faces",
@@ -347,6 +347,10 @@
   "theWildCard:Deicide": {
     "NAME": "Deicide",
     "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
+  },
+  "theWildCard:LadyLuck": {
+    "NAME": "Lady Luck",
+    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Draw !theWildCard:SecondMagic! cards for each Persona or Arcana discarded this way."
   },
   "theWildCard:UnderLockAndKey": {
     "NAME": "Under Lock and Key",
@@ -399,13 +403,13 @@
     "NAME": "Ruination",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to ALL enemies. NL Exhaust ALL your Persona."
   },
-  "theWildCard:LadyLuck": {
-    "NAME": "Lady Luck",
-    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Deal !D! damage to a random enemy for each Persona or Arcana discarded this way."
-  },
   "theWildCard:IdentityTheft": {
     "NAME": "Identity Theft",
     "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand."
+  },
+  "theWildCard:TheGreatSeal": {
+    "NAME": "The Great Seal",
+    "DESCRIPTION": "Deal !D! damage. NL If there are no Persona in your hand, deck, or discard pile, gain !M! Strength and target enemy loses !theWildCard:SecondMagic! Strength."
   },
   "theWildCard:Salvation": {
     "NAME": "Salvation",
@@ -425,11 +429,11 @@
   },
   "theWildCard:EnergizedStroke": {
     "NAME": "Energized Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Deal !D! damage to ALL enemies for each Persona or Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Deal !D! damage to ALL enemies for each Persona or Arcana discarded this way."
   },
   "theWildCard:StalwartBlade": {
     "NAME": "Stalwart Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Discard !M! card. Gain !B! Block for each Persona or Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain !B! Block for each Persona or Arcana discarded this way."
   },
   "theWildCard:CallToAdventure": {
     "NAME": "Call to Adventure",

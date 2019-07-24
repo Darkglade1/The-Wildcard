@@ -53,7 +53,8 @@ import theWildCard.cards.Attack.Rare.Overwhelm;
 import theWildCard.cards.Attack.Rare.Ruination;
 import theWildCard.cards.Attack.Uncommon.CryOfAgony;
 import theWildCard.cards.Attack.Uncommon.IdentityTheft;
-import theWildCard.cards.Attack.Uncommon.LadyLuck;
+import theWildCard.cards.Attack.Uncommon.TheGreatSeal;
+import theWildCard.cards.Skill.Uncommon.LadyLuck;
 import theWildCard.cards.Attack.Uncommon.Providence;
 import theWildCard.cards.Attack.Uncommon.Salvation;
 import theWildCard.cards.Persona.AbstractPersonaCard;
@@ -363,6 +364,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Attunement());
         BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
+        BaseMod.addCard(new LadyLuck());
         BaseMod.addCard(new UnderLockAndKey());
         BaseMod.addCard(new MaskChange());
         BaseMod.addCard(new UnendingRitual());
@@ -375,8 +377,8 @@ public class WildcardMod implements
         BaseMod.addCard(new Overwhelm());
         BaseMod.addCard(new Desolation());
         BaseMod.addCard(new Ruination());
-        BaseMod.addCard(new LadyLuck());
         BaseMod.addCard(new IdentityTheft());
+        BaseMod.addCard(new TheGreatSeal());
         BaseMod.addCard(new Salvation());
         BaseMod.addCard(new Providence());
         BaseMod.addCard(new CryOfAgony());
@@ -421,6 +423,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Attunement.ID);
         UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
+        UnlockTracker.unlockCard(LadyLuck.ID);
         UnlockTracker.unlockCard(UnderLockAndKey.ID);
         UnlockTracker.unlockCard(MaskChange.ID);
         UnlockTracker.unlockCard(UnendingRitual.ID);
@@ -433,8 +436,8 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Overwhelm.ID);
         UnlockTracker.unlockCard(Desolation.ID);
         UnlockTracker.unlockCard(Ruination.ID);
-        UnlockTracker.unlockCard(LadyLuck.ID);
         UnlockTracker.unlockCard(IdentityTheft.ID);
+        UnlockTracker.unlockCard(TheGreatSeal.ID);
         UnlockTracker.unlockCard(Salvation.ID);
         UnlockTracker.unlockCard(Providence.ID);
         UnlockTracker.unlockCard(CryOfAgony.ID);

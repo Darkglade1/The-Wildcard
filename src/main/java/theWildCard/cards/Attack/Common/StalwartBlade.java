@@ -33,20 +33,17 @@ public class StalwartBlade extends AbstractDefaultCard implements OnDiscardPerso
     private static final int BLOCK = 8;
     private static final int UPGRADE_PLUS_BLOCK = 2;
 
-    private static final int DISCARD = 1;
-
     public StalwartBlade() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
-        magicNumber = baseMagicNumber = DISCARD;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new DiscardArcanaAction(p, p, magicNumber, false, false, this));
+        AbstractDungeon.actionManager.addToBottom(new DiscardArcanaAction(p, p, -1, false, false, this));
     }
 
     @Override

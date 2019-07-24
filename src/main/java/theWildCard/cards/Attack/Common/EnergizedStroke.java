@@ -33,19 +33,16 @@ public class EnergizedStroke extends AbstractDefaultCard implements OnDiscardPer
     private static final int DAMAGE = 7;
     private static final int UPGRADE_PLUS_DMG = 2;
 
-    private static final int DISCARD = 1;
-
     public EnergizedStroke() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = DISCARD;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new DiscardArcanaAction(p, p, magicNumber, false, false, this));
+        AbstractDungeon.actionManager.addToBottom(new DiscardArcanaAction(p, p, -1, false, false, this));
     }
 
     @Override
