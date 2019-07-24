@@ -15,7 +15,7 @@
     "NAME": "Velvet Contract",
     "FLAVOR": "The contract is sealed, and with it, your fate.",
     "DESCRIPTIONS": [
-      "Replaces [#2aecd7]Blank [#2aecd7]Contract. Whenever you draw a Persona, draw a card."
+      "Whenever you draw a Persona, draw a card."
     ]
   },
   "theWildCard:PlaceholderRelic2": {

@@ -334,7 +334,7 @@
   },
   "theWildCard:Safeguard": {
     "NAME": "Safeguard",
-    "DESCRIPTION": "Whenever you play an Arcana, gain !M! Block."
+    "DESCRIPTION": "At the end of your turn, gain !M! Block for each Persona in your deck."
   },
   "theWildCard:Attunement": {
     "NAME": "Attunement",
@@ -347,6 +347,11 @@
   "theWildCard:Deicide": {
     "NAME": "Deicide",
     "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
+  },
+  "theWildCard:MasterPlan": {
+    "NAME": "Master Plan",
+    "DESCRIPTION": "Retain up to !M! cards this turn. NL Next turn, gain X energy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain up to !M! cards this turn. NL Next turn, gain X + 1 energy. NL Exhaust."
   },
   "theWildCard:LadyLuck": {
     "NAME": "Lady Luck",

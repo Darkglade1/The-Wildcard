@@ -21,10 +21,10 @@ public class Safeguard extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
+    private static final int UPGRADED_COST = 1;
 
-    private static final int BLOCK_POWER = 3;
-    private static final int UPGRADE_PLUS_BLOCK_POWER = 1;
+    private static final int BLOCK_POWER = 2;
 
     public Safeguard() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -41,7 +41,7 @@ public class Safeguard extends AbstractDefaultCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_PLUS_BLOCK_POWER);
+            upgradeBaseCost(UPGRADED_COST);
             initializeDescription();
         }
     }

@@ -19,6 +19,10 @@
         "NAME": "Crush",
         "DESCRIPTIONS": ["Next turn, gain", " ."]
 },
+"theWildCard:MasterPlanPower": {
+        "NAME": "Master Plan",
+        "DESCRIPTIONS": ["Next turn, gain", " . Retain up to #b", " cards this turn."]
+},
 "theWildCard:UnendingRitualPower": {
         "NAME": "Unending Ritual",
         "DESCRIPTIONS": ["Whenever you play an Arcana this turn, add #b", " random Arcana to your hand."]
@@ -53,7 +57,7 @@
 },
 "theWildCard:SafeguardPower": {
         "NAME": "Safeguard",
-        "DESCRIPTIONS": ["Whenever you play an Arcana, gain #b", " Block."]
+        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block for each Persona in your deck."]
 },
 "theWildCard:AttunementPower": {
         "NAME": "Attunement",

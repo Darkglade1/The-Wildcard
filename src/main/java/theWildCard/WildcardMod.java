@@ -86,6 +86,7 @@ import theWildCard.cards.Skill.Common.Unburden;
 import theWildCard.cards.Skill.Rare.Deicide;
 import theWildCard.cards.Skill.Uncommon.Impatience;
 import theWildCard.cards.Skill.Uncommon.MaskChange;
+import theWildCard.cards.Skill.Uncommon.MasterPlan;
 import theWildCard.cards.Skill.Uncommon.ShieldOfMany;
 import theWildCard.cards.Skill.Uncommon.UnderLockAndKey;
 import theWildCard.cards.Skill.Uncommon.UnendingRitual;
@@ -308,7 +309,7 @@ public class WildcardMod implements
         logger.info("Adding relics");
         
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new BlankContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
+        //BaseMod.addRelicToCustomPool(new BlankContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new VelvetContractRelic(), WildcardCharacter.Enums.COLOR_BLUE);
 
         logger.info("Done adding relics!");
@@ -364,6 +365,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Attunement());
         BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
+        BaseMod.addCard(new MasterPlan());
         BaseMod.addCard(new LadyLuck());
         BaseMod.addCard(new UnderLockAndKey());
         BaseMod.addCard(new MaskChange());
@@ -423,6 +425,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Attunement.ID);
         UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
+        UnlockTracker.unlockCard(MasterPlan.ID);
         UnlockTracker.unlockCard(LadyLuck.ID);
         UnlockTracker.unlockCard(UnderLockAndKey.ID);
         UnlockTracker.unlockCard(MaskChange.ID);

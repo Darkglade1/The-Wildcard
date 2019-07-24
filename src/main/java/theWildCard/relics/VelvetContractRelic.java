@@ -20,7 +20,7 @@ public class VelvetContractRelic extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("VelvetContract.png"));
 
     public VelvetContractRelic() {
-        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.MAGICAL);
     }
 
     @Override
@@ -31,24 +31,24 @@ public class VelvetContractRelic extends CustomRelic {
         }
     }
 
-    @Override
-    public void obtain() {
-        if (AbstractDungeon.player.hasRelic(BlankContractRelic.ID)) {
-            for (int i = 0; i < AbstractDungeon.player.relics.size(); i++) {
-                if ((AbstractDungeon.player.relics.get(i)).relicId.equals(BlankContractRelic.ID)) {
-                    instantObtain(AbstractDungeon.player, i, true);
-                    break;
-                }
-            }
-        } else {
-            super.obtain();
-        }
-    }
+//    @Override
+//    public void obtain() {
+//        if (AbstractDungeon.player.hasRelic(BlankContractRelic.ID)) {
+//            for (int i = 0; i < AbstractDungeon.player.relics.size(); i++) {
+//                if ((AbstractDungeon.player.relics.get(i)).relicId.equals(BlankContractRelic.ID)) {
+//                    instantObtain(AbstractDungeon.player, i, true);
+//                    break;
+//                }
+//            }
+//        } else {
+//            super.obtain();
+//        }
+//    }
 
-    @Override
-    public boolean canSpawn() {
-        return AbstractDungeon.player.hasRelic(BlankContractRelic.ID);
-    }
+//    @Override
+//    public boolean canSpawn() {
+//        return AbstractDungeon.player.hasRelic(BlankContractRelic.ID);
+//    }
 
     @Override
     public String getUpdatedDescription() {

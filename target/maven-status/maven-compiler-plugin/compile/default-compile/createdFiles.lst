@@ -120,6 +120,7 @@ theWildCard\cards\Attack\Uncommon\BrutalDemise.class
 theWildCard\patches\SingleCardViewPopupPatch$RenderArcanaPreviewPatch$Locator.class
 theWildCard\cards\Power\Rare\Reincarnation.class
 theWildCard\actions\DiscardArcanaAction.class
+theWildCard\powers\MasterPlanPower.class
 theWildCard\patches\ArcanaDropRatePatchUncommon.class
 theWildCard\cards\Persona\Alice.class
 theWildCard\cards\Skill\Uncommon\MassOffering.class
@@ -152,6 +153,7 @@ theWildCard\cards\Attack\Common\SweepingSlash.class
 theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\Attack\Common\Crush.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch$Locator.class
+theWildCard\cards\Skill\Uncommon\MasterPlan.class
 theWildCard\cards\Arcana\StingingStrike.class
 theWildCard\cards\Persona\Sakuya.class
 theWildCard\cards\Arcana\SeveringSlash.class

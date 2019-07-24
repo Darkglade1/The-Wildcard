@@ -23,7 +23,7 @@ import theWildCard.cards.Attack.Common.BasicStrike;
 import theWildCard.cards.Attack.Common.CallToAdventure;
 import theWildCard.cards.Persona.Arsene;
 import theWildCard.cards.Skill.Common.BasicDefend;
-import theWildCard.relics.BlankContractRelic;
+import theWildCard.relics.VelvetContractRelic;
 
 import java.util.ArrayList;
 
@@ -159,7 +159,7 @@ public class WildcardCharacter extends CustomPlayer {
     // Starting Relics	
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(BlankContractRelic.ID);
+        retVal.add(VelvetContractRelic.ID);
         return retVal;
     }
 
