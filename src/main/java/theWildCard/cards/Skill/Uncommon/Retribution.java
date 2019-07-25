@@ -26,8 +26,8 @@ public class Retribution extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 2;
-    private static final int UPGRADED_COST = 1;
+    private static final int COST = 1;
+    private static final int UPGRADED_COST = 0;
 
     public Retribution() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);

@@ -10,6 +10,7 @@ theWildCard\cards\Arcana\ArchaicAssault.class
 theWildCard\cards\Attack\Rare\Desolation.class
 theWildCard\patches\ArcanaDropRatePatchUncommon$Locator.class
 theWildCard\cards\Power\Uncommon\Abstinence.class
+theWildCard\relics\Wildcard.class
 theWildCard\cards\Power\Uncommon\BalancingAct.class
 theWildCard\cards\Arcana\ArcaneArts.class
 theWildCard\variables\ArcanaEnums.class
@@ -66,6 +67,7 @@ theWildCard\powers\TheUniversePower.class
 theWildCard\cards\Attack\Uncommon\IdentityTheft.class
 theWildCard\cards\Persona\Loki.class
 theWildCard\cards\Attack\Common\EbbAndFlow.class
+theWildCard\relics\FigureOfDeath.class
 theWildCard\cards\Attack\Common\Bristle.class
 theWildCard\cards\OnDiscardArcanaPower.class
 theWildCard\cards\Attack\Common\StalwartBlade.class
@@ -103,6 +105,7 @@ theWildCard\actions\KillAction.class
 theWildCard\cards\Power\Rare\Momentum.class
 theWildCard\patches\PowerOnKillPatch.class
 theWildCard\cards\Persona\Satanael.class
+theWildCard\actions\AnyCardFromDeckToHandAction.class
 theWildCard\cards\Persona\Arsene.class
 theWildCard\cards\Skill\Uncommon\RampantBloodlust.class
 theWildCard\cards\Attack\Rare\Overwhelm.class

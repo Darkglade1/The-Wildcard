@@ -95,7 +95,9 @@ import theWildCard.cards.Skill.Uncommon.UnendingRitual;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.VelvetRoom;
 import theWildCard.relics.Evoker;
+import theWildCard.relics.FigureOfDeath;
 import theWildCard.relics.VelvetContract;
+import theWildCard.relics.Wildcard;
 import theWildCard.util.IDCheckDontTouchPls;
 import theWildCard.util.TextureLoader;
 import theWildCard.variables.ArcanaEnums;
@@ -314,6 +316,8 @@ public class WildcardMod implements
         //BaseMod.addRelicToCustomPool(new BlankContract(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new VelvetContract(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new Evoker(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new Wildcard(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new FigureOfDeath(), WildcardCharacter.Enums.COLOR_BLUE);
 
         logger.info("Done adding relics!");
     }
