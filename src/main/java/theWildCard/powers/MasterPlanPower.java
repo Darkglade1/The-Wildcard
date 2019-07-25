@@ -40,11 +40,15 @@ public class MasterPlanPower extends AbstractPower {
     // Update the description when you apply this power.
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0];
-        for (int i = 0; i < amount; i++) {
-            description += " [E]";
+        if (amount == 0) {
+            description = DESCRIPTIONS[2] + RETAIN_POWER + DESCRIPTIONS[3];
+        } else {
+            description = DESCRIPTIONS[0];
+            for (int i = 0; i < amount; i++) {
+                description += " [E]";
+            }
+            description += DESCRIPTIONS[1] + DESCRIPTIONS[2] + RETAIN_POWER + DESCRIPTIONS[3];
         }
-        description += DESCRIPTIONS[1] + RETAIN_POWER + DESCRIPTIONS[2];
     }
 
     @Override

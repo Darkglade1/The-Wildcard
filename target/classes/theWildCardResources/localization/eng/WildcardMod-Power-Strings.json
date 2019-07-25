@@ -21,7 +21,7 @@
 },
 "theWildCard:MasterPlanPower": {
         "NAME": "Master Plan",
-        "DESCRIPTIONS": ["Next turn, gain", " . Retain up to #b", " cards this turn."]
+        "DESCRIPTIONS": ["Next turn, gain", " . ", "Retain up to #b", " cards this turn."]
 },
 "theWildCard:UnendingRitualPower": {
         "NAME": "Unending Ritual",

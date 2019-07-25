@@ -45,7 +45,7 @@ public class MasterPlan extends AbstractDefaultCard {
         if (upgraded) {
             effect++;
         }
-        if (effect > 0) {
+        if (effect >= 0) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                     new MasterPlanPower(p, effect), effect));
             if (!this.freeToPlayOnce) {
