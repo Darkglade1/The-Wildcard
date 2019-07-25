@@ -10,12 +10,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
 import theWildCard.actions.DiscardArcanaAction;
 import theWildCard.cards.AbstractDefaultCard;
-import theWildCard.cards.OnDiscardPersonaArcanaCard;
+import theWildCard.cards.OnDiscardArcanaCard;
 import theWildCard.characters.WildcardCharacter;
 
 import static theWildCard.WildcardMod.makeCardPath;
 
-public class StalwartBlade extends AbstractDefaultCard implements OnDiscardPersonaArcanaCard {
+public class StalwartBlade extends AbstractDefaultCard implements OnDiscardArcanaCard {
 
     public static final String ID = WildcardMod.makeID(StalwartBlade.class.getSimpleName());
     public static final String IMG = makeCardPath("StalwartBlade.png");
@@ -47,7 +47,7 @@ public class StalwartBlade extends AbstractDefaultCard implements OnDiscardPerso
     }
 
     @Override
-    public void onDiscardPersonaArcana() {
+    public void onDiscardArcana() {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, block));
     }
 

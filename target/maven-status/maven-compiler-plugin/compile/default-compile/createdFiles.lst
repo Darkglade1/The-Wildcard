@@ -4,7 +4,6 @@ theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
 theWildCard\cards\Attack\Common\SavageBlow.class
-theWildCard\cards\OnDiscardPersonaArcanaPower.class
 theWildCard\cards\Power\Rare\Bulwark.class
 theWildCard\cards\Arcana\ArchaicAssault.class
 theWildCard\cards\Attack\Rare\Desolation.class
@@ -68,6 +67,7 @@ theWildCard\cards\Attack\Uncommon\IdentityTheft.class
 theWildCard\cards\Persona\Loki.class
 theWildCard\cards\Attack\Common\EbbAndFlow.class
 theWildCard\cards\Attack\Common\Bristle.class
+theWildCard\cards\OnDiscardArcanaPower.class
 theWildCard\cards\Attack\Common\StalwartBlade.class
 theWildCard\cards\Attack\Common\BalancedThrust.class
 theWildCard\cards\Attack\Rare\Ruination.class
@@ -76,6 +76,7 @@ theWildCard\characters\WildcardCharacter$Enums.class
 theWildCard\cards\Skill\Rare\LastRites.class
 theWildCard\cards\Skill\Uncommon\Impatience.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch$Locator.class
+theWildCard\cards\Attack\Uncommon\EnergyTheft.class
 theWildCard\powers\LoseDrawPower.class
 theWildCard\util\IDCheckDontTouchPls.class
 theWildCard\cards\Skill\Common\TwoForOne.class
@@ -145,6 +146,7 @@ theWildCard\powers\UpgradedUnendingRitualPower.class
 theWildCard\events\VelvetRoom.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch.class
+theWildCard\cards\Attack\Common\BladeOfGenerations.class
 theWildCard\cards\Attack\Common\CallToAdventure.class
 theWildCard\cards\Power\Uncommon\RegalBearing.class
 theWildCard\cards\Skill\Uncommon\ShieldOfMany.class
@@ -164,13 +166,12 @@ theWildCard\cards\Attack\Uncommon\WallOfThorns.class
 theWildCard\cards\Persona\Caesar.class
 theWildCard\cards\Attack\Uncommon\AncientSeal.class
 theWildCard\cards\Attack\Common\SacrificialStroke.class
-theWildCard\cards\OnDiscardPersonaArcanaCard.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$CardLibraryRenderOrderPatch.class
 theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\Arcana\MagicalMight.class
 theWildCard\cards\Power\Uncommon\Safeguard.class
+theWildCard\cards\Skill\Common\MaskChange.class
 theWildCard\powers\VengeancePower.class
-theWildCard\cards\Skill\Uncommon\MaskChange.class
 theWildCard\powers\PersonaAmaterasuPower.class
 theWildCard\cards\Skill\Common\BurstOfStrength.class
 theWildCard\powers\CrushPower.class
@@ -179,6 +180,7 @@ theWildCard\patches\EventRemovePatch.class
 theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
 theWildCard\cards\Attack\Uncommon\TheGreatSeal.class
+theWildCard\cards\OnDiscardArcanaCard.class
 theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Power\Rare\FuelForTheFire.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class

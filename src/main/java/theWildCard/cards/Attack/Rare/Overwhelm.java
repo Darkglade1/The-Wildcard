@@ -10,12 +10,12 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
 import theWildCard.actions.DiscardArcanaAction;
 import theWildCard.cards.AbstractDefaultCard;
-import theWildCard.cards.OnDiscardPersonaArcanaCard;
+import theWildCard.cards.OnDiscardArcanaCard;
 import theWildCard.characters.WildcardCharacter;
 
 import static theWildCard.WildcardMod.makeCardPath;
 
-public class Overwhelm extends AbstractDefaultCard implements OnDiscardPersonaArcanaCard {
+public class Overwhelm extends AbstractDefaultCard implements OnDiscardArcanaCard {
 
     public static final String ID = WildcardMod.makeID(Overwhelm.class.getSimpleName());
     public static final String IMG = makeCardPath("Overwhelm.png");
@@ -47,7 +47,7 @@ public class Overwhelm extends AbstractDefaultCard implements OnDiscardPersonaAr
     }
 
     @Override
-    public void onDiscardPersonaArcana() {
+    public void onDiscardArcana() {
         AbstractDungeon.actionManager.addToBottom(new ModifyDamageAction(this.uuid, this.magicNumber));
     }
 

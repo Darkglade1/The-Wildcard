@@ -152,6 +152,27 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
         return (AbstractPersonaCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
     }
 
+    public static int getPersonaCount() {
+        AbstractPlayer p = AbstractDungeon.player;
+        int personaCount = 0;
+        for (AbstractCard card : p.hand.group) {
+            if (card instanceof AbstractPersonaCard) {
+                personaCount++;
+            }
+        }
+        for (AbstractCard card : p.drawPile.group) {
+            if (card instanceof AbstractPersonaCard) {
+                personaCount++;
+            }
+        }
+        for (AbstractCard card : p.discardPile.group) {
+            if (card instanceof AbstractPersonaCard) {
+                personaCount++;
+            }
+        }
+        return personaCount;
+    }
+
     private void transformArcana(AbstractCard card) {
         if (card.hasTag(Tags.ARCANA)) {
             AbstractArcanaCard arcana = (AbstractArcanaCard) card;

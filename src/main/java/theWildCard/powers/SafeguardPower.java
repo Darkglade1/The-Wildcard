@@ -41,22 +41,7 @@ public class SafeguardPower extends AbstractPower {
             return;
         }
         AbstractPlayer p = AbstractDungeon.player;
-        int personaCount = 0;
-        for (AbstractCard card : p.hand.group) {
-            if (card instanceof AbstractPersonaCard) {
-                personaCount++;
-            }
-        }
-        for (AbstractCard card : p.drawPile.group) {
-            if (card instanceof AbstractPersonaCard) {
-                personaCount++;
-            }
-        }
-        for (AbstractCard card : p.discardPile.group) {
-            if (card instanceof AbstractPersonaCard) {
-                personaCount++;
-            }
-        }
+        int personaCount = AbstractPersonaCard.getPersonaCount();
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, personaCount * amount));
     }
 
