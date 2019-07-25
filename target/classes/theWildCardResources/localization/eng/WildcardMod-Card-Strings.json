@@ -149,7 +149,8 @@
   },
   "theWildCard:CleansingBlow": {
     "NAME": "Cleansing Blow",
-    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust."
+    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust ALL your Status and Curse cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust ALL your Status and Curse cards."
   },
   "theWildCard:JackOfAllTrades": {
     "NAME": "Jack of All Trades",
@@ -363,7 +364,7 @@
   },
   "theWildCard:MaskChange": {
     "NAME": "Mask Change",
-    "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your deck into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your draw pile into your hand."
   },
   "theWildCard:UnendingRitual": {
     "NAME": "Unending Ritual",
@@ -402,7 +403,7 @@
   },
   "theWildCard:Desolation": {
     "NAME": "Desolation",
-    "DESCRIPTION": "If there are no Persona in your hand, deck, or discard pile, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "If there are no Persona in your deck, deal !D! damage to ALL enemies."
   },
   "theWildCard:Ruination": {
     "NAME": "Ruination",
@@ -419,7 +420,7 @@
   },
   "theWildCard:TheGreatSeal": {
     "NAME": "The Great Seal",
-    "DESCRIPTION": "Deal !D! damage. NL If there are no Persona in your hand, deck, or discard pile, gain !M! Strength and target enemy loses !theWildCard:SecondMagic! Strength."
+    "DESCRIPTION": "Deal !D! damage. NL If there are no Persona in your deck, gain !M! Strength and target enemy loses !theWildCard:SecondMagic! Strength."
   },
   "theWildCard:Salvation": {
     "NAME": "Salvation",
