@@ -28,11 +28,12 @@ public class IdentityTheft extends AbstractDefaultCard {
     private static final int COST = 1;
 
     private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
     public IdentityTheft() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        this.exhaust = true;
     }
 
     @Override

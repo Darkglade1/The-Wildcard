@@ -19,17 +19,11 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theWildCard.WildcardMod;
-import theWildCard.cards.Arcana.SeveringSlash;
 import theWildCard.cards.Attack.Common.BasicStrike;
-import theWildCard.cards.Attack.Common.BladeOfGenerations;
 import theWildCard.cards.Attack.Common.CallToAdventure;
-import theWildCard.cards.Attack.Common.SacrificialStroke;
-import theWildCard.cards.Attack.Uncommon.EnergyTheft;
-import theWildCard.cards.Attack.Uncommon.IdentityTheft;
 import theWildCard.cards.Persona.Arsene;
-import theWildCard.cards.Power.Rare.FuelForTheFire;
 import theWildCard.cards.Skill.Common.BasicDefend;
-import theWildCard.relics.VelvetContractRelic;
+import theWildCard.relics.VelvetContract;
 
 import java.util.ArrayList;
 
@@ -165,7 +159,7 @@ public class WildcardCharacter extends CustomPlayer {
     // Starting Relics	
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(VelvetContractRelic.ID);
+        retVal.add(VelvetContract.ID);
         return retVal;
     }
 

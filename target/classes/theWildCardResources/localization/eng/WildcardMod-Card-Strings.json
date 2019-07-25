@@ -416,7 +416,7 @@
   },
   "theWildCard:IdentityTheft": {
     "NAME": "Identity Theft",
-    "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand. NL Exhaust."
   },
   "theWildCard:TheGreatSeal": {
     "NAME": "The Great Seal",

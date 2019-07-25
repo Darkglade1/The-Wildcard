@@ -6,16 +6,23 @@
       "Gain #b1 [E] ."
     ]
   },
-  "theWildCard:BlankContractRelic": {
+  "theWildCard:BlankContract": {
     "NAME": "Blank Contract",
     "FLAVOR": "An endless sea of possibilities awaits . . .",
     "DESCRIPTIONS": ["The first #b3 times you draw a Persona each combat, draw a card."]
   },
-  "theWildCard:VelvetContractRelic": {
+  "theWildCard:VelvetContract": {
     "NAME": "Velvet Contract",
     "FLAVOR": "The contract is sealed, and with it, your fate.",
     "DESCRIPTIONS": [
       "Whenever you draw a Persona, draw a card."
+    ]
+  },
+  "theWildCard:Evoker": {
+    "NAME": "Evoker",
+    "FLAVOR": "A remnant of another story. It is cherished by those he left behind",
+    "DESCRIPTIONS": [
+      "Every time you play #b", " Persona, add a random Persona to your hand."
     ]
   },
   "theWildCard:PlaceholderRelic2": {

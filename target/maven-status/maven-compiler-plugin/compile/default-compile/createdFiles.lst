@@ -1,5 +1,6 @@
 theWildCard\cards\Attack\Common\BasicStrike.class
 theWildCard\variables\DefaultCustomVariable.class
+theWildCard\relics\BlankContract.class
 theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
@@ -12,7 +13,6 @@ theWildCard\cards\Power\Uncommon\Abstinence.class
 theWildCard\cards\Power\Uncommon\BalancingAct.class
 theWildCard\cards\Arcana\ArcaneArts.class
 theWildCard\variables\ArcanaEnums.class
-theWildCard\relics\VelvetContractRelic.class
 theWildCard\cards\Skill\Uncommon\SpikyShield.class
 theWildCard\powers\PersonaPaleRiderPower.class
 theWildCard\powers\PersonaLuciferPower.class
@@ -93,6 +93,7 @@ theWildCard\cards\Power\Rare\TheUniverse.class
 theWildCard\cards\Skill\Uncommon\Retribution.class
 theWildCard\cards\Skill\Uncommon\SincereOffering.class
 theWildCard\cards\Attack\Uncommon\Salvation.class
+theWildCard\relics\VelvetContract.class
 theWildCard\powers\PersonaPolydeucesPower.class
 theWildCard\variables\ArcanaEnums$Arcana.class
 theWildCard\characters\WildcardCharacter.class
@@ -133,6 +134,7 @@ theWildCard\cards\Persona\Polydeuces.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$GridCardSelectScreenRenderOrderPatch$Locator.class
 theWildCard\cards\Persona\Scathach.class
 theWildCard\cards\Skill\Common\Unburden.class
+theWildCard\relics\Evoker.class
 theWildCard\cards\Attack\Uncommon\RelentlessBarrage.class
 theWildCard\cards\Skill\Common\PiercingGaze.class
 theWildCard\cards\Attack\Uncommon\QuietPassing.class
@@ -150,7 +152,6 @@ theWildCard\cards\Attack\Common\BladeOfGenerations.class
 theWildCard\cards\Attack\Common\CallToAdventure.class
 theWildCard\cards\Power\Uncommon\RegalBearing.class
 theWildCard\cards\Skill\Uncommon\ShieldOfMany.class
-theWildCard\relics\BlankContractRelic.class
 theWildCard\cards\Attack\Common\SweepingSlash.class
 theWildCard\powers\SubduingPresencePower.class
 theWildCard\cards\Attack\Common\Crush.class
