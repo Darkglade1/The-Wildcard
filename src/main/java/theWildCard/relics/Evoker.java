@@ -2,6 +2,7 @@ package theWildCard.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -22,32 +23,25 @@ public class Evoker extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("Evoker.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Evoker.png"));
 
-    private static final int NUM_CARDS = 3;
+    private static final int BLOCK = 3;
 
     public Evoker() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
-        counter = 0;
     }
 
+    @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card instanceof AbstractPersonaCard) {
-            ++this.counter;
-            if (this.counter % NUM_CARDS == 0) {
-                this.counter = 0;
-                this.flash();
-                AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                AbstractPersonaCard c = (AbstractPersonaCard)returnTrulyRandomPersona().makeCopy();
-                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
-            }
+            this.flash();
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, BLOCK));
         }
     }
 
 
-
-
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + NUM_CARDS + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0] + BLOCK + DESCRIPTIONS[1];
     }
 
 }

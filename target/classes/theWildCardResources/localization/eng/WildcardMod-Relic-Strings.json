@@ -6,16 +6,16 @@
   },
   "theWildCard:VelvetContract": {
     "NAME": "Velvet Contract",
-    "FLAVOR": "The contract is sealed, and with it, your fate.",
+    "FLAVOR": "You didn't read the fine print, did you?",
     "DESCRIPTIONS": [
-      "Whenever you draw a Persona, draw a card."
+      "Increase your maximum hand size by #b", "."
     ]
   },
   "theWildCard:Evoker": {
     "NAME": "Evoker",
     "FLAVOR": "A remnant of another story. It is cherished by those he left behind",
     "DESCRIPTIONS": [
-      "Every time you play #b", " Persona, add a random Persona to your hand."
+      "Whenever you play a Persona, gain #b", " Block."
     ]
   },
   "theWildCard:Wildcard": {

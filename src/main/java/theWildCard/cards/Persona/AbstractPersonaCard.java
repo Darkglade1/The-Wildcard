@@ -1,6 +1,7 @@
 package theWildCard.cards.Persona;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -46,6 +47,12 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
         this.cardArcana = cardArcana;
         this.personaPower = personaPower;
         tags.add(Tags.PERSONA);
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        //Draws a card whenever a Persona is drawn, essentially making it not take up a card draw
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 
     // Upgraded stats.
@@ -150,27 +157,6 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
         }
 
         return (AbstractPersonaCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
-    }
-
-    public static int getPersonaCount() {
-        AbstractPlayer p = AbstractDungeon.player;
-        int personaCount = 0;
-        for (AbstractCard card : p.hand.group) {
-            if (card instanceof AbstractPersonaCard) {
-                personaCount++;
-            }
-        }
-        for (AbstractCard card : p.drawPile.group) {
-            if (card instanceof AbstractPersonaCard) {
-                personaCount++;
-            }
-        }
-        for (AbstractCard card : p.discardPile.group) {
-            if (card instanceof AbstractPersonaCard) {
-                personaCount++;
-            }
-        }
-        return personaCount;
     }
 
     private void transformArcana(AbstractCard card) {
