@@ -1,6 +1,7 @@
 theWildCard\cards\Attack\Common\BasicStrike.class
 theWildCard\variables\DefaultCustomVariable.class
 theWildCard\relics\BlankContract.class
+theWildCard\cards\Skill\Rare\ChangingDestiny.class
 theWildCard\cards\Skill\Rare\EndOfTheLine.class
 theWildCard\cards\Skill\Rare\Countdown.class
 theWildCard\cards\Attack\Uncommon\JackOfAllTrades.class
@@ -35,6 +36,7 @@ theWildCard\cards\Skill\Uncommon\Execute.class
 theWildCard\cards\Skill\Common\Patience.class
 theWildCard\powers\VileAuraPower.class
 theWildCard\actions\LockArcanaAction.class
+theWildCard\powers\ChangingDestinyPower.class
 theWildCard\util\TextureLoader.class
 theWildCard\cards\Arcana\ArcanaArtistry.class
 theWildCard\cards\Power\Rare\Encore.class

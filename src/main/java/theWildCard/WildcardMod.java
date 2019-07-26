@@ -56,6 +56,7 @@ import theWildCard.cards.Attack.Uncommon.CryOfAgony;
 import theWildCard.cards.Attack.Uncommon.EnergyTheft;
 import theWildCard.cards.Attack.Uncommon.IdentityTheft;
 import theWildCard.cards.Attack.Uncommon.TheGreatSeal;
+import theWildCard.cards.Skill.Rare.ChangingDestiny;
 import theWildCard.cards.Skill.Uncommon.LadyLuck;
 import theWildCard.cards.Attack.Uncommon.Providence;
 import theWildCard.cards.Attack.Uncommon.Salvation;
@@ -372,6 +373,7 @@ public class WildcardMod implements
         BaseMod.addCard(new Attunement());
         BaseMod.addCard(new Abstinence());
         BaseMod.addCard(new Deicide());
+        BaseMod.addCard(new ChangingDestiny());
         BaseMod.addCard(new MasterPlan());
         BaseMod.addCard(new LadyLuck());
         BaseMod.addCard(new UnderLockAndKey());
@@ -434,6 +436,7 @@ public class WildcardMod implements
         UnlockTracker.unlockCard(Attunement.ID);
         UnlockTracker.unlockCard(Abstinence.ID);
         UnlockTracker.unlockCard(Deicide.ID);
+        UnlockTracker.unlockCard(ChangingDestiny.ID);
         UnlockTracker.unlockCard(MasterPlan.ID);
         UnlockTracker.unlockCard(LadyLuck.ID);
         UnlockTracker.unlockCard(UnderLockAndKey.ID);

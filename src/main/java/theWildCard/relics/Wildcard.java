@@ -18,14 +18,26 @@ public class Wildcard extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("Wildcard.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Wildcard.png"));
 
+    private boolean activated = false;
+
     public Wildcard() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
     @Override
     public void atBattleStartPreDraw() {
-        AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToBottom(new AnyCardFromDeckToHandAction(1));
+        this.activated = false;
+    }
+
+    @Override
+    public void atTurnStartPostDraw() {
+        if (!this.activated) {
+            this.activated = true;
+            this.flash();
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            AbstractDungeon.actionManager.addToBottom(new AnyCardFromDeckToHandAction(1));
+        }
+
     }
 
     @Override

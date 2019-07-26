@@ -19,6 +19,10 @@
         "NAME": "Crush",
         "DESCRIPTIONS": ["Next turn, gain", " ."]
 },
+"theWildCard:ChangingDestinyPower": {
+        "NAME": "Changing Destiny",
+        "DESCRIPTIONS": ["Your next Arcana is played twice this turn.", "Your next #b", " Arcana are played twice this turn."]
+},
 "theWildCard:MasterPlanPower": {
         "NAME": "Master Plan",
         "DESCRIPTIONS": ["Next turn, gain", " . ", "Retain up to #b", " cards this turn."]

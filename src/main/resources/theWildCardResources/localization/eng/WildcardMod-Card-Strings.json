@@ -349,6 +349,11 @@
     "NAME": "Deicide",
     "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
   },
+  "theWildCard:ChangingDestiny": {
+    "NAME": "Changing Destiny",
+    "DESCRIPTION": "This turn, your next Arcana is played twice.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Arcana are played twice."
+  },
   "theWildCard:MasterPlan": {
     "NAME": "Master Plan",
     "DESCRIPTION": "Retain up to !M! cards this turn. NL Next turn, gain X energy. NL Exhaust.",
