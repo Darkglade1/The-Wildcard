@@ -11,6 +11,13 @@
       "Increase your maximum hand size by #b", "."
     ]
   },
+  "theWildCard:MemoriesOfPhantasm": {
+    "NAME": "Memories of Phantasm",
+    "FLAVOR": "It’s those small moments you end up remembering for the rest of your life.",
+    "DESCRIPTIONS": [
+      "Whenever you draw an Arcana, deal #b", " damage to ALL enemies."
+    ]
+  },
   "theWildCard:Evoker": {
     "NAME": "Evoker",
     "FLAVOR": "A remnant of another story. It is cherished by those he left behind",

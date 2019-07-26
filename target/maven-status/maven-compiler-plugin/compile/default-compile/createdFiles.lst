@@ -151,6 +151,7 @@ theWildCard\cards\Attack\Uncommon\CleansingBlow.class
 theWildCard\cards\Arcana\TheArcanaUnleashed.class
 theWildCard\cards\Attack\Rare\AllOutAttack.class
 theWildCard\powers\UpgradedUnendingRitualPower.class
+theWildCard\relics\MemoriesOfPhantasm.class
 theWildCard\events\VelvetRoom.class
 theWildCard\cards\Skill\Rare\BlessingOfKings.class
 theWildCard\patches\ArcanaPreviewRenderOrderPatch$ShopScreenRenderOrderPatch.class

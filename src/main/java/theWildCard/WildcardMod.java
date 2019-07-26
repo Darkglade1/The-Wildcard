@@ -97,6 +97,7 @@ import theWildCard.characters.WildcardCharacter;
 import theWildCard.events.VelvetRoom;
 import theWildCard.relics.Evoker;
 import theWildCard.relics.FigureOfDeath;
+import theWildCard.relics.MemoriesOfPhantasm;
 import theWildCard.relics.VelvetContract;
 import theWildCard.relics.Wildcard;
 import theWildCard.util.IDCheckDontTouchPls;
@@ -316,6 +317,7 @@ public class WildcardMod implements
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
         //BaseMod.addRelicToCustomPool(new BlankContract(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new VelvetContract(), WildcardCharacter.Enums.COLOR_BLUE);
+        BaseMod.addRelicToCustomPool(new MemoriesOfPhantasm(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new Evoker(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new Wildcard(), WildcardCharacter.Enums.COLOR_BLUE);
         BaseMod.addRelicToCustomPool(new FigureOfDeath(), WildcardCharacter.Enums.COLOR_BLUE);
