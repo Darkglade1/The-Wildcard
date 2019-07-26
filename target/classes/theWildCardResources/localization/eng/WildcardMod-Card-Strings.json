@@ -118,8 +118,8 @@
   },
   "theWildCard:RampantBloodlust": {
     "NAME": "Rampant Bloodlust",
-    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If you do not kill an enemy, lose [E] [E] next turn.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If you do not kill an enemy, lose [E] [E] [E] next turn."
+    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If an enemy doesn't die this turn, lose [E] [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If an enemy doesn't die this turn, lose [E] [E] [E] next turn."
   },
   "theWildCard:MassOffering": {
     "NAME": "Mass Offering",

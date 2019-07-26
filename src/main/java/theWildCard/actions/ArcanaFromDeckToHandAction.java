@@ -1,5 +1,6 @@
 package theWildCard.actions;
 
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -39,7 +40,7 @@ public class ArcanaFromDeckToHandAction extends AbstractGameAction {
                 this.isDone = true;
             } else if (tmp.size() == 1) {
                 card = tmp.getTopCard();
-                if (this.p.hand.size() == 10) {
+                if (this.p.hand.size() == BaseMod.MAX_HAND_SIZE) {
                     this.p.drawPile.moveToDiscardPile(card);
                     this.p.createHandIsFullDialog();
                 } else {
@@ -89,7 +90,7 @@ public class ArcanaFromDeckToHandAction extends AbstractGameAction {
     }
 
     static {
-        String[] text = {"Choose a Persona to add to your hand"};
+        String[] text = {"Choose an Arcana to add to your hand"};
         TEXT = text;
     }
 }

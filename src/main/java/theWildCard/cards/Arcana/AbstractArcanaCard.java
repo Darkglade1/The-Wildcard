@@ -297,6 +297,9 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
             throw new RuntimeException("BaseMod failed to auto-generate makeCopy for card: " + this.cardID);
         }
         //in case the card is locked, transform it to the card Arcana instead of the active Arcana
+        if (this.upgraded) {
+            card.upgrade();
+        }
         card.cardArcana = this.cardArcana;
         card.transform();
         card.isLocked = this.isLocked;
