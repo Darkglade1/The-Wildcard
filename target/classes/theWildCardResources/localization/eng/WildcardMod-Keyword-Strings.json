@@ -3,7 +3,7 @@
     "NAMES": [
       "persona"
     ],
-    "DESCRIPTION": "Persona are 0 cost Skill cards that change the active Arcana, grant special passive effects, and draw a card when drawn. You can only have one Persona at a time."
+    "DESCRIPTION": "Persona are 0 cost Skill cards that change the active Arcana and grant special passive effects when played and draw a card when drawn. You can only have one Persona at a time."
   },
   {
     "NAMES": [
@@ -15,31 +15,31 @@
     "NAMES": [
       "priestess"
     ],
-    "DESCRIPTION": "This card belongs to the Priestess Arcana."
+    "DESCRIPTION": "The Priestess demands sacrifice, Exhausting cards in exchange for healing and weakening the enemy."
   },
   {
     "NAMES": [
       "emperor"
     ],
-    "DESCRIPTION": "This card belongs to the Emperor Arcana."
+    "DESCRIPTION": "The Emperor stands strong, Blocking the enemy's advance and retaliating in kind while warding off any sort of trickery."
   },
   {
     "NAMES": [
       "fool"
     ],
-    "DESCRIPTION": "This card belongs to the Fool Arcana."
+    "DESCRIPTION": "The Fool is a jack of all trades, boasting card draw and a wide variety of other effects."
   },
   {
     "NAMES": [
       "judgement"
     ],
-    "DESCRIPTION": "This card belongs to the Judgement Arcana."
+    "DESCRIPTION": "Judgement brings divine wrath down upon the enemy, using mighty Strength to cleave swathes of enemies at once."
   },
   {
     "NAMES": [
       "death"
     ],
-    "DESCRIPTION": "This card belongs to the Death Arcana."
+    "DESCRIPTION": "Death's very presence makes enemies more Vulnerable to attack, wakening a primal Energy to destroy any foe in one fell swoop."
   },
   {
     "NAMES": [
