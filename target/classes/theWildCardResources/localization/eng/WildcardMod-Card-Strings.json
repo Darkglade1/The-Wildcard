@@ -335,7 +335,7 @@
   },
   "theWildCard:Safeguard": {
     "NAME": "Safeguard",
-    "DESCRIPTION": "At the end of your turn, gain !M! Block for each Persona in your deck."
+    "DESCRIPTION": "Whenever you play an Arcana, gain !M! Block times the amount of [E] spent on it."
   },
   "theWildCard:Attunement": {
     "NAME": "Attunement",
@@ -404,7 +404,7 @@
   },
   "theWildCard:Overwhelm": {
     "NAME": "Overwhelm",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Persona or Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
   },
   "theWildCard:Desolation": {
     "NAME": "Desolation",
@@ -421,7 +421,7 @@
   },
   "theWildCard:IdentityTheft": {
     "NAME": "Identity Theft",
-    "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand."
   },
   "theWildCard:TheGreatSeal": {
     "NAME": "The Great Seal",
@@ -441,7 +441,7 @@
   },
   "theWildCard:BladeOfGenerations": {
     "NAME": "Blade of Generations",
-    "DESCRIPTION": "Deal !D! damage. NL Deals !M! additional damage for each Persona in your deck."
+    "DESCRIPTION": "Deal !D! damage. NL Put an Arcana from your draw pile into your hand."
   },
   "theWildCard:SacrificialStroke": {
     "NAME": "Sacrificial Stroke",

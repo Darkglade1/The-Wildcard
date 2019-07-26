@@ -61,7 +61,7 @@
 },
 "theWildCard:SafeguardPower": {
         "NAME": "Safeguard",
-        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block for each Persona in your deck."]
+        "DESCRIPTIONS": ["Whenever you play an Arcana, gain #b", " Block times the amount of [E] spent on it."]
 },
 "theWildCard:AttunementPower": {
         "NAME": "Attunement",

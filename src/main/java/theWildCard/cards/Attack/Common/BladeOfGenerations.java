@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
+import theWildCard.actions.ArcanaFromDeckToHandAction;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.cards.Persona.AbstractPersonaCard;
 import theWildCard.characters.WildcardCharacter;
@@ -23,42 +24,21 @@ public class BladeOfGenerations extends AbstractDefaultCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = WildcardCharacter.Enums.COLOR_BLUE;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     private static final int DAMAGE = 10;
-    private static final int UPGRADE_PLUS_DMG = 2;
-
-    private static final int DAMAGE_BONUS = 4;
-    private static final int UPGRADE_PLUS_DMG_BONUS = 2;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
     public BladeOfGenerations() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        magicNumber = baseMagicNumber = DAMAGE_BONUS;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-    }
-
-    @Override
-    public void calculateCardDamage(AbstractMonster mo) {
-        int realBaseDamage = baseDamage;
-        baseDamage += magicNumber * AbstractPersonaCard.getPersonaCount();
-        super.calculateCardDamage(mo);
-        baseDamage = realBaseDamage;
-        isDamageModified = damage != baseDamage;
-    }
-
-    @Override
-    public void applyPowers() {
-        int realBaseDamage = baseDamage;
-        baseDamage += magicNumber * AbstractPersonaCard.getPersonaCount();
-        super.applyPowers();
-        baseDamage = realBaseDamage;
-        isDamageModified = damage != baseDamage;
+        AbstractDungeon.actionManager.addToBottom(new ArcanaFromDeckToHandAction(1));
     }
 
     @Override
@@ -66,7 +46,6 @@ public class BladeOfGenerations extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeMagicNumber(UPGRADE_PLUS_DMG_BONUS);
             initializeDescription();
         }
     }

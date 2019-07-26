@@ -21,7 +21,7 @@
 },
 "theWildCard:ChangingDestinyPower": {
         "NAME": "Changing Destiny",
-        "DESCRIPTIONS": ["Your next Arcana is played twice.", "Your next #b", " Arcana are played twice."]
+        "DESCRIPTIONS": ["Your next Arcana is played twice this turn.", "Your next #b", " Arcana are played twice this turn."]
 },
 "theWildCard:MasterPlanPower": {
         "NAME": "Master Plan",
@@ -61,7 +61,7 @@
 },
 "theWildCard:SafeguardPower": {
         "NAME": "Safeguard",
-        "DESCRIPTIONS": ["At the end of your turn, gain #b", " Block for each Persona in your deck."]
+        "DESCRIPTIONS": ["Whenever you play an Arcana, gain #b", " Block times the amount of [E] spent on it."]
 },
 "theWildCard:AttunementPower": {
         "NAME": "Attunement",

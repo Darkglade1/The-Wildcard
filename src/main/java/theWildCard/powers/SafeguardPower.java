@@ -2,14 +2,15 @@ package theWildCard.powers;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import theWildCard.WildcardMod;
-import theWildCard.cards.Persona.AbstractPersonaCard;
+import theWildCard.cards.Arcana.AbstractArcanaCard;
 
 
 public class SafeguardPower extends AbstractPower {
@@ -36,13 +37,24 @@ public class SafeguardPower extends AbstractPower {
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        if (!isPlayer) {
-            return;
+    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+        if (card instanceof AbstractArcanaCard) {
+            if (card.freeToPlayOnce) {
+                return;
+            }
+            int cost;
+            if (card.isCostModifiedForTurn) {
+                cost = card.costForTurn;
+            } else if (card.cost == -1){
+                cost = EnergyPanel.totalCount;
+            } else {
+                cost = card.cost;
+            }
+            if (cost > 0) {
+                this.flash();
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, amount * cost));
+            }
         }
-        AbstractPlayer p = AbstractDungeon.player;
-        int personaCount = AbstractPersonaCard.getPersonaCount();
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, personaCount * amount));
     }
 
     @Override

@@ -46,6 +46,7 @@ theWildCard\cards\Skill\Common\Proficiency.class
 theWildCard\patches\SingleCardViewPopupPatch.class
 theWildCard\cards\Arcana\FinalHour.class
 theWildCard\cards\Attack\Common\WitchsStrike.class
+theWildCard\actions\ArcanaFromDeckToHandAction.class
 theWildCard\cards\Persona\Odin.class
 theWildCard\powers\HarvestPower.class
 theWildCard\powers\UnendingRitualPower.class
