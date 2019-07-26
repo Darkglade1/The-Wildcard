@@ -404,7 +404,7 @@
   },
   "theWildCard:Overwhelm": {
     "NAME": "Overwhelm",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Persona or Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
   },
   "theWildCard:Desolation": {
     "NAME": "Desolation",

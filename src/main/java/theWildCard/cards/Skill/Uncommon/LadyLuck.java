@@ -25,15 +25,12 @@ public class LadyLuck extends AbstractDefaultCard implements OnDiscardArcanaCard
     private static final int COST = 1;
 
     private static final int DRAW = 2;
-
-    private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_DRAW = 1;
 
     private static final int DRAW_EFFECT = 2;
 
     public LadyLuck() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = DRAW;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber = DRAW_EFFECT;
     }
@@ -53,7 +50,7 @@ public class LadyLuck extends AbstractDefaultCard implements OnDiscardArcanaCard
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DMG);
+            upgradeMagicNumber(UPGRADE_DRAW);
             initializeDescription();
         }
     }
