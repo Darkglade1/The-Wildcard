@@ -2,14 +2,13 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.screens.DeathScreen;
 import theWildCard.WildcardMod;
 import theWildCard.util.TextureLoader;
 
@@ -27,39 +26,32 @@ public class LastStandPower extends AbstractPower {
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("LastStand84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("LastStand32.png"));
 
-    public LastStandPower(AbstractCreature owner, AbstractCreature source) {
+    public LastStandPower(AbstractCreature owner, AbstractCreature source, int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.source = source;
+        this.amount = amount;
 
-        type = PowerType.BUFF;
+        type = PowerType.DEBUFF;
         isTurnBased = false;
 
         //loads textures
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
 
-        description = DESCRIPTIONS[0];
+        updateDescription();
     }
 
     @Override
     public void atStartOfTurnPostDraw () {
         this.flash();
-        AbstractPlayer p = AbstractDungeon.player;
-        p.isDead = true;
-        AbstractDungeon.deathScreen = new DeathScreen(AbstractDungeon.getMonsters());
-        p.currentHealth = 0;
-        if (p.currentBlock > 0) {
-            p.loseBlock();
-        }
+        AbstractDungeon.actionManager.addToBottom(new LoseHPAction(owner, owner, amount));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this.ID));
     }
 
-    @Override
-    public void onRemove() {
-        //reapplies itself if removed
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
-                new LastStandPower(owner, owner), 0));
+    public void updateDescription() {
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 }

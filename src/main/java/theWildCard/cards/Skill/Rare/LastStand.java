@@ -24,12 +24,16 @@ public class LastStand extends AbstractDefaultCard {
 
     private static final int COST = 0;
 
-    private static final int STRENGTH = 10;
-    private static final int UPGRADE_PLUS_STRENGTH = 5;
+    private static final int STRENGTH = 5;
+    private static final int UPGRADE_PLUS_STRENGTH = 2;
+
+    private static final int HP_LOSS = 8;
+    private static final int HP_LOSS_DECREASE = -2;
 
     public LastStand() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         magicNumber = baseMagicNumber = STRENGTH;
+        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = HP_LOSS;
         exhaust = true;
     }
 
@@ -38,7 +42,7 @@ public class LastStand extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
                 new StrengthPower(p, magicNumber), magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new LastStandPower(p, p), 0));
+                new LastStandPower(p, p, defaultSecondMagicNumber), defaultSecondMagicNumber));
     }
 
     @Override
@@ -46,6 +50,7 @@ public class LastStand extends AbstractDefaultCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_PLUS_STRENGTH);
+            upgradeDefaultSecondMagicNumber(HP_LOSS_DECREASE);
             initializeDescription();
         }
     }

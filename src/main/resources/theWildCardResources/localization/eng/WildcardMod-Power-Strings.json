@@ -41,7 +41,7 @@
 },
 "theWildCard:LastStandPower": {
         "NAME": "Last Stand",
-        "DESCRIPTIONS": ["There is no escape from your impending demise . . ."]
+        "DESCRIPTIONS": ["Next turn, lose #b", " HP."]
 },
 "theWildCard:RampantBloodlustPower": {
         "NAME": "Rampant Bloodlust",

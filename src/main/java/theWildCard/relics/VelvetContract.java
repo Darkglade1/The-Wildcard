@@ -16,7 +16,7 @@ public class VelvetContract extends CustomRelic {
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("VelvetContract.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("VelvetContract.png"));
 
-    private static final int HAND_SIZE_INCREASE = 2;
+    private static final int HAND_SIZE_INCREASE = 99;
 
     public VelvetContract() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.MAGICAL);
@@ -30,7 +30,7 @@ public class VelvetContract extends CustomRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + HAND_SIZE_INCREASE + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0];
     }
 
 }

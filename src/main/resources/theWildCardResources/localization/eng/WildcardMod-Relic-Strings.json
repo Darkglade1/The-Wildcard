@@ -6,9 +6,9 @@
   },
   "theWildCard:VelvetContract": {
     "NAME": "Velvet Contract",
-    "FLAVOR": "You didn't read the fine print, did you?",
+    "FLAVOR": "An endless sea of possibilities awaits . . .",
     "DESCRIPTIONS": [
-      "Increase your maximum hand size by #b", "."
+      "You have no maximum hand size."
     ]
   },
   "theWildCard:MemoriesOfPhantasm": {

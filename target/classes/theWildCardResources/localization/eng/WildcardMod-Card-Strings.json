@@ -114,7 +114,7 @@
   },
   "theWildCard:Vengeance": {
     "NAME": "Vengeance",
-    "DESCRIPTION": "Arcana Judgement. NL Whenever you lose HP this turn, gain half that amount as Strength. NL Exhaust."
+    "DESCRIPTION": "Arcana Judgement. NL Lose !theWildCard:SecondMagic! HP. NL Gain !M! Strength."
   },
   "theWildCard:RampantBloodlust": {
     "NAME": "Rampant Bloodlust",
@@ -200,7 +200,7 @@
   },
   "theWildCard:LastStand": {
     "NAME": "Last Stand",
-    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength. NL Next turn, you die. NL Exhaust."
+    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength. NL Next turn, lose !theWildCard:SecondMagic! HP. NL Exhaust."
   },
   "theWildCard:Countdown": {
     "NAME": "Countdown",
