@@ -2,12 +2,12 @@ package theWildCard.cards.Attack.Uncommon;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
+import theWildCard.actions.BetterMakeTempCardInHandAction;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.cards.Persona.AbstractPersonaCard;
 import theWildCard.characters.WildcardCharacter;
@@ -40,7 +40,7 @@ public class IdentityTheft extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         AbstractPersonaCard c = (AbstractPersonaCard)returnTrulyRandomPersona().makeCopy();
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
+        AbstractDungeon.actionManager.addToBottom(new BetterMakeTempCardInHandAction(c, true));
     }
 
     @Override

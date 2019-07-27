@@ -1,10 +1,10 @@
 package theWildCard.cards.Skill.Common;
 
-import com.megacrit.cardcrawl.actions.common.BetterDiscardPileToHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theWildCard.WildcardMod;
+import theWildCard.actions.DiscardPileToHandAction;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.characters.WildcardCharacter;
 
@@ -33,7 +33,7 @@ public class Proficiency extends AbstractDefaultCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new BetterDiscardPileToHandAction(magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DiscardPileToHandAction(magicNumber));
     }
 
     @Override

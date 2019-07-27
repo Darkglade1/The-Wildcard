@@ -1,6 +1,5 @@
 package theWildCard.powers;
 
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,6 +9,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
+import theWildCard.actions.BetterMakeTempCardInHandAction;
 import theWildCard.cards.Arcana.AbstractArcanaCard;
 import theWildCard.tags.Tags;
 
@@ -46,7 +46,7 @@ public class UnendingRitualPower extends AbstractPower {
             for (int i = 0; i < amount; i++) {
                 AbstractArcanaCard c = (AbstractArcanaCard)returnTrulyRandomArcana().makeCopy();
                 c.changeArcana();
-                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, true));
+                AbstractDungeon.actionManager.addToBottom(new BetterMakeTempCardInHandAction(c, true));
             }
         }
     }

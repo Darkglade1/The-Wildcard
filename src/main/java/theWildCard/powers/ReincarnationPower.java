@@ -45,7 +45,9 @@ public class ReincarnationPower extends AbstractPower {
     @Override
     public void onExhaust(AbstractCard card) {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(card.makeStatEquivalentCopy(), amount));
+        if (card.type != AbstractCard.CardType.CURSE && card.type != AbstractCard.CardType.STATUS) {
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(card.makeStatEquivalentCopy(), amount));
+        }
     }
 
     @Override
