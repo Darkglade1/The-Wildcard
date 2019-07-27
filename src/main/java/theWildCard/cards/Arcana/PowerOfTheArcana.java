@@ -14,7 +14,7 @@ public class PowerOfTheArcana extends AbstractArcanaCard {
 
 
     public static final String ID = WildcardMod.makeID(PowerOfTheArcana.class.getSimpleName());
-    public static final String IMG = makeCardPath("ArcanaPower.png");
+    public static final String IMG = makeCardPath("PowerOfTheArcana.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
