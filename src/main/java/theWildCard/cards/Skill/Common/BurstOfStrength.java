@@ -24,8 +24,8 @@ public class BurstOfStrength extends AbstractDefaultCard {
 
     private static final int COST = 0;
 
-    private static final int STRENGTH = 5;
-    private static final int UPGRADE_PLUS_STRENGTH = 3;
+    private static final int STRENGTH = 4;
+    private static final int UPGRADE_PLUS_STRENGTH = 2;
 
     public BurstOfStrength() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
