@@ -14,7 +14,7 @@ public class Odin extends AbstractPersonaCard {
     public static final String ID = WildcardMod.makeID(Odin.class.getSimpleName());
     public static final String IMG = makeCardPath("Odin.png");
 
-    public static final int BLOCK = 10;
+    public static final int BLOCK = 8;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
