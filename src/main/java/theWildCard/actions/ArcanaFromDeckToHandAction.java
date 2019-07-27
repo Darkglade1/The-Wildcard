@@ -69,7 +69,7 @@ public class ArcanaFromDeckToHandAction extends AbstractGameAction {
                 while(var1.hasNext()) {
                     card = (AbstractCard)var1.next();
                     card.unhover();
-                    if (this.p.hand.size() == 10) {
+                    if (this.p.hand.size() == BaseMod.MAX_HAND_SIZE) {
                         this.p.drawPile.moveToDiscardPile(card);
                         this.p.createHandIsFullDialog();
                     } else {

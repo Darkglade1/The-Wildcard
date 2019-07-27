@@ -1,9 +1,4 @@
 {
-  "theWildCard:BlankContract": {
-    "NAME": "Blank Contract",
-    "FLAVOR": "An endless sea of possibilities awaits . . .",
-    "DESCRIPTIONS": ["The first #b3 times you draw a Persona each combat, draw a card."]
-  },
   "theWildCard:VelvetContract": {
     "NAME": "Velvet Contract",
     "FLAVOR": "An endless sea of possibilities awaits . . .",

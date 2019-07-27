@@ -1,8 +1,4 @@
 {
-"theWildCard:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
 "theWildCard:StrengthLossPower": {
         "NAME": "Burst of Strength",
         "DESCRIPTIONS": ["Lose #b", " Strength after your next Attack."]
@@ -158,9 +154,5 @@
 "theWildCard:PersonaThanatosPower": {
         "NAME": "Thanatos",
         "DESCRIPTIONS": ["Attacks that cost 2 or more are played twice. Whenever this effect triggers, lose #b", " HP."]
-},
-"theWildCard:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
 }
 }

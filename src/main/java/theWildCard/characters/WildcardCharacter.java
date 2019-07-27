@@ -30,34 +30,21 @@ import java.util.ArrayList;
 import static theWildCard.WildcardMod.*;
 import static theWildCard.characters.WildcardCharacter.Enums.COLOR_BLUE;
 
-//Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
-//and https://github.com/daviscook477/BaseMod/wiki/Migrating-to-5.0
-//All text (starting description and loadout, anything labeled TEXT[]) can be found in WildcardMod-character-Strings.json in the resources
 
 public class WildcardCharacter extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
 
-    // =============== CHARACTER ENUMERATORS =================
-    // These are enums for your Characters color (both general color and for the card library) as well as
-    // an enum for the name of the player class - IRONCLAD, THE_SILENT, DEFECT, YOUR_CLASS ...
-    // These are all necessary for creating a character. If you want to find out where and how exactly they are used
-    // in the basegame (for fun and education) Ctrl+click on the PlayerClass, CardColor and/or LibraryType below and go down the
-    // Ctrl+click rabbit hole
-
+    //Enums for character color and class
     public static class Enums {
         @SpireEnum
         public static AbstractPlayer.PlayerClass THE_WILD_CARD;
-        @SpireEnum(name = "DEFAULT_BLUE_COLOR") // These two HAVE to have the same absolutely identical name.
+        @SpireEnum(name = "DEFAULT_BLUE_COLOR") // These two MUST have the same name.
         public static AbstractCard.CardColor COLOR_BLUE;
         @SpireEnum(name = "DEFAULT_BLUE_COLOR") @SuppressWarnings("unused")
         public static CardLibrary.LibraryType LIBRARY_COLOR;
     }
 
-    // =============== CHARACTER ENUMERATORS  =================
-
-
-    // =============== BASE STATS =================
-
+    //Character stats
     public static final int ENERGY_PER_TURN = 3;
     public static final int STARTING_HP = 60;
     public static final int MAX_HP = 60;
@@ -65,20 +52,12 @@ public class WildcardCharacter extends CustomPlayer {
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
 
-    // =============== /BASE STATS/ =================
-
-
-    // =============== STRINGS =================
 
     private static final String ID = makeID("WildCardCharacter");
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
     private static final String[] NAMES = characterStrings.NAMES;
     private static final String[] TEXT = characterStrings.TEXT;
 
-    // =============== /STRINGS/ =================
-
-
-    // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
             "theWildCardResources/images/char/defaultCharacter/orb/layer1.png",
@@ -93,9 +72,6 @@ public class WildcardCharacter extends CustomPlayer {
             "theWildCardResources/images/char/defaultCharacter/orb/layer4d.png",
             "theWildCardResources/images/char/defaultCharacter/orb/layer5d.png",};
 
-    // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
-
-    // =============== CHARACTER CLASS START =================
 
     public WildcardCharacter(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
@@ -104,28 +80,20 @@ public class WildcardCharacter extends CustomPlayer {
                         "theWildCardResources/images/char/defaultCharacter/Spriter/WildCardCharacter.scml"));
 
 
-        // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
-                // I left these in WildcardMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
                 THE_DEFAULT_SHOULDER_1, // campfire pose
                 THE_DEFAULT_SHOULDER_2, // another campfire pose
                 THE_DEFAULT_CORPSE, // dead corpse
-                getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
-
-        // =============== /TEXTURES, ENERGY, LOADOUT/ =================
+                getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
 
 
-        // =============== TEXT BUBBLE LOCATION =================
-
-        dialogX = (drawX + 0.0F * Settings.scale); // set location for text bubbles
-        dialogY = (drawY + 220.0F * Settings.scale); // you can just copy these values
-
-        // =============== /TEXT BUBBLE LOCATION/ =================
+        // set location for text bubbles
+        dialogX = (drawX + 0.0F * Settings.scale);
+        dialogY = (drawY + 220.0F * Settings.scale);
 
     }
 
-    // =============== /CHARACTER CLASS END/ =================
 
     // Starting description and loadout
     @Override
@@ -177,39 +145,39 @@ public class WildcardCharacter extends CustomPlayer {
         return "ATTACK_DAGGER_1";
     }
 
-    // Should return how much HP your maximum HP reduces by when starting a run at
-    // Ascension 14 or higher. (ironclad loses 5, defect and silent lose 4 hp respectively)
+    // How much HP your maximum HP reduces by when starting a run at
+    // Ascension 14 or higher.
     @Override
     public int getAscensionMaxHPLoss() {
         return 3;
     }
 
-    // Should return the card color enum to be associated with your character.
+    // The card color enum to be associated with your character.
     @Override
     public AbstractCard.CardColor getCardColor() {
         return COLOR_BLUE;
     }
 
-    // Should return a color object to be used to color the trail of moving cards
+    // A color object to be used to color the trail of moving cards
     @Override
     public Color getCardTrailColor() {
         return WildcardMod.DEFAULT_BLUE;
     }
 
-    // Should return a BitmapFont object that you can use to customize how your
+    // A BitmapFont object that customizes how
     // energy is displayed from within the energy orb.
     @Override
     public BitmapFont getEnergyNumFont() {
         return FontHelper.energyNumFontRed;
     }
 
-    // Should return class name as it appears in run history screen.
+    // The class name as it appears in run history screen.
     @Override
     public String getLocalizedCharacterName() {
         return NAMES[0];
     }
 
-    //Which card should be obtainable from the Match and Keep event?
+    //The card that should be obtainable from the Match and Keep event?
     @Override
     public AbstractCard getStartCardForEvent() {
         return new Arsene();
@@ -221,26 +189,26 @@ public class WildcardCharacter extends CustomPlayer {
         return NAMES[1];
     }
 
-    // Should return a new instance of your character, sending name as its name parameter.
+    // Returns a new instance of your character, sending name as its name parameter.
     @Override
     public AbstractPlayer newInstance() {
         return new WildcardCharacter(name, chosenClass);
     }
 
-    // Should return a Color object to be used to color the miniature card images in run history.
+    // Returns a Color object to be used to color the miniature card images in run history.
     @Override
     public Color getCardRenderColor() {
         return WildcardMod.DEFAULT_BLUE;
     }
 
-    // Should return a Color object to be used as screen tint effect when your
+    // Returns a Color object to be used as screen tint effect when your
     // character attacks the heart.
     @Override
     public Color getSlashAttackColor() {
         return WildcardMod.DEFAULT_BLUE;
     }
 
-    // Should return an AttackEffect array of any size greater than 0. These effects
+    // Returns an AttackEffect array of any size greater than 0. These effects
     // will be played in sequence as your character's finishing combo on the heart.
     // Attack effects are the same as used in DamageAction and the like.
     @Override
@@ -251,7 +219,7 @@ public class WildcardCharacter extends CustomPlayer {
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY};
     }
 
-    // Should return a string containing what text is shown when your character is
+    // Returns a string containing what text is shown when your character is
     // about to attack the heart. For example, the defect is "NL You charge your
     // core to its maximum..."
     @Override
@@ -259,9 +227,7 @@ public class WildcardCharacter extends CustomPlayer {
         return TEXT[1];
     }
 
-    // The vampire events refer to the base game characters as "brother", "sister",
-    // and "broken one" respectively.This method should return a String containing
-    // the full text that will be displayed as the first screen of the vampires event.
+    // The text displayed during the vampire event
     @Override
     public String getVampireText() {
         return TEXT[2];
