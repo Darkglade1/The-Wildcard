@@ -69,6 +69,7 @@ public class AllOutAttack extends AbstractDefaultCard {
                 }
             }
         }
+        
         for (int i = 0; i < personaCount; i++) {
             AbstractCard card = attacks.get(AbstractDungeon.cardRandomRng.random(attacks.size() - 1));
             AbstractMonster mo = null;

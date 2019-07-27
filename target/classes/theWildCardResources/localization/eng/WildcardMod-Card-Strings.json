@@ -228,7 +228,7 @@
   },
   "theWildCard:Reincarnation": {
     "NAME": "Reincarnation",
-    "DESCRIPTION": "Arcana Priestess. NL Whenever a card is exhausted, add !M! copy of it to your discard pile."
+    "DESCRIPTION": "Arcana Priestess. NL Whenever a non-Status, non-Curse card is exhausted, add !M! copy of it to your discard pile."
   },
   "theWildCard:Bulwark": {
     "NAME": "Bulwark",
@@ -313,8 +313,8 @@
   },
   "theWildCard:Lucifer": {
     "NAME": "Lucifer",
-    "DESCRIPTION": "Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much. NL At the end of your turn, lose !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much. NL At the end of your turn, lose !M! Dexterity."
+    "DESCRIPTION": "Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much. NL The first time you trigger this effect each turn, lose !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much. NL The first time you trigger this effect each turn, lose !M! Dexterity."
   },
   "theWildCard:Thanatos": {
     "NAME": "Thanatos",

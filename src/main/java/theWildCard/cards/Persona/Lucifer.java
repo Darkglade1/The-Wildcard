@@ -21,7 +21,7 @@ public class Lucifer extends AbstractPersonaCard {
     private static final ArcanaEnums.Arcana ARCANA = ArcanaEnums.Arcana.JUDGEMENT;
 
     private static final int COST = 0;
-    public static final int DEX_LOSS = 2;
+    public static final int DEX_LOSS = 1;
 
     public Lucifer() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaLuciferPower(AbstractDungeon.player, AbstractDungeon.player));

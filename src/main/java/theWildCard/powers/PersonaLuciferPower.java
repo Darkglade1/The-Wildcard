@@ -25,6 +25,7 @@ public class PersonaLuciferPower extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final int DEX_LOSS = Lucifer.DEX_LOSS;
+    private boolean activated = false;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("LuciferPower84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("LuciferPower32.png"));
@@ -47,19 +48,28 @@ public class PersonaLuciferPower extends AbstractPower {
     }
 
     @Override
+    public void atStartOfTurn() {
+        activated = false;
+    }
+
+    @Override
+    public void onRemove() {
+        activated = false;
+    }
+
+    @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power instanceof StrengthPower && power.amount > 0) {
             this.flash();
             //source is set to null so the extra strength doesn't trigger this power again and create an infinite loop
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, null,
                     new StrengthPower(owner, power.amount), power.amount));
+            //Player loses Dex the first time they use this effect each turn
+            if (!activated) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
+                        new DexterityPower(owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
+                activated = true;
+            }
         }
-    }
-
-    @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        this.flash();
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
-                new DexterityPower(owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
     }
 }
