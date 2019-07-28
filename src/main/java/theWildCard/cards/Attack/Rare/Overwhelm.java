@@ -28,9 +28,9 @@ public class Overwhelm extends AbstractDefaultCard implements OnDiscardArcanaCar
     private static final int COST = 3;
 
     private static final int DAMAGE = 20;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int UPGRADE_PLUS_DMG = 10;
 
-    private static final int DAMAGE_UP = 20;
+    private static final int DAMAGE_UP = 10;
     private static final int UPGRADE_PLUS_DMG_UP = 5;
 
     public Overwhelm() {
