@@ -3,7 +3,6 @@ package theWildCard.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,7 +13,6 @@ import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makeRelicOutlinePath;
 import static theWildCard.WildcardMod.makeRelicPath;
-import static theWildCard.cards.Persona.AbstractPersonaCard.returnTrulyRandomPersona;
 
 public class Evoker extends CustomRelic {
 

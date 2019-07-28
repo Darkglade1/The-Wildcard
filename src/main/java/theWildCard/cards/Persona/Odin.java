@@ -1,7 +1,6 @@
 package theWildCard.cards.Persona;
 
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaOdinPower;
@@ -14,7 +13,7 @@ public class Odin extends AbstractPersonaCard {
     public static final String ID = WildcardMod.makeID(Odin.class.getSimpleName());
     public static final String IMG = makeCardPath("Odin.png");
 
-    public static final int BLOCK = 8;
+    public static final int BLOCK = 4;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

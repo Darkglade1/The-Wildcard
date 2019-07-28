@@ -278,8 +278,8 @@
   },
   "theWildCard:Odin": {
     "NAME": "Odin",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Block.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL At the end of your turn, gain !M! Block."
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL Whenever you play an Attack, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Whenever you play an Attack, gain !M! Block."
   },
   "theWildCard:Loki": {
     "NAME": "Loki",
@@ -303,8 +303,8 @@
   },
   "theWildCard:Caesar": {
     "NAME": "Caesar",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL Gain !theWildCard:SecondMagic! Artifact. NL At the end of your turn, gain !M! Artifact.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Gain !theWildCard:SecondMagic! Artifact. NL At the end of your turn, gain !M! Artifact."
+    "DESCRIPTION": "Retain. NL Persona Emperor. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, gain !M! Artifact."
   },
   "theWildCard:Satanael": {
     "NAME": "Satanael",

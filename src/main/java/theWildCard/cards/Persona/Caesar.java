@@ -1,11 +1,6 @@
 package theWildCard.cards.Persona;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.ArtifactPower;
 import theWildCard.WildcardMod;
 import theWildCard.characters.WildcardCharacter;
 import theWildCard.powers.PersonaCaesarPower;
@@ -18,7 +13,7 @@ public class Caesar extends AbstractPersonaCard {
     public static final String ID = WildcardMod.makeID(Caesar.class.getSimpleName());
     public static final String IMG = makeCardPath("Caesar.png");
 
-    public static final int INITIAL_ARTIFACT = 1;
+    public static final int ARTIFACT_COUNTER = 2;
     public static final int ARTIFACT = 1;
 
     private static final CardRarity RARITY = CardRarity.RARE;
@@ -32,14 +27,6 @@ public class Caesar extends AbstractPersonaCard {
     public Caesar() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaCaesarPower(AbstractDungeon.player, AbstractDungeon.player));
         magicNumber = baseMagicNumber = ARTIFACT;
-        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = INITIAL_ARTIFACT;
-    }
-
-    @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        super.use(p, m);
-        if (AbstractPersonaCard.canChangePersona) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ArtifactPower(p, INITIAL_ARTIFACT), INITIAL_ARTIFACT));
-        }
+        defaultSecondMagicNumber = defaultBaseSecondMagicNumber = ARTIFACT_COUNTER;
     }
 }

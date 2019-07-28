@@ -3,6 +3,7 @@ package theWildCard.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,7 +14,6 @@ import theWildCard.cards.Persona.Odin;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makePowerPath;
-
 
 public class PersonaOdinPower extends AbstractPower {
     public AbstractCreature source;
@@ -45,8 +45,10 @@ public class PersonaOdinPower extends AbstractPower {
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        this.flash();
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, BLOCK));
+    public void onAfterCardPlayed(AbstractCard card) {
+        if (card.type == AbstractCard.CardType.ATTACK) {
+            this.flash();
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(owner, owner, BLOCK));
+        }
     }
 }
