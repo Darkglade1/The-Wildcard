@@ -20,7 +20,7 @@ public class Satanael extends AbstractPersonaCard {
     private static final ArcanaEnums.Arcana ARCANA = ArcanaEnums.Arcana.FOOL;
 
     private static final int COST = 0;
-    public static int RETAIN = 10;
+    public static int RETAIN = 2;
 
     public Satanael() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET, ARCANA, new PersonaSatanaelPower(AbstractDungeon.player, AbstractDungeon.player));

@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theWildCard.WildcardMod;
 import theWildCard.cards.Persona.Sakuya;
+import theWildCard.tags.Tags;
 import theWildCard.util.TextureLoader;
 
 import java.util.Iterator;
@@ -50,12 +52,14 @@ public class PersonaSakuyaPower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurn() {
-        this.flash();
-        Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        while (iterator.hasNext()) {
-            AbstractMonster mo = (AbstractMonster) iterator.next();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, owner, new WeakPower(mo, WEAK, false), WEAK, true, AbstractGameAction.AttackEffect.NONE));
+    public void onAfterCardPlayed(AbstractCard card) {
+        if (!card.hasTag(Tags.PERSONA)) {
+            this.flash();
+            Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+            while(iterator.hasNext()) {
+                AbstractMonster mo = (AbstractMonster)iterator.next();
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, owner, new WeakPower(mo, WEAK, false), WEAK, true, AbstractGameAction.AttackEffect.NONE));
+            }
         }
     }
 }

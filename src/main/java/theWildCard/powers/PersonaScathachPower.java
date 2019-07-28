@@ -2,20 +2,22 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theWildCard.WildcardMod;
-import theWildCard.cards.OnKillPowerCard;
 import theWildCard.cards.Persona.Scathach;
+import theWildCard.tags.Tags;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makePowerPath;
 
 
-public class PersonaScathachPower extends AbstractPower implements OnKillPowerCard {
+public class PersonaScathachPower extends AbstractPower {
     public AbstractCreature source;
 
     public static final String POWER_ID = WildcardMod.makeID("PersonaScathachPower");
@@ -45,10 +47,10 @@ public class PersonaScathachPower extends AbstractPower implements OnKillPowerCa
     }
 
     @Override
-    public void onKill(boolean isMinion) {
-        if (!isMinion) {
+    public void onAfterCardPlayed(AbstractCard card) {
+        if (!card.hasTag(Tags.PERSONA)) {
             this.flash();
-            AbstractDungeon.player.increaseMaxHp(HEAL, false);
+            AbstractDungeon.actionManager.addToBottom(new AddTemporaryHPAction(owner, owner, HEAL));
         }
     }
 }

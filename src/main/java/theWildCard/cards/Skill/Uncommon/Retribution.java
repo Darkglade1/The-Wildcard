@@ -1,13 +1,17 @@
 package theWildCard.cards.Skill.Uncommon;
 
 import basemod.ReflectionHacks;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import theWildCard.WildcardMod;
 import theWildCard.cards.AbstractDefaultCard;
 import theWildCard.characters.WildcardCharacter;
@@ -43,13 +47,25 @@ public class Retribution extends AbstractDefaultCard {
                 if ((Boolean) ReflectionHacks.getPrivate(m, AbstractMonster.class, "isMultiDmg")) {
                     damage *= (Integer) ReflectionHacks.getPrivate(m, AbstractMonster.class, "intentMultiAmt");
                 }
-                AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CleaveEffect(), 0.0F));
-                Iterator iterator = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+                int[] newMultiDamage = new int[AbstractDungeon.getCurrRoom().monsters.monsters.size()];
+                for (int i = 0; i < newMultiDamage.length; i++) {
+                    newMultiDamage[i] = damage;
+                }
+
+                float speedTime = 0.2F;
+                if (Settings.FAST_MODE) {
+                    speedTime = 0.0F;
+                }
+                Iterator iterator = AbstractDungeon.getMonsters().monsters.iterator();
                 while(iterator.hasNext()) {
                     AbstractMonster mo = (AbstractMonster)iterator.next();
-                    mo.damage(new DamageInfo(mo, damage, DamageInfo.DamageType.HP_LOSS));
+                    if (!mo.isDeadOrEscaped() && !mo.halfDead) {
+                        AbstractDungeon.actionManager.addToTop(new VFXAction(new LightningEffect(mo.drawX, mo.drawY), speedTime));
+                    }
                 }
+                AbstractDungeon.actionManager.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE"));
+                AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, newMultiDamage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
+
             }
         }
     }

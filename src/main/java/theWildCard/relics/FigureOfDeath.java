@@ -2,10 +2,12 @@ package theWildCard.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import theWildCard.WildcardMod;
-import theWildCard.actions.ExhaustPersonaAction;
+import theWildCard.cards.Persona.AbstractPersonaCard;
+import theWildCard.tags.Tags;
 import theWildCard.util.TextureLoader;
 
 import static theWildCard.WildcardMod.makeRelicOutlinePath;
@@ -23,9 +25,18 @@ public class FigureOfDeath extends CustomRelic {
     }
 
     @Override
-    public void onPlayerEndTurn() {
-        AbstractPlayer p = AbstractDungeon.player;
-        AbstractDungeon.actionManager.addToBottom(new ExhaustPersonaAction(p, p, p.hand.size()));
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        if (card.hasTag(Tags.PERSONA)) {
+            this.flash();
+            AbstractPersonaCard.canChangePersona = false;
+        }
+    }
+
+    @Override
+    public void atTurnStart() {
+        if (!AbstractDungeon.player.hasPower("theWildCard:AttunementPower")) {
+            AbstractPersonaCard.canChangePersona = true;
+        }
     }
 
     @Override
@@ -36,6 +47,9 @@ public class FigureOfDeath extends CustomRelic {
     @Override
     public void onUnequip() {
         --AbstractDungeon.player.energy.energyMaster;
+        if (!AbstractDungeon.player.hasPower("theWildCard:AttunementPower")) {
+            AbstractPersonaCard.canChangePersona = true; //In case some effect makes you drop this relic
+        }
     }
 
     @Override

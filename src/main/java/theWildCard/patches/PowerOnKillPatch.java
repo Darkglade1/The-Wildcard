@@ -16,10 +16,12 @@ import theWildCard.cards.OnKillPowerCard;
 // A patch that allows a power to trigger upon a monster's death
 public class PowerOnKillPatch {
     @SpirePostfixPatch
-    public static void triggerOnKillPowers(AbstractMonster instance, boolean unused) {
-        for (AbstractPower power : AbstractDungeon.player.powers) {
-            if (power instanceof OnKillPowerCard) {
-                ((OnKillPowerCard)power).onKill(instance.hasPower("Minion"));
+    public static void triggerOnKillPowers(AbstractMonster instance, boolean triggerRelics) {
+        if (triggerRelics) {
+            for (AbstractPower power : AbstractDungeon.player.powers) {
+                if (power instanceof OnKillPowerCard) {
+                    ((OnKillPowerCard)power).onKill(instance.hasPower("Minion"));
+                }
             }
         }
     }

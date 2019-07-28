@@ -248,8 +248,8 @@
   },
   "theWildCard:Sakuya": {
     "NAME": "Sakuya",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Apply !M! Weak to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Weak to all enemies."
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, apply !M! Weak to ALL enemies."
   },
   "theWildCard:Polydeuces": {
     "NAME": "Polydeuces",
@@ -268,13 +268,13 @@
   },
   "theWildCard:PaleRider": {
     "NAME": "Pale Rider",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Apply !M! Vulnerable to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Vulnerable to all enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Apply !M! Vulnerable to all enemies. NL At the start of your turn, apply !theWildCard:SecondMagic! Vulnerable to all enemies."
+    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever you play a non-Persona card, apply !M! Vulnerable to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever you play a non-Persona card, apply !M! Vulnerable to ALL enemies."
   },
   "theWildCard:Scathach": {
     "NAME": "Scathach",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever a non-minion enemy dies, raise your Max HP by !M!.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever a non-minion enemy dies, raise your Max HP by !M!."
+    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, gain !M! Temporary_HP.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, gain !M! Temporary_HP."
   },
   "theWildCard:Odin": {
     "NAME": "Odin",
@@ -283,8 +283,8 @@
   },
   "theWildCard:Loki": {
     "NAME": "Loki",
-    "DESCRIPTION": "Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Draw !M! card. NL At the start of your turn, draw !theWildCard:SecondMagic! cards."
+    "DESCRIPTION": "Retain. NL Persona Fool. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, draw !M! card."
   },
   "theWildCard:Metatron": {
     "NAME": "Metatron",
@@ -308,8 +308,8 @@
   },
   "theWildCard:Satanael": {
     "NAME": "Satanael",
-    "DESCRIPTION": "Retain. NL Persona Fool. NL At the end of your turn, Retain up to !M! cards.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL At the end of your turn, Retain up to !M! cards."
+    "DESCRIPTION": "Retain. NL Persona Fool. NL Whenever you play a non-Persona card, Retain up to !M! cards this turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Whenever you play a non-Persona card, Retain up to !M! cards this turn."
   },
   "theWildCard:Lucifer": {
     "NAME": "Lucifer",

@@ -31,7 +31,7 @@
     "NAME": "Figure of Death",
     "FLAVOR": "The Arcana is the means by which all is revealed.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of each turn. At the end of your turn, exhaust ALL Persona in your hand."
+      "Gain [E] at the start of each turn. You can only change Persona once per turn."
     ]
   }
 }

@@ -31,10 +31,6 @@
         "NAME": "Unending Ritual",
         "DESCRIPTIONS": ["Whenever you play an Arcana this turn, add #b", " random upgraded Arcana to your hand."]
 },
-"theWildCard:VengeancePower": {
-        "NAME": "Vengeance",
-        "DESCRIPTIONS": ["Whenever you lose HP this turn, gain half that amount as Strength."]
-},
 "theWildCard:LastStandPower": {
         "NAME": "Last Stand",
         "DESCRIPTIONS": ["Next turn, lose #b", " HP."]
@@ -97,7 +93,7 @@
 },
 "theWildCard:PersonaSakuyaPower": {
         "NAME": "Sakuya",
-        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Weak to all enemies."]
+        "DESCRIPTIONS": ["Whenever you play a non-Persona card, apply #b", " Weak to ALL enemies."]
 },
 "theWildCard:PersonaPolydeucesPower": {
         "NAME": "Polydeuces",
@@ -113,11 +109,11 @@
 },
 "theWildCard:PersonaPaleRiderPower": {
         "NAME": "Pale Rider",
-        "DESCRIPTIONS": ["At the start of your turn, apply #b", " Vulnerable to all enemies."]
+        "DESCRIPTIONS": ["Whenever you play a non-Persona card, apply #b", " Vulnerable to ALL enemies."]
 },
 "theWildCard:PersonaScathachPower": {
         "NAME": "Scathach",
-        "DESCRIPTIONS": ["Whenever a non-minion enemy dies, raise your Max HP by #b", "."]
+        "DESCRIPTIONS": ["Whenever you play a non-Persona card, gain #b", " Temporary HP."]
 },
 "theWildCard:PersonaOdinPower": {
         "NAME": "Odin",
@@ -125,7 +121,7 @@
 },
 "theWildCard:PersonaLokiPower": {
         "NAME": "Loki",
-        "DESCRIPTIONS": ["At the start of your turn, draw #b", " cards."]
+        "DESCRIPTIONS": ["Every #b", " times you play a non-Persona card, draw #b", " card. (You need to play #b", " more card).", " more cards)."]
 },
 "theWildCard:PersonaMetatronPower": {
         "NAME": "Metatron",
@@ -145,7 +141,7 @@
 },
 "theWildCard:PersonaSatanaelPower": {
         "NAME": "Satanael",
-        "DESCRIPTIONS": ["At the end of your turn, Retain up to #b", " cards."]
+        "DESCRIPTIONS": ["Whenever you play a non-Persona card, Retain up to #b", " cards this turn."]
 },
 "theWildCard:PersonaLuciferPower": {
         "NAME": "Lucifer",

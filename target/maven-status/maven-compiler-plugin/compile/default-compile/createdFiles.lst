@@ -180,7 +180,6 @@ theWildCard\powers\StrengthLossPower.class
 theWildCard\cards\Arcana\MagicalMight.class
 theWildCard\cards\Power\Uncommon\Safeguard.class
 theWildCard\cards\Skill\Common\MaskChange.class
-theWildCard\powers\VengeancePower.class
 theWildCard\powers\PersonaAmaterasuPower.class
 theWildCard\cards\Skill\Common\BurstOfStrength.class
 theWildCard\powers\CrushPower.class
@@ -190,6 +189,7 @@ theWildCard\powers\PersonaSatanaelPower.class
 theWildCard\actions\PersonaFromDeckToHandAction.class
 theWildCard\cards\Attack\Uncommon\TheGreatSeal.class
 theWildCard\cards\OnDiscardArcanaCard.class
+theWildCard\powers\TempRetainCardPower.class
 theWildCard\cards\Skill\Rare\Deicide.class
 theWildCard\cards\Power\Rare\FuelForTheFire.class
 theWildCard\cards\Skill\Uncommon\Vengeance.class

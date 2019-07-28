@@ -33,7 +33,7 @@ public class Providence extends AbstractDefaultCard {
     private static final int BLOCK = 10;
     private static final int UPGRADE_PLUS_BLOCK = 3;
 
-    private static final int HEAL = 2;
+    private static final int HEAL = 1;
     private static final int UPGRADE_PLUS_HEAL = 1;
 
     public Providence() {
