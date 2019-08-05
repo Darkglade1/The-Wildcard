@@ -323,34 +323,16 @@ public abstract class AbstractArcanaCard extends AbstractDefaultCard {
 
     public static AbstractArcanaCard returnTrulyRandomArcana() {
         ArrayList<AbstractCard> list = new ArrayList();
-        Iterator iterator = AbstractDungeon.srcCommonCardPool.group.iterator();
-
-        AbstractCard c;
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractArcanaCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
-        iterator = AbstractDungeon.srcUncommonCardPool.group.iterator();
-
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractArcanaCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
-        iterator = AbstractDungeon.srcRareCardPool.group.iterator();
-
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractArcanaCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
+        list.add(new SeveringSlash());
+        list.add(new StingingStrike());
+        list.add(new ArcaneArts());
+        list.add(new ArcanaArtistry());
+        list.add(new ArchaicAssault());
+        list.add(new MagicalMight());
+        list.add(new MagicMettle());
+        list.add(new PowerOfTheArcana());
+        list.add(new FinalHour());
+        list.add(new TheArcanaUnleashed());
         return (AbstractArcanaCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
     }
 }

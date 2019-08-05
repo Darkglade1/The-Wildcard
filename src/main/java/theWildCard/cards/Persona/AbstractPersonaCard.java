@@ -128,34 +128,21 @@ public abstract class AbstractPersonaCard extends AbstractDefaultCard {
 
     public static AbstractPersonaCard returnTrulyRandomPersona() {
         ArrayList<AbstractCard> list = new ArrayList();
-        Iterator iterator = AbstractDungeon.srcCommonCardPool.group.iterator();
-
-        AbstractCard c;
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractPersonaCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
-        iterator = AbstractDungeon.srcUncommonCardPool.group.iterator();
-
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractPersonaCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
-        iterator = AbstractDungeon.srcRareCardPool.group.iterator();
-
-        while(iterator.hasNext()) {
-            c = (AbstractCard)iterator.next();
-            if (c instanceof AbstractPersonaCard && !(list.contains(c))) {
-                list.add(c);
-            }
-        }
-
+        list.add(new Sakuya());
+        list.add(new Polydeuces());
+        list.add(new Arsene());
+        list.add(new Michael());
+        list.add(new PaleRider());
+        list.add(new Scathach());
+        list.add(new Odin());
+        list.add(new Loki());
+        list.add(new Metatron());
+        list.add(new Alice());
+        list.add(new Amaterasu());
+        list.add(new Caesar());
+        list.add(new Satanael());
+        list.add(new Lucifer());
+        list.add(new Thanatos());
         return (AbstractPersonaCard)list.get(AbstractDungeon.cardRandomRng.random(list.size() - 1));
     }
 
