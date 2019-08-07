@@ -1,358 +1,358 @@
 {
   "theWildCard:SeveringSlash": {
     "NAME": "Severing Slash",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:StingingStrike": {
     "NAME": "Stinging Strike",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:ArcaneArts": {
     "NAME": "Arcane Arts",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:ArcanaArtistry": {
     "NAME": "Arcana Artistry",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:MagicMettle": {
     "NAME": "Magic Mettle",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:ArchaicAssault": {
     "NAME": "Archaic Assault",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:MagicalMight": {
     "NAME": "Magical Might",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:FinalHour": {
     "NAME": "Final Hour",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:PowerOfTheArcana": {
     "NAME": "Power of the Arcana",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:TheArcanaUnleashed": {
     "NAME": "The Arcana Unleashed",
-    "DESCRIPTION": "Arcana."
+    "DESCRIPTION": "thewildcard:Arcana."
   },
   "theWildCard:HealersStrike": {
     "NAME": "Healer's Strike",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Deal !D! damage. NL Heal !M! HP. NL Exhaust."
   },
   "theWildCard:WardingBlow": {
     "NAME": "Warding Blow",
-    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Deal !D! damage."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Gain !B! Block. NL Deal !D! damage."
   },
   "theWildCard:BalancedThrust": {
     "NAME": "Balanced Thrust",
-    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Deal !D! damage."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Gain !B! Block. NL Deal !D! damage."
   },
   "theWildCard:SweepingSlash": {
     "NAME": "Sweeping Slash",
-    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Deal !D! damage to ALL enemies."
   },
   "theWildCard:SavageBlow": {
     "NAME": "Savage Blow",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Deal !D! damage."
   },
   "theWildCard:WitchsStrike": {
     "NAME": "Witch's Strike",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Heal HP equal to damage dealt. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Deal !D! damage. NL Heal HP equal to damage dealt. NL Exhaust."
   },
   "theWildCard:Bristle": {
     "NAME": "Bristle",
-    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Gain !M! Thorns."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Deal !D! damage. NL Gain !M! Thorns."
   },
   "theWildCard:EbbAndFlow": {
     "NAME": "Ebb and Flow",
-    "DESCRIPTION": "Arcana Fool. NL Deal !D! damage. NL Draw !M! cards."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Deal !D! damage. NL Draw !M! cards."
   },
   "theWildCard:FlurryOfBlows": {
     "NAME": "Flurry of Blows",
-    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage !M! times."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Deal !D! damage !M! times."
   },
   "theWildCard:Crush": {
     "NAME": "Crush",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. Next turn, gain [E] [E]."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Deal !D! damage. Next turn, gain [E] [E]."
   },
   "theWildCard:DebilitatingSpell": {
     "NAME": "Debilitating Spell",
-    "DESCRIPTION": "Arcana Priestess. NL Apply !M! Weak."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Apply !M! Weak."
   },
   "theWildCard:Fortify": {
     "NAME": "Fortify",
-    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Gain !B! Block."
   },
   "theWildCard:TwoForOne": {
     "NAME": "Two For One",
-    "DESCRIPTION": "Arcana Fool. NL Apply !M! Weak. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Apply !M! Weak. NL Apply !M! Vulnerable."
   },
   "theWildCard:BurstOfStrength": {
     "NAME": "Burst of Strength",
-    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength on your next attack."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Gain !M! Strength on your next attack."
   },
   "theWildCard:PiercingGaze": {
     "NAME": "Piercing Gaze",
-    "DESCRIPTION": "Arcana Death. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Apply !M! Vulnerable."
   },
   "theWildCard:SincereOffering": {
     "NAME": "Sincere Offering",
-    "DESCRIPTION": "Arcana Priestess. NL Exhaust a random card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card.",
-    "UPGRADE_DESCRIPTION": "Arcana Priestess. NL Exhaust a card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Exhaust a random card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Exhaust a card in your hand. NL Heal !M! HP. NL Draw !theWildCard:SecondMagic! card."
   },
   "theWildCard:SpikyShield": {
     "NAME": "Spiky Shield",
-    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! Thorns."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Gain !B! Block. NL Gain !M! Thorns."
   },
   "theWildCard:SleightOfHand": {
     "NAME": "Sleight of Hand",
-    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Gain !B! Block. NL Apply !M! Vulnerable."
   },
   "theWildCard:Vengeance": {
     "NAME": "Vengeance",
-    "DESCRIPTION": "Arcana Judgement. NL Lose !theWildCard:SecondMagic! HP. NL Gain !M! Strength."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Lose !theWildCard:SecondMagic! HP. NL Gain !M! Strength."
   },
   "theWildCard:RampantBloodlust": {
     "NAME": "Rampant Bloodlust",
-    "DESCRIPTION": "Arcana Death. NL Gain [E] [E]. NL If an enemy doesn't die this turn, lose [E] [E] next turn.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Gain [E] [E] [E]. NL If an enemy doesn't die this turn, lose [E] [E] [E] next turn."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Gain [E] [E]. NL If an enemy doesn't die this turn, lose [E] [E] next turn.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Gain [E] [E] [E]. NL If an enemy doesn't die this turn, lose [E] [E] [E] next turn."
   },
   "theWildCard:MassOffering": {
     "NAME": "Mass Offering",
-    "DESCRIPTION": "Arcana Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Exhaust all cards in your hand. NL Heal !M! HP for each Exhausted card. NL Draw !theWildCard:SecondMagic! cards."
   },
   "theWildCard:Fortification": {
     "NAME": "Fortification",
-    "DESCRIPTION": "Arcana Emperor. NL Gain !B! Block. NL Gain !M! Plated Armor."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Gain !B! Block. NL Gain !M! Plated Armor."
   },
   "theWildCard:OnTheRoad": {
     "NAME": "On the Road",
-    "DESCRIPTION": "Arcana Fool. NL Draw !M! cards. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Fool. NL Draw !M! cards."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Draw !M! cards."
   },
   "theWildCard:Retribution": {
     "NAME": "Retribution",
-    "DESCRIPTION": "Arcana Judgement. NL ALL enemies lose HP equal to target enemy's intent."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL ALL enemies lose HP equal to target enemy's intent."
   },
   "theWildCard:Execute": {
     "NAME": "Execute",
-    "DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Death. NL Kill target non-boss enemy if it is below half HP."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Kill target non-boss enemy if it is below half HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Kill target non-boss enemy if it is below half HP."
   },
   "theWildCard:AncientSeal": {
     "NAME": "Ancient Seal",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL Target enemy loses Strength this turn equal to damage dealt."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Deal !D! damage. NL Target enemy loses Strength this turn equal to damage dealt."
   },
   "theWildCard:CleansingBlow": {
     "NAME": "Cleansing Blow",
-    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust ALL your Status and Curse cards. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust ALL your Status and Curse cards."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust ALL your Status and Curse cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Deal !D! damage. NL Remove all of your debuffs. NL Exhaust ALL your Status and Curse cards."
   },
   "theWildCard:JackOfAllTrades": {
     "NAME": "Jack of All Trades",
-    "DESCRIPTION": "Arcana Fool. NL Gain !B! Block. NL Deal !D! damage. NL Draw !M! card."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Gain !B! Block. NL Deal !D! damage. NL Draw !M! card."
   },
   "theWildCard:DivineWhirl": {
     "NAME": "Divine Whirl",
-    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage !M! times to ALL enemies."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Deal !D! damage !M! times to ALL enemies."
   },
   "theWildCard:SuddenDeath": {
-    "NAME": "Sudden Death",
-    "DESCRIPTION": "Arcana Death. NL If X is at least !M!, kill target non-boss enemy. NL Deal !D!X damage."
+    "NAME": "Sudden thewildcard:Death",
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL If X is at least !M!, kill target non-boss enemy. NL Deal !D!X damage."
   },
   "theWildCard:QuietPassing": {
     "NAME": "Quiet Passing",
-    "DESCRIPTION": "Arcana Priestess. NL Deal !D! damage. NL ALL enemies loses Strength equal to the amount of Weak on target enemy. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Deal !D! damage. NL ALL enemies loses Strength equal to the amount of Weak on target enemy. NL Exhaust."
   },
   "theWildCard:WallOfThorns": {
     "NAME": "Wall of Thorns",
-    "DESCRIPTION": "Arcana Emperor. NL Deal !D! damage. NL Gain !M! Thorns this turn."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Deal !D! damage. NL Gain !M! Thorns this turn."
   },
   "theWildCard:OneTwo": {
     "NAME": "One Two",
-    "DESCRIPTION": "Arcana Fool. NL Deal !D! damage twice. NL Apply !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Arcana Fool. NL Deal !D! damage twice. NL Apply !M! Weak twice."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Deal !D! damage twice. NL Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Deal !D! damage twice. NL Apply !M! Weak twice."
   },
   "theWildCard:RelentlessBarrage": {
     "NAME": "Relentless Barrage",
-    "DESCRIPTION": "Arcana Judgement. NL Deal !D! damage 2X times."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Deal !D! damage 2X times."
   },
   "theWildCard:BrutalDemise": {
     "NAME": "Brutal Demise",
-    "DESCRIPTION": "Arcana Death. NL Deal !D! damage. NL Gain [E] equal to the amount of Vulnerable on target enemy. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Deal !D! damage. NL Gain [E] equal to the amount of Vulnerable on target enemy. NL Exhaust."
   },
   "theWildCard:LastRites": {
     "NAME": "Last Rites",
-    "DESCRIPTION": "Arcana Priestess. NL For each card in your exhaust pile, deal !D! damage and heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL For each card in your exhaust pile, deal !D! damage and heal !M! HP. NL Exhaust."
   },
   "theWildCard:BlessingOfKings": {
     "NAME": "Blessing of Kings",
-    "DESCRIPTION": "Arcana Emperor. NL Remove all of your debuffs. NL Gain !M! Artifact. NL Gain !B! Block. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Remove all of your debuffs. NL Gain !M! Artifact. NL Gain !B! Block. NL Exhaust."
   },
   "theWildCard:EndOfTheLine": {
     "NAME": "End of the Line",
-    "DESCRIPTION": "Arcana Fool. NL Discard your hand, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Arcana Fool. NL Discard any number of cards, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Discard your hand, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Discard any number of cards, then draw !M! cards. NL You cannot draw additional cards this turn. NL Exhaust."
   },
   "theWildCard:LastStand": {
     "NAME": "Last Stand",
-    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength. NL Next turn, lose !theWildCard:SecondMagic! HP. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Gain !M! Strength. NL Next turn, lose !theWildCard:SecondMagic! HP. NL Exhaust."
   },
   "theWildCard:Countdown": {
     "NAME": "Countdown",
-    "DESCRIPTION": "Arcana Death. NL Retain. NL At the start of your turn, reduce this card's cost by 1. NL Kill target enemy. NL Exhaust."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL Retain. NL At the start of your turn, reduce this card's cost by 1. NL Kill target enemy. NL Exhaust."
   },
   "theWildCard:SubduingPresence": {
     "NAME": "Subduing Presence",
-    "DESCRIPTION": "Arcana Priestess. NL At the start of your turn, apply !M! Weak to ALL enemies."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL At the start of your turn, apply !M! Weak to ALL enemies."
   },
   "theWildCard:RegalBearing": {
     "NAME": "Regal Bearing",
-    "DESCRIPTION": "Arcana Emperor. NL Gain !M! Dexterity."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Gain !M! Dexterity."
   },
   "theWildCard:BalancingAct": {
     "NAME": "Balancing Act",
-    "DESCRIPTION": "Arcana Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity."
   },
   "theWildCard:RighteousFury": {
     "NAME": "Righteous Fury",
-    "DESCRIPTION": "Arcana Judgement. NL Gain !M! Strength."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Gain !M! Strength."
   },
   "theWildCard:VileAura": {
     "NAME": "Vile Aura",
-    "DESCRIPTION": "Arcana Death. NL At the start of your turn, apply !M! Vulnerable to ALL enemies."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL At the start of your turn, apply !M! Vulnerable to ALL enemies."
   },
   "theWildCard:Reincarnation": {
     "NAME": "Reincarnation",
-    "DESCRIPTION": "Arcana Priestess. NL Whenever a non-Status, non-Curse card is exhausted, add !M! copy of it to your discard pile."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Priestess. NL Whenever a non-Status, non-Curse card is exhausted, add !M! copy of it to your discard pile."
   },
   "theWildCard:Bulwark": {
     "NAME": "Bulwark",
-    "DESCRIPTION": "Arcana Emperor. NL Whenever you play a Skill, gain !M! Plated Armor."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Emperor. NL Whenever you play a Skill, gain !M! Plated Armor."
   },
   "theWildCard:Encore": {
     "NAME": "Encore",
-    "DESCRIPTION": "Arcana Fool. NL Whenever you play a card, draw !M! card."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Fool. NL Whenever you play a card, draw !M! card."
   },
   "theWildCard:Momentum": {
     "NAME": "Momentum",
-    "DESCRIPTION": "Arcana Judgement. NL Whenever you deal damage, gain !M! Strength this turn."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Whenever you deal damage, gain !M! Strength this turn."
   },
   "theWildCard:Harvest": {
     "NAME": "Harvest",
-    "DESCRIPTION": "Arcana Death. NL At the start of your turn, gain [E]. Whenever an enemy dies, gain an additional [E] at the start of your turn."
+    "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL At the start of your turn, gain [E]. Whenever an enemy dies, gain an additional [E] at the start of your turn."
   },
   "theWildCard:Sakuya": {
     "NAME": "Sakuya",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, apply !M! Weak to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, apply !M! Weak to ALL enemies."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Priestess. NL Whenever you play a non-Persona card, apply !M! Weak to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Priestess. NL Whenever you play a non-Persona card, apply !M! Weak to ALL enemies."
   },
   "theWildCard:Polydeuces": {
     "NAME": "Polydeuces",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL Gain !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Gain !M! Dexterity."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Emperor. NL Gain !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Emperor. NL Gain !M! Dexterity."
   },
   "theWildCard:Arsene": {
     "NAME": "Arsene",
-    "DESCRIPTION": "Retain. NL Persona Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Fool. NL Gain !M! Strength and !theWildCard:SecondMagic! Dexterity."
   },
   "theWildCard:Michael": {
     "NAME": "Michael",
-    "DESCRIPTION": "Retain. NL Persona Judgement. NL Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Gain !M! Strength."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Judgement. NL Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Judgement. NL Gain !M! Strength."
   },
   "theWildCard:PaleRider": {
     "NAME": "Pale Rider",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever you play a non-Persona card, apply !M! Vulnerable to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever you play a non-Persona card, apply !M! Vulnerable to ALL enemies."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Death. NL Whenever you play a non-Persona card, apply !M! Vulnerable to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Death. NL Whenever you play a non-Persona card, apply !M! Vulnerable to ALL enemies."
   },
   "theWildCard:Scathach": {
     "NAME": "Scathach",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, gain !M! Temporary_HP.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever you play a non-Persona card, gain !M! Temporary_HP."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Priestess. NL Whenever you play a non-Persona card, gain !M! Temporary_HP.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Priestess. NL Whenever you play a non-Persona card, gain !M! Temporary_HP."
   },
   "theWildCard:Odin": {
     "NAME": "Odin",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL Whenever you play an Attack, gain !M! Block.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Whenever you play an Attack, gain !M! Block."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Emperor. NL Whenever you play an Attack, gain !M! Block.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Emperor. NL Whenever you play an Attack, gain !M! Block."
   },
   "theWildCard:Loki": {
     "NAME": "Loki",
-    "DESCRIPTION": "Retain. NL Persona Fool. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, draw !M! card."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Fool. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Fool. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, draw !M! card."
   },
   "theWildCard:Metatron": {
     "NAME": "Metatron",
-    "DESCRIPTION": "Retain. NL Persona Judgement. NL Your single target Attacks deal damage to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Your single target Attacks deal damage to ALL enemies."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Judgement. NL Your single target Attacks deal damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Judgement. NL Your single target Attacks deal damage to ALL enemies."
   },
   "theWildCard:Alice": {
     "NAME": "Alice",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Whenever an enemy dies, gain [E] [E]."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Death. NL Whenever an enemy dies, gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Death. NL Whenever an enemy dies, gain [E] [E]."
   },
   "theWildCard:Amaterasu": {
     "NAME": "Amaterasu",
-    "DESCRIPTION": "Retain. NL Persona Priestess. NL Whenever a card is exhausted, heal !M! HP. NL ALL your cards exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Priestess. NL Whenever a card is exhausted, heal !M! HP. NL ALL your cards exhaust."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Priestess. NL Whenever a card is exhausted, heal !M! HP. NL ALL your cards exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Priestess. NL Whenever a card is exhausted, heal !M! HP. NL ALL your cards exhaust."
   },
   "theWildCard:Caesar": {
     "NAME": "Caesar",
-    "DESCRIPTION": "Retain. NL Persona Emperor. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, gain !M! Artifact.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Emperor. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, gain !M! Artifact."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Emperor. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, gain !M! Artifact.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Emperor. NL Every !theWildCard:SecondMagic! times you play a non-Persona card in a turn, gain !M! Artifact."
   },
   "theWildCard:Satanael": {
     "NAME": "Satanael",
-    "DESCRIPTION": "Retain. NL Persona Fool. NL Whenever you play a non-Persona card, Retain up to !M! cards this turn.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Fool. NL Whenever you play a non-Persona card, Retain up to !M! cards this turn."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Fool. NL Whenever you play a non-Persona card, Retain up to !M! cards this turn.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Fool. NL Whenever you play a non-Persona card, Retain up to !M! cards this turn."
   },
   "theWildCard:Lucifer": {
     "NAME": "Lucifer",
-    "DESCRIPTION": "Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much. NL The first time you trigger this effect each turn, lose !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Judgement. NL Whenever you gain Strength, gain twice as much. NL The first time you trigger this effect each turn, lose !M! Dexterity."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Judgement. NL Whenever you gain Strength, gain twice as much. NL The first time you trigger this effect each turn, lose !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Judgement. NL Whenever you gain Strength, gain twice as much. NL The first time you trigger this effect each turn, lose !M! Dexterity."
   },
   "theWildCard:Thanatos": {
     "NAME": "Thanatos",
-    "DESCRIPTION": "Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice. NL Whenever this effect triggers, lose !M! HP.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL Persona Death. NL Attacks that cost 2 or more are played twice. NL Whenever this effect triggers, lose !M! HP."
+    "DESCRIPTION": "Retain. NL thewildcard:Persona thewildcard:Death. NL Attacks that cost 2 or more are played twice. NL Whenever this effect triggers, lose !M! HP.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Retain. NL thewildcard:Persona thewildcard:Death. NL Attacks that cost 2 or more are played twice. NL Whenever this effect triggers, lose !M! HP."
   },
   "theWildCard:TheUniverse": {
     "NAME": "The Universe",
-    "DESCRIPTION": "At the start of your turn, add a random Persona to your hand."
+    "DESCRIPTION": "At the start of your turn, add a random thewildcard:Persona to your hand."
   },
   "theWildCard:FuelForTheFire": {
     "NAME": "Fuel for the Fire",
-    "DESCRIPTION": "Whenever you exhaust a Persona or discard an Arcana, draw a card."
+    "DESCRIPTION": "Whenever you exhaust a thewildcard:Persona or discard an thewildcard:Arcana, draw a card."
   },
   "theWildCard:ManOfManyFaces": {
     "NAME": "Man of Many Faces",
-    "DESCRIPTION": "Whenever you play a Persona, draw a card."
+    "DESCRIPTION": "Whenever you play a thewildcard:Persona, draw a card."
   },
   "theWildCard:Safeguard": {
     "NAME": "Safeguard",
-    "DESCRIPTION": "Whenever you play an Arcana, gain !M! Block times the amount of [E] spent on it."
+    "DESCRIPTION": "Whenever you play an thewildcard:Arcana, gain !M! Block times the amount of [E] spent on it."
   },
   "theWildCard:Attunement": {
     "NAME": "Attunement",
-    "DESCRIPTION": "Whenever you play your active Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change Persona."
+    "DESCRIPTION": "Whenever you play your active thewildcard:Persona again, gain !M! Strength and !M! Dexterity. NL You can no longer change thewildcard:Persona."
   },
   "theWildCard:Abstinence": {
     "NAME": "Abstinence",
-    "DESCRIPTION": "If you have no Persona in your hand at the end of your turn, gain !M! Block."
+    "DESCRIPTION": "If you have no thewildcard:Persona in your hand at the end of your turn, gain !M! Block."
   },
   "theWildCard:Deicide": {
     "NAME": "Deicide",
-    "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! Persona in your exhaust pile, kill ALL enemies."
+    "DESCRIPTION": "Gain !B! Block. NL If there are at least !M! thewildcard:Persona in your exhaust pile, kill ALL enemies."
   },
   "theWildCard:ChangingDestiny": {
     "NAME": "Changing Destiny",
-    "DESCRIPTION": "This turn, your next Arcana is played twice.",
-    "UPGRADE_DESCRIPTION": "This turn, your next !M! Arcana are played twice."
+    "DESCRIPTION": "This turn, your next thewildcard:Arcana is played twice.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! thewildcard:Arcana are played twice."
   },
   "theWildCard:MasterPlan": {
     "NAME": "Master Plan",
@@ -361,24 +361,24 @@
   },
   "theWildCard:LadyLuck": {
     "NAME": "Lady Luck",
-    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Draw !theWildCard:SecondMagic! cards for each Arcana discarded this way."
+    "DESCRIPTION": "Draw !M! cards. NL Discard any number of cards. Draw !theWildCard:SecondMagic! cards for each thewildcard:Arcana discarded this way."
   },
   "theWildCard:UnderLockAndKey": {
     "NAME": "Under Lock and Key",
-    "DESCRIPTION": "Enemy loses !M! Strength this turn. NL Lock !theWildCard:SecondMagic! Arcana in your hand. (Locked Arcana can no longer transform)."
+    "DESCRIPTION": "Enemy loses !M! Strength this turn. NL Lock !theWildCard:SecondMagic! thewildcard:Arcana in your hand. (Locked thewildcard:Arcana can no longer transform)."
   },
   "theWildCard:MaskChange": {
     "NAME": "Mask Change",
-    "DESCRIPTION": "Gain !B! Block. NL Put a Persona from your draw pile into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Put a thewildcard:Persona from your draw pile into your hand."
   },
   "theWildCard:UnendingRitual": {
     "NAME": "Unending Ritual",
-    "DESCRIPTION": "Whenever you play an Arcana this turn, add a random Arcana to your hand.",
-    "UPGRADE_DESCRIPTION": "Whenever you play an Arcana this turn, add a random upgraded Arcana to your hand."
+    "DESCRIPTION": "Whenever you play an thewildcard:Arcana this turn, add a random thewildcard:Arcana to your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you play an thewildcard:Arcana this turn, add a random upgraded thewildcard:Arcana to your hand."
   },
   "theWildCard:ShieldOfMany": {
     "NAME": "Shield of Many",
-    "DESCRIPTION": "Gain !B! Block for each Persona in your hand."
+    "DESCRIPTION": "Gain !B! Block for each thewildcard:Persona in your hand."
   },
   "theWildCard:Impatience": {
     "NAME": "Impatience",
@@ -386,7 +386,7 @@
   },
   "theWildCard:Unburden": {
     "NAME": "Unburden",
-    "DESCRIPTION": "Gain !B! Block. NL Exhaust !M! random Persona in your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust !M! random thewildcard:Persona in your hand."
   },
   "theWildCard:Patience": {
     "NAME": "Patience",
@@ -400,60 +400,60 @@
   },
   "theWildCard:AllOutAttack": {
     "NAME": "All Out Attack",
-    "DESCRIPTION": "For each Persona in your deck, play a copy of a random Attack from your deck. NL Exhaust."
+    "DESCRIPTION": "For each thewildcard:Persona in your thewildcard:deck, play a copy of a random Attack from your thewildcard:deck. NL Exhaust."
   },
   "theWildCard:Overwhelm": {
     "NAME": "Overwhelm",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Increase this card's damage by !M! this combat for each thewildcard:Arcana discarded this way."
   },
   "theWildCard:Desolation": {
     "NAME": "Desolation",
-    "DESCRIPTION": "If there are no Persona in your deck, deal !D! damage to ALL enemies."
+    "DESCRIPTION": "If there are no thewildcard:Persona in your thewildcard:deck, deal !D! damage to ALL enemies."
   },
   "theWildCard:Ruination": {
     "NAME": "Ruination",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to ALL enemies. NL Exhaust ALL your Persona."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable to ALL enemies. NL Exhaust ALL your thewildcard:Persona."
   },
   "theWildCard:EnergyTheft": {
     "NAME": "Energy Theft",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain [E] for each Arcana discarded this way. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain [E] for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain [E] for each thewildcard:Arcana discarded this way. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain [E] for each thewildcard:Arcana discarded this way."
   },
   "theWildCard:IdentityTheft": {
     "NAME": "Identity Theft",
-    "DESCRIPTION": "Deal !D! damage. NL Add a random Persona to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add a random thewildcard:Persona to your hand."
   },
   "theWildCard:TheGreatSeal": {
     "NAME": "The Great Seal",
-    "DESCRIPTION": "Deal !D! damage. NL If there are no Persona in your deck, gain !M! Strength and target enemy loses !theWildCard:SecondMagic! Strength."
+    "DESCRIPTION": "Deal !D! damage. NL If there are no thewildcard:Persona in your thewildcard:deck, gain !M! Strength and target enemy loses !theWildCard:SecondMagic! Strength."
   },
   "theWildCard:Salvation": {
     "NAME": "Salvation",
-    "DESCRIPTION": "Deal !D! damage. NL If you have no Persona in your hand, draw !M! cards."
+    "DESCRIPTION": "Deal !D! damage. NL If you have no thewildcard:Persona in your hand, draw !M! cards."
   },
   "theWildCard:Providence": {
     "NAME": "Providence",
-    "DESCRIPTION": "Deal !D! damage. NL If you have no Persona in your hand, gain !B! Block and heal !M! HP."
+    "DESCRIPTION": "Deal !D! damage. NL If you have no thewildcard:Persona in your hand, gain !B! Block and heal !M! HP."
   },
   "theWildCard:CryOfAgony": {
     "NAME": "Cry of Agony",
-    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies. NL Exhaust ALL Persona in your hand."
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies. NL Exhaust ALL thewildcard:Persona in your hand."
   },
   "theWildCard:BladeOfGenerations": {
     "NAME": "Blade of Generations",
-    "DESCRIPTION": "Deal !D! damage. NL Put an Arcana from your draw pile into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Put an thewildcard:Arcana from your draw pile into your hand."
   },
   "theWildCard:SacrificialStroke": {
     "NAME": "Sacrificial Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Exhaust a random Persona in your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust a random thewildcard:Persona in your hand."
   },
   "theWildCard:EnergizedStroke": {
     "NAME": "Energized Stroke",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Deal !D! damage to ALL enemies for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Deal !D! damage to ALL enemies for each thewildcard:Arcana discarded this way."
   },
   "theWildCard:StalwartBlade": {
     "NAME": "Stalwart Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain !B! Block for each Arcana discarded this way."
+    "DESCRIPTION": "Deal !D! damage. NL Discard any number of cards. Gain !B! Block for each thewildcard:Arcana discarded this way."
   },
   "theWildCard:CallToAdventure": {
     "NAME": "Call to Adventure",
