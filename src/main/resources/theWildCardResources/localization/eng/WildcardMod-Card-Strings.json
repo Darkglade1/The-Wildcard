@@ -399,7 +399,7 @@
     "UPGRADE_DESCRIPTION": "Put !M! cards from your discard pile into your hand."
   },
   "theWildCard:AllOutAttack": {
-    "NAME": "All Out Attack",
+    "NAME": "All-Out Attack",
     "DESCRIPTION": "For each thewildcard:Persona in your thewildcard:deck, play a copy of a random Attack from your thewildcard:deck. NL Exhaust."
   },
   "theWildCard:Overwhelm": {
