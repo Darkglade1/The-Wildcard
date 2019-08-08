@@ -161,7 +161,7 @@
     "DESCRIPTION": "thewildcard:Arcana thewildcard:Judgement. NL Deal !D! damage !M! times to ALL enemies."
   },
   "theWildCard:SuddenDeath": {
-    "NAME": "Sudden thewildcard:Death",
+    "NAME": "Sudden Death",
     "DESCRIPTION": "thewildcard:Arcana thewildcard:Death. NL If X is at least !M!, kill target non-boss enemy. NL Deal !D!X damage."
   },
   "theWildCard:QuietPassing": {
