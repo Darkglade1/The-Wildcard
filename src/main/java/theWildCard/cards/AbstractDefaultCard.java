@@ -1,6 +1,8 @@
 package theWildCard.cards;
 
 import basemod.abstracts.CustomCard;
+import theWildCard.WildcardMod;
+
 import static com.megacrit.cardcrawl.core.CardCrawlGame.languagePack;
 
 //A class to automatically fill in the name and descriptions of cards
@@ -28,6 +30,18 @@ public abstract class AbstractDefaultCard extends CustomCard {
         isBlockModified = false;
         isMagicNumberModified = false;
         isDefaultSecondMagicNumberModified = false;
+
+        if (WildcardMod.enableAltCardArt) {
+            if (type == CardType.ATTACK) {
+                this.setBackgroundTexture("theWildCardResources/images/512/bg_attack_original.png", "theWildCardResources/images/1024/bg_attack_original.png");
+            }
+            if (type == CardType.SKILL) {
+                this.setBackgroundTexture("theWildCardResources/images/512/bg_skill_original.png", "theWildCardResources/images/1024/bg_skill_original.png");
+            }
+            if (type == CardType.POWER) {
+                this.setBackgroundTexture("theWildCardResources/images/512/bg_power_original.png", "theWildCardResources/images/1024/bg_power_original.png");
+            }
+        }
     }
 
     public void displayUpgrades() { // Display the upgrade - when you click a card to upgrade it

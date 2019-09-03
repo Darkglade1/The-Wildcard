@@ -1,6 +1,7 @@
 package theWildCard;
 
 import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
@@ -17,10 +18,15 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.Prefs;
+import com.megacrit.cardcrawl.helpers.SaveHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
@@ -109,6 +115,7 @@ import theWildCard.variables.DefaultSecondMagicNumber;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Properties;
 
 @SpireInitializer
 public class WildcardMod implements
@@ -125,6 +132,11 @@ public class WildcardMod implements
 
     public static final Logger logger = LogManager.getLogger(WildcardMod.class.getName());
     private static String modID;
+
+    // Mod-settings settings. This is if you want an on/off savable button
+    public static Properties wildCardDefaultSettings = new Properties();
+    public static final String ENABLE_PLACEHOLDER_SETTINGS = "enableAltCardArt";
+    public static boolean enableAltCardArt = false; // The boolean we'll be setting on/off (true/false)
 
     //This is for the in-game mod settings panel.
     private static final String MODNAME = "The Wild Card";
@@ -199,7 +211,7 @@ public class WildcardMod implements
                 ENERGY_ORB_BLUE_PORTRAIT, CARD_ENERGY_ORB);
         
         logger.info("Done creating the color");
-        
+        loadConfigData();
     }
 
     
@@ -255,6 +267,30 @@ public class WildcardMod implements
 
         logger.info("Added " + WildcardCharacter.Enums.THE_WILD_CARD.toString());
     }
+
+    public static void loadConfigData() {
+        try {
+            SpireConfig config = new SpireConfig("thewildcard", "wildCardConfig", wildCardDefaultSettings);
+            config.load();
+            enableAltCardArt = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+            saveData();
+        }
+    }
+
+
+    public static void saveData() {
+        try {
+            SpireConfig config = new SpireConfig("thewildcard", "wildCardConfig", wildCardDefaultSettings);
+            config.setBool(ENABLE_PLACEHOLDER_SETTINGS, enableAltCardArt);
+
+            config.save();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     
     @Override
     public void receivePostInitialize() {
@@ -266,6 +302,20 @@ public class WildcardMod implements
         // Create the Mod Menu
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
+
+        // Create the on/off button:
+        ModLabeledToggleButton enableNormalsButton = new ModLabeledToggleButton("Use alternate card background art.",
+                350.0f, 700.0f, Settings.CREAM_COLOR, FontHelper.charDescFont, // Position (trial and error it), color, font
+                enableAltCardArt, // Boolean it uses
+                settingsPanel, // The mod panel in which this button will be in
+                (label) -> {}, // thing??????? idk
+                (button) -> { // The actual button:
+
+                    enableAltCardArt = button.enabled; // The boolean true/false will be whether the button is enabled or not
+                    saveData();
+                });
+
+        settingsPanel.addUIElement(enableNormalsButton); // Add the button to the settings panel. Button is a go.
 
 
         //Add events
