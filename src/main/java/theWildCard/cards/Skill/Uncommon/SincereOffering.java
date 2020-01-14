@@ -39,9 +39,9 @@ public class SincereOffering extends AbstractDefaultCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, false));
+            AbstractDungeon.actionManager.addToBottom(new ExhaustAction( 1, false, false));
         } else {
-            AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, 1, true));
+            AbstractDungeon.actionManager.addToBottom(new ExhaustAction( 1, true, false));
         }
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, magicNumber));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, defaultSecondMagicNumber));

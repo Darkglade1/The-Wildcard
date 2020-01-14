@@ -3,8 +3,8 @@
   "name": "The Wild Card",
   "author_list": ["Darkglade"],
   "description": "A character mod inspired by the Persona Series.",
-  "version": "0.16.2",
-  "sts_version": "07-17-2019",
+  "version": "1.0.0",
+  "sts_version": "01-14-2020",
   "mts_version": "3.8.0",
   "dependencies": ["basemod", "stslib"],
   "update_json": ""

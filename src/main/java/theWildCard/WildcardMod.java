@@ -146,7 +146,7 @@ public class WildcardMod implements
     
     // Colors (RGB)
     // Character Color
-    public static final Color DEFAULT_BLUE = CardHelper.getColor(11.0f, 11.0f, 96.0f);
+    public static final Color DEFAULT_BLUE = CardHelper.getColor(11, 11, 96);
   
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_BLUE = "theWildCardResources/images/512/bg_attack_blue.png";

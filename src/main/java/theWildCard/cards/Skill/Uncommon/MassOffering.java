@@ -43,7 +43,7 @@ public class MassOffering extends AbstractDefaultCard {
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, magicNumber * count));
 
         for(int i = 0; i < count; ++i) {
-            AbstractDungeon.actionManager.addToTop(new ExhaustAction(AbstractDungeon.player, AbstractDungeon.player, 1, true, true));
+            AbstractDungeon.actionManager.addToTop(new ExhaustAction(1, true, true));
         }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, defaultSecondMagicNumber));
     }
