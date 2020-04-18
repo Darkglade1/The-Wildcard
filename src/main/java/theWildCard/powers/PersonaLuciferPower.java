@@ -2,6 +2,7 @@ package theWildCard.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -26,6 +27,7 @@ public class PersonaLuciferPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final int DEX_LOSS = Lucifer.DEX_LOSS;
     private boolean activated = false;
+    private boolean active = true;
 
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("LuciferPower84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("LuciferPower32.png"));
@@ -60,15 +62,23 @@ public class PersonaLuciferPower extends AbstractPower {
     @Override
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if (power instanceof StrengthPower && power.amount > 0) {
-            this.flash();
-            //source is set to null so the extra strength doesn't trigger this power again and create an infinite loop
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, null,
-                    new StrengthPower(owner, power.amount), power.amount));
-            //Player loses Dex the first time they use this effect each turn
-            if (!activated) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner,
-                        new DexterityPower(owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
-                activated = true;
+            if(active) {
+                active = false;
+                //Prevents infinite loop
+                this.addToTop(new AbstractGameAction() {
+                    @Override
+                    public void update() {
+                        this.isDone = true;
+                        active = true;
+                    }
+                });
+                this.flash();
+                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(owner, owner, new StrengthPower(owner, power.amount), power.amount));
+                //Player loses Dex the first time they use this effect each turn
+                if (!activated) {
+                    AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(owner, owner, new DexterityPower(owner, -Lucifer.DEX_LOSS), -Lucifer.DEX_LOSS));
+                    activated = true;
+                }
             }
         }
     }

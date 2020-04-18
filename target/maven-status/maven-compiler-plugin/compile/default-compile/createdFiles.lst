@@ -49,6 +49,7 @@ theWildCard\actions\ArcanaFromDeckToHandAction.class
 theWildCard\cards\Persona\Odin.class
 theWildCard\powers\HarvestPower.class
 theWildCard\powers\UnendingRitualPower.class
+theWildCard\powers\PersonaLuciferPower$1.class
 theWildCard\powers\BulwarkPower.class
 theWildCard\cards\Attack\Common\EnergizedStroke.class
 theWildCard\cards\Power\Uncommon\RighteousFury.class
