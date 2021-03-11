@@ -9,6 +9,7 @@ theWildCard\cards\Power\Rare\Bulwark.class
 theWildCard\cards\Arcana\ArchaicAssault.class
 theWildCard\cards\Attack\Rare\Desolation.class
 theWildCard\patches\ArcanaDropRatePatchUncommon$Locator.class
+theWildCard\WildcardMod$1.class
 theWildCard\cards\Power\Uncommon\Abstinence.class
 theWildCard\relics\Wildcard.class
 theWildCard\cards\Power\Uncommon\BalancingAct.class

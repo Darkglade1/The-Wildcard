@@ -30,10 +30,13 @@ import com.megacrit.cardcrawl.helpers.SaveHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.localization.EventStrings;
+import com.megacrit.cardcrawl.localization.MonsterStrings;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.TutorialStrings;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
@@ -479,48 +482,56 @@ public class WildcardMod implements
     @Override
     public void receiveEditStrings() {
         logger.info("Beginning to edit strings for mod with ID: " + getModID());
-        
-        // CardStrings
-        BaseMod.loadCustomStringsFile(CardStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Card-Strings.json");
-        
-        // PowerStrings
-        BaseMod.loadCustomStringsFile(PowerStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Power-Strings.json");
-        
-        // RelicStrings
-        BaseMod.loadCustomStringsFile(RelicStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Relic-Strings.json");
-        
-        // Event Strings
-        BaseMod.loadCustomStringsFile(EventStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Event-Strings.json");
-        
-        // PotionStrings
-        BaseMod.loadCustomStringsFile(PotionStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Potion-Strings.json");
-        
-        // CharacterStrings
-        BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Character-Strings.json");
-        
-        // OrbStrings
-        BaseMod.loadCustomStringsFile(OrbStrings.class,
-                getModID() + "Resources/localization/eng/WildcardMod-Orb-Strings.json");
+
+        loadLocFiles(Settings.GameLanguage.ENG);
+        if (Settings.language != Settings.GameLanguage.ENG) {
+            loadLocFiles(Settings.language);
+        }
         
         logger.info("Done editing strings");
     }
-    
-    @Override
-    public void receiveEditKeywords() {
+
+    private static String makeLocPath(Settings.GameLanguage language, String filename)
+    {
+        String ret = "localization/";
+        switch (language) {
+            case ZHS:
+                ret += "zhs/";
+                break;
+            default:
+                ret += "eng/";
+                break;
+        }
+        return getModID() + "Resources/" + (ret + filename + ".json");
+    }
+
+    private void loadLocFiles(Settings.GameLanguage language)
+    {
+        BaseMod.loadCustomStringsFile(CardStrings.class, makeLocPath(language, "WildcardMod-Card-Strings"));
+        BaseMod.loadCustomStringsFile(EventStrings.class, makeLocPath(language, "WildcardMod-Event-Strings"));
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, makeLocPath(language, "WildcardMod-Character-Strings"));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, makeLocPath(language, "WildcardMod-Relic-Strings"));
+        BaseMod.loadCustomStringsFile(PowerStrings.class, makeLocPath(language, "WildcardMod-Power-Strings"));
+    }
+
+    private void loadLocKeywords(Settings.GameLanguage language)
+    {
         Gson gson = new Gson();
-        String json = Gdx.files.internal(getModID() + "Resources/localization/eng/WildcardMod-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
-        com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
-        
+        String json = Gdx.files.internal(makeLocPath(language, "WildcardMod-Keyword-Strings")).readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+
         if (keywords != null) {
             for (Keyword keyword : keywords) {
                 BaseMod.addKeyword(getModID().toLowerCase(), keyword.PROPER_NAME, keyword.NAMES, keyword.DESCRIPTION);
             }
+        }
+    }
+    
+    @Override
+    public void receiveEditKeywords() {
+        loadLocKeywords(Settings.GameLanguage.ENG);
+        if (Settings.language != Settings.GameLanguage.ENG) {
+            loadLocKeywords(Settings.language);
         }
     }
 
