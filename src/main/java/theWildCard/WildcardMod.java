@@ -495,6 +495,9 @@ public class WildcardMod implements
     {
         String ret = "localization/";
         switch (language) {
+            case RUS:
+                ret += "rus/";
+                break;
             case ZHS:
                 ret += "zhs/";
                 break;

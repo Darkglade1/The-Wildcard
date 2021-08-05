@@ -1,0 +1,154 @@
+{
+"theWildCard:StrengthLossPower": {
+        "NAME": "Приток мощи",
+        "DESCRIPTIONS": ["Отнимает #b", " #yСилы после разыгрывания след. Атаки."]
+},
+"theWildCard:LoseThornsPower": {
+        "NAME": "Вал шипов",
+        "DESCRIPTIONS": ["Отнимает #b", " #yШипов в начале след. хода."]
+},
+"theWildCard:LoseDrawPower": {
+        "NAME": "Ни шагу назад",
+        "DESCRIPTIONS": ["В след. ходу вы возьмёте на #b", " карты меньше."]
+},
+"theWildCard:CrushPower": {
+        "NAME": "Пролом",
+        "DESCRIPTIONS": ["Даёт", " в вашем след. ходу."]
+},
+"theWildCard:ChangingDestinyPower": {
+        "NAME": "Предрешить судьбу",
+        "DESCRIPTIONS": ["В этом ходу след. #yАркан разыгрывается дважды.", "В этом ходу #b", " след. #yАркана разыгрываются дважды."]
+},
+"theWildCard:MasterPlanPower": {
+        "NAME": "Безупречный план",
+        "DESCRIPTIONS": ["Даёт", " в вашем след. ходу. ", "#yОставьте до #b", " карт в этом ходу."]
+},
+"theWildCard:UnendingRitualPower": {
+        "NAME": "Обряд вечности",
+        "DESCRIPTIONS": ["Добавляет в руку #b", " случ. #yАркан, когда вы разыгрываете #yАрканы в этом ходу."]
+},
+"theWildCard:UpgradedUnendingRitualPower": {
+        "NAME": "Обряд вечности",
+        "DESCRIPTIONS": ["Добавляет в руку #b", " случ. #yУлучшенный Аркан, когда вы разыгрываете #yАрканы в этом ходу."]
+},
+"theWildCard:LastStandPower": {
+        "NAME": "Выживший",
+        "DESCRIPTIONS": ["Отнимает #b", " ОЗ в след. ходу."]
+},
+"theWildCard:RampantBloodlustPower": {
+        "NAME": "Неутолимая жажда",
+        "DESCRIPTIONS": ["Если враг не умрёт до конца хода, отнимает", " в след. ходу."]
+},
+"theWildCard:TheUniversePower": {
+        "NAME": "Мироздание",
+        "DESCRIPTIONS": ["Добавляет #b", " случ. #yПерсону в руку в начале вашего хода."]
+},
+"theWildCard:FuelForTheFirePower": {
+        "NAME": "Разжечь пламя",
+        "DESCRIPTIONS": ["Вы берёте #b", " карту, когда #yСжигаете #yПерсону или сбрасываете #yАркан.", " карты, когда #yСжигаете #yПерсону или сбрасываете #yАркан."]
+},
+"theWildCard:ManOfManyFacesPower": {
+        "NAME": "Лицедей",
+        "DESCRIPTIONS": ["Вы берёте #b", " карту, когда разыгрываете #yПерсону.", " карты, когда разыгрываете #yПерсону."]
+},
+"theWildCard:SafeguardPower": {
+        "NAME": "Страж",
+        "DESCRIPTIONS": ["Когда вы разыгрываете #yАркан, даёт #b", " Защиты число раз, равное потраченной на него [E] ."]
+},
+"theWildCard:AttunementPower": {
+        "NAME": "Отладка",
+        "DESCRIPTIONS": ["Даёт #b", " Силы и #b", " #yЛовкости, когда вы разыгрываете активную #yПерсону. NL Вы не можете сменить #yПерсону."]
+},
+"theWildCard:AbstinencePower": {
+        "NAME": "Сдерживание",
+        "DESCRIPTIONS": ["Даёт #b", " Защиты, если в конце вашего хода в руке нет #yПерсон."]
+},
+"theWildCard:SubduingPresencePower": {
+        "NAME": "Духовное присутствие",
+        "DESCRIPTIONS": ["Накладывает #b", " #yСлабости на ВСЕХ врагов в начале каждого вашего хода."]
+},
+"theWildCard:VileAuraPower": {
+        "NAME": "Нечистая аура",
+        "DESCRIPTIONS": ["Накладывает #b", " #yУязвимости на ВСЕХ врагов в начале каждого вашего хода."]
+},
+"theWildCard:ReincarnationPower": {
+        "NAME": "Реинкарнация",
+        "DESCRIPTIONS": ["Когда #yСжигается карта, добавляет #b", " её копию", " её копии", " в стопку сброса."]
+},
+"theWildCard:BulwarkPower": {
+        "NAME": "Бастион",
+        "DESCRIPTIONS": ["Даёт #b", " #yПанциря, когда вы разыгрываете Навык."]
+},
+"theWildCard:EncorePower": {
+        "NAME": "Бис",
+        "DESCRIPTIONS": ["Вы берёте #b", " карту, когда разыгрываете карту.", " карт, когда разыгрываете карту."]
+},
+"theWildCard:MomentumPower": {
+        "NAME": "Импульс",
+        "DESCRIPTIONS": ["Даёт #b", " #yСилы до конца хода, когда вы наносите урон."]
+},
+"theWildCard:HarvestPower": {
+        "NAME": "Жатва",
+        "DESCRIPTIONS": ["Даёт", " в начале каждого вашего хода и повышает даваемое кол-во на", " , когда умирает враг."]
+},
+"theWildCard:PersonaSakuyaPower": {
+        "NAME": "Сакуя",
+        "DESCRIPTIONS": ["Накладывает #b", " #yСлабости на ВСЕХ врагов, когда вы разыгрываете карту."]
+},
+"theWildCard:PersonaPolydeucesPower": {
+        "NAME": "Полидеусес",
+        "DESCRIPTIONS": ["Даёт #b", " #yЛовкости."]
+},
+"theWildCard:PersonaArsenePower": {
+        "NAME": "Арсен",
+        "DESCRIPTIONS": ["Даёт #b", " #yСилы и #b", " #yЛовкости."]
+},
+"theWildCard:PersonaMichaelPower": {
+        "NAME": "Микаил",
+        "DESCRIPTIONS": ["Даёт #b", " #yСилы."]
+},
+"theWildCard:PersonaPaleRiderPower": {
+        "NAME": "Бледный всадник",
+        "DESCRIPTIONS": ["Накладывает #b", " #yУязвимости на ВСЕХ врагов, когда вы разыгрываете карту."]
+},
+"theWildCard:PersonaScathachPower": {
+        "NAME": "Скатах",
+        "DESCRIPTIONS": ["Даёт #b", " #yВременных #yОЗ, когда вы разыгрываете карту."]
+},
+"theWildCard:PersonaOdinPower": {
+        "NAME": "Один",
+        "DESCRIPTIONS": ["Даёт #b", " #yЗащиты, когда вы разыгрываете Атаку."]
+},
+"theWildCard:PersonaLokiPower": {
+        "NAME": "Локи",
+        "DESCRIPTIONS": ["Каждый #b", " раз в ходу, когда вы разыгрываете карту, вы берёте #b", " карту. (После разыгрывания еще #b", " карты).", " карт)."]
+},
+"theWildCard:PersonaMetatronPower": {
+        "NAME": "Метатрон",
+        "DESCRIPTIONS": ["Атаки наносят урон ВСЕМ врагам."]
+},
+"theWildCard:PersonaAlicePower": {
+        "NAME": "Алиса",
+        "DESCRIPTIONS": ["Даёт [E] [E] , когда умирает враг."]
+},
+"theWildCard:PersonaAmaterasuPower": {
+        "NAME": "Аматерасу",
+        "DESCRIPTIONS": ["Восполняет #b", " ОЗ, когда #yСжигается карта. Каждая разыгрываемая карта #yСжигается."]
+},
+"theWildCard:PersonaCaesarPower": {
+        "NAME": "Цезарь",
+        "DESCRIPTIONS": ["Каждый #b", " раз в ходу, когда вы разыгрываете карту, даёт #b", " #yАртефакта. (После разыгрывания еще #b", " карты).", " карт)."]
+},
+"theWildCard:PersonaSatanaelPower": {
+        "NAME": "Сатанаил",
+        "DESCRIPTIONS": ["Вы Оставляете до #b", " карт в конце хода, когда разыгрываете карту."]
+},
+"theWildCard:PersonaLuciferPower": {
+        "NAME": "Люцифер",
+        "DESCRIPTIONS": ["Удваивает получаемую #yСилу. Вы теряете #b", " #yЛовкости, каждый первый раз за ход, когда срабатывает этот эффект.."]
+},
+"theWildCard:PersonaThanatosPower": {
+        "NAME": "Танатос",
+        "DESCRIPTIONS": ["Атаки с ценой не менее 2 разыгрываются дважды. Вы теряете #b", " ОЗ, когда срабатывает этот эффект."]
+}
+}

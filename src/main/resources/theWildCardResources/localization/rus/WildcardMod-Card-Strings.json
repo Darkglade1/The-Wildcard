@@ -1,0 +1,470 @@
+{
+  "theWildCard:SeveringSlash": {
+    "NAME": "Кромсающий порез",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:StingingStrike": {
+    "NAME": "Жгучий удар",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:ArcaneArts": {
+    "NAME": "Тайные искусства",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:ArcanaArtistry": {
+    "NAME": "Загадочное мастерство",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:MagicMettle": {
+    "NAME": "Чарующий антураж",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:ArchaicAssault": {
+    "NAME": "Древняя дрожь",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:MagicalMight": {
+    "NAME": "Чудное могущество",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:FinalHour": {
+    "NAME": "Последний час",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:PowerOfTheArcana": {
+    "NAME": "Мощь арканы",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:TheArcanaUnleashed": {
+    "NAME": "Неудержимая аркана",
+    "DESCRIPTION": "thewildcard:Аркан."
+  },
+  "theWildCard:HealersStrike": {
+    "NAME": "Удар целителя",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Наносит !D! урона. NL Восполняет !M! ОЗ. NL Сжигается."
+  },
+  "theWildCard:WardingBlow": {
+    "NAME": "Охранный взмах",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Даёт !B! Защиты. NL Наносит !D! урона."
+  },
+  "theWildCard:BalancedThrust": {
+    "NAME": "Взвешенный выпад",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Даёт !B! Защиты. NL Наносит !D! урона."
+  },
+  "theWildCard:SweepingSlash": {
+    "NAME": "Рассекающее лезвие",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Наносит !D! урона ВСЕМ врагам."
+  },
+  "theWildCard:SavageBlow": {
+    "NAME": "Жестокий натиск",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Наносит !D! урона."
+  },
+  "theWildCard:WitchsStrike": {
+    "NAME": "Удар ведьмы",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Наносит !D! урона. NL Восполняет ОЗ, равное нанесённому урону. NL Сжигается."
+  },
+  "theWildCard:Bristle": {
+    "NAME": "Свирепство",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Наносит !D! урона. NL Даёт !M! Шипов."
+  },
+  "theWildCard:EbbAndFlow": {
+    "NAME": "Прилив и отлив",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Наносит !D! урона. NL Вы берёте !M! карты."
+  },
+  "theWildCard:FlurryOfBlows": {
+    "NAME": "Шквал кулаков",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Наносит !D! урона !M! раза."
+  },
+  "theWildCard:Crush": {
+    "NAME": "Пролом",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Наносит !D! урона. NL Даёт [E] [E] в след. ходу."
+  },
+  "theWildCard:DebilitatingSpell": {
+    "NAME": "Истощающие чары",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Накладывает !M! Слабости."
+  },
+  "theWildCard:Fortify": {
+    "NAME": "Укрепление",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Даёт !B! Защиты."
+  },
+  "theWildCard:TwoForOne": {
+    "NAME": "По цене одного",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Накладывает !M! Слабости. NL Накладывает !M! Уязвимости."
+  },
+  "theWildCard:BurstOfStrength": {
+    "NAME": "Приток мощи",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Даёт !M! Силы до разыгрывания след. Атаки."
+  },
+  "theWildCard:PiercingGaze": {
+    "NAME": "Пронзающий взор",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Накладывает !M! Уязвимости."
+  },
+  "theWildCard:SincereOffering": {
+    "NAME": "Великая жертва",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Сжигает случ. карту в руке. NL Восполняет !M! ОЗ. NL Вы берёте !theWildCard:SecondMagic! карту.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Сжигает выбранную карту в руке. NL Восполняет !M! ОЗ. NL Вы берёте !theWildCard:SecondMagic! карту."
+  },
+  "theWildCard:SpikyShield": {
+    "NAME": "Колкий заслон",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Даёт !B! Защиты. NL Даёт !M! Шипов."
+  },
+  "theWildCard:SleightOfHand": {
+    "NAME": "Ловкость рук",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Даёт !B! Защиты. NL Накладывает !M! Уязвимости."
+  },
+  "theWildCard:Vengeance": {
+    "NAME": "Отмщение",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Отнимает !theWildCard:SecondMagic! ОЗ. NL Даёт !M! Силы."
+  },
+  "theWildCard:RampantBloodlust": {
+    "NAME": "Неутолимая жажда",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Даёт [E] [E]. NL Если в этом ходу не умрёт враг, отнимает [E] [E] в след. ходу.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Даёт [E] [E] [E]. NL Если в этом ходу не умрёт враг, отнимает [E] [E] [E] в след. ходу."
+  },
+  "theWildCard:MassOffering": {
+    "NAME": "Обильный дар",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Сжигает все карты в руке. NL Восполняет !M! ОЗ за каждую. NL Вы берёте !theWildCard:SecondMagic! карты."
+  },
+  "theWildCard:Fortification": {
+    "NAME": "Фортификация",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Даёт !B! Защиты. NL Даёт !M! *Панциря."
+  },
+  "theWildCard:OnTheRoad": {
+    "NAME": "На перепутье",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Вы берёте !M! карты. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Вы берёте !M! карты."
+  },
+  "theWildCard:Retribution": {
+    "NAME": "Немезида",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL ВСЕ враги теряют ОЗ, равное намерению целевого врага."
+  },
+  "theWildCard:Execute": {
+    "NAME": "Экзекуция",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Убивает врага, если у него меньше половины Макс. ОЗ. NL (Исключая боссов.) NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Убивает врага, если у него меньше половины Макс. ОЗ. NL (Исключая боссов.) "
+  },
+  "theWildCard:AncientSeal": {
+    "NAME": "Древняя печать",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Наносит !D! урона. NL Враг теряет Силу, равную нанесённому урону."
+  },
+  "theWildCard:CleansingBlow": {
+    "NAME": "Очищающий бриз",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Наносит !D! урона. NL Снимает с вас все отриц. эффекты. Сжигает ВСЕ карты *Статусов и Проклятий. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Наносит !D! урона. NL Снимает с вас все отриц. эффекты. Сжигает ВСЕ карты *Статусов и Проклятий."
+  },
+  "theWildCard:JackOfAllTrades": {
+    "NAME": "Мастак",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Даёт !B! Защиты. NL Наносит !D! урона. NL Вы берёте !M! карту."
+  },
+  "theWildCard:DivineWhirl": {
+    "NAME": "Божественный вихрь",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Наносит !D! урона !M! раз ВСЕМ врагам."
+  },
+  "theWildCard:SuddenDeath": {
+    "NAME": "Летальный исход",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Наносит !D!X урона. NL Если X не меньше !M!, убивает целевого врага. NL (Исключая боссов.)"
+  },
+  "theWildCard:QuietPassing": {
+    "NAME": "Неспешный отход",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Наносит !D! урона. NL ВСЕ враги теряют Силу, равную Слабости целевого врага. NL Сжигается."
+  },
+  "theWildCard:WallOfThorns": {
+    "NAME": "Вал шипов",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Наносит !D! урона. NL Даёт !M! Шипов до конца хода."
+  },
+  "theWildCard:OneTwo": {
+    "NAME": "На раз-два",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Наносит !D! урона дважды. NL Накладывает !M! Слабости.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Наносит !D! урона дважды. NL Накладывает !M! Слабости дважды."
+  },
+  "theWildCard:RelentlessBarrage": {
+    "NAME": "Безжалостный каскад",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Наносит !D! урона 2X раз."
+  },
+  "theWildCard:BrutalDemise": {
+    "NAME": "Скорая кончина",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Наносит !D! урона. NL Даёт [E] , равную Уязвимости врага. NL Сжигается."
+  },
+  "theWildCard:LastRites": {
+    "NAME": "Прощальный ритуал",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Наносит !D! урона и восполняет !M! ОЗ. за каждую карту в стопке сожжённых карт NL Сжигается."
+  },
+  "theWildCard:BlessingOfKings": {
+    "NAME": "Вотум королей",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Снимает с вас все отриц. эффекты. NL Даёт !M! Артефакта. NL Даёт !B! Защиты. NL Сжигается."
+  },
+  "theWildCard:EndOfTheLine": {
+    "NAME": "Замкнутый круг",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Вы сбрасываете все карты, затем берёте !M! карт. NL Вы больше не сможете брать карты в этом ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Вы сбрасываете любое кол-во карт, затем берёте !M! карт. NL Вы больше не сможете брать карты в этом ходу. NL Сжигается."
+  },
+  "theWildCard:LastStand": {
+    "NAME": "Выживший",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Даёт !M! Силы. NL Отнимает !theWildCard:SecondMagic! ОЗ в след. ходу. NL Сжигается."
+  },
+  "theWildCard:Countdown": {
+    "NAME": "Отсчёт",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Оставляется. NL Убивает врага. В начале каждого вашего хода снижает свою стоимость на 1. NL Сжигается."
+  },
+  "theWildCard:SubduingPresence": {
+    "NAME": "Духовное присутствие",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Накладывает !M! Слабости на ВСЕХ врагов в начале каждого вашего хода."
+  },
+  "theWildCard:RegalBearing": {
+    "NAME": "Явление власти",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Даёт !M! Ловкости."
+  },
+  "theWildCard:BalancingAct": {
+    "NAME": "Балансирование",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Даёт !M! Силы и !theWildCard:SecondMagic! Ловкости."
+  },
+  "theWildCard:RighteousFury": {
+    "NAME": "Праведный гнев",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Даёт !M! Силы."
+  },
+  "theWildCard:VileAura": {
+    "NAME": "Нечистая аура",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Накладывает !M! Уязвимости на ВСЕХ врагов в начале каждого вашего хода."
+  },
+  "theWildCard:Reincarnation": {
+    "NAME": "Реинкарнация",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Жрицы. NL Когда Сжигается карта, добавляет !M! её копию в стопку сброса."
+  },
+  "theWildCard:Bulwark": {
+    "NAME": "Бастион",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Императора. NL Даёт !M! *Панциря, когда вы разыгрываете Навык."
+  },
+  "theWildCard:Encore": {
+    "NAME": "На бис",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Шута. NL Вы берёте !M! карту, когда разыгрываете карту."
+  },
+  "theWildCard:Momentum": {
+    "NAME": "Импульс",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Суда. NL Даёт !M! Силы до конца хода, когда вы наносите урон."
+  },
+  "theWildCard:Harvest": {
+    "NAME": "Жатва",
+    "DESCRIPTION": "thewildcard:Аркан thewildcard:Смерти. NL Даёт [E] в начале каждого вашего хода и повышает даваемое кол-во на [E] , когда умирает враг."
+  },
+  "theWildCard:Sakuya": {
+    "NAME": "Сакуя",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Жрица. NL Накладывает !M! Слабости на ВСЕХ врагов, когда вы разыгрываете карту, исключая карты thewildcard:Персон.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Жрица. NL Накладывает !M! Слабости на ВСЕХ врагов, когда вы разыгрываете карту, исключая карты thewildcard:Персон."
+  },
+  "theWildCard:Polydeuces": {
+    "NAME": "Полидеусес",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Император. NL Даёт !M! Ловкости.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Император. NL Даёт !M! Ловкости."
+  },
+  "theWildCard:Arsene": {
+    "NAME": "Арсен",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Шут. NL Даёт !M! Силы и !theWildCard:SecondMagic! Ловкости.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Шут. NL Даёт !M! Силы и !theWildCard:SecondMagic! Ловкости."
+  },
+  "theWildCard:Michael": {
+    "NAME": "Микаил",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Суд. NL Даёт !M! Силы.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Суд. NL Даёт !M! Силы."
+  },
+  "theWildCard:PaleRider": {
+    "NAME": "Бледный всадник",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Смерть. NL Накладывает !M! Уязвимости на ВСЕХ врагов, когда вы разыгрываете карту, исключая карты thewildcard:Персон.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Смерть. NL Накладывает !M! Уязвимости на ВСЕХ врагов, когда вы разыгрываете карту, исключая карты thewildcard:Персон."
+  },
+  "theWildCard:Scathach": {
+    "NAME": "Скатах",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Жрица. NL Даёт !M! Временных_ОЗ, когда вы разыгрываете карту, исключая карты thewildcard:Персон.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Жрица. NL Даёт !M! Временных_ОЗ, когда вы разыгрываете карту, исключая карты thewildcard:Персон."
+  },
+  "theWildCard:Odin": {
+    "NAME": "Один",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Император. NL Даёт !M! Защиты, когда вы разыгрываете Атаку.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Император. NL Даёт !M! Защиты, когда вы разыгрываете Атаку."
+  },
+  "theWildCard:Loki": {
+    "NAME": "Локи",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Шут. NL Вы берёте !M! карту, каждый !theWildCard:SecondMagic! раз в ходу, когда разыгрываете карту, исключая карты thewildcard:Персон.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Шут. NL Вы берёте !M! карту, каждый !theWildCard:SecondMagic! раз в ходу, когда разыгрываете карту, исключая карты thewildcard:Персон."
+  },
+  "theWildCard:Metatron": {
+    "NAME": "Метатрон",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Суд. NL Ваши Атаки наносят урон ВСЕМ врагам.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Суд. NL Ваши Атаки наносят урон ВСЕМ врагам."
+  },
+  "theWildCard:Alice": {
+    "NAME": "Алиса",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Смерть. NL Даёт [E] [E] , когда умирает враг.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Смерть. NL Даёт [E] [E] , когда умирает враг."
+  },
+  "theWildCard:Amaterasu": {
+    "NAME": "Аматерасу",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Жрица. NL Восполняет !M! ОЗ, когда Сжигается карта. NL Каждая разыгрываемая карта Сжигается.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Жрица. NL Восполняет !M! ОЗ, когда Сжигается карта. NL Каждая разыгрываемая карта Сжигается."
+  },
+  "theWildCard:Caesar": {
+    "NAME": "Цезарь",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Император. NL Даёт !M! Артефакта, каждый !theWildCard:SecondMagic! раз в ходу, когда вы разыгрываете карту, исключая карты thewildcard:Персон.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Император. NL Даёт !M! Артефакта, каждый !theWildCard:SecondMagic! раз в ходу, когда вы разыгрываете карту, исключая карты thewildcard:Персон."
+  },
+  "theWildCard:Satanael": {
+    "NAME": "Сатанаил",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Шут. NL Вы Оставляете до !M! карт в конце хода, когда разыгрываете карту, исключая карты thewildcard:Персон.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Шут. NL Вы Оставляете до !M! карт в конце хода, когда разыгрываете карту, исключая карты thewildcard:Персон."
+  },
+  "theWildCard:Lucifer": {
+    "NAME": "Люцифер",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Суд. NL Удваивает получаемую Силу. NL Вы теряете !M! Ловкости, когда этот эффект срабатывает первый раз за ход.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Суд. NL Удваивает получаемую Силу. NL Вы теряете !M! Ловкости, когда этот эффект срабатывает первый раз за ход."
+  },
+  "theWildCard:Thanatos": {
+    "NAME": "Танатос",
+    "DESCRIPTION": "Оставляется. NL thewildcard:Персона. thewildcard:Смерть. NL Атаки с ценой не менее 2 разыгрываются дважды. NL Вы теряете !M! ОЗ, когда срабатывает этот эффект.",
+    "UPGRADE_DESCRIPTION": "Начальная. Оставляется. NL thewildcard:Персона. thewildcard:Смерть. NL Атаки с ценой не менее 2 разыгрываются дважды. NL Вы теряете !M! ОЗ, когда срабатывает этот эффект."
+  },
+  "theWildCard:TheUniverse": {
+    "NAME": "Мироздание",
+    "DESCRIPTION": "Добавляет случ. thewildcard:Персону в руку в начале каждого вашего хода."
+  },
+  "theWildCard:FuelForTheFire": {
+    "NAME": "Возжечь",
+    "DESCRIPTION": "Вы берёте карту, когда Сжигаете thewildcard:Персону или сбрасываете thewildcard:Аркан."
+  },
+  "theWildCard:ManOfManyFaces": {
+    "NAME": "Лицедей",
+    "DESCRIPTION": "Вы берёте карту, когда разыгрываете thewildcard:Персону."
+  },
+  "theWildCard:Safeguard": {
+    "NAME": "Страж",
+    "DESCRIPTION": "Когда вы разыгрываете thewildcard:Аркан, даёт !M! Защиты кол-во раз, равное потраченной [E] ."
+  },
+  "theWildCard:Attunement": {
+    "NAME": "Отладка",
+    "DESCRIPTION": "Даёт !M! Силы и !M! Ловкости, когда вы вновь разыгрываете активную thewildcard:Персону. NL Вы больше не можете сменить thewildcard:Персону."
+  },
+  "theWildCard:Abstinence": {
+    "NAME": "Сдерживание",
+    "DESCRIPTION": "Даёт !M! Защиты, если в конце вашего хода в руке нет thewildcard:Персон."
+  },
+  "theWildCard:Deicide": {
+    "NAME": "Богоубийство",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Убивает ВСЕХ врагов, если в стопке сожжённых карт не меньше !M! thewildcard:Персон."
+  },
+  "theWildCard:ChangingDestiny": {
+    "NAME": "Предрешить судьбу",
+    "DESCRIPTION": "В этом ходу след. thewildcard:Аркан разыгрывается дважды.",
+    "UPGRADE_DESCRIPTION": "В этом ходу !M! след. thewildcard:Аркана разыгрываются дважды."
+  },
+  "theWildCard:MasterPlan": {
+    "NAME": "Безупречный план",
+    "DESCRIPTION": "Вы Оставляете до !M! карт в конце этого хода. NL Даёт X энергии в след. ходу. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Вы Оставляете до !M! карт в конце этого хода. NL Даёт X + 1 энергии в след. ходу. NL Сжигается."
+  },
+  "theWildCard:LadyLuck": {
+    "NAME": "Госпожа удача",
+    "DESCRIPTION": "Вы берёте !M! карты, затем сбрасываете любое кол-во карт. NL Вы берёте !theWildCard:SecondMagic! карты за каждый сброшенный thewildcard:Аркан."
+  },
+  "theWildCard:UnderLockAndKey": {
+    "NAME": "Запереть",
+    "DESCRIPTION": "Враг теряет !M! Силы до конца хода. NL Блокирует !theWildCard:SecondMagic! thewildcard:Аркан из руки. NL (Заблокированные thewildcard:Арканы не могут изменяться)."
+  },
+  "theWildCard:MaskChange": {
+    "NAME": "Сменить маску",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Вы кладёте thewildcard:Персону из стопки добора в руку."
+  },
+  "theWildCard:UnendingRitual": {
+    "NAME": "Обряд вечности",
+    "DESCRIPTION": "Добавляет в руку случ. thewildcard:Аркан, когда вы разыгрываете thewildcard:Арканы в этом ходу.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку случ. Улучшенный thewildcard:Аркан, когда вы разыгрываете thewildcard:Арканы в этом ходу."
+  },
+  "theWildCard:ShieldOfMany": {
+    "NAME": "Надёжный барьер",
+    "DESCRIPTION": "Даёт !B! Защиты за каждую thewildcard:Персону в руке."
+  },
+  "theWildCard:Impatience": {
+    "NAME": "Ни шагу назад",
+    "DESCRIPTION": "Вы берёте !M! карты. NL В след. ходу вы возьмёте на !theWildCard:SecondMagic! карты меньше."
+  },
+  "theWildCard:Unburden": {
+    "NAME": "Сбросить бремя",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Сжигает !M! случ. thewildcard:Персоны в руке."
+  },
+  "theWildCard:Patience": {
+    "NAME": "Терпение",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте !theWildCard:SecondMagic! карту. NL В след. ходу вы возьмёте на !M! карту больше.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте !theWildCard:SecondMagic! карту. NL В след. ходу вы возьмёте на !M! карты больше."
+  },
+  "theWildCard:Proficiency": {
+    "NAME": "Сноровка",
+    "DESCRIPTION": "Вы кладёте !M! карты из стопки сброса в руку. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Вы кладёте !M! карты из стопки сброса в руку."
+  },
+  "theWildCard:AllOutAttack": {
+    "NAME": "Общая атака",
+    "DESCRIPTION": "Вы разыгрываете по случ. Атаке из вашей thewildcard:Колоды за каждую thewildcard:Персону в thewildcard:Колоде. NL Сжигается."
+  },
+  "theWildCard:Overwhelm": {
+    "NAME": "Погром",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы сбрасываете любое кол-во карт. Повышает наносимый этой картой урон на !M! до конца боя за каждый сброшенный thewildcard:Аркан."
+  },
+  "theWildCard:Desolation": {
+    "NAME": "Запустение",
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам, если в вашей thewildcard:Колоде нет thewildcard:Персон."
+  },
+  "theWildCard:Ruination": {
+    "NAME": "Разорение",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! Уязвимости на ВСЕХ врагов. NL Сжигает всех ваших thewildcard:Персон."
+  },
+  "theWildCard:EnergyTheft": {
+    "NAME": "Молниеносная кража",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы сбрасываете любое кол-во карт. Даёт [E] за каждый сброшенный thewildcard:Аркан. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Вы сбрасываете любое кол-во карт. Даёт [E] за каждый сброшенный thewildcard:Аркан."
+  },
+  "theWildCard:IdentityTheft": {
+    "NAME": "Неповторимая кража",
+    "DESCRIPTION": "Наносит !D! урона. NL Добавляет случ. thewildcard:Персону в руку."
+  },
+  "theWildCard:TheGreatSeal": {
+    "NAME": "Великий заговор",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! Силы и отнимает !theWildCard:SecondMagic! Силы у врага, если в вашей thewildcard:Колоде нет thewildcard:Персон."
+  },
+  "theWildCard:Salvation": {
+    "NAME": "Спасение",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы берёте !M! карты, если в вашей руке нет thewildcard:Персон."
+  },
+  "theWildCard:Providence": {
+    "NAME": "Провидение",
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !B! Защиты и восполняет !M! ОЗ, если в вашей руке нет thewildcard:Персон."
+  },
+  "theWildCard:CryOfAgony": {
+    "NAME": "Крик души",
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! Слабости на ВСЕХ врагов. NL Сжигает ВСЕХ thewildcard:Персон в руке."
+  },
+  "theWildCard:BladeOfGenerations": {
+    "NAME": "Фамильный клинок",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы кладёте thewildcard:Аркан из стопки добора в руку."
+  },
+  "theWildCard:SacrificialStroke": {
+    "NAME": "Жертвенный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Сжигает случ. thewildcard:Персону в руке."
+  },
+  "theWildCard:EnergizedStroke": {
+    "NAME": "Заряженный удар",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы сбрасываете любое кол-во карт. NL Наносит !D! урона ВСЕМ врагам за каждый сброшенный thewildcard:Аркан."
+  },
+  "theWildCard:StalwartBlade": {
+    "NAME": "Булат",
+    "DESCRIPTION": "Наносит !D! урона. NL Вы сбрасываете любое кол-во карт. NL Даёт !B! Защиты за каждый сброшенный thewildcard:Аркан."
+  },
+  "theWildCard:CallToAdventure": {
+    "NAME": "Зов странствий",
+    "DESCRIPTION": "Наносит !D! урона дважды. NL Даёт !M! Уязвимости."
+  },
+  "theWildCard:BasicStrike": {
+    "NAME": "Удар",
+    "DESCRIPTION": "Наносит !D! урона."
+  },
+  "theWildCard:BasicDefend": {
+    "NAME": "Оборона",
+    "DESCRIPTION": "Даёт !B! Защиты."
+  }
+}
